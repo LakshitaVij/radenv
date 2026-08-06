@@ -1,0 +1,44 @@
+# Secrets - never commit real API keys
+.openrouter_key
+.openai_key
+*.key
+
+# Dependencies / build artifacts
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.vite/
+dist/
+build/
+
+# Real patient data - DICOM images, gold reports, generated followups.
+# These must be placed locally per the README, never committed to git
+# history (private repo or not).
+dicom_by_visit/
+dicomweb/
+csv/
+*.csv
+*.numbers
+
+# Generated run artifacts - eval episodes, receipts, results, logs
+computer_use_eval/episodes/
+computer_use_eval/*_batch*/
+computer_use_eval/regraded*/
+computer_use_eval/task_batch*/
+computer_use_eval/run_full_batch*/
+*.jsonl
+*.log
+
+# The real upstream OpenEMR clone - not ours to commit, tracked separately
+# via the patch file instead (see README)
+openemr/
+
+# OHIF - parked/not currently in use
+ohif-viewer/
+
+# Editor/OS cruft
+.DS_Store
+*.code-workspace
+.vscode/

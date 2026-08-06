@@ -1,0 +1,14 @@
+azure-functions
+azure-storage-blob
+openai
+azure-data-tables
+azure-identity
+azure-identity
+pydicom
+numpy
+Pillow
+# Needed to decompress DICOM files using JPEG Lossless/JPEG2000 transfer
+# syntaxes (pydicom itself only handles uncompressed pixel data natively).
+pylibjpeg
+pylibjpeg-libjpeg
+pylibjpeg-openjpeg

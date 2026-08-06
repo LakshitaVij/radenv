@@ -1,0 +1,3115 @@
+PatientID,VisitNum,StudyDate,StudyTime,PatientAge,PatientSex,ViewPosition,StudyDescription,NumberOfSeries,NumberOfImages,HistoryText,FindingsText,ImpressionText,report_text,PatientSource,IsSyntheticReport,HasRealReport,condition,phenotype,oxygen_saturation_percent,oxygen_device,respiratory_rate_per_min,work_of_breathing,systolic_bp_mmHg,temperature_C,mental_status,current_care_setting
+GRDN003M0HXJ2YHT,1,20080330,011543.934395,046Y,M,LL; PA,"CHEST, DEPSIA/ SUDDEN LOSS OF VISON",2,2,Sudden loss of vision.,,,"------------- REPORT GRDNBC60671A590FEDDA -------------
+CHEST, TWO VIEWS: 
+
+HISTORY:  Sudden loss of vision.
+
+------------- REPORT GRDN70634A5F49D38694 -------------
+CHEST, TWO VIEWS: 
+
+HISTORY:  Sudden loss of vision.",real,False,True,Normal,,99,room air,12,normal,111,36.3,alert,outpatient
+GRDN003M0HXJ2YHT,2,20080628,200041.934395,046Y,M,AP,"PCXR, CHEST PAIN, SHORT OF BREATH",1,1,,,Unremarkable chest.,"------------- REPORT GRDN783F95A9B0A7AE93 -------------
+PORTABLE CHEST:  Heart size and mediastinum are within normal limits.  The lungs are clear of infiltrates.  No significant bony abnormalities. 
+
+IMPRESSION:  Unremarkable chest.
+
+------------- REPORT GRDN5E2413A42195578B -------------
+PORTABLE CHEST:  Heart size and mediastinum are within normal limits.  The lungs are clear of infiltrates.  No significant bony abnormalities. 
+
+IMPRESSION:  Unremarkable chest.",real,False,True,Normal,,96,room air,14,normal,120,36.1,alert,ED
+GRDN003M0HXJ2YHT,3,20090225,225058.934395,047Y,M,AP,PCXR FOR CHEST PAIN,1,1,"Chest pain. 
+
+COMPARISON:  None.",Portable AP upright view of the chest demonstrates a normal cardiac silhouette.  Pulmonary hila and vessels are within normal limits.  Pleural spaces are clear.  Lungs are clear of any focal mass or consolidation.  There is no pneumothorax.,No acute cardiopulmonary process.,"HISTORY:  Chest pain. 
+
+COMPARISON:  None. 
+
+FINDINGS:  Portable AP upright view of the chest demonstrates a normal cardiac silhouette.  Pulmonary hila and vessels are within normal limits.  Pleural spaces are clear.  Lungs are clear of any focal mass or consolidation.  There is no pneumothorax. 
+
+IMPRESSION:  No acute cardiopulmonary process.",real,False,True,Normal,,98,room air,18,normal,100,37.0,alert,outpatient
+GRDN003M0HXJ2YHT,4,20090228,093049.934395,047Y,M,AP,PCXR FOR CHEST PAIN,1,1,,Heart and mediastinal contours unchanged.  No focal consolidation or evidence of edema.  No evidence for pneumothorax.  Bones are unremarkable.,No acute cardiopulmonary disease.,"STUDY:  Portable frontal chest radiograph, 09/09/2008.
+
+COMPARISON:  09/08/2008.
+
+FINDINGS:  Heart and mediastinal contours unchanged.  No focal consolidation or evidence of edema.  No evidence for pneumothorax.  Bones are unremarkable. 
+
+IMPRESSION:  No acute cardiopulmonary disease.",real,False,True,Normal,,97,room air,18,normal,104,36.5,alert,outpatient
+GRDN003M0HXJ2YHT,5,20090308,132330.934395,047Y,M,AP,PCXR    CHEST PAIN,1,1,,,Unremarkable AP view chest.,"AP view chest dated 09/22/2008 and demonstrates the lungs to be well aerated.  There is no evidence of active intrathoracic disease.  No evidence of effusions, pneumonia or pneumothorax seen.  
+
+IMPRESSION:  Unremarkable AP view chest.",real,False,True,Normal,,99,room air,16,normal,139,36.5,alert,ward
+GRDN003M0HXJ2YHT,6,20091118,163021.934395,047Y,M,AP,PCHEST/ CP,1,1,,,Unremarkable AP view chest.,"AP view chest dated 12/09/2008:  AP view chest demonstrates the lungs to be well aerated.  There is no evidence of active intrathoracic disease.  No evidence of effusions, pneumonia or pneumothorax seen.  
+
+IMPRESSION:  Unremarkable AP view chest.  
+
+Study Description:PCHEST - CPReport Status:FINALReferring Physician:ADRIAN PABLO GABAS; MOSESReading Physician:Dr. Faizura",real,False,True,Normal,,96,room air,17,normal,131,37.2,alert,ED
+GRDN003M0HXJ2YHT,7,20091204,181917.934395,047Y,M,AP,PCXR.  CHEST PAIN,1,1,,,,"CHEST:  Upright portable view of the chest shows normal heart, mediastinum, lung fields and osseous structures.",real,False,True,Normal,,98,room air,19,normal,107,36.5,alert,ward
+GRDN003M0HXJ2YHT,8,20100415,224708.934395,048Y,M,LL; PA,"[ID] FOR CHEST PAIN, SOB",2,2,Chest pain and shortness of breath.,The lungs are clear.  The cardiomediastinal silhouette is normal.  There is no pneumothorax or pleural effusion.,Negative.,"Chest, two views.
+
+History:  Chest pain and shortness of breath. 
+
+Findings:  
+The lungs are clear.  The cardiomediastinal silhouette is normal.  There is no pneumothorax or pleural effusion.  
+
+Impression:  Negative.",real,False,True,Normal,,99,room air,13,normal,115,37.2,alert,outpatient
+GRDN003M0HXJ2YHT,9,20100701,125452.934395,048Y,M,AP,PCXR.  CHEST PAIN,1,1,,,,"Chest:  AP portable view of the chest was obtained in evaluation of chest pain.  
+
+The heart, mediastinum, lung fields and osseous structures appear normal.",real,False,True,Normal,,99,room air,18,normal,116,36.2,alert,ED
+GRDN003M0HXJ2YHT,10,20150102,211805.871395,052Y,M,AP,ADULT CHEST - 1 VIEW,1,1,Chest pain.,"Single portable frontal radiograph of the chest shows that the lungs are clear, with no parenchymal consolidation, pulmonary edema or pleural effusion.  The heart size is normal.  No significant skeletal abnormality is identified.",No acute cardiopulmonary abnormality.,"------------- REPORT GRDN0AB1945F4B29442C -------------
+HISTORY:  Chest pain.
+
+FINDINGS:  Single portable frontal radiograph of the chest shows that the lungs are clear, with no parenchymal consolidation, pulmonary edema or pleural effusion.  The heart size is normal.  No significant skeletal abnormality is identified.
+
+IMPRESSION:  No acute cardiopulmonary abnormality.
+
+------------- REPORT GRDNB2432AE6CC212579 -------------
+HISTORY:  Chest pain.
+
+FINDINGS:  Single portable frontal radiograph of the chest shows that the lungs are clear, with no parenchymal consolidation, pulmonary edema or pleural effusion.  The heart size is normal.  No significant skeletal abnormality is identified.
+
+IMPRESSION:  No acute cardiopulmonary abnormality.",real,False,True,Normal,,100,room air,17,normal,106,36.3,alert,ED
+GRDN004RP5BFHE0T,1,20090429,023539.896060,058Y,M,,DG CHEST 1V PORT,1,1,"Evaluate PICC line placement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 12/08/2009","There is a right arm PICC line with tip in the SVC.
+
+The heart size is normal.
+
+There is no pleural effusion or pulmonary interstitial edema noted.
+
+No airspace densities identified.",1.  Right arm PICC line tip is in the SVC.,"Clinical Data: Evaluate PICC line placement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 12/08/2009
+
+Findings: There is a right arm PICC line with tip in the SVC.
+
+The heart size is normal.
+
+There is no pleural effusion or pulmonary interstitial edema noted.
+
+No airspace densities identified.
+
+IMPRESSION:
+
+1.  Right arm PICC line tip is in the SVC.",real,False,True,Normal,,97,room air,20,normal,120,36.2,alert,ward
+GRDN004RP5BFHE0T,2,20090501,035000.896060,058Y,M,,DG CHEST 1V PORT,1,1,"Crohn's disease.  Anemia and dehydration.  PICC line
+placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 08/17/2010","A right arm PICC line is now seen with the tip in the
+proximal to mid right atrium.  Approximately 3 cm below the
+expected level of the cavoatrial junction.
+
+Both lungs are clear.  There is no evidence of pleural effusion.
+Heart size is normal.","1.  Right arm PICC line and right atrium, approximately 3 cm below
+the expected location of the cavoatrial junction.
+2.  No active cardiopulmonary disease.","Clinical Data: Crohn's disease.  Anemia and dehydration.  PICC line
+placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 08/17/2010
+
+Findings: A right arm PICC line is now seen with the tip in the
+proximal to mid right atrium.  Approximately 3 cm below the
+expected level of the cavoatrial junction.
+
+Both lungs are clear.  There is no evidence of pleural effusion.
+Heart size is normal.
+
+IMPRESSION:
+
+1.  Right arm PICC line and right atrium, approximately 3 cm below
+the expected location of the cavoatrial junction.
+2.  No active cardiopulmonary disease.",real,False,True,Normal,,97,room air,17,normal,124,36.5,alert,ward
+GRDN004RP5BFHE0T,3,20090525,080718.896060,058Y,M,AP,DG CHEST 1V PORT,1,1,"Shortness of breath.  Evaluate PICC line placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Chest x-ray 10/03/2010.  CT abdomen pelvis 10/26/2010.","Right upper extremity PICC terminates in the distal
+superior vena cava, near the junction of the superior vena cava and
+right atrium.  A nasogastric tube enters the stomach, goes beyond
+the edge of the image, and then curves back on itself, likely
+within the stomach.
+
+Heart and mediastinal, contours within normal limits.  The lungs
+are clear.","1. Satisfactory position of right upper extremity PICC, with the
+tip in the distal superior vena cava.
+2.  No evidence of acute cardiopulmonary disease.","Clinical Data: Shortness of breath.  Evaluate PICC line placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Chest x-ray 10/03/2010.  CT abdomen pelvis 10/26/2010.
+
+Findings: Right upper extremity PICC terminates in the distal
+superior vena cava, near the junction of the superior vena cava and
+right atrium.  A nasogastric tube enters the stomach, goes beyond
+the edge of the image, and then curves back on itself, likely
+within the stomach.
+
+Heart and mediastinal, contours within normal limits.  The lungs
+are clear.
+
+IMPRESSION:
+
+1. Satisfactory position of right upper extremity PICC, with the
+tip in the distal superior vena cava.
+2.  No evidence of acute cardiopulmonary disease.",real,False,True,Normal,,99,room air,17,normal,121,36.4,alert,ED
+GRDN004RP5BFHE0T,4,20090528,064728.896060,058Y,M,,DG CHEST 2V,2,2,"Tachycardia.  Small bowel obstruction and low grade
+fever.
+
+CHEST - 2 VIEW
+
+Comparison: 05/09/2010","This is a mildly low volume film with mild bibasilar
+atelectasis.
+An NG tube is present within the stomach.
+A right-sided PICC line is identified with tip overlying the right
+atrium - consider retraction 4-5 cm.
+A probable small left pleural effusion is identified.
+There is no evidence of pneumothorax.
+No acute bony abnormalities are identified.","Mild bibasilar atelectasis and probable small left pleural
+effusion.
+
+Right-sided PICC line with tip overlying the right atrium -
+consider 4-5 cm retraction.
+
+Celam, Ivan Vid for this patient was notified of these results on
+05/12/2010 at [DATE] p.m.","Clinical Data: Tachycardia.  Small bowel obstruction and low grade
+fever.
+
+CHEST - 2 VIEW
+
+Comparison: 05/09/2010
+
+Findings: This is a mildly low volume film with mild bibasilar
+atelectasis.
+An NG tube is present within the stomach.
+A right-sided PICC line is identified with tip overlying the right
+atrium - consider retraction 4-5 cm.
+A probable small left pleural effusion is identified.
+There is no evidence of pneumothorax.
+No acute bony abnormalities are identified.
+
+IMPRESSION:
+Mild bibasilar atelectasis and probable small left pleural
+effusion.
+
+Right-sided PICC line with tip overlying the right atrium -
+consider 4-5 cm retraction.
+
+Celam, Ivan Vid for this patient was notified of these results on
+05/12/2010 at [DATE] p.m.",real,False,True,Atelectasis,Mild postoperative/dependent,93,room air,12,normal,158,37.3,alert,postoperative unit
+GRDN004RP5BFHE0T,5,20090529,002843.896060,058Y,M,AP,DG CHEST 1V PORT,1,1,"Small bowel obstruction.  Central line placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Earlier film of the same day.","There has been interval placement of a right IJ central
+venous catheter, tip in the distal SVC.  No pneumothorax.  Right
+arm PICC, endotracheal tube, and nasogastric tube are stable in
+position.  Some increase in left retrocardiac consolidation /
+atelectasis.  Right lung is clear.  Relatively low lung volumes.
+Heart size normal.  No definite effusion.","1.  Right IJ central line to distal SVC without pneumothorax.
+2.  Worsening left retrocardiac consolidation / atelectasis.","Clinical Data: Small bowel obstruction.  Central line placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Earlier film of the same day.
+
+Findings: There has been interval placement of a right IJ central
+venous catheter, tip in the distal SVC.  No pneumothorax.  Right
+arm PICC, endotracheal tube, and nasogastric tube are stable in
+position.  Some increase in left retrocardiac consolidation /
+atelectasis.  Right lung is clear.  Relatively low lung volumes.
+Heart size normal.  No definite effusion.
+
+IMPRESSION:
+
+1.  Right IJ central line to distal SVC without pneumothorax.
+2.  Worsening left retrocardiac consolidation / atelectasis.",real,False,True,Consolidation,Severe/high-risk infection,89,room air,28,moderate,133,39.1,mildly confused,stepdown
+GRDN004RP5BFHE0T,6,20090529,163825.896060,058Y,M,,DG CHEST 1V PORT,1,1,"58-year-old male status post surgery.  Evaluate
+endotracheal tube.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 01/22/2010 and earlier.","Portable semiupright AP view 3223 hours.  Endotracheal
+tube tip projects at the level of clavicles.  Enteric tube courses
+to the region of the body of the stomach.  Cardiac size and
+mediastinal contours are within normal limits.  Stable slightly low
+lung volumes.  Probable hiatal hernia.  No pneumothorax, pulmonary
+edema, pleural effusion or confluent airspace opacity.  Stable
+right PICC line.","1.  Endotracheal tube in good position.
+2.  Otherwise stable lines and tubes.
+3.  Mild bibasilar atelectasis suspected.","Clinical Data: 58-year-old male status post surgery.  Evaluate
+endotracheal tube.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 01/22/2010 and earlier.
+
+Findings: Portable semiupright AP view 3223 hours.  Endotracheal
+tube tip projects at the level of clavicles.  Enteric tube courses
+to the region of the body of the stomach.  Cardiac size and
+mediastinal contours are within normal limits.  Stable slightly low
+lung volumes.  Probable hiatal hernia.  No pneumothorax, pulmonary
+edema, pleural effusion or confluent airspace opacity.  Stable
+right PICC line.
+
+IMPRESSION:
+
+1.  Endotracheal tube in good position.
+2.  Otherwise stable lines and tubes.
+3.  Mild bibasilar atelectasis suspected.",real,False,True,Atelectasis,Mild postoperative/dependent,93,room air,16,normal,148,37.5,alert,postoperative unit
+GRDN004RP5BFHE0T,7,20090530,194414.896060,058Y,M,,DG CHEST 1V PORT,1,1,"58-year-old male with shortness of breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/21/2009 and earlier.","Portable AP view at 2245 hours.  Endotracheal tube is
+stable.  Visualized enteric tube is stable.  Right PICC line and IJ
+catheters are stable.  Unchanged left lower lobe collapse.  Stable
+cardiac size and mediastinal contours.  No pneumothorax, pulmonary
+edema or pleural effusion identified.","1.  Stable lines and tubes.
+2.  Unchanged left lower lobe collapse.","Clinical Data: 58-year-old male with shortness of breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/21/2009 and earlier.
+
+Findings: Portable AP view at 2245 hours.  Endotracheal tube is
+stable.  Visualized enteric tube is stable.  Right PICC line and IJ
+catheters are stable.  Unchanged left lower lobe collapse.  Stable
+cardiac size and mediastinal contours.  No pneumothorax, pulmonary
+edema or pleural effusion identified.
+
+IMPRESSION:
+
+1.  Stable lines and tubes.
+2.  Unchanged left lower lobe collapse.",real,False,True,Atelectasis,Severe lobar collapse/obstruction,79,mask,33,moderate,87,38.3,somnolent,stepdown
+GRDN004RP5BFHE0T,8,20090531,201807.896060,058Y,M,,DG CHEST 1V PORT,1,1,"Shortness of breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 1 day prior","4448 hours.  Endotracheal tube and right-sided PICC line
+are unchanged.  The right-sided PICC line is difficult to follow
+centrally.  Nasogastric extends beyond the  inferior aspect of the
+film.  Midline trachea. Normal heart size for level of inspiration.
+Question small amount of layering left-sided pleural fluid. No
+pneumothorax.  No congestive failure.  Mild persistent right base
+atelectasis.  No change in left lower lobe atelectasis.","1. No significant change since one day prior.
+2.  Similar left greater than right bibasilar atelectasis.
+Possible small left pleural effusion.","Clinical Data: Shortness of breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 1 day prior
+
+Findings: 4448 hours.  Endotracheal tube and right-sided PICC line
+are unchanged.  The right-sided PICC line is difficult to follow
+centrally.  Nasogastric extends beyond the  inferior aspect of the
+film.  Midline trachea. Normal heart size for level of inspiration.
+Question small amount of layering left-sided pleural fluid. No
+pneumothorax.  No congestive failure.  Mild persistent right base
+atelectasis.  No change in left lower lobe atelectasis.
+
+IMPRESSION:
+
+1. No significant change since one day prior.
+2.  Similar left greater than right bibasilar atelectasis.
+Possible small left pleural effusion.",real,False,True,Atelectasis,Mild postoperative/dependent,98,room air,14,normal,142,37.1,alert,inpatient ward
+GRDN004RP5BFHE0T,9,20090601,201233.896060,058Y,M,,DG CHEST 1V PORT,1,1,"Respiratory distress.  Small bowel obstruction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison:  08/18/2009","The endotracheal tube is stable in position.  An NG tube
+courses off the inferior border of the film.  A right-sided PICC
+line is stable in position.  A right IJ line is stable in position.
+Lung volumes remain low.  There is no significant change in right
+perihilar airspace disease.  Increased opacification in the left
+base represents a developing left pleural effusion.  There is left
+basilar atelectasis as well.","1.  Increasing opacification at the left base worrisome for
+effusion.
+2.  Low lung volumes with stable bibasilar atelectasis otherwise.
+3.  Support apparatus stable","Clinical Data: Respiratory distress.  Small bowel obstruction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison:  08/18/2009
+
+Findings:  The endotracheal tube is stable in position.  An NG tube
+courses off the inferior border of the film.  A right-sided PICC
+line is stable in position.  A right IJ line is stable in position.
+Lung volumes remain low.  There is no significant change in right
+perihilar airspace disease.  Increased opacification in the left
+base represents a developing left pleural effusion.  There is left
+basilar atelectasis as well.
+
+IMPRESSION:
+1.  Increasing opacification at the left base worrisome for
+effusion.
+2.  Low lung volumes with stable bibasilar atelectasis otherwise.
+3.  Support apparatus stable",real,False,True,Effusion,New unexplained,98,room air,22,normal,129,37.1,alert,outpatient
+GRDN004RP5BFHE0T,10,20090602,201437.896060,058Y,M,,DG CHEST 1V PORT,1,1,"Small bowel obstruction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/24/2010","Endotracheal tube is in satisfactory position.
+Nasogastric tube is followed into the stomach, with the tip
+projecting beyond the inferior boundary of the film. Right PICC tip
+projects over the SVC. Lungs are low in volume with predominately
+lingular and left lower lobe air space disease.  Left pleural
+effusion.","Lingular and left lower lobe air space disease, and left pleural
+effusion.","Clinical Data: Small bowel obstruction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/24/2010
+
+Findings: Endotracheal tube is in satisfactory position.
+Nasogastric tube is followed into the stomach, with the tip
+projecting beyond the inferior boundary of the film. Right PICC tip
+projects over the SVC. Lungs are low in volume with predominately
+lingular and left lower lobe air space disease.  Left pleural
+effusion.
+
+IMPRESSION:
+Lingular and left lower lobe air space disease, and left pleural
+effusion.",real,False,True,Consolidation,Probable nonsevere infection,91,room air,26,mild,108,36.9,alert,ED
+GRDN004RP5BFHE0T,11,20090603,201553.896060,058Y,M,,DG CHEST 1V PORT,1,1,"Shortness breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 05/15/2009.","Right internal jugular line catheter tip mid superior
+vena cava.  Right PICC line tip distal superior vena cava.
+Nasogastric tube courses below the diaphragm.  Tip is not included
+on present examination.  No pneumothorax.  Poor inspiration.  Left
+mid to lower lung zone and medial aspect right lung/right
+infrahilar opacities remain unchanged.  Question infiltrate and /
+or atelectasis.  Central pulmonary vascular congestion.","Endotracheal tube has been removed.  Remainder of the findings are
+similar to that of the prior exam.","Clinical Data: Shortness breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 05/15/2009.
+
+Findings: Right internal jugular line catheter tip mid superior
+vena cava.  Right PICC line tip distal superior vena cava.
+Nasogastric tube courses below the diaphragm.  Tip is not included
+on present examination.  No pneumothorax.  Poor inspiration.  Left
+mid to lower lung zone and medial aspect right lung/right
+infrahilar opacities remain unchanged.  Question infiltrate and /
+or atelectasis.  Central pulmonary vascular congestion.
+
+IMPRESSION:
+Endotracheal tube has been removed.  Remainder of the findings are
+similar to that of the prior exam.",real,False,True,Consolidation,Probable nonsevere infection,95,nasal cannula,29,mild,96,37.0,alert,ward
+GRDN004RP5BFHE0T,12,20090615,040907.896060,058Y,M,AP,DG CHEST 1V PORT,1,1,"The small bowel obstruction.  Fever.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 03/12/2009.","A right-sided PICC line terminates in the mid SVC.  There
+is ill-defined airspace disease involving the right lung apex.  The
+area is incompletely evaluated due to patient positioning.
+Bibasilar airspace disease is still worse left than right, likely
+reflecting atelectasis.  No definite effusions are seen.  Lung
+volumes remain low.","1.  Ill-defined right upper lobe airspace disease worrisome for
+pneumonia.
+2.  Improved aeration at both bases with some residual airspace
+disease, left greater than right, likely reflecting atelectasis.
+
+[REDACTED] DICTATED: 03/24/2009 [DATE]","Clinical Data: The small bowel obstruction.  Fever.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 03/12/2009.
+
+Findings: A right-sided PICC line terminates in the mid SVC.  There
+is ill-defined airspace disease involving the right lung apex.  The
+area is incompletely evaluated due to patient positioning.
+Bibasilar airspace disease is still worse left than right, likely
+reflecting atelectasis.  No definite effusions are seen.  Lung
+volumes remain low.
+
+IMPRESSION:
+
+1.  Ill-defined right upper lobe airspace disease worrisome for
+pneumonia.
+2.  Improved aeration at both bases with some residual airspace
+disease, left greater than right, likely reflecting atelectasis.
+
+[REDACTED] DICTATED: 03/24/2009 [DATE]",real,False,True,Pneumonia,Inpatient nonsevere,94,nasal cannula,26,mild,128,39.1,alert,ED
+GRDN004RP5BFHE0T,13,20091025,070000.255060,059Y,M,,DG CHEST 2V,2,2,"Peripheral edema
+
+CHEST - 2 VIEW
+
+Comparison: 12/11/2009 .","Improved lung volumes compared to prior studies.  No
+current airspace disease, pneumonia, edema, effusion or
+pneumothorax.  Midline trachea.  Normal heart size and vascularity.
+Remote healed left posterior rib fractures.  Degenerative changes
+of the spine",No acute finding.,"Clinical Data: Peripheral edema
+
+CHEST - 2 VIEW
+
+Comparison: 12/11/2009 .
+
+Findings: Improved lung volumes compared to prior studies.  No
+current airspace disease, pneumonia, edema, effusion or
+pneumothorax.  Midline trachea.  Normal heart size and vascularity.
+Remote healed left posterior rib fractures.  Degenerative changes
+of the spine
+
+IMPRESSION:
+No acute finding.",real,False,True,Normal,,99,room air,15,normal,116,37.1,alert,ED
+GRDN004RP5BFHE0T,14,20110718,105712.896060,061Y,M,,DG CHEST 1V PORT,1,1,"Bilateral leg pain and swelling.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 10/29/2009","The heart size and pulmonary vascularity are normal. The
+lungs appear clear and expanded without focal air space disease or
+consolidation. No blunting of the costophrenic angles.","No evidence of active pulmonary disease.  Nothing to suggest
+congestive failure.","*RADIOLOGY REPORT*
+
+Clinical Data: Bilateral leg pain and swelling.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 10/29/2009
+
+Findings: The heart size and pulmonary vascularity are normal. The
+lungs appear clear and expanded without focal air space disease or
+consolidation. No blunting of the costophrenic angles.
+
+IMPRESSION:
+No evidence of active pulmonary disease.  Nothing to suggest
+congestive failure.",real,False,True,Normal,,99,room air,18,normal,104,36.3,alert,outpatient
+GRDN004RP5BFHE0T,15,20110901,083224.896060,061Y,M,AP; PICC LINE,DG CHEST 1V PORT,1,2,"PICC line placement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Portable chest x-ray of 07/29/2012","A left upper extremity PICC line has been placed with the
+tip near the expected SVC - RA junction.  No pneumothorax is seen.
+The lungs are clear.  Heart size is stable.","Left upper extremity PICC line tip near SVC/RA junction.  No
+pneumothorax.","*RADIOLOGY REPORT*
+
+Clinical Data: PICC line placement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Portable chest x-ray of 07/29/2012
+
+Findings: A left upper extremity PICC line has been placed with the
+tip near the expected SVC - RA junction.  No pneumothorax is seen.
+The lungs are clear.  Heart size is stable.
+
+IMPRESSION:
+Left upper extremity PICC line tip near SVC/RA junction.  No
+pneumothorax.",real,False,True,Normal,,97,room air,14,normal,137,36.6,alert,outpatient
+GRDN006MCYEVYFE8,1,20100611,193822.566744,043Y,M,AP,DG CHEST 1V PORT,1,1,"Fever
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: None","The lungs are clear.  The heart is within normal limits
+in size.  No bony abnormality is seen.",No active lung disease.,"Clinical Data: Fever
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: None
+
+Findings: The lungs are clear.  The heart is within normal limits
+in size.  No bony abnormality is seen.
+
+IMPRESSION:
+No active lung disease.",real,False,True,Normal,,100,room air,19,normal,107,36.6,alert,outpatient
+GRDN006MCYEVYFE8,2,20110725,033539.566744,044Y,M,,DG CHEST 1V PORT,1,1,"44-year-old male intubated.  ST-segment elevation
+myocardial infarction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 04/19/2010.","Portable semi upright AP view 5885 hours.  Endotracheal
+tube tip between the level of clavicles and carina.  Enteric tube
+course to the abdomen, tip likely in the distal stomach.  There is
+acute perihilar pulmonary edema.  Relatively good lung volumes.
+Cardiac size and mediastinal contours are within normal limits.  No
+pneumothorax or effusion identified.","1.  Satisfactory placement of support apparatus.
+2.  Acute perihilar pulmonary edema.","Clinical Data: 44-year-old male intubated.  ST-segment elevation
+myocardial infarction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 04/19/2010.
+
+Findings: Portable semi upright AP view 5885 hours.  Endotracheal
+tube tip between the level of clavicles and carina.  Enteric tube
+course to the abdomen, tip likely in the distal stomach.  There is
+acute perihilar pulmonary edema.  Relatively good lung volumes.
+Cardiac size and mediastinal contours are within normal limits.  No
+pneumothorax or effusion identified.
+
+IMPRESSION:
+
+1.  Satisfactory placement of support apparatus.
+2.  Acute perihilar pulmonary edema.",real,False,True,Edema,Active normotensive congestion,88,simple mask,34,moderate,121,37.3,anxious,stepdown
+GRDN006MCYEVYFE8,3,20110726,054110.566744,044Y,M,AP,DG CHEST 1V PORT,1,1,"Myocardial infarction
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Chest radiograph 09/17/2011","Interval extubation and removal of NG tube.  Stable
+cardiac silhouette.  There is interval improvement in perihilar air
+space disease.  No evidence of atelectasis or pleural effusion.  No
+pneumothorax.","1.  Extubation without increase in atelectasis.
+2.  Improved pulmonary edema.","Clinical Data: Myocardial infarction
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Chest radiograph 09/17/2011
+
+Findings: Interval extubation and removal of NG tube.  Stable
+cardiac silhouette.  There is interval improvement in perihilar air
+space disease.  No evidence of atelectasis or pleural effusion.  No
+pneumothorax.
+
+IMPRESSION:
+1.  Extubation without increase in atelectasis.
+2.  Improved pulmonary edema.",real,False,True,Edema,Mild stable congestion,97,room air,24,normal,144,37.2,alert,outpatient
+GRDN006MCYEVYFE8,4,20110727,104716.159744,044Y,M,,DG CHEST 2V,2,2,"Myocardial infarction, pulmonary edema
+
+CHEST - 2 VIEW
+
+Comparison: 12/03/2009","Lungs clear.  Heart size and pulmonary vascularity
+normal.  No effusion.  Visualized bones unremarkable.",No acute disease,"Clinical Data: Myocardial infarction, pulmonary edema
+
+CHEST - 2 VIEW
+
+Comparison: 12/03/2009
+
+Findings: Lungs clear.  Heart size and pulmonary vascularity
+normal.  No effusion.  Visualized bones unremarkable.
+
+IMPRESSION:
+No acute disease",real,False,True,Normal,,100,room air,17,normal,122,36.9,alert,ward
+GRDN006MCYEVYFE8,5,20130801,053738.566744,046Y,M,AP,DG CHEST 1V PORT,1,1,"Chest pain.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 07/11/2011","Cardiopericardial silhouette within normal limits.
+Mediastinal contours normal. Trachea midline.  No airspace disease
+or effusion.  Lung volumes are slightly low. Monitoring leads are
+projected over the chest.",No active cardiopulmonary disease.,"*RADIOLOGY REPORT*
+
+Clinical Data: Chest pain.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 07/11/2011
+
+Findings:  Cardiopericardial silhouette within normal limits.
+Mediastinal contours normal. Trachea midline.  No airspace disease
+or effusion.  Lung volumes are slightly low. Monitoring leads are
+projected over the chest.
+
+IMPRESSION:
+No active cardiopulmonary disease.",real,False,True,Normal,,100,room air,16,normal,102,36.7,alert,ward
+GRDN006MCYEVYFE8,6,20180918,200705.331744,052Y,M,AP,DG CHEST 1V PORT,1,1,"Cardiorespiratory arrest.  Intubation.
+
+EXAM:
+PORTABLE CHEST 1 VIEW
+
+COMPARISON:  Chest x-rays earlier today [DATE] a.m., yesterday and
+previously. CTA chest yesterday.","Endotracheal tube tip in satisfactory position projecting
+approximately 7 cm above carina. Nasogastric tube courses below the
+diaphragm into the stomach. External pacing pads are present.
+
+Cardiac silhouette markedly enlarged, unchanged. Interval resolution
+of the mild interstitial pulmonary edema and the atelectasis in the
+right lower lobe since this morning. Only minimal atelectasis
+persists at the right lung base. Lungs otherwise clear.","1. Support apparatus satisfactory.
+2. Resolution of interstitial pulmonary edema since earlier today.
+3. Improved aeration in the right lower lobe since earlier today
+with only minimal atelectasis persisting.
+4. No new abnormalities.","CLINICAL DATA:  Cardiorespiratory arrest.  Intubation.
+
+EXAM:
+PORTABLE CHEST 1 VIEW
+
+COMPARISON:  Chest x-rays earlier today [DATE] a.m., yesterday and
+previously. CTA chest yesterday.
+
+FINDINGS:
+Endotracheal tube tip in satisfactory position projecting
+approximately 7 cm above carina. Nasogastric tube courses below the
+diaphragm into the stomach. External pacing pads are present.
+
+Cardiac silhouette markedly enlarged, unchanged. Interval resolution
+of the mild interstitial pulmonary edema and the atelectasis in the
+right lower lobe since this morning. Only minimal atelectasis
+persists at the right lung base. Lungs otherwise clear.
+
+IMPRESSION:
+1. Support apparatus satisfactory.
+2. Resolution of interstitial pulmonary edema since earlier today.
+3. Improved aeration in the right lower lobe since earlier today
+with only minimal atelectasis persisting.
+4. No new abnormalities.",real,False,True,Edema,Mild stable congestion,96,room air,19,normal,175,37.0,alert,ward
+GRDN006MCYEVYFE8,7,20180918,215842.159744,052Y,M,AP,DG CHEST 1V PORT,1,1,"Hypertension. Respiratory failure. Central line
+placement.
+
+EXAM:
+PORTABLE CHEST 1 VIEW
+
+COMPARISON:  04/27/2018 at [DATE]","New right jugular central line extends into the low SVC.
+
+Endotracheal tube is 5.8 cm above the carina. Nasogastric tube
+extends into the stomach.
+
+No pneumothorax.
+
+Unchanged cardiomegaly. Mild basilar airspace opacities, accentuated
+by a shallow degree of inspiration.","1. Support equipment appears satisfactorily positioned. New right IJ
+line extends into the low SVC.
+2. No pneumothorax.
+3. Stable cardiomegaly and mild basilar airspace opacities.","CLINICAL DATA:  Hypertension. Respiratory failure. Central line
+placement.
+
+EXAM:
+PORTABLE CHEST 1 VIEW
+
+COMPARISON:  04/27/2018 at [DATE]
+
+FINDINGS:
+New right jugular central line extends into the low SVC.
+
+Endotracheal tube is 5.8 cm above the carina. Nasogastric tube
+extends into the stomach.
+
+No pneumothorax.
+
+Unchanged cardiomegaly. Mild basilar airspace opacities, accentuated
+by a shallow degree of inspiration.
+
+IMPRESSION:
+1. Support equipment appears satisfactorily positioned. New right IJ
+line extends into the low SVC.
+2. No pneumothorax.
+3. Stable cardiomegaly and mild basilar airspace opacities.",real,False,True,Cardiomegaly,Chronic stable enlargement,98,baseline low-flow oxygen,16,normal,175,36.3,alert,ED
+GRDN006MCYEVYFE8,8,20190328,052625.566744,052Y,M,,DG CHEST 2V,2,2,"52-year-old male preoperative exam for pacemaker
+lead. Hypertension and coronary artery disease. Initial encounter.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  08/22/2018 and 05/19/2018 chest x-ray. 05/19/2018 chest
+CT.","Cardiomegaly. Biventricular pacer/AICD in place with leads unchanged
+in position (right atrium and right ventricle).
+
+Pulmonary vascular congestion superimposed upon chronic lung
+changes.
+
+CT detected mediastinal adenopathy and right upper lobe 4 mm nodule
+not appreciated by plain film exam.
+
+Minimally tortuous descending thoracic aorta.
+
+No acute osseous abnormality","Cardiomegaly. Biventricular pacer/AICD in place with leads unchanged
+in position (right atrium and right ventricle).
+
+Pulmonary vascular congestion superimposed upon chronic lung
+changes.
+
+CT detected mediastinal adenopathy and right upper lobe 4 mm nodule
+not appreciated by plain film exam.","CLINICAL DATA:  52-year-old male preoperative exam for pacemaker
+lead. Hypertension and coronary artery disease. Initial encounter.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  08/22/2018 and 05/19/2018 chest x-ray. 05/19/2018 chest
+CT.
+
+FINDINGS:
+Cardiomegaly. Biventricular pacer/AICD in place with leads unchanged
+in position (right atrium and right ventricle).
+
+Pulmonary vascular congestion superimposed upon chronic lung
+changes.
+
+CT detected mediastinal adenopathy and right upper lobe 4 mm nodule
+not appreciated by plain film exam.
+
+Minimally tortuous descending thoracic aorta.
+
+No acute osseous abnormality
+
+IMPRESSION:
+Cardiomegaly. Biventricular pacer/AICD in place with leads unchanged
+in position (right atrium and right ventricle).
+
+Pulmonary vascular congestion superimposed upon chronic lung
+changes.
+
+CT detected mediastinal adenopathy and right upper lobe 4 mm nodule
+not appreciated by plain film exam.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,86,room air,29,mild,141,37.7,anxious,stepdown
+GRDN006MCYEVYFE8,9,20190330,061554.566744,052Y,M,,DG CHEST 2V,2,2,"Thoracotomy.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  10/18/2017 .","Interim removal of left chest tube. No pneumothorax. Cardiac pacer
+stable position. Cardiomegaly with mild increase in interstitial
+prominence suggesting mild CHF. Mild right base subsegmental
+atelectasis again noted. No pleural effusion or pneumothorax.","1. Interim removal of left chest tube.  No pneumothorax.
+
+2. Cardiac pacer stable position. Cardiomegaly with slight increase
+interstitial prominence suggesting mild CHF.
+
+3. Stable right base subsegmental atelectasis .","CLINICAL DATA:  Thoracotomy.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  10/18/2017 .
+
+FINDINGS:
+Interim removal of left chest tube. No pneumothorax. Cardiac pacer
+stable position. Cardiomegaly with mild increase in interstitial
+prominence suggesting mild CHF. Mild right base subsegmental
+atelectasis again noted. No pleural effusion or pneumothorax.
+
+IMPRESSION:
+1. Interim removal of left chest tube.  No pneumothorax.
+
+2. Cardiac pacer stable position. Cardiomegaly with slight increase
+interstitial prominence suggesting mild CHF.
+
+3. Stable right base subsegmental atelectasis .",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,96,nasal cannula,34,mild,107,36.4,anxious,ED
+GRDN006MCYEVYFE8,10,20190427,125434.191744,052Y,M,,DG CHEST 2V,2,2,"Epicardial pacer lead placement
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  08/22/2018","Stable appearance of cardiac pacer. Mild cardiac enlargement is
+unchanged. No pleural effusion or edema. No airspace opacities. No
+pneumothorax visualized.","1. No evidence for pneumothorax.
+2. Stable cardiac enlargement.","CLINICAL DATA:  Epicardial pacer lead placement
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  08/22/2018
+
+FINDINGS:
+Stable appearance of cardiac pacer. Mild cardiac enlargement is
+unchanged. No pleural effusion or edema. No airspace opacities. No
+pneumothorax visualized.
+
+IMPRESSION:
+1. No evidence for pneumothorax.
+2. Stable cardiac enlargement.",real,False,True,Cardiomegaly,Chronic stable enlargement,99,baseline low-flow oxygen,14,normal,113,37.4,alert,ward
+GRDN006MCYEVYFE8,11,20211111,114125.566744,055Y,M,,DG CHEST 2V,2,2,"Amiodarone therapy.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  08/31/2018","Left ventricular assist device in good position and unchanged. AICD
+unchanged in position. Cardiac enlargement. Negative for heart
+failure infiltrate or effusion. Lungs are clear. No significant
+pulmonary scarring.",No active cardiopulmonary disease.,"CLINICAL DATA:  Amiodarone therapy.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  08/31/2018
+
+FINDINGS:
+Left ventricular assist device in good position and unchanged. AICD
+unchanged in position. Cardiac enlargement. Negative for heart
+failure infiltrate or effusion. Lungs are clear. No significant
+pulmonary scarring.
+
+IMPRESSION:
+No active cardiopulmonary disease.",real,False,True,Cardiomegaly,Chronic stable enlargement,95,room air,21,mild,121,37.5,alert,ward
+GRDN006VFINFR877,1,20051016,005659.106528,003Y,F,,DG CHEST 2V,2,2,"Cough; pharyngitis; 105 degree fever
+ TWO VIEW CHEST 
+ Poor inspiration.  Grossly normal sized heart.  Diffuse peribronchial thickening without air space consolidation.  Unremarkable bones.",,Moderate to marked bronchitic changes.,"Clinical data:    Cough; pharyngitis; 105 degree fever
+ TWO VIEW CHEST 
+ Poor inspiration.  Grossly normal sized heart.  Diffuse peribronchial thickening without air space consolidation.  Unremarkable bones. 
+ IMPRESSION
+ Moderate to marked bronchitic changes.",real,False,True,Emphysema,Clinical COPD exacerbation,86,Venturi,23,moderate,155,38.1,anxious,ED
+GRDN006VFINFR877,2,20080805,153415.106528,006Y,F,,DG CHEST 2V,2,2,"Cough.  Fever.  History of asthma.
+ CHEST - 2 VIEW: 
+ Comparison : 08/14/05.",Pulmonary hyperaeration.  No active infiltrate or atelectasis.  Cardiomediastinal silhouette unremarkable.,"Pulmonary hyperaeration.  This may be due to air trapping for example, as seen with asthma.","Clinical data:    Cough.  Fever.  History of asthma.
+ CHEST - 2 VIEW: 
+ Comparison : 08/14/05. 
+ Findings:  Pulmonary hyperaeration.  No active infiltrate or atelectasis.  Cardiomediastinal silhouette unremarkable.  
+ IMPRESSION:
+ Pulmonary hyperaeration.  This may be due to air trapping for example, as seen with asthma.",real,False,True,Emphysema,Stable imaging emphysema,89,room air,15,mild,122,36.0,alert,ward
+GRDN006VFINFR877,3,20100826,052511.106528,008Y,F,,DG CHEST 2V,2,2,"Asthma.  Short of breath and fever.
+
+CHEST - 2 VIEW
+
+Comparison: 05/26/2008.","The lungs are hyperinflated with prominent lung markings
+compatible with asthma.  No acute infiltrate or effusion.",Hyperinflation without infiltrate.,"Clinical Data: Asthma.  Short of breath and fever.
+
+CHEST - 2 VIEW
+
+Comparison: 05/26/2008.
+
+Findings: The lungs are hyperinflated with prominent lung markings
+compatible with asthma.  No acute infiltrate or effusion.
+
+IMPRESSION:
+Hyperinflation without infiltrate.",real,False,True,Emphysema,Stable imaging emphysema,92,room air,18,normal,145,36.2,alert,ward
+GRDN006VFINFR877,4,20110325,031404.106528,008Y,F,,DG CHEST 2V,2,2,"Cough, congestion, runny nose, history asthma
+
+CHEST - 2 VIEW
+
+Comparison: 11/07/2009","Normal heart size, mediastinal contours, and pulmonary vascularity.
+Minimal hyperaeration and peribronchial thickening.
+Lungs otherwise clear.
+No pleural effusion or pneumothorax.
+Bones unremarkable.","Minimal peribronchial thickening and hyperinflation, question
+related to asthma.
+No acute infiltrate identified.","Clinical Data: Cough, congestion, runny nose, history asthma
+
+CHEST - 2 VIEW
+
+Comparison: 11/07/2009
+
+Findings:
+Normal heart size, mediastinal contours, and pulmonary vascularity.
+Minimal hyperaeration and peribronchial thickening.
+Lungs otherwise clear.
+No pleural effusion or pneumothorax.
+Bones unremarkable.
+
+IMPRESSION:
+Minimal peribronchial thickening and hyperinflation, question
+related to asthma.
+No acute infiltrate identified.",real,False,True,Emphysema,Stable imaging emphysema,94,room air,15,mild,103,36.6,alert,ward
+GRDN006VFINFR877,5,20110415,041713.106528,008Y,F,,DG CHEST 2V,2,2,"Cough, congestion and fever.
+
+CHEST - 2 VIEW
+
+Comparison: Chest 04/18/2010.","Chest is hyperexpanded with central airway thickening.
+No focal airspace disease or effusion.  Heart size normal.","Findings compatible with a viral process or reactive airways
+disease.","Clinical Data: Cough, congestion and fever.
+
+CHEST - 2 VIEW
+
+Comparison: Chest 04/18/2010.
+
+Findings: Chest is hyperexpanded with central airway thickening.
+No focal airspace disease or effusion.  Heart size normal.
+
+IMPRESSION:
+Findings compatible with a viral process or reactive airways
+disease.",real,False,True,Emphysema,Clinical COPD exacerbation,86,controlled nasal cannula,21,mild,162,38.2,alert,ED
+GRDN006VFINFR877,6,20110814,054418.106528,009Y,F,,DG CHEST 2V,2,2,"Cough, congestion and fever for 3 days.
+
+CHEST - 2 VIEW
+
+Comparison: Chest radiograph for 12/20/2010","The lungs are well-aerated and clear.  There is no
+evidence of focal opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits.  No acute osseous abnormalities are seen.",No acute cardiopulmonary process seen.,"Clinical Data: Cough, congestion and fever for 3 days.
+
+CHEST - 2 VIEW
+
+Comparison: Chest radiograph for 12/20/2010
+
+Findings: The lungs are well-aerated and clear.  There is no
+evidence of focal opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits.  No acute osseous abnormalities are seen.
+
+IMPRESSION:
+No acute cardiopulmonary process seen.",real,False,True,Normal,,100,room air,18,normal,135,36.1,alert,ED
+GRDN006VFINFR877,7,20120130,030150.106528,009Y,F,,DG CHEST 2V,2,2,"Cough and sore throat.
+
+CHEST - 2 VIEW
+
+Comparison: Chest 12/21/2010.","Lungs clear.  Heart size normal.  No pleural effusion or
+focal bony abnormality.",Negative chest.,"Clinical Data: Cough and sore throat.
+
+CHEST - 2 VIEW
+
+Comparison: Chest 12/21/2010.
+
+Findings: Lungs clear.  Heart size normal.  No pleural effusion or
+focal bony abnormality.
+
+IMPRESSION:
+Negative chest.",real,False,True,Normal,,97,room air,18,normal,115,36.1,alert,ED
+GRDN006VFINFR877,8,20130325,074531.106528,010Y,F,,DG CHEST 2V,2,2,"Fever and cough.
+
+CHEST - 2 VIEW
+
+Comparison: Chest radiograph performed 11/17/2010","The lungs are well-aerated.  Mild peribronchial
+thickening may reflect viral or small airways disease.  There is no
+evidence of focal opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits.  No acute osseous abnormalities are seen.","Mild peribronchial thickening may reflect viral or small airways
+disease; no evidence of focal consolidation.","*RADIOLOGY REPORT*
+
+Clinical Data: Fever and cough.
+
+CHEST - 2 VIEW
+
+Comparison: Chest radiograph performed 11/17/2010
+
+Findings: The lungs are well-aerated.  Mild peribronchial
+thickening may reflect viral or small airways disease.  There is no
+evidence of focal opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits.  No acute osseous abnormalities are seen.
+
+IMPRESSION:
+Mild peribronchial thickening may reflect viral or small airways
+disease; no evidence of focal consolidation.",real,False,True,Emphysema,Stable imaging emphysema,91,room air,20,mild,170,36.4,alert,ED
+GRDN006VFINFR877,9,20141203,051952.324528,012Y,F,,DG CHEST 2V,2,2,"Midsternal chest pain
+
+CHEST - 2 VIEW
+
+Comparison: 07/05/2013","Cardiomediastinal silhouette is within normal limits. The
+lungs are clear. No pleural effusion.  No pneumothorax.  No acute
+osseous abnormality.",Normal chest.,"*RADIOLOGY REPORT*
+
+Clinical Data: Midsternal chest pain
+
+CHEST - 2 VIEW
+
+Comparison: 07/05/2013
+
+Findings: Cardiomediastinal silhouette is within normal limits. The
+lungs are clear. No pleural effusion.  No pneumothorax.  No acute
+osseous abnormality.
+
+IMPRESSION:
+Normal chest.",real,False,True,Normal,,99,room air,20,normal,111,36.8,alert,outpatient
+GRDN006VFINFR877,10,20150621,080739.106528,013Y,F,,DG CHEST 2V,2,2,"Chest pain and wheezing.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest radiograph performed 12/17/2013","The lungs are well-aerated and clear. There is no evidence of focal
+opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits. No acute osseous abnormalities are seen.",No acute cardiopulmonary process seen.,"CLINICAL DATA:  Chest pain and wheezing.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest radiograph performed 12/17/2013
+
+FINDINGS:
+The lungs are well-aerated and clear. There is no evidence of focal
+opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits. No acute osseous abnormalities are seen.
+
+IMPRESSION:
+No acute cardiopulmonary process seen.",real,False,True,Normal,,100,room air,14,normal,123,37.2,alert,ED
+GRDN006VFINFR877,11,20190524,061753.106528,016Y,F,,DG CHEST 2V,2,2,"Shortness of breath, chest pain beginning yesterday.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest radiograph September 24, 2018","Cardiothymic silhouette is unremarkable. Mild bilateral perihilar
+peribronchial cuffing without pleural effusions or focal
+consolidations. Normal lung volumes. No pneumothorax. Soft tissue
+planes and included osseous structures are normal.","Peribronchial cuffing can be seen with reactive airway disease or
+bronchiolitis without focal consolidation.","CLINICAL DATA:  Shortness of breath, chest pain beginning yesterday.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest radiograph September 24, 2018
+
+FINDINGS:
+Cardiothymic silhouette is unremarkable. Mild bilateral perihilar
+peribronchial cuffing without pleural effusions or focal
+consolidations. Normal lung volumes. No pneumothorax. Soft tissue
+planes and included osseous structures are normal.
+
+IMPRESSION:
+Peribronchial cuffing can be seen with reactive airway disease or
+bronchiolitis without focal consolidation.",real,False,True,Emphysema,Stable imaging emphysema,95,baseline home oxygen,14,normal,148,36.9,alert,outpatient
+GRDN006VFINFR877,12,20200204,075513.106528,017Y,F,,DG CHEST 2V,2,2,"Wheezing, chest pain, and nausea for 1 week.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  05/26/2018","Normal heart size and pulmonary vascularity. No focal airspace
+disease or consolidation in the lungs. No blunting of costophrenic
+angles. No pneumothorax. Mediastinal contours appear intact.",No active cardiopulmonary disease.,"CLINICAL DATA:  Wheezing, chest pain, and nausea for 1 week.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  05/26/2018
+
+FINDINGS:
+Normal heart size and pulmonary vascularity. No focal airspace
+disease or consolidation in the lungs. No blunting of costophrenic
+angles. No pneumothorax. Mediastinal contours appear intact.
+
+IMPRESSION:
+No active cardiopulmonary disease.",real,False,True,Normal,,99,room air,12,normal,137,36.7,alert,outpatient
+GRDN006WOMKG4AVY,1,20070110,113218.220663,015Y,M,,DG CHEST 2V,2,2,"Chest pain.
+CHEST ? 2 VIEW:
+There is a 15 to 20 percent left pneumothorax present.  The heart is normal in size.  The lungs are clear.",,15 to 20 percent left pneumothorax.  The patient was contacted and he is currently coming back to the Emergency Department with his parents.  An attempt was made to contact the referring doctor at 537-7387 and a pager 654-4651 but I received no call back.  The patient will go to the Emergency Department.,"Clinical Data:  Chest pain.
+CHEST ? 2 VIEW:
+There is a 15 to 20 percent left pneumothorax present.  The heart is normal in size.  The lungs are clear. 
+IMPRESSION:
+15 to 20 percent left pneumothorax.  The patient was contacted and he is currently coming back to the Emergency Department with his parents.  An attempt was made to contact the referring doctor at 537-7387 and a pager 654-4651 but I received no call back.  The patient will go to the Emergency Department.",real,False,True,Pneumothorax,Symptomatic/enlarging,94,nasal cannula,37,severe,146,37.1,anxious,stepdown
+GRDN006WOMKG4AVY,2,20070110,140600.220663,015Y,M,,DG CHEST 1V PORT,1,1,"Spontaneous left pneumothorax.  Status post chest tube placement. 
+ PORTABLE CHEST ? 1 VIEW, 06/24/05 AT 1862 HOURS:
+ Compared to prior study earlier today, there has been placement of a left chest tube.  Previously seen left pneumothorax has resolved.  Both lungs are clear.  The heart size and mediastinal contours are normal.",,Resolution of left pneumothorax following left chest tube placement.,"Clinical Data:  Spontaneous left pneumothorax.  Status post chest tube placement. 
+ PORTABLE CHEST ? 1 VIEW, 06/24/05 AT 1862 HOURS:
+ Compared to prior study earlier today, there has been placement of a left chest tube.  Previously seen left pneumothorax has resolved.  Both lungs are clear.  The heart size and mediastinal contours are normal. 
+ IMPRESSION:
+ Resolution of left pneumothorax following left chest tube placement.",real,False,True,Pneumothorax,Small stable,95,low-flow oxygen,17,mild,124,36.2,alert,ward
+GRDN006WOMKG4AVY,3,20070111,214227.220663,015Y,M,,DG CHEST 1V PORT,1,1,"Spontaneous left pneumothorax.
+ CHEST PORTABLE- 1 VIEW:
+ Comparison:    10/14/05.
+ Left chest tube remains in place and no pneumothorax is identified.  Both lungs are clear.  Heart size is normal.",,No evidence of residual pneumothorax.,"Clinical Data:    Spontaneous left pneumothorax.
+ CHEST PORTABLE- 1 VIEW:
+ Comparison:    10/14/05.
+ Left chest tube remains in place and no pneumothorax is identified.  Both lungs are clear.  Heart size is normal.
+ IMPRESSION:
+ No evidence of residual pneumothorax.",real,False,True,Normal,,98,room air,15,normal,133,36.4,alert,ED
+GRDN006WOMKG4AVY,4,20070112,035859.220663,015Y,M,,DG CHEST 2V,2,2,"Pneumothorax
+CHEST - 2 VIEW: 
+Comparison: 05/13/07.",The left chest tube has been removed and there is no left pneumothorax.  The heart is normal in size.  The lungs are clear.,No pneumothorax after left chest tube removal.,"Clinical Data:  Pneumothorax
+CHEST - 2 VIEW: 
+Comparison: 05/13/07.
+Findings: The left chest tube has been removed and there is no left pneumothorax.  The heart is normal in size.  The lungs are clear. 
+IMPRESSION: 
+No pneumothorax after left chest tube removal.",real,False,True,Normal,,98,room air,17,normal,120,37.0,alert,ward
+GRDN006WOMKG4AVY,5,20070112,214853.220663,015Y,M,,DG CHEST 1V PORT,1,1,"Assault. Spontaneous left pneumothorax.
+ PORTABLE 88HNM-V VIEW:
+ Left chest tube remains in place. There is no evidence of pneumothorax. Both lungs are clear. Heart size and mediastinal contours are normal.",,No evidence of residual left pneumothorax. Left chest tube remains in place.,"Clinical Data: Assault. Spontaneous left pneumothorax.
+ PORTABLE 88HNM-V VIEW:
+ Left chest tube remains in place. There is no evidence of pneumothorax. Both lungs are clear. Heart size and mediastinal contours are normal.
+ IMPRESSION:
+ No evidence of residual left pneumothorax. Left chest tube remains in place.",real,False,True,Normal,,99,room air,17,normal,104,37.1,alert,outpatient
+GRDN006WOMKG4AVY,6,20070124,063451.313663,015Y,M,,DG CHEST 2V,2,2,"History of pneumothorax of the left lung.  
+ PA AND LATERAL CHEST:
+ Comparison:  Multiple prior exams, most recent 08/21/06.",The lungs are clear.  No pneumothorax.  No pleural effusion.  Heart size normal.,Normal chest.  No pneumothorax.,"Clinical Data:  History of pneumothorax of the left lung.  
+ PA AND LATERAL CHEST:
+ Comparison:  Multiple prior exams, most recent 08/21/06.
+ Findings:  The lungs are clear.  No pneumothorax.  No pleural effusion.  Heart size normal. 
+ IMPRESSION:
+ Normal chest.  No pneumothorax.",real,False,True,Normal,,97,room air,12,normal,139,36.8,alert,ward
+GRDN006WOMKG4AVY,7,20070302,044057.220663,015Y,M,,DG CHEST 2V,2,2,"History of pneumothorax. 
+ 2-VIEW CHEST:
+ PA and lateral views of the chest are made and are compared to a previous study of 04/19/07 and show no evidence of pneumothorax, pleural effusion, or acute chest disease.  The heart and mediastinum are normal.  Bones are normal.",,No acute findings.  No pneumothorax.,"Clinical Data:  History of pneumothorax. 
+ 2-VIEW CHEST:
+ PA and lateral views of the chest are made and are compared to a previous study of 04/19/07 and show no evidence of pneumothorax, pleural effusion, or acute chest disease.  The heart and mediastinum are normal.  Bones are normal. 
+ IMPRESSION:
+ No acute findings.  No pneumothorax.",real,False,True,Normal,,98,room air,18,normal,115,36.5,alert,ED
+GRDN006WOMKG4AVY,8,20090806,070601.220663,018Y,M,,DG CHEST 2V,3,3,"Cough
+
+Comparison:  03/14/2006
+
+CHEST - 2 VIEW:
+
+The lungs are clear.  The cardiopericardial silhouette is within normal limits
+for size.  Visualized bony structures of the thorax are intact.",,No acute cardiopulmonary process,"Clinical Data: Cough
+
+Comparison:  03/14/2006
+
+CHEST - 2 VIEW:
+
+The lungs are clear.  The cardiopericardial silhouette is within normal limits
+for size.  Visualized bony structures of the thorax are intact.
+
+IMPRESSION:
+
+No acute cardiopulmonary process",real,False,True,Normal,,97,room air,18,normal,128,36.6,alert,outpatient
+GRDN006WOMKG4AVY,9,20120813,033329.220663,021Y,M,,DG CHEST 2V,2,2,"History of pneumothorax.  Shortness of breath with
+left-sided chest pain.
+
+CHEST - 2 VIEW
+
+Comparison: 06/27/2008.","Trachea is midline.  Heart size normal.  Lungs are clear.
+No pleural fluid.  There may be a very mild pectus deformity.",No acute findings.,"*RADIOLOGY REPORT*
+
+Clinical Data: History of pneumothorax.  Shortness of breath with
+left-sided chest pain.
+
+CHEST - 2 VIEW
+
+Comparison: 06/27/2008.
+
+Findings: Trachea is midline.  Heart size normal.  Lungs are clear.
+No pleural fluid.  There may be a very mild pectus deformity.
+
+IMPRESSION:
+No acute findings.",real,False,True,Normal,,99,room air,17,normal,140,36.8,alert,outpatient
+GRDN006WOMKG4AVY,10,20150220,070206.360663,023Y,M,,DG CHEST 2V,2,2,"Chest pain
+
+CHEST - 2 VIEW
+
+Comparison: January 31, 2012.","Cardiomediastinal silhouette appears normal.  No acute
+pulmonary disease is noted.  Bony thorax is intact.",No acute cardiopulmonary abnormality seen.,"*RADIOLOGY REPORT*
+
+Clinical Data: Chest pain
+
+CHEST - 2 VIEW
+
+Comparison: January 31, 2012.
+
+Findings: Cardiomediastinal silhouette appears normal.  No acute
+pulmonary disease is noted.  Bony thorax is intact.
+
+IMPRESSION:
+No acute cardiopulmonary abnormality seen.",real,False,True,Normal,,99,room air,16,normal,110,36.4,alert,ED
+GRDN007ELLXXY3OJ,1,20050502,160728.548902,065Y,M,,DG CHEST 1V PORT,1,1,"65-year-old with chest pain, throat pain for two weeks.  
+ PORTABLE, ONE VIEW, CHEST
+ Comparison:  CT of the chest 02/15/2005.  
+ The patient has left-sided AICD-pacer with leads overlying superior vena cava, right atrium, right ventricle and coronary sinus.  The patient has had median sternotomy and CABG.  The cardiac size is mildly enlarged though also accentuated by technique.  There is no evidence for edema.  No focal consolidations or pleural effusions are seen.",,Cardiomegaly without evidence for acute pulmonary abnormality.,"Clinical Data:  65-year-old with chest pain, throat pain for two weeks.  
+ PORTABLE, ONE VIEW, CHEST
+ Comparison:  CT of the chest 02/15/2005.  
+ The patient has left-sided AICD-pacer with leads overlying superior vena cava, right atrium, right ventricle and coronary sinus.  The patient has had median sternotomy and CABG.  The cardiac size is mildly enlarged though also accentuated by technique.  There is no evidence for edema.  No focal consolidations or pleural effusions are seen. 
+ IMPRESSION
+ Cardiomegaly without evidence for acute pulmonary abnormality.",real,False,True,Cardiomegaly,Chronic stable enlargement,97,room air,19,normal,119,36.6,alert,outpatient
+GRDN007ELLXXY3OJ,2,20060507,130947.548902,066Y,M,,DG CHEST 1V PORT,1,1,"Chest pain. 
+ PORTABLE CHEST - 12/20/2005 AT 5536 HOURS:
+ Comparison:  12/15/2004.",The heart is borderline enlarged.  The left subclavian AICD device is stable.  The pulmonary vasculature is within normal limits.  The lungs are clear.,No significant change.  No acute pathology.,"Clinical Data:  Chest pain. 
+ PORTABLE CHEST - 12/20/2005 AT 5536 HOURS:
+ Comparison:  12/15/2004. 
+ Findings:  The heart is borderline enlarged.  The left subclavian AICD device is stable.  The pulmonary vasculature is within normal limits.  The lungs are clear. 
+ IMPRESSION:
+ No significant change.  No acute pathology.",real,False,True,Cardiomegaly,Chronic stable enlargement,96,baseline low-flow oxygen,12,mild,117,36.7,alert,outpatient
+GRDN007ELLXXY3OJ,3,20060512,145354.548902,066Y,M,,DG CHEST 1V PORT,1,1,"Post-CABG.  Chest pain.  
+ PORTABLE CHEST ([DATE] HOURS):
+ Compared to a portable film from 10/11/06, endotracheal tube is in good position with the tip approximately 6 cm above the carina.  Swan-Ganz catheter tip is in the right main pulmonary artery.  There is cardiomegaly present and there is pericardial air probably due to recent surgical intervention.  Pacer is present.",,"1.  Endotracheal tube tip 6 cm above carina. 
+ 2.  Air in pericardial space probably postoperative in nature. 
+ 3.  Swan-Ganz catheter tip right main pulmonary artery.
+ 4.  Mild left basilar linear atelectasis.","Clinical Data:  Post-CABG.  Chest pain.  
+ PORTABLE CHEST ([DATE] HOURS):
+ Compared to a portable film from 10/11/06, endotracheal tube is in good position with the tip approximately 6 cm above the carina.  Swan-Ganz catheter tip is in the right main pulmonary artery.  There is cardiomegaly present and there is pericardial air probably due to recent surgical intervention.  Pacer is present.  
+ IMPRESSION:
+ 1.  Endotracheal tube tip 6 cm above carina. 
+ 2.  Air in pericardial space probably postoperative in nature. 
+ 3.  Swan-Ganz catheter tip right main pulmonary artery.
+ 4.  Mild left basilar linear atelectasis.",real,False,True,Atelectasis,Mild postoperative/dependent,93,room air,16,mild,146,37.1,alert,postoperative unit
+GRDN007ELLXXY3OJ,4,20060513,041454.548902,066Y,M,,DG CHEST 1V PORT,1,1,"Chest pain, postop day 1 status post CABG redo.
+PORTABLE CHEST:
+Comparison:  06/22/06. 
+Stable left basilar atelectasis.  Mildly reduced interstitial edema.  Endotracheal and nasogastric tubes have been removed.  Defibrillator device, left sided chest tubes, and Swan-Ganz catheter in the right pulmonary artery remain.  
+No visible pneumothorax. 
+Minimal residual pneumopericardium.",,Endotracheal and nasogastric tubes have been removed.  Mild bibasilar atelectasis.  There is likely a tiny residual amount of pneumopericardium.,"Clinical data:    Chest pain, postop day 1 status post CABG redo.
+PORTABLE CHEST:
+Comparison:  06/22/06. 
+Stable left basilar atelectasis.  Mildly reduced interstitial edema.  Endotracheal and nasogastric tubes have been removed.  Defibrillator device, left sided chest tubes, and Swan-Ganz catheter in the right pulmonary artery remain.  
+No visible pneumothorax. 
+Minimal residual pneumopericardium.
+IMPRESSION:
+Endotracheal and nasogastric tubes have been removed.  Mild bibasilar atelectasis.  There is likely a tiny residual amount of pneumopericardium.",real,False,True,Atelectasis,Mild postoperative/dependent,98,nasal cannula 1–2 L/min,15,normal,131,37.6,alert,postoperative unit
+GRDN007ELLXXY3OJ,5,20060514,042211.548902,066Y,M,,DG CHEST 1V PORT,1,1,"Chest pain, CABG. 
+ PORTABLE CHEST:
+ Comparison: 05/22/05. 
+ Cardiomegaly, cardiac surgery, pacemaker, pulmonary vascular congestion and basilar atelectasis are stable. No evidence of pneumothorax.  Swan-Ganz catheter has been removed. Thoracostomy/ mediastinal tube is also removed.   A tiny amount of pneumomediastinum/pneumothorax along the left heart is unchanged.",,Swan-Ganz catheter and mediastinal/thoracostomy tube removal without other significant change.,"Clinical Data:   Chest pain, CABG. 
+ PORTABLE CHEST:
+ Comparison: 05/22/05. 
+ Cardiomegaly, cardiac surgery, pacemaker, pulmonary vascular congestion and basilar atelectasis are stable. No evidence of pneumothorax.  Swan-Ganz catheter has been removed. Thoracostomy/ mediastinal tube is also removed.   A tiny amount of pneumomediastinum/pneumothorax along the left heart is unchanged. 
+ IMPRESSION: 
+ Swan-Ganz catheter and mediastinal/thoracostomy tube removal without other significant change.",real,False,True,Atelectasis,Mild postoperative/dependent,94,nasal cannula 1–2 L/min,17,normal,131,37.2,alert,postoperative unit
+GRDN007ELLXXY3OJ,6,20060515,035025.438902,066Y,M,,DG CHEST 2V,2,2,"Chest pain.  CABG.  
+2-VIEW CHEST RADIOGRAPH:
+Comparison:  06/17/06.","There is mild persistent pneumopericardium.  Reduced interstitial edema.  There is a small amount of pleural fluid on the left with some mild left basilar atelectasis.  Mitral valve prosthesis ring is noted.  
+There is a 5 mm slightly spiculated-appearing nodule at the right lung apex.  Review of the prior CT scan of the chest from 04/01/05 failed to reveal this finding.  Cannot exclude a small neoplastic pulmonary nodule.   I recommend followup chest radiography in two months time or sooner for followup.","1.  Reduced interstitial edema.
+2.  Cardiomegaly.  
+3.  Mild residual pneumopericardium.
+4.  Mild left basilar atelectasis associated with small left pleural effusion.","Clinical Data:  Chest pain.  CABG.  
+2-VIEW CHEST RADIOGRAPH:
+Comparison:  06/17/06.
+Findings:  There is mild persistent pneumopericardium.  Reduced interstitial edema.  There is a small amount of pleural fluid on the left with some mild left basilar atelectasis.  Mitral valve prosthesis ring is noted.  
+There is a 5 mm slightly spiculated-appearing nodule at the right lung apex.  Review of the prior CT scan of the chest from 04/01/05 failed to reveal this finding.  Cannot exclude a small neoplastic pulmonary nodule.   I recommend followup chest radiography in two months time or sooner for followup. 
+IMPRESSION:
+1.  Reduced interstitial edema.
+2.  Cardiomegaly.  
+3.  Mild residual pneumopericardium.
+4.  Mild left basilar atelectasis associated with small left pleural effusion.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,96,mask,27,mild,182,37.1,alert,stepdown
+GRDN007ELLXXY3OJ,7,20060612,041716.782902,066Y,M,,DG CHEST 2V,2,2,"Unsteady gait and bilateral leg pain.
+ PA AND LATERAL CHEST:
+ Comparison:  09/13/06 and CT done 09/14/06.  The cardiomediastinal contours are stable status-post CABG and mitral valve replacement.  The left subclavian biventricular pacemaker leads are in stable position.  The lungs appear stable without evidence of acute superimposed process.  There is no pleural effusion or pneumothorax.",,Stable postoperative chest.  No acute findings.,"Clinical Data:  Unsteady gait and bilateral leg pain.
+ PA AND LATERAL CHEST:
+ Comparison:  09/13/06 and CT done 09/14/06.  The cardiomediastinal contours are stable status-post CABG and mitral valve replacement.  The left subclavian biventricular pacemaker leads are in stable position.  The lungs appear stable without evidence of acute superimposed process.  There is no pleural effusion or pneumothorax.  
+ IMPRESSION:
+ Stable postoperative chest.  No acute findings.",real,False,True,Normal,,98,room air,19,normal,107,36.4,alert,ED
+GRDN007ELLXXY3OJ,8,20080412,130625.548902,068Y,M,,DG CHEST 1V PORT,1,1,"Patient is status post cardioversion.  Question pulmonary edema.  
+ PORTABLE CHEST ? 1 VIEW:
+ Comparison:   12/18/06.",There is cardiomegaly with mild interstitial edema.  No effusion.  Patient is status post CABG with an AICD in place.,Cardiomegaly and mild interstitial edema.,"Clinical Data:   Patient is status post cardioversion.  Question pulmonary edema.  
+ PORTABLE CHEST ? 1 VIEW:
+ Comparison:   12/18/06.  
+ Findings:   There is cardiomegaly with mild interstitial edema.  No effusion.  Patient is status post CABG with an AICD in place.  
+ IMPRESSION:
+ Cardiomegaly and mild interstitial edema.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,89,nasal cannula,32,moderate,125,37.7,alert,ward
+GRDN007ELLXXY3OJ,9,20081130,062410.282902,068Y,M,,DG CHEST 2V,2,2,"Pre-op for cardiac catheterization. 
+ CHEST ? 2 VIEW:
+ Comparison:  10/28/08.",Two views of the chest show stable cardiomegaly.  No active infiltrate or effusion is seen.  Pacer with AICD remains.,Stable cardiomegaly with pacer.  No active lung disease.,"Clinical Data:  Pre-op for cardiac catheterization. 
+ CHEST ? 2 VIEW:
+ Comparison:  10/28/08. 
+ Findings:  Two views of the chest show stable cardiomegaly.  No active infiltrate or effusion is seen.  Pacer with AICD remains. 
+ IMPRESSION:
+ Stable cardiomegaly with pacer.  No active lung disease.",real,False,True,Cardiomegaly,Chronic stable enlargement,94,room air,16,normal,180,36.6,alert,outpatient
+GRDN007ELLXXY3OJ,10,20091123,205750.423902,069Y,M,,DG CHEST 2V,2,2,"Chest pain, hypertension, diabetes, coronary artery
+disease
+
+CHEST - 2 VIEW
+
+Comparison: 09/27/2008","Cardiac enlargement status post CABG and MVR.
+Left subclavian transvenous pacemaker and AICD leads stable.
+Pulmonary vascular congestion.
+Minimal chronic interstitial prominence without acute pulmonary
+edema or segmental consolidation.
+Spur formation vertebral endplates thoracic spine.
+No pleural effusion or pneumothorax.","Cardiomegaly with pulmonary vascular congestion, status post CABG,
+MVR, and pacemaker / AICD.
+No acute abnormalities.","Clinical Data: Chest pain, hypertension, diabetes, coronary artery
+disease
+
+CHEST - 2 VIEW
+
+Comparison: 09/27/2008
+
+Findings:
+Cardiac enlargement status post CABG and MVR.
+Left subclavian transvenous pacemaker and AICD leads stable.
+Pulmonary vascular congestion.
+Minimal chronic interstitial prominence without acute pulmonary
+edema or segmental consolidation.
+Spur formation vertebral endplates thoracic spine.
+No pleural effusion or pneumothorax.
+
+IMPRESSION:
+Cardiomegaly with pulmonary vascular congestion, status post CABG,
+MVR, and pacemaker / AICD.
+No acute abnormalities.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,87,mask,20,mild,114,36.2,alert,ward
+GRDN007ELLXXY3OJ,11,20100620,210034.485902,070Y,M,,DG CHEST 2V,2,2,"Chest pain and shortness of breath.
+
+CHEST - 2 VIEW
+
+Comparison: 04/28/2009","There is a stable appearance to a biventricular pacing /
+ICD device.  Stable cardiomegaly.  Patient is status post CABG and
+mitral valve replacement.
+
+No evidence of edema or infiltrate.  No pleural fluid is
+identified.  Stable degenerative changes of the thoracic spine.",Stable appearance of chest.  No acute edema.,"Clinical Data: Chest pain and shortness of breath.
+
+CHEST - 2 VIEW
+
+Comparison: 04/28/2009
+
+Findings: There is a stable appearance to a biventricular pacing /
+ICD device.  Stable cardiomegaly.  Patient is status post CABG and
+mitral valve replacement.
+
+No evidence of edema or infiltrate.  No pleural fluid is
+identified.  Stable degenerative changes of the thoracic spine.
+
+IMPRESSION:
+Stable appearance of chest.  No acute edema.",real,False,True,Cardiomegaly,Chronic stable enlargement,98,room air,19,normal,113,37.0,alert,outpatient
+GRDN007ELLXXY3OJ,12,20130712,101759.157902,073Y,M,,DG CHEST 2V,2,2,"Shortness of breath, pacemaker battery dead.
+
+CHEST - 2 VIEW
+
+Comparison: 01/12/2011","Lungs are essentially clear. No pleural effusion or
+pneumothorax.
+
+Stable cardiomegaly. Postsurgical changes related to prior CABG.
+
+Left subclavian ICD.
+
+Degenerative changes of the visualized thoracolumbar spine.
+Cervical spine fixation hardware, incompletely visualized.","No evidence of acute cardiopulmonary disease.
+
+Stable cardiomegaly.","*RADIOLOGY REPORT*
+
+Clinical Data: Shortness of breath, pacemaker battery dead.
+
+CHEST - 2 VIEW
+
+Comparison: 01/12/2011
+
+Findings: Lungs are essentially clear. No pleural effusion or
+pneumothorax.
+
+Stable cardiomegaly. Postsurgical changes related to prior CABG.
+
+Left subclavian ICD.
+
+Degenerative changes of the visualized thoracolumbar spine.
+Cervical spine fixation hardware, incompletely visualized.
+
+IMPRESSION:
+No evidence of acute cardiopulmonary disease.
+
+Stable cardiomegaly.",real,False,True,Cardiomegaly,Chronic stable enlargement,97,baseline low-flow oxygen,21,mild,146,37.5,alert,outpatient
+GRDN007ELLXXY3OJ,13,20130715,090900.548902,073Y,M,,DG CHEST 2V,2,2,"Chest heart failure
+
+CHEST - 2 VIEW
+
+Comparison: Plain film 08/14/2013","Left-sided pacemaker with continuous leads overlies
+stable cardiac silhouette.  No effusion, infiltrate, or
+pneumothorax. Degenerative osteophytosis of the thoracic spine.",Cardiomegaly without acute cardiopulmonary process.,"*RADIOLOGY REPORT*
+
+Clinical Data: Chest heart failure
+
+CHEST - 2 VIEW
+
+Comparison: Plain film 08/14/2013
+
+Findings: Left-sided pacemaker with continuous leads overlies
+stable cardiac silhouette.  No effusion, infiltrate, or
+pneumothorax. Degenerative osteophytosis of the thoracic spine.
+
+IMPRESSION:
+Cardiomegaly without acute cardiopulmonary process.",real,False,True,Cardiomegaly,Chronic stable enlargement,98,baseline low-flow oxygen,20,normal,119,37.2,alert,ED
+GRDN007ELLXXY3OJ,14,20130721,135037.610902,073Y,M,AP,DG CHEST 1V PORT,1,1,"Shortness of breath.  The chest pain.  History of
+congestive heart failure.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Two-view chest 09/24/2013 and 09/21/2013.","Cardiomegaly is stable.  The mild pulmonary vascular
+congestion has increased slightly.  Pacing wires are stable.  The
+visualized soft tissues and bony thorax are unremarkable.","Cardiomegaly with a slight increase in a diffuse interstitial
+pattern compatible with mild edema or pulmonary vascular
+congestion.","*RADIOLOGY REPORT*
+
+Clinical Data: Shortness of breath.  The chest pain.  History of
+congestive heart failure.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Two-view chest 09/24/2013 and 09/21/2013.
+
+Findings: Cardiomegaly is stable.  The mild pulmonary vascular
+congestion has increased slightly.  Pacing wires are stable.  The
+visualized soft tissues and bony thorax are unremarkable.
+
+IMPRESSION:
+Cardiomegaly with a slight increase in a diffuse interstitial
+pattern compatible with mild edema or pulmonary vascular
+congestion.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,91,room air,29,moderate,106,37.2,anxious,ED
+GRDN007ELLXXY3OJ,15,20130723,110839.548902,073Y,M,,DG CHEST 2V,2,2,"Chest pain and shortness of breath.
+
+CHEST - 2 VIEW
+
+Comparison: Chest x-ray 12/12/2013.","Lungs are well expanded bilaterally, without
+consolidative airspace disease or pleural effusions.  No
+pneumothorax.  Pulmonary vasculature is within normal limits.
+Heart size is mildly enlarged.  Mediastinal contours are
+unremarkable.  Atherosclerosis in the thoracic aorta.  The patient
+is status post median sternotomy for CABG with [REDACTED] to the LAD.
+Additionally, there has been a mitral annuloplasty.  A left-sided
+biventricular pacemaker/AICD is in place with lead tips projecting
+over the expected location of the right atrium, right ventricle and
+left ventricle (via the coronary sinus and coronary veins).","1.  No radiographic evidence of acute cardiopulmonary disease.
+2.  Mild cardiomegaly is unchanged.
+3.  Postoperative changes and support apparatus redemonstrated, as
+above.
+4.  Atherosclerosis.","*RADIOLOGY REPORT*
+
+Clinical Data: Chest pain and shortness of breath.
+
+CHEST - 2 VIEW
+
+Comparison: Chest x-ray 12/12/2013.
+
+Findings: Lungs are well expanded bilaterally, without
+consolidative airspace disease or pleural effusions.  No
+pneumothorax.  Pulmonary vasculature is within normal limits.
+Heart size is mildly enlarged.  Mediastinal contours are
+unremarkable.  Atherosclerosis in the thoracic aorta.  The patient
+is status post median sternotomy for CABG with [REDACTED] to the LAD.
+Additionally, there has been a mitral annuloplasty.  A left-sided
+biventricular pacemaker/AICD is in place with lead tips projecting
+over the expected location of the right atrium, right ventricle and
+left ventricle (via the coronary sinus and coronary veins).
+
+IMPRESSION:
+1.  No radiographic evidence of acute cardiopulmonary disease.
+2.  Mild cardiomegaly is unchanged.
+3.  Postoperative changes and support apparatus redemonstrated, as
+above.
+4.  Atherosclerosis.",real,False,True,Cardiomegaly,Chronic stable enlargement,97,room air,14,mild,171,36.8,alert,ward
+GRDN007ELLXXY3OJ,16,20130823,181653.688902,073Y,M,,DG CHEST 2V,2,2,"Short of breath and cough
+
+CHEST - 2 VIEW
+
+Comparison: 09/29/2013","Mitral valve replacement.  AICD is unchanged.  Cardiac
+enlargement.  Prior CABG.
+
+Negative for edema.  Negative for pneumonia or effusion.  Mild
+vascular congestion.",Mild vascular congestion without edema or pneumonia.,"*RADIOLOGY REPORT*
+
+Clinical Data: Short of breath and cough
+
+CHEST - 2 VIEW
+
+Comparison: 09/29/2013
+
+Findings: Mitral valve replacement.  AICD is unchanged.  Cardiac
+enlargement.  Prior CABG.
+
+Negative for edema.  Negative for pneumonia or effusion.  Mild
+vascular congestion.
+
+IMPRESSION:
+Mild vascular congestion without edema or pneumonia.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,91,nasal cannula,29,moderate,155,37.7,anxious,stepdown
+GRDN007ELLXXY3OJ,17,20130906,140424.548902,073Y,M,,DG CHEST 2V,1,2,,,"Hazy density in the right infrahilar region which could
+represent developing pneumonia versus atelectasis. Pleural thickening is
+also a consideration. Pacemaker present with CABG changes and cardiomegaly.
+
+[REDACTED]","REASON FOR EXAM:    cough
+COMMENTS:
+
+PROCEDURE:     SIHLIYEV - SIHLIYEV CHEST PA (OR AP) AND LAT  - November 30, 2012  [DATE]
+
+RESULT:     Left-sided pacemaker device is present. Cardiac silhouette is
+enlarged. Hazy increased density is seen in the right lung lower third
+region which could represent atelectasis or pleural thickening. Early
+infiltrate is not completely excluded. There is no effusion, mass or
+significant edema. CABG changes are present.
+
+IMPRESSION:      Hazy density in the right infrahilar region which could
+represent developing pneumonia versus atelectasis. Pleural thickening is
+also a consideration. Pacemaker present with CABG changes and cardiomegaly.
+
+[REDACTED]",real,False,True,Pneumonia,Inpatient nonsevere,92,nasal cannula,23,moderate,110,39.7,alert,observation
+GRDN007ELLXXY3OJ,18,20130911,145024.548902,073Y,M,,DG CHEST 2V,1,3,,,"1. Cardiomegaly with mild pulmonary edema.
+
+[REDACTED]","REASON FOR EXAM:    SOB
+COMMENTS:
+
+PROCEDURE:     DXR - DXR CHEST PA (OR AP) AND LATERAL  - September 27, 2013  [DATE]
+
+RESULT:     Comparison is made to the study dated 22 September, 2013.
+
+Left-sided pacemaker device is present. The cardiac silhouette is enlarged
+but unchanged. Atherosclerotic calcification is seen. There is pulmonary
+vascular congestion with mild interstitial edema. There is no consolidation,
+effusion or pneumothorax.
+
+IMPRESSION:
+1. Cardiomegaly with mild pulmonary edema.
+
+[REDACTED]",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,91,nasal cannula,29,mild,130,36.9,anxious,ED
+GRDN007ELLXXY3OJ,19,20140531,091807.548902,074Y,M,,DG CHEST 2V,3,3,"Cough and malaise for 4 weeks.
+
+CHEST - 2 VIEW
+
+Comparison: 09/30/2013.","The heart, mediastinum and hilar contours are normal.
+Status post CABG and cardiac valve replacement surgery.  Sequential
+cardiac ICD pacer wires in place with generator on the left.  The
+lungs are clear.  No edema, consolidation or masses.  No effusions
+or pneumothoraces.  No acute bony changes.",No active disease,"*RADIOLOGY REPORT*
+
+Clinical Data: Cough and malaise for 4 weeks.
+
+CHEST - 2 VIEW
+
+Comparison: 09/30/2013.
+
+Findings: The heart, mediastinum and hilar contours are normal.
+Status post CABG and cardiac valve replacement surgery.  Sequential
+cardiac ICD pacer wires in place with generator on the left.  The
+lungs are clear.  No edema, consolidation or masses.  No effusions
+or pneumothoraces.  No acute bony changes.
+
+IMPRESSION:
+No active disease",real,False,True,Normal,,97,room air,14,normal,111,36.8,alert,outpatient
+GRDN007ELLXXY3OJ,20,20150719,085230.548902,075Y,M,,DG CHEST 2V,1,2,"Dyspnea.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  March 08, 2014.","Stable cardiomegaly. Status post coronary artery bypass graft.
+Left-sided pacemaker is unchanged in position. No pneumothorax or
+pleural effusion is noted. No acute pulmonary disease is noted. Bony
+thorax appears intact.",No acute cardiopulmonary abnormality seen.,"CLINICAL DATA:  Dyspnea.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  March 08, 2014.
+
+FINDINGS:
+Stable cardiomegaly. Status post coronary artery bypass graft.
+Left-sided pacemaker is unchanged in position. No pneumothorax or
+pleural effusion is noted. No acute pulmonary disease is noted. Bony
+thorax appears intact.
+
+IMPRESSION:
+No acute cardiopulmonary abnormality seen.",real,False,True,Cardiomegaly,Chronic stable enlargement,95,baseline low-flow oxygen,15,mild,144,36.4,alert,outpatient
+GRDN007ELLXXY3OJ,21,20150721,070010.548902,075Y,M,,DG CHEST 2V,1,3,"Shortness of Breath
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  April 09, 2015 and June 02, 2013","There is chronic interstitial prominence in the lung bases.
+Elsewhere lungs are clear. The heart is mildly enlarged with
+pulmonary vascularity within normal limits. Pacemaker leads are
+attached to the right atrium, right ventricle, and left ventricle.
+Patient is status post internal mammary bypass grafting. There is a
+mitral valve replacement as well. No adenopathy.","Suspect mild chronic congestive heart failure. There may also be
+some bibasilar interstitial fibrosis. There is no new opacity. No
+consolidation. There is chronic mild cardiac prominence with
+postoperative change.","CLINICAL DATA:  Shortness of Breath
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  April 09, 2015 and June 02, 2013
+
+FINDINGS:
+There is chronic interstitial prominence in the lung bases.
+Elsewhere lungs are clear. The heart is mildly enlarged with
+pulmonary vascularity within normal limits. Pacemaker leads are
+attached to the right atrium, right ventricle, and left ventricle.
+Patient is status post internal mammary bypass grafting. There is a
+mitral valve replacement as well. No adenopathy.
+
+IMPRESSION:
+Suspect mild chronic congestive heart failure. There may also be
+some bibasilar interstitial fibrosis. There is no new opacity. No
+consolidation. There is chronic mild cardiac prominence with
+postoperative change.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,86,mask,23,moderate,162,36.6,anxious,stepdown
+GRDN007ELLXXY3OJ,22,20150726,075752.548902,075Y,M,,DG CHEST 1V PORT,1,1,"Cough, shortness of Breath
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  07/20/2015","Left AICD remains in place, unchanged. Prior CABG. Cardiomegaly.
+Lungs are clear. No effusions or acute bony abnormality. No overt
+edema.",Cardiomegaly.  No active disease.,"CLINICAL DATA:  Cough, shortness of Breath
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  07/20/2015
+
+FINDINGS:
+Left AICD remains in place, unchanged. Prior CABG. Cardiomegaly.
+Lungs are clear. No effusions or acute bony abnormality. No overt
+edema.
+
+IMPRESSION:
+Cardiomegaly.  No active disease.",real,False,True,Cardiomegaly,Chronic stable enlargement,97,baseline low-flow oxygen,15,mild,160,36.6,alert,ED
+GRDN007ELLXXY3OJ,23,20150803,155942.548902,075Y,M,,DG CHEST 1V PORT,1,1,"Congestive heart failure.
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  06/08/2016 and 06/03/2016.","5469 hr. Left subclavian pacemaker/ AICD leads are unchanged within
+the right atrium, right ventricle and coronary sinus. The heart is
+enlarged status post CABG and mitral valve replacement. There is
+mild pulmonary edema. No confluent airspace opacity or significant
+pleural effusion is seen.","Cardiomegaly with mild pulmonary edema consistent with mild
+congestive heart failure.","CLINICAL DATA:  Congestive heart failure.
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  06/08/2016 and 06/03/2016.
+
+FINDINGS:
+5469 hr. Left subclavian pacemaker/ AICD leads are unchanged within
+the right atrium, right ventricle and coronary sinus. The heart is
+enlarged status post CABG and mitral valve replacement. There is
+mild pulmonary edema. No confluent airspace opacity or significant
+pleural effusion is seen.
+
+IMPRESSION:
+Cardiomegaly with mild pulmonary edema consistent with mild
+congestive heart failure.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,88,mask,30,mild,128,37.3,alert,ED
+GRDN007ELLXXY3OJ,24,20150803,191439.548902,075Y,M,,DG CHEST 1V PORT,1,1,"Central line placed
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  03/17/2016","New right upper extremity PICC.  The tip is at the lower SVC.
+
+Unchanged cardiomegaly. The patient is status post median sternotomy
+for mitral annuloplasty and CABG. Unchanged orientation of
+biventricular ICD/pacer leads from the left. There is improving
+right basilar aeration. Pulmonary edema is less evident as well.
+Suspect multiple calcified pulmonary nodules bilaterally, usually
+seen with granulomatous disease or remote varicella infection. No
+effusion or pneumothorax.","1. New right upper extremity PICC is in good position.
+2. Improving basilar lung aeration.","CLINICAL DATA:  Central line placed
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  03/17/2016
+
+FINDINGS:
+New right upper extremity PICC.  The tip is at the lower SVC.
+
+Unchanged cardiomegaly. The patient is status post median sternotomy
+for mitral annuloplasty and CABG. Unchanged orientation of
+biventricular ICD/pacer leads from the left. There is improving
+right basilar aeration. Pulmonary edema is less evident as well.
+Suspect multiple calcified pulmonary nodules bilaterally, usually
+seen with granulomatous disease or remote varicella infection. No
+effusion or pneumothorax.
+
+IMPRESSION:
+1. New right upper extremity PICC is in good position.
+2. Improving basilar lung aeration.",real,False,True,Cardiomegaly,Chronic stable enlargement,98,baseline low-flow oxygen,13,normal,147,37.3,alert,ED
+GRDN007ELLXXY3OJ,25,20150808,071124.548902,075Y,M,,DG CHEST 1V PORT,1,1,"Cough with sputum production, history CHF, question
+pneumonia.
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  Portable exam 5801 hr compared to 03/08/2016","LEFT subclavian pacemaker/AICD leads project over RIGHT atrium,
+RIGHT ventricle and coronary sinus.
+
+RIGHT arm PICC line tip projects over mid SVC.
+
+Enlargement of cardiac silhouette post CABG.
+
+Mediastinal contours and pulmonary vascularity normal.
+
+Atherosclerotic calcification aortic arch.
+
+Mild residual infiltrate RIGHT lower lobe.
+
+Remaining lungs grossly clear.
+
+No pleural effusion or pneumothorax.","Mild residual infiltrate RIGHT lower lobe.
+
+Enlargement of cardiac silhouette post CABG and pacemaker/AICD.","CLINICAL DATA:  Cough with sputum production, history CHF, question
+pneumonia.
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  Portable exam 5801 hr compared to 03/08/2016
+
+FINDINGS:
+LEFT subclavian pacemaker/AICD leads project over RIGHT atrium,
+RIGHT ventricle and coronary sinus.
+
+RIGHT arm PICC line tip projects over mid SVC.
+
+Enlargement of cardiac silhouette post CABG.
+
+Mediastinal contours and pulmonary vascularity normal.
+
+Atherosclerotic calcification aortic arch.
+
+Mild residual infiltrate RIGHT lower lobe.
+
+Remaining lungs grossly clear.
+
+No pleural effusion or pneumothorax.
+
+IMPRESSION:
+Mild residual infiltrate RIGHT lower lobe.
+
+Enlargement of cardiac silhouette post CABG and pacemaker/AICD.",real,False,True,Consolidation,Nonspecific/stable opacity,94,baseline oxygen,14,normal,101,37.1,alert,ward
+GRDN007ELLXXY3OJ,26,20150810,065722.548902,075Y,M,,DG CHEST 1V PORT,1,1,"Short of breath, congestive heart failure
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  10/03/2015","Left-sided pacemaker with multiple contents leads overlie stable
+enlarged groin silhouette. Right PICC line is unchanged. There is
+mild central venous congestion. No pulmonary edema. No pneumothorax.","Mild central venous congestion. No overt pulmonary edema. No
+interval change.","CLINICAL DATA:  Short of breath, congestive heart failure
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  10/03/2015
+
+FINDINGS:
+Left-sided pacemaker with multiple contents leads overlie stable
+enlarged groin silhouette. Right PICC line is unchanged. There is
+mild central venous congestion. No pulmonary edema. No pneumothorax.
+
+IMPRESSION:
+Mild central venous congestion. No overt pulmonary edema. No
+interval change.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,88,room air,33,mild,157,37.4,anxious,ward
+GRDN00A5ZYWHZY7D,1,20060929,044746.759320,038Y,F,,DG CHEST 2V,2,2,"Cough, shortness of breath.
+ CHEST- 2 VIEW:",The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.,No active cardiopulmonary disease.,"Clinical Data:   Cough, shortness of breath.
+ CHEST- 2 VIEW:
+ Findings: The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.
+ IMPRESSION:
+ No active cardiopulmonary disease.",real,False,True,Normal,,98,room air,15,normal,139,36.4,alert,ED
+GRDN00A5ZYWHZY7D,2,20080114,041659.791320,039Y,F,,DG CHEST 2V,2,2,"Fever, strep throat
+
+CHEST - 2 VIEW:
+
+Comparison: 07/12/2006","The heart size and mediastinal contours are within normal limits. 
+Both lungs are clear.  The visualized skeletal structures are unremarkable.",No active cardiopulmonary disease,"Clinical Data: Fever, strep throat
+
+CHEST - 2 VIEW:
+
+Comparison: 07/12/2006
+
+Findings:  The heart size and mediastinal contours are within normal limits. 
+Both lungs are clear.  The visualized skeletal structures are unremarkable. 
+
+IMPRESSION:
+
+No active cardiopulmonary disease",real,False,True,Normal,,98,room air,17,normal,127,36.3,alert,outpatient
+GRDN00A5ZYWHZY7D,3,20080429,103241.822320,039Y,F,,DG CHEST 2V,2,2,"Neutropenia, abdominal pain, pancytopenia. Fever of unknown
+origin.
+Comparison:  06/23/2008.","No focal airspace disease, edema, or effusions. No consolidations
+suspicious for pneumonia. Bones appear within normal limits. Cardiomediastinal
+silhouette within normal limits.
+**********************************************************************","No active cardiopulmonary disease. 
+**********************************************************************","CHEST - 2 VIEW
+Clinical Data: Neutropenia, abdominal pain, pancytopenia. Fever of unknown
+origin.
+Comparison:  06/23/2008.
+
+Findings:  No focal airspace disease, edema, or effusions. No consolidations
+suspicious for pneumonia. Bones appear within normal limits. Cardiomediastinal
+silhouette within normal limits.
+**********************************************************************
+IMPRESSION
+No active cardiopulmonary disease. 
+**********************************************************************",real,False,True,Normal,,98,room air,15,normal,124,36.8,alert,ED
+GRDN00A5ZYWHZY7D,4,20080710,023919.697320,040Y,F,,DG CHEST 2V,1,1,"Midchest tightness.  Shortness of breath.  Cough.  
+ H4IU4-9 VIEWS:
+ Comparison:  01/05/09
+ Two views of the chest show no active infiltrate or effusion.  The heart is within normal limits and size.",,No active lung disease.,"Clinical Data:    Midchest tightness.  Shortness of breath.  Cough.  
+ H4IU4-9 VIEWS:
+ Comparison:  01/05/09
+ Two views of the chest show no active infiltrate or effusion.  The heart is within normal limits and size. 
+ IMPRESSION:
+
+ No active lung disease.",real,False,True,Normal,,99,room air,20,normal,112,36.8,alert,ED
+GRDN00A5ZYWHZY7D,5,20120509,063431.572320,043Y,F,,DG CHEST 2V,2,2,"Progressive mid chest pain for 2 weeks.  Question
+pneumonia.
+
+CHEST - 2 VIEW
+
+Comparison: 06/24/2008.","The heart size is stable at the upper limits of normal.
+Mediastinal contours are normal.  The lungs are clear.  There is no
+pleural effusion or pneumothorax.  Thoracic spine osteophytes are
+noted.","Stable examination.  No evidence of pneumonia or other acute
+cardiopulmonary process.","*RADIOLOGY REPORT*
+
+Clinical Data: Progressive mid chest pain for 2 weeks.  Question
+pneumonia.
+
+CHEST - 2 VIEW
+
+Comparison: 06/24/2008.
+
+Findings: The heart size is stable at the upper limits of normal.
+Mediastinal contours are normal.  The lungs are clear.  There is no
+pleural effusion or pneumothorax.  Thoracic spine osteophytes are
+noted.
+
+IMPRESSION:
+Stable examination.  No evidence of pneumonia or other acute
+cardiopulmonary process.",real,False,True,Normal,,99,room air,13,normal,107,36.2,alert,ward
+GRDN00A5ZYWHZY7D,6,20140506,093506.713320,045Y,F,,DG CHEST 2V,2,2,"Chest pain and cough
+
+CHEST - 2 VIEW
+
+Comparison: October 09, 2012","Lungs clear.  The heart size and pulmonary vascularity
+are normal.  No adenopathy.  There is degenerative change in the
+thoracic spine.  No pneumothorax.",No edema or consolidation.,"*RADIOLOGY REPORT*
+
+Clinical Data: Chest pain and cough
+
+CHEST - 2 VIEW
+
+Comparison: October 09, 2012
+
+Findings:  Lungs clear.  The heart size and pulmonary vascularity
+are normal.  No adenopathy.  There is degenerative change in the
+thoracic spine.  No pneumothorax.
+
+IMPRESSION:
+No edema or consolidation.",real,False,True,Normal,,98,room air,14,normal,109,36.9,alert,ED
+GRDN00A5ZYWHZY7D,7,20150424,011145.713320,046Y,F,,DG CHEST 2V,2,2,"Asthma.  Pre bariatric screening.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  02/21/2014","Lateral view degraded by patient arm position. Lower thoracic
+spondylosis. Midline trachea. Normal heart size and mediastinal
+contours. No pleural effusion or pneumothorax. Clear lungs.",No acute cardiopulmonary disease.,"CLINICAL DATA:  Asthma.  Pre bariatric screening.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  02/21/2014
+
+FINDINGS:
+Lateral view degraded by patient arm position. Lower thoracic
+spondylosis. Midline trachea. Normal heart size and mediastinal
+contours. No pleural effusion or pneumothorax. Clear lungs.
+
+IMPRESSION:
+No acute cardiopulmonary disease.",real,False,True,Normal,,99,room air,17,normal,126,37.1,alert,ward
+GRDN00A5ZYWHZY7D,8,20160721,142647.713320,048Y,F,,DG CHEST 2V,2,2,"48-year-old female with history of cough, fever and
+flu-like symptoms.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest x-ray 07/23/2015.","Lung volumes are normal. No consolidative airspace disease. No
+pleural effusions. No pneumothorax. No pulmonary nodule or mass
+noted. Pulmonary vasculature and the cardiomediastinal silhouette
+are within normal limits.",No radiographic evidence of acute cardiopulmonary disease.,"CLINICAL DATA:  48-year-old female with history of cough, fever and
+flu-like symptoms.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest x-ray 07/23/2015.
+
+FINDINGS:
+Lung volumes are normal. No consolidative airspace disease. No
+pleural effusions. No pneumothorax. No pulmonary nodule or mass
+noted. Pulmonary vasculature and the cardiomediastinal silhouette
+are within normal limits.
+
+IMPRESSION:
+No radiographic evidence of acute cardiopulmonary disease.",real,False,True,Normal,,97,room air,14,normal,106,36.2,alert,outpatient
+GRDN00A5ZYWHZY7D,9,20170112,192635.713320,048Y,F,,DG CHEST 2V,2,2,"Fever for 2 days.  Body aches.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  07/08/2016","Lung volumes are low. The cardiomediastinal contours are normal. The
+lungs are clear. Pulmonary vasculature is normal. No consolidation,
+pleural effusion, or pneumothorax. No acute osseous abnormalities
+are seen.",Low lung volumes without acute process.,"CLINICAL DATA:  Fever for 2 days.  Body aches.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  07/08/2016
+
+FINDINGS:
+Lung volumes are low. The cardiomediastinal contours are normal. The
+lungs are clear. Pulmonary vasculature is normal. No consolidation,
+pleural effusion, or pneumothorax. No acute osseous abnormalities
+are seen.
+
+IMPRESSION:
+Low lung volumes without acute process.",real,False,True,Normal,,98,room air,14,normal,116,36.4,alert,ward
+GRDN00A5ZYWHZY7D,10,20191114,053249.713320,051Y,F,,DG CHEST 2V,2,2,"Generalized weakness recent gastroenteritis
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  03/14/2020","The heart size and mediastinal contours are within normal limits.
+Both lungs are clear. The visualized skeletal structures are
+unremarkable.",Normal chest radiograph.,"CLINICAL DATA:  Generalized weakness recent gastroenteritis
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  03/14/2020
+
+FINDINGS:
+The heart size and mediastinal contours are within normal limits.
+Both lungs are clear. The visualized skeletal structures are
+unremarkable.
+
+IMPRESSION:
+Normal chest radiograph.",real,False,True,Normal,,96,room air,15,normal,113,36.4,alert,ward
+GRDN00BE97VCHW4E,1,20220825,023135.184771,058Y,M,AP,XR CHEST 1 VIEW,1,1,"chest pain. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 05/13/2022.","No focal consolidation, pleural effusion, or pneumothorax. Cardiomediastinal silhouette is unremarkable. No pulmonary edema pattern.",No features of an acute intrathoracic process.,"Chest pain
+FINAL REPORT:
+EXAM: Portable chest x-ray
+INDICATION: chest pain. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 05/13/2022.
+FINDINGS: No focal consolidation, pleural effusion, or pneumothorax. Cardiomediastinal silhouette is unremarkable. No pulmonary edema pattern.
+IMPRESSION:
+No features of an acute intrathoracic process.",real,False,True,Normal,,99,room air,17,normal,131,36.3,alert,ward
+GRDN00BE97VCHW4E,2,20241214,112345.184771,060Y,M,AP,XR CHEST 1 VIEW,1,1,"Post CABG
+Comparison: Chest radiograph December 14, 2024","1 view of the chest.
+Interval removal of endotracheal and enteric tubes.
+Right IJ approach Swan-Ganz catheter terminates overlying the main pulmonary artery, unchanged.
+Borderline increased interstitial opacities overlying both lungs. No pleural effusion pneumothorax. Cardiomegaly. Postsurgical changes related to median sternotomy. No acute fracture is identified.",Borderline increased interstitial lung markings overlying both lungs. Mild pulmonary interstitial edema cannot be ruled out.,"FINAL REPORT:
+Indication: Post CABG
+Comparison: Chest radiograph December 14, 2024
+Findings:
+1 view of the chest.
+Interval removal of endotracheal and enteric tubes.
+Right IJ approach Swan-Ganz catheter terminates overlying the main pulmonary artery, unchanged.
+Borderline increased interstitial opacities overlying both lungs. No pleural effusion pneumothorax. Cardiomegaly. Postsurgical changes related to median sternotomy. No acute fracture is identified.
+IMPRESSION:
+Impression:
+Borderline increased interstitial lung markings overlying both lungs. Mild pulmonary interstitial edema cannot be ruled out.
+Portable?
+Yes",real,False,True,Edema,Mild stable congestion,94,low-flow nasal cannula,23,mild,178,36.8,alert,ward
+GRDN00BE97VCHW4E,3,20241214,202822.184771,060Y,M,AP,XR CHEST 1 VIEW,1,1,"pre op eval pain
+Comparison: 12/12/2024","1 view of the chest. The cardiomediastinal contours are within normal limits. No evidence of focal consolidation, pleural effusion, pulmonary edema, or pneumothorax.",No acute cardiopulmonary findings.,"FINAL REPORT:
+Indication: pre op eval pain
+Comparison: 12/12/2024
+Findings:
+1 view of the chest. The cardiomediastinal contours are within normal limits. No evidence of focal consolidation, pleural effusion, pulmonary edema, or pneumothorax.
+IMPRESSION:
+Impression:
+No acute cardiopulmonary findings.
+Portable?
+Yes",real,False,True,Normal,,96,room air,13,normal,116,36.6,alert,outpatient
+GRDN00BE97VCHW4E,4,20241215,210209.184771,060Y,M,AP,XR CHEST 1 VIEW,1,1,"postoperative care
+Comparison: 12/14/2024","1 view of the chest was obtained.
+Lungs/pleura: Mild interstitial prominence. Small left pleural effusion. No pneumothorax. Mildly prominent pulm vasculature.
+Cardiomediastinum: Cardiomegaly. Right Arturin Mc catheter tip is at the pulmonary outflow tract. Mediastinal drain in place.
+Bones: No acute osseous abnormalities.
+Other: None.","1. Small left pleural effusion with mild pulmonary vascular congestion.
+2. Satisfactory support device placement.","Post op care
+FINAL REPORT:
+XR CHEST 1 VIEW
+Indication: postoperative care
+Comparison: 12/14/2024
+Findings:
+1 view of the chest was obtained.
+Lungs/pleura: Mild interstitial prominence. Small left pleural effusion. No pneumothorax. Mildly prominent pulm vasculature.
+Cardiomediastinum: Cardiomegaly. Right Arturin Mc catheter tip is at the pulmonary outflow tract. Mediastinal drain in place.
+Bones: No acute osseous abnormalities.
+Other: None.
+IMPRESSION:
+Impression:
+1. Small left pleural effusion with mild pulmonary vascular congestion.
+2. Satisfactory support device placement.
+Portable?
+Yes",real,False,True,Effusion,Small stable/chronic,95,room air,15,mild,178,36.7,alert,outpatient
+GRDN00BE97VCHW4E,5,20241216,030633.184771,060Y,M,AP,XR CHEST 1 VIEW,1,2,"removal of anterior \T\ posterior chest tubes. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/16/2024.",Interval removal of pulmonary artery catheter with right internal jugular introducer remaining in stable position. Mediastinal drain/left chest tube is demonstrated. Persistent small left pleural effusion. No pneumothorax. Cardiomediastinal silhouette is stable and the heart remains enlarged. No pulmonary edema pattern.,No significant interval change since prior examination.,"Removal of anterior and posterior chest tubes
+FINAL REPORT:
+EXAM: Portable chest x-ray
+INDICATION: removal of anterior \T\ posterior chest tubes. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/16/2024.
+FINDINGS: Interval removal of pulmonary artery catheter with right internal jugular introducer remaining in stable position. Mediastinal drain/left chest tube is demonstrated. Persistent small left pleural effusion. No pneumothorax. Cardiomediastinal silhouette is stable and the heart remains enlarged. No pulmonary edema pattern.
+IMPRESSION:
+No significant interval change since prior examination.
+Portable?
+Yes",real,False,True,Effusion,Small stable/chronic,94,room air,16,normal,161,37.1,alert,outpatient
+GRDN00BE97VCHW4E,6,20241216,210348.184771,060Y,M,AP,XR CHEST 1 VIEW,1,1,"postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/15/2024.","Support apparatus appear to be in stable position. Hypoventilation. Mild left basilar opacity may correlate with atelectasis, small effusion. No lobar consolidation. No pneumothorax. Heart remains enlarged. No overt pulmonary edema pattern.",No significant interval change since prior examination.,"FINAL REPORT:
+EXAM: Portable chest x-ray
+INDICATION: postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/15/2024.
+FINDINGS: Support apparatus appear to be in stable position. Hypoventilation. Mild left basilar opacity may correlate with atelectasis, small effusion. No lobar consolidation. No pneumothorax. Heart remains enlarged. No overt pulmonary edema pattern.
+IMPRESSION:
+No significant interval change since prior examination.
+Portable?
+Yes",real,False,True,Atelectasis,Mild postoperative/dependent,98,room air,16,normal,156,36.2,alert,postoperative unit
+GRDN00BE97VCHW4E,7,20241217,221157.184771,060Y,M,AP,XR CHEST 1 VIEW,1,1,"postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/16/2024.","Right internal jugular introducer remains in stable position. Previously demonstrated left chest tube/drain is not definitely present, with evaluation limited by overlying external wires. Heart remains enlarged. Central vascular congestion. No overt pulmonary edema pattern. Small pleural effusions. No pneumothorax.",No significant interval change since prior examination.,"FINAL REPORT:
+EXAM: Portable chest x-ray
+INDICATION: postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/16/2024.
+FINDINGS: Right internal jugular introducer remains in stable position. Previously demonstrated left chest tube/drain is not definitely present, with evaluation limited by overlying external wires. Heart remains enlarged. Central vascular congestion. No overt pulmonary edema pattern. Small pleural effusions. No pneumothorax.
+IMPRESSION:
+No significant interval change since prior examination.
+Portable?
+Yes",real,False,True,Atelectasis,Mild postoperative/dependent,95,nasal cannula 1–2 L/min,13,normal,151,37.6,alert,inpatient ward
+GRDN00BE97VCHW4E,8,20241218,214609.184771,060Y,M,AP,XR CHEST 1 VIEW,1,1,"postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/17/2024.","Right internal jugular introducer has been removed. Left chest tube/mediastinal drain remains in stable position. Mild left basilar opacities persist which may correlate with atelectasis, infiltrate, and/or small pleural effusions. No pneumothorax. Cardiomediastinal silhouette is stable and the heart remains enlarged. No pulmonary edema pattern.",No significant interval change since prior examination.,"FINAL REPORT:
+EXAM: Portable chest x-ray
+INDICATION: postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/17/2024.
+FINDINGS: Right internal jugular introducer has been removed. Left chest tube/mediastinal drain remains in stable position. Mild left basilar opacities persist which may correlate with atelectasis, infiltrate, and/or small pleural effusions. No pneumothorax. Cardiomediastinal silhouette is stable and the heart remains enlarged. No pulmonary edema pattern.
+IMPRESSION:
+No significant interval change since prior examination.
+Portable?
+Yes",real,False,True,Atelectasis,Mild postoperative/dependent,98,nasal cannula 1–2 L/min,15,mild,156,36.7,alert,inpatient ward
+GRDN00BE97VCHW4E,9,20250105,005819.184771,060Y,M,PA; LL,XR CHEST 2 VIEWS,1,2,"CABG
+Number of views:2
+Comparison: 01/02/2025 and 12/22/2024",Cardiomediastinal contour and poststernotomy changes are stable. No aggressive bone lesions are seen. Small posterior density persists. This is decreased since the prior with mild residual.,Decrease but persistence of pleural/parenchymal density in the left lower lobe. Follow-up to complete clearing or consider chest CT,"CAD  S/P CABG
+FINAL REPORT:
+History: CABG
+Number of views:2
+Comparison: 01/02/2025 and 12/22/2024
+Findings: Cardiomediastinal contour and poststernotomy changes are stable. No aggressive bone lesions are seen. Small posterior density persists. This is decreased since the prior with mild residual.
+IMPRESSION:
+Impression: Decrease but persistence of pleural/parenchymal density in the left lower lobe. Follow-up to complete clearing or consider chest CT",real,False,True,Lung opacity,Indeterminate stable opacity,96,room air,17,normal,174,37.0,alert,ED
+GRDN00BE97VCHW4E,10,20250719,111607.184771,061Y,M,AP,XR CHEST 1 VIEW,1,1,"Chest pain, ACS suspected
+Comparison: 07/18/2025",The lungs are clear.   The cardiac silhouette is within normal limits  given portable technique.  No acute osseous abnormalities.,No acute cardiopulmonary process.,"FINAL REPORT:
+Chest portable one view
+Indication: Chest pain, ACS suspected
+Comparison: 07/18/2025
+Findings:  The lungs are clear.   The cardiac silhouette is within normal limits  given portable technique.  No acute osseous abnormalities.
+IMPRESSION:
+Impression: No acute cardiopulmonary process.
+Portable?
+Yes",real,False,True,Normal,,97,room air,18,normal,111,36.1,alert,ED
+GRDN00BJ2R8QRO0L,1,20051228,120940.735989,064Y,F,,DG CHEST 2V,2,2,"Chest pain. Preoperative evaluation prior to cardiac
+catheterization.
+
+CHEST - 2 VIEW  08/28/2006:
+
+Comparison:  None. I have the report of a previous two-view chest x-ray
+05/01/2000 which was interpreted as no active disease. Those films have been
+purged.","The heart is upper normal in size to perhaps slightly enlarged. The
+thoracic aorta is mildly atherosclerotic. The hilar and mediastinal contours are
+otherwise unremarkable. The lungs appear clear. Degenerative changes are present
+in the thoracic spine.",Borderline to mild cardiomegaly. No evidence of acute disease.,"Clinical Data: Chest pain. Preoperative evaluation prior to cardiac
+catheterization.
+
+CHEST - 2 VIEW  08/28/2006:
+
+Comparison:  None. I have the report of a previous two-view chest x-ray
+05/01/2000 which was interpreted as no active disease. Those films have been
+purged.
+
+Findings:  The heart is upper normal in size to perhaps slightly enlarged. The
+thoracic aorta is mildly atherosclerotic. The hilar and mediastinal contours are
+otherwise unremarkable. The lungs appear clear. Degenerative changes are present
+in the thoracic spine.
+
+IMPRESSION:
+
+Borderline to mild cardiomegaly. No evidence of acute disease.",real,False,True,Cardiomegaly,Chronic stable enlargement,97,baseline low-flow oxygen,14,mild,144,36.9,alert,ward
+GRDN00BJ2R8QRO0L,2,20071023,123315.391989,066Y,F,,DG CHEST 2V,2,2,"Fever, shortness of breath, chest pain. 
+ CHEST - 2 VIEW:
+ Comparison:   10/23/05.",The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.,No active cardiopulmonary disease.,"Clinical Data:  Fever, shortness of breath, chest pain. 
+ CHEST - 2 VIEW:
+ Comparison:   10/23/05. 
+ Findings:  The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.
+ IMPRESSION:
+ No active cardiopulmonary disease.",real,False,True,Normal,,97,room air,15,normal,134,36.6,alert,ED
+GRDN00BJ2R8QRO0L,3,20071024,135430.391989,066Y,F,,DG CHEST 2V,2,2,"Cough
+
+Chest 2 view:
+
+Comparison 02/17/2008. Lungs clear. Heart size normal. No effusion. Vascular clips
+right upper abdomen. Atheromatous aortic arch. Minimal thoracic spondylitic
+changes.",,1. No acute disease,"Clinical data: Cough
+
+Chest 2 view:
+
+Comparison 02/17/2008. Lungs clear. Heart size normal. No effusion. Vascular clips
+right upper abdomen. Atheromatous aortic arch. Minimal thoracic spondylitic
+changes.
+
+Impression:
+1. No acute disease",real,False,True,Normal,,100,room air,18,normal,126,36.3,alert,outpatient
+GRDN00BJ2R8QRO0L,4,20080701,074024.735989,067Y,F,,DG CHEST 2V,2,2,"Chest pain.  Bilateral shoulder pain.  Short of breath.
+ CHEST - 2 VIEW:
+ Comparison:   01/31/07",Two views of the chest show no active infiltrate or effusion.  There is some peribronchial thickening which may indicate bronchitis.  Mild cardiomegaly is stable.  No acute bony abnormality is seen.,No pneumonia.  Possible bronchitis.,"Clinical Data:     Chest pain.  Bilateral shoulder pain.  Short of breath.
+ CHEST - 2 VIEW:
+ Comparison:   01/31/07
+ Findings:   Two views of the chest show no active infiltrate or effusion.  There is some peribronchial thickening which may indicate bronchitis.  Mild cardiomegaly is stable.  No acute bony abnormality is seen.
+ IMPRESSION:
+ No pneumonia.  Possible bronchitis.",real,False,True,Cardiomegaly,Chronic stable enlargement,99,room air,15,mild,142,36.8,alert,outpatient
+GRDN00BJ2R8QRO0L,5,20081224,121253.031989,067Y,F,,DG CHEST 2V,2,2,"Pre cardiac cath work up. 
+ CHEST, TWO VIEWS: 
+ Comparison:  03/27/08.",The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.  Multilevel degenerative disc disease of the thoracic spine.,No active cardiopulmonary disease.,"Clinical Data:   Pre cardiac cath work up. 
+ CHEST, TWO VIEWS: 
+ Comparison:  03/27/08.  
+ Findings:  The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.  Multilevel degenerative disc disease of the thoracic spine.  
+ IMPRESSION:
+ No active cardiopulmonary disease.",real,False,True,Normal,,98,room air,20,normal,114,36.9,alert,ED
+GRDN00BJ2R8QRO0L,6,20081229,095130.735989,067Y,F,,DG CHEST 2V,2,2,"Aortic stenosis.  
+ CHEST - 2 VIEW:
+ Comparison:  01/18/2010","The heart is upper normal.   There is no heart failure, infiltrate, or effusion.  The lungs are clear.",No active cardiopulmonary disease.,"Clinical Data:   Aortic stenosis.  
+ CHEST - 2 VIEW:
+ Comparison:  01/18/2010
+ Findings:   The heart is upper normal.   There is no heart failure, infiltrate, or effusion.  The lungs are clear.  
+ IMPRESSION:
+ No active cardiopulmonary disease.",real,False,True,Normal,,99,room air,19,normal,120,36.7,alert,outpatient
+GRDN00BJ2R8QRO0L,7,20090101,084551.735989,067Y,F,,DG CHEST 1V PORT,1,1,"Aortic stenosis. CABG.
+ AP PORTABLE SEMI-RECUMBANT CHEST ? 03/03/09 AT [DATE] P.M.:
+ Comparison Examination: 02/28/09",Endotracheal tube 1.8 cm above the carina. Nasogastric tube enters the stomach. The tip is not imaged. Right Swan-Ganz catheter is in place with the tip in the right lower lobe pulmonary artery.  This may be retracted by 5 cm to be within right main pulmonary artery. Floor contacted. Cardiomegaly and pulmonary vascular congestion. Mediastinal drain in place. No pneumothorax. Limited evaluation of aorta.,"1.  Swan-Ganz catheter tip right lower lobe pulmonary artery. This can be retracted by 5 cm to be within the right main pulmonary artery.
+ 2.  Endotracheal tube tip 1.8 cm above the carina. 
+ 3.  Cardiomegaly and pulmonary vascular congestion.
+ 4.  No pneumothorax.","Clinical Data:  Aortic stenosis. CABG.
+ AP PORTABLE SEMI-RECUMBANT CHEST ? 03/03/09 AT [DATE] P.M.:
+ Comparison Examination: 02/28/09
+ Findings: Endotracheal tube 1.8 cm above the carina. Nasogastric tube enters the stomach. The tip is not imaged. Right Swan-Ganz catheter is in place with the tip in the right lower lobe pulmonary artery.  This may be retracted by 5 cm to be within right main pulmonary artery. Floor contacted. Cardiomegaly and pulmonary vascular congestion. Mediastinal drain in place. No pneumothorax. Limited evaluation of aorta. 
+ IMPRESSION:  
+ 1.  Swan-Ganz catheter tip right lower lobe pulmonary artery. This can be retracted by 5 cm to be within the right main pulmonary artery.
+ 2.  Endotracheal tube tip 1.8 cm above the carina. 
+ 3.  Cardiomegaly and pulmonary vascular congestion.
+ 4.  No pneumothorax.",real,False,True,Cardiomegaly,Congestion/heart-failure phenotype,93,room air,26,moderate,109,37.1,alert,stepdown
+GRDN00BJ2R8QRO0L,8,20090102,021741.735989,067Y,F,,DG CHEST 1V PORT,1,1,"Aortic valve replacement. 
+ PORTABLE CHEST - 1 VIEW AT 1924 HOURS: 
+ Comparison:  [DATE]",Endotracheal tube has been removed with slight decrease in aeration and increase in basilar atelectasis.  Swan-Ganz catheter tip remains in the distal right lower lobe pulmonary artery.  Cardiomegaly is stable.,Diminished aeration after removal of endotracheal tube.,"Clinical Data:   Aortic valve replacement. 
+ PORTABLE CHEST - 1 VIEW AT 1924 HOURS: 
+ Comparison:  [DATE]
+ Findings:  Endotracheal tube has been removed with slight decrease in aeration and increase in basilar atelectasis.  Swan-Ganz catheter tip remains in the distal right lower lobe pulmonary artery.  Cardiomegaly is stable. 
+ IMPRESSION:
+ Diminished aeration after removal of endotracheal tube.",real,False,True,Atelectasis,Mild postoperative/dependent,94,nasal cannula 1–2 L/min,12,mild,126,36.1,alert,postoperative unit
+GRDN00BJ2R8QRO0L,9,20090103,015222.735989,067Y,F,,DG CHEST 1V PORT,1,1,"Aortic stenosis, CABG.  Followup.
+ PORTABLE CHEST ? 1 VIEW ? 3564 hours:
+ Comparison:  10/07/08",The Swan Ganz catheter has been removed with the venous sheath remaining in the SVC.  Atelectasis and mild congestion remain.  Probable small effusions.  No pneumothorax is seen.,Swan Ganz catheter removed.  No change in atelectasis and probable mild congestion with effusions.,"Clinical Data:  Aortic stenosis, CABG.  Followup.
+ PORTABLE CHEST ? 1 VIEW ? 3564 hours:
+ Comparison:  10/07/08
+ Findings:  The Swan Ganz catheter has been removed with the venous sheath remaining in the SVC.  Atelectasis and mild congestion remain.  Probable small effusions.  No pneumothorax is seen.  
+ IMPRESSION:
+ Swan Ganz catheter removed.  No change in atelectasis and probable mild congestion with effusions.",real,False,True,Atelectasis,Mild postoperative/dependent,93,room air,16,normal,155,36.3,alert,postoperative unit
+GRDN00BJ2R8QRO0L,10,20090105,020343.797989,067Y,F,,DG CHEST 2V,2,2,"AVR;
+
+CHEST - 2 VIEW
+
+Comparison: 10/20/2009",Small pleural effusions.  Cardiomegaly.  No pneumothorax.,Small pleural effusions are present.,"Clinical Data: AVR;
+
+CHEST - 2 VIEW
+
+Comparison: 10/20/2009
+
+Findings: Small pleural effusions.  Cardiomegaly.  No pneumothorax.
+
+IMPRESSION:
+Small pleural effusions are present.",real,False,True,Effusion,Small stable/chronic,96,baseline oxygen,18,mild,119,37.1,alert,ward
+GRDN00BJ2R8QRO0L,11,20090128,120220.735989,067Y,F,,DG CHEST 2V,2,2,"Post heart surgery 04/01/2009.  Chest pain with
+cough
+
+CHEST - 2 VIEW
+
+Comparison: 04/05/2009",".  The heart borderline enlarged considering low level of
+inspiration.  Pleural effusions have resolved.  Lungs clear.
+Aortic valve prosthesis unchanged.","Suboptimal inspiration - no active disease.  Pleural effusions
+resolved since 04/05/2009.","Clinical Data: Post heart surgery 04/01/2009.  Chest pain with
+cough
+
+CHEST - 2 VIEW
+
+Comparison: 04/05/2009
+
+Findings: .  The heart borderline enlarged considering low level of
+inspiration.  Pleural effusions have resolved.  Lungs clear.
+Aortic valve prosthesis unchanged.
+
+IMPRESSION:
+Suboptimal inspiration - no active disease.  Pleural effusions
+resolved since 04/05/2009.",real,False,True,Normal,,100,room air,17,normal,106,36.6,alert,ward
+GRDN00BJ2R8QRO0L,12,20100922,114132.735989,069Y,F,,DG CHEST 2V,2,2,"Degenerative joint disease right hip, preoperative
+assessment, history hypertension, diabetes, asthma
+
+CHEST - 2 VIEW
+
+Comparison: 09/14/2009","Cardiac enlargement status post median sternotomy and AVR.
+Atherosclerotic calcifications of mildly tortuous thoracic aorta.
+Pulmonary vascularity normal.
+Eventration right diaphragm stable.
+No acute infiltrate or effusion.
+Minimal chronic peribronchial thickening.
+End plate spur formation throughout thoracic spine.","Cardiac enlargement status post AVR.
+Minimal chronic bronchitic changes.","Clinical Data: Degenerative joint disease right hip, preoperative
+assessment, history hypertension, diabetes, asthma
+
+CHEST - 2 VIEW
+
+Comparison: 09/14/2009
+
+Findings:
+Cardiac enlargement status post median sternotomy and AVR.
+Atherosclerotic calcifications of mildly tortuous thoracic aorta.
+Pulmonary vascularity normal.
+Eventration right diaphragm stable.
+No acute infiltrate or effusion.
+Minimal chronic peribronchial thickening.
+End plate spur formation throughout thoracic spine.
+
+IMPRESSION:
+Cardiac enlargement status post AVR.
+Minimal chronic bronchitic changes.",real,False,True,Cardiomegaly,Chronic stable enlargement,96,baseline low-flow oxygen,20,normal,116,36.7,alert,ED
+GRDN00BJ2R8QRO0L,13,20111103,135807.438989,070Y,F,,DG CHEST 2V,2,2,"Chest pain and right shoulder pain secondary to a
+motor vehicle accident.
+
+CHEST - 2 VIEW
+
+Comparison: Chest x-ray dated 02/27/2010","There is borderline cardiomegaly.  Pulmonary vascularity
+is normal and the lungs are clear.  Evidence of previous aortic
+valve replacement.  No acute osseous abnormalities.",No acute disease.,"*RADIOLOGY REPORT*
+
+Clinical Data: Chest pain and right shoulder pain secondary to a
+motor vehicle accident.
+
+CHEST - 2 VIEW
+
+Comparison: Chest x-ray dated 02/27/2010
+
+Findings: There is borderline cardiomegaly.  Pulmonary vascularity
+is normal and the lungs are clear.  Evidence of previous aortic
+valve replacement.  No acute osseous abnormalities.
+
+IMPRESSION:
+No acute disease.",real,False,True,Cardiomegaly,Chronic stable enlargement,97,baseline low-flow oxygen,17,mild,179,36.5,alert,ward
+GRDN00BJ2R8QRO0L,14,20130331,103734.735989,071Y,F,,DG CHEST 2V,2,2,"Preoperative assessment for cardiac valve
+replacement, history hypertension, diabetes, COPD, sleep apnea, AVR
+
+CHEST - 2 VIEW
+
+Comparison: 08/25/2012","Upper normal-sized cardiac silhouette post median sternotomy and
+AVR.
+Calcified tortuous aorta.
+Pulmonary vascularity normal.
+Bronchitic changes without infiltrate or effusion.
+No pneumothorax.
+Multilevel endplate spur formation throughout thoracic spine.","Post AVR.
+Mild bronchitic changes.","*RADIOLOGY REPORT*
+
+Clinical Data: Preoperative assessment for cardiac valve
+replacement, history hypertension, diabetes, COPD, sleep apnea, AVR
+
+CHEST - 2 VIEW
+
+Comparison: 08/25/2012
+
+Findings:
+Upper normal-sized cardiac silhouette post median sternotomy and
+AVR.
+Calcified tortuous aorta.
+Pulmonary vascularity normal.
+Bronchitic changes without infiltrate or effusion.
+No pneumothorax.
+Multilevel endplate spur formation throughout thoracic spine.
+
+IMPRESSION:
+Post AVR.
+Mild bronchitic changes.",real,False,True,Normal,,99,room air,18,normal,139,37.1,alert,ward
+GRDN00BJ2R8QRO0L,15,20130402,143009.406989,072Y,F,AP,DG CHEST 1V PORT,1,1,"Status post CABG today.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/13/2013.","Endotracheal tube in satisfactory position.  Right
+jugular Swan-Ganz catheter tip in the main pulmonary artery.
+Mediastinal and right chest tubes without pneumothorax.
+Nasogastric tube extending into the stomach.  Minimal right lung
+atelectasis.  Clear left lung.  Mildly enlarged cardiac silhouette.
+Median sternotomy wires and prosthetic heart valve.  Thoracic spine
+degenerative changes.","1.  Minimal right lung atelectasis.
+2.  Interval mild cardiomegaly.","*RADIOLOGY REPORT*
+
+Clinical Data: Status post CABG today.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/13/2013.
+
+Findings: Endotracheal tube in satisfactory position.  Right
+jugular Swan-Ganz catheter tip in the main pulmonary artery.
+Mediastinal and right chest tubes without pneumothorax.
+Nasogastric tube extending into the stomach.  Minimal right lung
+atelectasis.  Clear left lung.  Mildly enlarged cardiac silhouette.
+Median sternotomy wires and prosthetic heart valve.  Thoracic spine
+degenerative changes.
+
+IMPRESSION:
+
+1.  Minimal right lung atelectasis.
+2.  Interval mild cardiomegaly.",real,False,True,Atelectasis,Mild postoperative/dependent,97,room air,14,normal,115,36.5,alert,inpatient ward
+GRDN00BJ2R8QRO0L,16,20130403,014056.735989,072Y,F,AP,DG CHEST 1V PORT,1,1,"Aortic valve replacement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Yesterday","Endotracheal and NG tubes removed.  Vatuva and right
+chest tube stable.  Mediastinal tube stable.  Increasing
+hypoaeration and bibasilar atelectasis.  Cardiomegaly.  No sign of
+interstitial edema.  No pneumothorax.","No pneumothorax or pulmonary edema.
+
+Extubated.
+
+Increasing basilar atelectasis.","*RADIOLOGY REPORT*
+
+Clinical Data: Aortic valve replacement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Yesterday
+
+Findings: Endotracheal and NG tubes removed.  Vatuva and right
+chest tube stable.  Mediastinal tube stable.  Increasing
+hypoaeration and bibasilar atelectasis.  Cardiomegaly.  No sign of
+interstitial edema.  No pneumothorax.
+
+IMPRESSION:
+No pneumothorax or pulmonary edema.
+
+Extubated.
+
+Increasing basilar atelectasis.",real,False,True,Atelectasis,Worsening/secretion-associated,93,nasal cannula 1–6 L/min,20,moderate,123,36.3,anxious,ward
+GRDN00BJ2R8QRO0L,17,20130404,023616.906989,072Y,F,AP,DG CHEST 1V PORT,1,1,"Status post cardiac surgery.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Portable chest 04/30/2014.","The Swan-Ganz catheter has been removed.  The right IJ
+sheath remains.  The right-sided chest tube in mediastinal drains
+have been removed.  There is no pneumothorax.  The lung volumes are
+low.  Bibasilar atelectasis is evident.  Small effusions are
+suspected, particularly on the left.","1.  Interval removal of Swan-Ganz catheter, right-sided chest tube,
+and mediastinal drain.
+2.  No pneumothorax.
+3.  Low lung volumes with persistent bibasilar atelectasis and
+probable left pleural effusion.","*RADIOLOGY REPORT*
+
+Clinical Data: Status post cardiac surgery.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Portable chest 04/30/2014.
+
+Findings: The Swan-Ganz catheter has been removed.  The right IJ
+sheath remains.  The right-sided chest tube in mediastinal drains
+have been removed.  There is no pneumothorax.  The lung volumes are
+low.  Bibasilar atelectasis is evident.  Small effusions are
+suspected, particularly on the left.
+
+IMPRESSION:
+
+1.  Interval removal of Swan-Ganz catheter, right-sided chest tube,
+and mediastinal drain.
+2.  No pneumothorax.
+3.  Low lung volumes with persistent bibasilar atelectasis and
+probable left pleural effusion.",real,False,True,Atelectasis,Mild postoperative/dependent,93,nasal cannula 1–2 L/min,20,normal,170,36.7,alert,inpatient ward
+GRDN00BJ2R8QRO0L,18,20130405,023851.156989,072Y,F,AP,DG CHEST 1V PORT,1,1,"Postop aortic valve replacement.
+
+PORTABLE CHEST - 1 VIEW [DATE]/1027 0380 hours:
+
+Comparison: Portable chest x-rays yesterday and dating back to
+09/03/2013.","Sternotomy for aortic valve replacement.  Cardiac
+silhouette enlarged but stable.  Mild pulmonary venous hypertension
+without overt edema.  Improved aeration in the lung bases, with
+mild atelectasis persisting, right greater than left.  No new
+pulmonary parenchymal abnormalities.  Right jugular introducer
+sheath tip remains in the SVC.","Improved aeration in the lung bases with mild atelectasis
+persisting, right greater than left.  Stable cardiomegaly without
+pulmonary edema.  No new abnormalities.","*RADIOLOGY REPORT*
+
+Clinical Data: Postop aortic valve replacement.
+
+PORTABLE CHEST - 1 VIEW [DATE]/1027 0380 hours:
+
+Comparison: Portable chest x-rays yesterday and dating back to
+09/03/2013.
+
+Findings: Sternotomy for aortic valve replacement.  Cardiac
+silhouette enlarged but stable.  Mild pulmonary venous hypertension
+without overt edema.  Improved aeration in the lung bases, with
+mild atelectasis persisting, right greater than left.  No new
+pulmonary parenchymal abnormalities.  Right jugular introducer
+sheath tip remains in the SVC.
+
+IMPRESSION:
+Improved aeration in the lung bases with mild atelectasis
+persisting, right greater than left.  Stable cardiomegaly without
+pulmonary edema.  No new abnormalities.",real,False,True,Atelectasis,Mild postoperative/dependent,98,nasal cannula 1–2 L/min,15,normal,170,37.4,alert,postoperative unit
+GRDN00BJ2R8QRO0L,19,20130406,030119.735989,072Y,F,,DG CHEST 2V,2,2,"Postop aortic valve replacement.
+
+CHEST - 2 VIEW
+
+Comparison: Portable chest x-ray yesterday and dating back to
+04/08/2030","Sternotomy for aortic valve replacement.  Cardiac
+silhouette enlarged but stable.  Thoracic aorta tortuous
+atherosclerotic, unchanged.  Hilar and mediastinal contours
+otherwise stable.  Slight increase in the right lower lobe
+atelectasis since yesterday.  Improved aeration in the left lower
+lobe.  No new pulmonary parenchymal abnormalities.  Pulmonary
+vascularity normal.  Very small bilateral pleural effusions.
+Degenerative changes involving the thoracic spine.","Slight worsening of right lower lobe atelectasis since yesterday,
+though aeration in the left lower lobe has improved.  Very small
+bilateral pleural effusions.  No new abnormalities.","*RADIOLOGY REPORT*
+
+Clinical Data: Postop aortic valve replacement.
+
+CHEST - 2 VIEW
+
+Comparison: Portable chest x-ray yesterday and dating back to
+04/08/2030
+
+Findings: Sternotomy for aortic valve replacement.  Cardiac
+silhouette enlarged but stable.  Thoracic aorta tortuous
+atherosclerotic, unchanged.  Hilar and mediastinal contours
+otherwise stable.  Slight increase in the right lower lobe
+atelectasis since yesterday.  Improved aeration in the left lower
+lobe.  No new pulmonary parenchymal abnormalities.  Pulmonary
+vascularity normal.  Very small bilateral pleural effusions.
+Degenerative changes involving the thoracic spine.
+
+IMPRESSION:
+Slight worsening of right lower lobe atelectasis since yesterday,
+though aeration in the left lower lobe has improved.  Very small
+bilateral pleural effusions.  No new abnormalities.",real,False,True,Atelectasis,Worsening/secretion-associated,93,simple mask,27,moderate,178,38.1,alert,postoperative unit
+GRDN00BJ2R8QRO0L,20,20130501,101808.844989,072Y,F,,DG CHEST 2V,2,2,"Aortic valve replacement.  Follow-up to surgery.
+
+CHEST - 2 VIEW
+
+Comparison: Two-view chest 08/01/2013.","The heart size is normal.  Although the lung volumes are
+still low, bibasilar atelectasis has significantly improved.
+Minimal residual pleural fluid persists, though significantly
+reduced.  A prosthetic aortic valve is now in place.  The patient
+is status post cholecystectomy.","1.  Improving aeration at the lung bases with mild atelectasis and
+minimal fluid bilaterally.
+2.  Persistent low lung volumes.
+3.  Status post aortic valve replacement.","*RADIOLOGY REPORT*
+
+Clinical Data: Aortic valve replacement.  Follow-up to surgery.
+
+CHEST - 2 VIEW
+
+Comparison: Two-view chest 08/01/2013.
+
+Findings: The heart size is normal.  Although the lung volumes are
+still low, bibasilar atelectasis has significantly improved.
+Minimal residual pleural fluid persists, though significantly
+reduced.  A prosthetic aortic valve is now in place.  The patient
+is status post cholecystectomy.
+
+IMPRESSION:
+
+1.  Improving aeration at the lung bases with mild atelectasis and
+minimal fluid bilaterally.
+2.  Persistent low lung volumes.
+3.  Status post aortic valve replacement.",real,False,True,Atelectasis,Mild postoperative/dependent,92,nasal cannula 1–2 L/min,17,mild,136,37.2,alert,postoperative unit
+GRDN00BJ2R8QRO0L,21,20140927,104017.735989,073Y,F,,DG CHEST 2V,2,2,"Cough for 2 weeks.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  12/22/2012.","Aortic arch atherosclerosis. The cardiopericardial silhouette is
+within normal limits for projection. No airspace disease. No
+effusion. Cholecystectomy clips are present in the right upper
+quadrant. Median sternotomy wires are present. Aortic arch
+atherosclerosis. Tiny calcified granuloma is present in the right
+upper lobe. Subsegmental atelectasis or scarring is present at the
+medial right lung base. Aortic valve replacement.","1. No active cardiopulmonary disease.
+2. Aortic valve replacement.","CLINICAL DATA:  Cough for 2 weeks.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  12/22/2012.
+
+FINDINGS:
+Aortic arch atherosclerosis. The cardiopericardial silhouette is
+within normal limits for projection. No airspace disease. No
+effusion. Cholecystectomy clips are present in the right upper
+quadrant. Median sternotomy wires are present. Aortic arch
+atherosclerosis. Tiny calcified granuloma is present in the right
+upper lobe. Subsegmental atelectasis or scarring is present at the
+medial right lung base. Aortic valve replacement.
+
+IMPRESSION:
+1. No active cardiopulmonary disease.
+2. Aortic valve replacement.",real,False,True,Normal,,99,room air,16,normal,125,37.1,alert,ward
+GRDN00BJ2R8QRO0L,22,20150620,140018.453989,074Y,F,,DG CHEST 2V,2,2,"Asthma and shortness of breath. Midsternal burning
+sensation, dizziness, nausea, cough, and congestion for 1 day.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  10/28/2015","Sequelae of prior aortic valve replacement are again identified.
+Cardiac silhouette is within normal limits for size. Thoracic aortic
+calcification is again seen. The lungs are normally inflated without
+evidence of airspace consolidation, edema, pleural effusion, or
+pneumothorax. Tiny calcified granuloma in the right upper lobe is
+unchanged. No acute osseous abnormality is identified. Thoracolumbar
+spondylosis and right upper quadrant abdominal surgical clips are
+noted.",No active cardiopulmonary disease.,"CLINICAL DATA:  Asthma and shortness of breath. Midsternal burning
+sensation, dizziness, nausea, cough, and congestion for 1 day.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  10/28/2015
+
+FINDINGS:
+Sequelae of prior aortic valve replacement are again identified.
+Cardiac silhouette is within normal limits for size. Thoracic aortic
+calcification is again seen. The lungs are normally inflated without
+evidence of airspace consolidation, edema, pleural effusion, or
+pneumothorax. Tiny calcified granuloma in the right upper lobe is
+unchanged. No acute osseous abnormality is identified. Thoracolumbar
+spondylosis and right upper quadrant abdominal surgical clips are
+noted.
+
+IMPRESSION:
+No active cardiopulmonary disease.",real,False,True,Normal,,99,room air,19,normal,112,36.5,alert,ED
+GRDN00BJ2R8QRO0L,23,20160329,072210.016989,074Y,F,PA; LATERAL,DG CHEST 2V,2,2,"Bronchitis.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  None.","Mediastinum and hilar structures are normal. Lungs are clear of
+acute infiltrates. Prior aortic valve replacement. Cardiomegaly, no
+pulmonary venous congestion. No pleural effusion or pneumothorax. No
+acute bony abnormality. Surgical clips right upper quadrant .","1. Prior aortic valve replacement. Cardiomegaly. No pulmonary venous
+congestion.
+2. No acute pulmonary infiltrate.","CLINICAL DATA:  Bronchitis.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  None.
+
+FINDINGS:
+Mediastinum and hilar structures are normal. Lungs are clear of
+acute infiltrates. Prior aortic valve replacement. Cardiomegaly, no
+pulmonary venous congestion. No pleural effusion or pneumothorax. No
+acute bony abnormality. Surgical clips right upper quadrant .
+
+IMPRESSION:
+1. Prior aortic valve replacement. Cardiomegaly. No pulmonary venous
+congestion.
+2. No acute pulmonary infiltrate.",real,False,True,Cardiomegaly,Chronic stable enlargement,100,baseline low-flow oxygen,11,mild,119,36.9,alert,ward
+GRDN00BJ2R8QRO0L,24,20170107,084821.625989,075Y,F,PA; LATERAL,DG CHEST 2V,2,2,"Cough for 1 week.  History of asthma.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  11/25/2016","Cardiac silhouette is normal in size. Changes from cardiac surgery
+and valve replacement are stable. No mediastinal or hilar masses or
+evidence of adenopathy.
+
+Lungs are clear.  No pleural effusion or pneumothorax.
+
+Bony thorax is intact.",No acute cardiopulmonary disease.,"CLINICAL DATA:  Cough for 1 week.  History of asthma.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  11/25/2016
+
+FINDINGS:
+Cardiac silhouette is normal in size. Changes from cardiac surgery
+and valve replacement are stable. No mediastinal or hilar masses or
+evidence of adenopathy.
+
+Lungs are clear.  No pleural effusion or pneumothorax.
+
+Bony thorax is intact.
+
+IMPRESSION:
+No acute cardiopulmonary disease.",real,False,True,Normal,,100,room air,18,normal,122,36.7,alert,ED
+GRDN00BJ2R8QRO0L,25,20190410,100912.735989,078Y,F,,DG CHEST 2V,2,2,"Pt from endo, was getting procedure and EKG showed
+new onset afib. Patient mostly asymptomatic with occasional
+palpitations. HR ranging from 115-135. denies any complaints. Hx
+asthma, diabetic, htn, non-smoker.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  06/09/2019","Status post median sternotomy and valve replacement. The heart is
+normal in size. Lungs are free of focal consolidations and pleural
+effusions. No pulmonary edema. Degenerative changes are seen in
+thoracic spine. Chronic changes in both shoulders. Clips are present
+in the RIGHT UPPER QUADRANT the abdomen.",No evidence for acute cardiopulmonary abnormality.,"CLINICAL DATA:  Pt from endo, was getting procedure and EKG showed
+new onset afib. Patient mostly asymptomatic with occasional
+palpitations. HR ranging from 115-135. denies any complaints. Hx
+asthma, diabetic, htn, non-smoker.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  06/09/2019
+
+FINDINGS:
+Status post median sternotomy and valve replacement. The heart is
+normal in size. Lungs are free of focal consolidations and pleural
+effusions. No pulmonary edema. Degenerative changes are seen in
+thoracic spine. Chronic changes in both shoulders. Clips are present
+in the RIGHT UPPER QUADRANT the abdomen.
+
+IMPRESSION:
+No evidence for acute cardiopulmonary abnormality.",real,False,True,Normal,,98,room air,20,normal,111,36.9,alert,outpatient
+GRDN00BJ2R8QRO0L,26,20200726,125133.547989,079Y,F,,DG CHEST 2V,2,2,"Cough
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  12/26/2020","Cardiomegaly status post median sternotomy with aortic valve
+prosthesis. Both lungs are clear. Disc degenerative disease of the
+thoracic spine.",Cardiomegaly without acute abnormality of the lungs.,"CLINICAL DATA:  Cough
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  12/26/2020
+
+FINDINGS:
+Cardiomegaly status post median sternotomy with aortic valve
+prosthesis. Both lungs are clear. Disc degenerative disease of the
+thoracic spine.
+
+IMPRESSION:
+Cardiomegaly without acute abnormality of the lungs.",real,False,True,Cardiomegaly,Chronic stable enlargement,99,baseline low-flow oxygen,11,normal,155,36.9,alert,ED
+GRDN00BJ2R8QRO0L,27,20210414,133037.735989,080Y,F,,DG CHEST 2V,2,2,"MVA
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  09/17/2021","Prior valve replacement. Cardiomegaly. Lungs clear. No effusions or
+pneumothorax. No acute bony abnormality.",No active cardiopulmonary disease.,"CLINICAL DATA:  MVA
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  09/17/2021
+
+FINDINGS:
+Prior valve replacement. Cardiomegaly. Lungs clear. No effusions or
+pneumothorax. No acute bony abnormality.
+
+IMPRESSION:
+No active cardiopulmonary disease.",real,False,True,Cardiomegaly,Chronic stable enlargement,95,room air,11,normal,168,36.8,alert,ED
+GRDN00BJ2R8QRO0L,28,20220328,135013.735989,080Y,F,,DG CHEST 2V,2,2,"Chest pain
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  05/13/2022","Post sternotomy changes and valve prosthesis. Mild cardiomegaly with
+aortic atherosclerosis. Mitral calcifications. No focal opacity,
+pleural effusion or pneumothorax.",No active cardiopulmonary disease.  Cardiomegaly,"CLINICAL DATA:  Chest pain
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  05/13/2022
+
+FINDINGS:
+Post sternotomy changes and valve prosthesis. Mild cardiomegaly with
+aortic atherosclerosis. Mitral calcifications. No focal opacity,
+pleural effusion or pneumothorax.
+
+IMPRESSION:
+No active cardiopulmonary disease.  Cardiomegaly",real,False,True,Cardiomegaly,Chronic stable enlargement,95,room air,12,normal,145,36.1,alert,ED
+GRDN00BJ2R8QRO0L,29,20221122,102126.735989,081Y,F,,DG CHEST 1V,1,1,"Shortness of breath with chest pain and dizziness
+today. History of diabetes.
+
+EXAM:
+CHEST  1 VIEW
+
+COMPARISON:  Radiographs 01/27/2023 and 09/12/2022.  CT 03/12/2020.","6434 hours. Stable cardiomegaly and aortic atherosclerosis post
+median sternotomy and aortic valve replacement. The lungs are clear.
+There is no pleural effusion or pneumothorax. No acute osseous
+findings are evident.","Stable postoperative chest. No evidence of acute cardiopulmonary
+process.","CLINICAL DATA:  Shortness of breath with chest pain and dizziness
+today. History of diabetes.
+
+EXAM:
+CHEST  1 VIEW
+
+COMPARISON:  Radiographs 01/27/2023 and 09/12/2022.  CT 03/12/2020.
+
+FINDINGS:
+6434 hours. Stable cardiomegaly and aortic atherosclerosis post
+median sternotomy and aortic valve replacement. The lungs are clear.
+There is no pleural effusion or pneumothorax. No acute osseous
+findings are evident.
+
+IMPRESSION:
+Stable postoperative chest. No evidence of acute cardiopulmonary
+process.",real,False,True,Cardiomegaly,Chronic stable enlargement,99,room air,19,normal,148,36.5,alert,outpatient
+GRDN00BKCEOKC7S1,1,20240112,184734.415117,060Y,M,AP,XR CHEST 1 VIEW,1,1,"shortness of breath
+Comparison: 01/11/2024",1 view of the chest. The cardiomediastinal contours are within normal limits. Worsening consolidation right mid to lower lung. Left lung stable..,Worsening consolidation right mid to lower lung.,"FINAL REPORT:
+Indication: shortness of breath
+Comparison: 01/11/2024
+Findings:
+1 view of the chest. The cardiomediastinal contours are within normal limits. Worsening consolidation right mid to lower lung. Left lung stable..
+IMPRESSION:
+Impression:
+Worsening consolidation right mid to lower lung.",real,False,True,Consolidation,Severe/high-risk infection,89,room air,29,moderate,101,37.4,alert,stepdown
+GRDN00BKCEOKC7S1,2,20240525,111732.415117,060Y,M,AP,XR CHEST 2 VIEWS,1,2,"Pleural effusion, not elsewhere classified
+Comparison: Chest radiograph dated 04/01/2024",Faint perihilar groundglass opacities may reflect edema versus an infectious/inflammatory process. There are no definite pleural effusions. There is elevation of the left hemidiaphragm. There is a small right pneumothorax. The heart is normal in size.,"1.  Small right pneumothorax.
+2.  No definite pleural effusion.
+3.  Faint groundglass opacities may reflect edema versus an infectious/inflammatory process.
+4.  Additional findings as described above.","FINAL REPORT:
+Chest radiograph 2 views
+Indication: Pleural effusion, not elsewhere classified
+Comparison: Chest radiograph dated 04/01/2024
+FINDINGS:
+Faint perihilar groundglass opacities may reflect edema versus an infectious/inflammatory process. There are no definite pleural effusions. There is elevation of the left hemidiaphragm. There is a small right pneumothorax. The heart is normal in size.
+IMPRESSION:
+:
+1.  Small right pneumothorax.
+2.  No definite pleural effusion.
+3.  Faint groundglass opacities may reflect edema versus an infectious/inflammatory process.
+4.  Additional findings as described above.",real,False,True,Pneumothorax,Small stable,94,room air,14,mild,134,36.2,alert,ED
+GRDN00BKCEOKC7S1,3,20240525,134809.415117,060Y,M,AP,XR CHEST 2 VIEWS,1,2,"Pleural effusion, not elsewhere classified
+Comparison: 05/25/2024",Inspiration and expiration views of the chest. The cardiomediastinal contours are within normal limits. Small right apical pneumothorax stable in size and appearance. Left lung clear.,Stable small right apical pneumothorax.,"FINAL REPORT:
+Indication: Pleural effusion, not elsewhere classified
+Comparison: 05/25/2024
+Findings:
+Inspiration and expiration views of the chest. The cardiomediastinal contours are within normal limits. Small right apical pneumothorax stable in size and appearance. Left lung clear.
+IMPRESSION:
+Impression:
+Stable small right apical pneumothorax.",real,False,True,Pneumothorax,Small stable,96,room air,13,mild,140,37.6,alert,ward
+GRDN00BKCEOKC7S1,4,20241021,093751.415117,061Y,M,PA; LL,XR CHEST 2 VIEWS,1,2,"Pleural effusion, not elsewhere classified
+Comparison: 05/25/2024","2 views of the chest.
+There is a tiny less than 5% right apical pneumothorax slightly decreased compared to prior examination. Lungs otherwise clear. Heart size within normal limits. Bony structures unremarkable. There is some muscular calcification.",Tiny right apical less than 5% pneumothorax slightly improved compared to prior examination.,"Addendum:
+(#SRS.PQNEM.Clo
+\F\[HOSPITAL]\F\
+Communicated to: Dareje Bedair, NP via [HOSPITAL]
+On behalf of: Dr. Agathe Moten
+By: Kiyonobu Chiasson
+At: [DATE]
+On: 10/21/2024 EST
+\F\/[HOSPITAL]\F\#)
+FINAL REPORT:
+Indication: Pleural effusion, not elsewhere classified
+Comparison: 05/25/2024
+Findings:
+2 views of the chest.
+There is a tiny less than 5% right apical pneumothorax slightly decreased compared to prior examination. Lungs otherwise clear. Heart size within normal limits. Bony structures unremarkable. There is some muscular calcification.
+IMPRESSION:
+:
+Tiny right apical less than 5% pneumothorax slightly improved compared to prior examination.",real,False,True,Pneumothorax,Small stable,100,room air,13,mild,138,36.7,alert,outpatient
+GRDN00BKCEOKC7S1,5,20250207,230941.821117,061Y,M,AP; LL,Chest,3,3,"PRE-OP MAJOR SURGERY
+Comparison: 01/28/2025",The cardiac silhouette is normal. Moderate left pleural effusion with adjacent atelectasis. No pneumothorax. No acute osseous abnormalities.,Moderate left pleural effusion with adjacent atelectasis.,"Pre-op major surgery
+FINAL REPORT:
+Chest radiograph 2 views
+Indication: PRE-OP MAJOR SURGERY
+Comparison: 01/28/2025
+Findings: The cardiac silhouette is normal. Moderate left pleural effusion with adjacent atelectasis. No pneumothorax. No acute osseous abnormalities.
+IMPRESSION:
+Impression: Moderate left pleural effusion with adjacent atelectasis.",real,False,True,Effusion,New unexplained,97,low-flow nasal cannula,19,mild,103,36.3,alert,ED
+GRDN00BKCEOKC7S1,6,20250208,170013.415117,061Y,M,AP,XR CHEST 1 VIEW,1,1,"post op pacemaker insertion
+Comparison: 02/08/2025",Left subclavian vein pacemaker. The cardiac silhouette is obscured given portable technique. Hazy bilateral airspace infiltrates. Skinfold artifact projects over the right lung. Cervical fusion hardware noted. No pneumothorax. Small to moderate left pleural effusion. No acute osseous abnormalities.,"Satisfactory positioning of left pacemaker. No pneumothorax.
+Diffuse bilateral airspace infiltrates which could represent pneumonia and/or edema.
+Small to moderate left pleural effusion.","FINAL REPORT:
+Chest portable one view
+Indication: post op pacemaker insertion
+Comparison: 02/08/2025
+Findings: Left subclavian vein pacemaker. The cardiac silhouette is obscured given portable technique. Hazy bilateral airspace infiltrates. Skinfold artifact projects over the right lung. Cervical fusion hardware noted. No pneumothorax. Small to moderate left pleural effusion. No acute osseous abnormalities.
+IMPRESSION:
+Impression: Satisfactory positioning of left pacemaker. No pneumothorax.
+Diffuse bilateral airspace infiltrates which could represent pneumonia and/or edema.
+Small to moderate left pleural effusion.
+Portable?
+Yes",real,False,True,Consolidation,Severe/high-risk infection,92,room air,24,moderate,153,36.5,mildly confused,stepdown
+GRDN00BKCEOKC7S1,7,20250210,222956.415117,061Y,M,AP,XR CHEST 1 VIEW,1,1,,"SUPPORT DEVICES: Left-sided cardiac reduction device. Bilateral pigtail pleural drainage catheters/thoracostomy tubes. EKG leads.
+HEART /PULMONARY VASCULATURE: Cardiomediastinal silhouette is within normal limits.
+LUNGS / PLEURA: Hazy opacification of the right lung apex. Airspace disease/atelectasis at the left lower lung zone/left retrocardiac region, improved relative the prior. Mild interstitial edema. Significant improved aeration of the right lung. No appreciable residual/recurrent pneumothorax.
+OSSEOUS: Stable.
+ADDITIONAL","*  Airspace disease/atelectasis at the left lung base, improved relative the prior.
+*  Bilateral thoracostomy tubes in place.
+*  Significant improved aeration of the right lung.","FINAL REPORT:
+XR CHEST 1 VIEW
+INDICATION / CLINICAL INFORMATION: OTHER
+chest tube
+COMPARISON: 02/09/2025
+FINDINGS:
+SUPPORT DEVICES: Left-sided cardiac reduction device. Bilateral pigtail pleural drainage catheters/thoracostomy tubes. EKG leads.
+HEART /PULMONARY VASCULATURE: Cardiomediastinal silhouette is within normal limits.
+LUNGS / PLEURA: Hazy opacification of the right lung apex. Airspace disease/atelectasis at the left lower lung zone/left retrocardiac region, improved relative the prior. Mild interstitial edema. Significant improved aeration of the right lung. No appreciable residual/recurrent pneumothorax.
+OSSEOUS: Stable.
+ADDITIONAL FINDINGS: No significant additional findings.
+IMPRESSION:
+*  Airspace disease/atelectasis at the left lung base, improved relative the prior.
+*  Bilateral thoracostomy tubes in place.
+*  Significant improved aeration of the right lung.",real,False,True,Effusion,Pleural infection/empyema,83,HFNC,37,severe,97,39.4,confused,stepdown
+GRDN00BKCEOKC7S1,8,20250212,111810.415117,061Y,M,AP,XR CHEST 1 VIEW,1,1,"Pleural effusion
+COMPARISON: Radiograph 02/10/2025","Support Devices: Bilateral pigtail drainage catheters. Left chest cardiac device.
+Lungs/Pleura: Trace right apical pneumothorax. No pleural effusion. Patchy right basilar airspace opacity, which may represent atelectasis, pneumonia, and/or aspiration.
+Heart/Mediastinum: Unremarkable.
+Bones/Soft tissues: No acute osseous abnormality. Partially imaged lower cervical ACDF.","1.  Trace right apical pneumothorax. Bilateral pigtail drainage catheters.
+2.  Patchy right basilar airspace opacity, which may represent atelectasis, pneumonia, and/or aspiration.","Addendum:
+(#SRS.QWC83.Clo
+\F\[HOSPITAL]\F\
+Communicated to: Willy Tiger, NP via [HOSPITAL]
+On behalf of: Dr. Sugeng Agus Agung Aji
+By: Widi Arso Kuncahyo
+At: [DATE]
+On: 02/12/2025 EST
+\F\/[HOSPITAL]\F\#)
+FINAL REPORT:
+EXAM: XR CHEST 1 VIEW
+CLINICAL INDICATION: Pleural effusion
+COMPARISON: Radiograph 02/10/2025
+FINDINGS:
+Support Devices: Bilateral pigtail drainage catheters. Left chest cardiac device.
+Lungs/Pleura: Trace right apical pneumothorax. No pleural effusion. Patchy right basilar airspace opacity, which may represent atelectasis, pneumonia, and/or aspiration.
+Heart/Mediastinum: Unremarkable.
+Bones/Soft tissues: No acute osseous abnormality. Partially imaged lower cervical ACDF.
+IMPRESSION:
+:
+1.  Trace right apical pneumothorax. Bilateral pigtail drainage catheters.
+2.  Patchy right basilar airspace opacity, which may represent atelectasis, pneumonia, and/or aspiration.",real,False,True,Pneumothorax,Small stable,95,room air,14,normal,174,36.1,alert,outpatient
+GRDN00BKCEOKC7S1,9,20250324,132633.415117,061Y,M,LL; AP,XR CHEST 2 VIEWS,1,2,"Pleural effusion, not elsewhere classified
+TECHNIQUE: PA and lateral digital radiographs were obtained of the chest.
+COMPARISON: 02/24/2025.",Left chest cardiac device and leads are in stable position. Small left pleural effusion. No focal consolidation or pneumothorax. Cardiomediastinal silhouette stable. Central vascular congestion without overt pulmonary edema pattern.,Small left pleural effusion.,"FINAL REPORT:
+EXAM: Two views of the chest
+HISTORY: Pleural effusion, not elsewhere classified
+TECHNIQUE: PA and lateral digital radiographs were obtained of the chest.
+COMPARISON: 02/24/2025.
+FINDINGS: Left chest cardiac device and leads are in stable position. Small left pleural effusion. No focal consolidation or pneumothorax. Cardiomediastinal silhouette stable. Central vascular congestion without overt pulmonary edema pattern.
+IMPRESSION:
+Small left pleural effusion.",real,False,True,Effusion,Small stable/chronic,98,baseline oxygen,16,normal,110,36.1,alert,ward
+GRDN00BKCEOKC7S1,10,20250714,041956.415117,062Y,M,AP,XR CHEST 1 VIEW,1,1,"Respiratory failure
+COMPARISON: 07/13/2025
+Bilateral effusions are not significantly changed. There is associated atelectasis. No pneumothorax is seen. Invasive devices appear stable.",,No significant change in appearance of the chest.,"FINAL REPORT:
+Chest AP portable:
+CLINICAL INDICATION: Respiratory failure
+COMPARISON: 07/13/2025
+Bilateral effusions are not significantly changed. There is associated atelectasis. No pneumothorax is seen. Invasive devices appear stable.
+IMPRESSION:
+No significant change in appearance of the chest.
+Portable?
+Yes",real,False,True,Effusion,Small stable/chronic,99,room air,21,mild,134,37.6,alert,ward
+GRDN00BKCEOKC7S1,11,20250716,182939.415117,062Y,M,AP,XR CHEST 1 VIEW,1,1,"dyspnea
+COMPARISON: 07/14/2025","Support Devices: None
+Lungs/Pleura: Worsening airspace consolidations in the bilateral mid and lower lung zones may reflect pneumonia, atelectasis, or aspiration. No pneumothorax. Small bilateral pleural effusions.
+Heart/Mediastinum: Normal.
+Bones/Soft tissues: No acute abnormality.","Worsening airspace consolidations in the bilateral mid and lower lung zones may reflect pneumonia, atelectasis, or aspiration.
+Small bilateral pleural effusions.","FINAL REPORT:
+EXAM: XR CHEST 1 VIEW
+CLINICAL INDICATION: dyspnea
+COMPARISON: 07/14/2025
+FINDINGS:
+Support Devices: None
+Lungs/Pleura: Worsening airspace consolidations in the bilateral mid and lower lung zones may reflect pneumonia, atelectasis, or aspiration. No pneumothorax. Small bilateral pleural effusions.
+Heart/Mediastinum: Normal.
+Bones/Soft tissues: No acute abnormality.
+IMPRESSION:
+Worsening airspace consolidations in the bilateral mid and lower lung zones may reflect pneumonia, atelectasis, or aspiration.
+Small bilateral pleural effusions.",real,False,True,Consolidation,Severe hypoxemic/septic process,72,nonrebreather,38,exhaustion/failure,62,36.3,unresponsive,stepdown
+GRDN00BKCEOKC7S1,12,20250723,164832.415117,062Y,M,AP,XR CHEST 1 VIEW,1,1,"increased oxygen requirements- last Xray poor exposure
+TECHNIQUE: Radiograph of the chest, 1 view.
+COMPARISON: 07/20/2025","Support Devices: Cardiac conduction device is present.
+Cardiomediastinal contours: Cardiomegaly.
+Lungs: Worsening pulmonary vascular congestion with bilateral pleural effusions and associated airspace disease, right greater than left. No pneumothorax.
+Bones: No acute osseous abnormalities.","Worsening pulmonary edema with bilateral pleural effusions and associated airspace disease, right greater than left.","FINAL REPORT:
+EXAM: XR CHEST 1 VIEW
+INDICATION: increased oxygen requirements- last Xray poor exposure
+TECHNIQUE: Radiograph of the chest, 1 view.
+COMPARISON: 07/20/2025
+FINDINGS:
+Support Devices: Cardiac conduction device is present.
+Cardiomediastinal contours: Cardiomegaly.
+Lungs: Worsening pulmonary vascular congestion with bilateral pleural effusions and associated airspace disease, right greater than left. No pneumothorax.
+Bones: No acute osseous abnormalities.
+IMPRESSION:
+Worsening pulmonary edema with bilateral pleural effusions and associated airspace disease, right greater than left.
+Portable?
+Yes",real,False,True,Edema,Severe hypertensive pulmonary edema,72,NIV,33,severe,194,36.7,confused,ED
+GRDN00BKCEOKC7S1,13,20250725,152138.415117,062Y,M,,"CHEST,SINGLE VIEW;FRONTAL",1,2,"Recurrent bilateral pleural effusion. Patient not surgical candidate per cardiothoracic surgery.
+Procedure:
+1.  Bilateral chest Pleurx catheter placement.
+The patient was informed and consented for the procedure then placed in the supine position on the fluoroscopic table. The patient was prepped and draped in a sterile technique. Whole-body sterile drape, sterile gown, sterile gloves, surgical and facemask were utilized for the procedure.
+1% lidocaine without and with epinephrine was utilized as a local anesthetic.
+Versed and fentanyl was utilized for conscious sedation while monitoring the vital signs for 30 minutes. Direct face-to-face monitoring was provided during sedation. A trained intraprocedural observed and was present at all times.
+The patient was administered 2 g of Ancef prior to the procedure for intraprocedural prophylaxis. No additional antibiotics were given during or after the procedure.
+RIGHT:
+Under ultrasound guidance access into the right thorax was performed along the right lateral thoracic wall. Ultrasound image of the access needle in the pleural space and fluid was sent to PACS for documentation. This was followed by placement of a guidewire through the access needle and into the thorax.
+A 10 cm subcutaneous tract was then made extending medially from the guidewire through which a Pleurx drainage catheter was pulled. A peel-away sheath was then introduced over the guidewire and into the thorax under fluoroscopic guidance.
+The guidewire stylet were removed and the Pleurx catheter was placed through the peel-away sheath and into the thorax. The peel-away sheath was then removed and the pleural exchange catheter was secured. A sterile dressing was applied.
+1.3 L of clear yellow fluid was drained.
+LEFT:
+Under ultrasound guidance access into the left thorax was performed along the left lateral thoracic wall. Ultrasound image of the access needle in the pleural space and fluid was sent to PACS for documentation. This was followed by placement of a guidewire through the access needle and into the thorax.
+A 10 cm subcutaneous tract was then made extending medially from the guidewire through which a Pleurx drainage catheter was pulled. A peel-away sheath was then introduced over the guidewire and into the thorax under fluoroscopic guidance.
+The guidewire stylet were removed and the Pleurx catheter was placed through the peel-away sheath and into the thorax. The peel-away sheath was then removed and the pleural exchange catheter was secured. A sterile dressing was applied.
+0.5 L of clear yellow fluid was drained.
+Fluoroscopic time: 1.8 minutes.
+Air kerma:",,"Successful bilateral chest Pleurx catheter placement. 1.3 L of clear yellow fluid was drained from the right Pleurx catheter, and 0.5 L of clear yellow fluid was drained from the left Pleurx catheter.
+PLAN: Drain as needed.","FINAL REPORT:
+Indication: Recurrent bilateral pleural effusion. Patient not surgical candidate per cardiothoracic surgery.
+Procedure:
+1.  Bilateral chest Pleurx catheter placement.
+The patient was informed and consented for the procedure then placed in the supine position on the fluoroscopic table. The patient was prepped and draped in a sterile technique. Whole-body sterile drape, sterile gown, sterile gloves, surgical and facemask were utilized for the procedure.
+1% lidocaine without and with epinephrine was utilized as a local anesthetic.
+Versed and fentanyl was utilized for conscious sedation while monitoring the vital signs for 30 minutes. Direct face-to-face monitoring was provided during sedation. A trained intraprocedural observed and was present at all times.
+The patient was administered 2 g of Ancef prior to the procedure for intraprocedural prophylaxis. No additional antibiotics were given during or after the procedure.
+RIGHT:
+Under ultrasound guidance access into the right thorax was performed along the right lateral thoracic wall. Ultrasound image of the access needle in the pleural space and fluid was sent to PACS for documentation. This was followed by placement of a guidewire through the access needle and into the thorax.
+A 10 cm subcutaneous tract was then made extending medially from the guidewire through which a Pleurx drainage catheter was pulled. A peel-away sheath was then introduced over the guidewire and into the thorax under fluoroscopic guidance.
+The guidewire stylet were removed and the Pleurx catheter was placed through the peel-away sheath and into the thorax. The peel-away sheath was then removed and the pleural exchange catheter was secured. A sterile dressing was applied.
+1.3 L of clear yellow fluid was drained.
+LEFT:
+Under ultrasound guidance access into the left thorax was performed along the left lateral thoracic wall. Ultrasound image of the access needle in the pleural space and fluid was sent to PACS for documentation. This was followed by placement of a guidewire through the access needle and into the thorax.
+A 10 cm subcutaneous tract was then made extending medially from the guidewire through which a Pleurx drainage catheter was pulled. A peel-away sheath was then introduced over the guidewire and into the thorax under fluoroscopic guidance.
+The guidewire stylet were removed and the Pleurx catheter was placed through the peel-away sheath and into the thorax. The peel-away sheath was then removed and the pleural exchange catheter was secured. A sterile dressing was applied.
+0.5 L of clear yellow fluid was drained.
+Fluoroscopic time: 1.8 minutes.
+Air kerma:
+IMPRESSION:
+Impression: Successful bilateral chest Pleurx catheter placement. 1.3 L of clear yellow fluid was drained from the right Pleurx catheter, and 0.5 L of clear yellow fluid was drained from the left Pleurx catheter.
+PLAN: Drain as needed.",real,False,True,Effusion,Large symptomatic,84,nasal cannula,31,moderate,118,36.8,alert,stepdown
+GRDN00BKCEOKC7S1,14,20250802,091328.415117,062Y,M,AP,XR CHEST 1 VIEW,1,1,"sob
+Comparison: 07/23/2025.","The cardiac silhouette is obscured by pulmonary findings.
+New complete opacification of left hemithorax, potentially due to large pleural effusion with atelectasis. Improved right pleural effusion, now small. There is increased interstitial thinning in the right lung, suggestive of pulmonary edema.
+There are bilateral Pleurx catheters in place.
+Left chest wall pacemaker. Cervical fusion hardware.
+No acute osseous abnormalities.","1.  New complete opacification of the left hemithorax, potentially due to large pleural effusion with atelectasis.
+2.  Improved right pleural effusion, now small. Probable pulm edema.
+3.  A Red - High message has been communicated to NIMMO, VICTORIA via the PowerConnect Actionable Findings application on 08/02/2025 [DATE], Message [REDACTED]","FINAL REPORT:
+Chest portable one view
+Indication: sob
+Comparison: 07/23/2025.
+Findings:
+The cardiac silhouette is obscured by pulmonary findings.
+New complete opacification of left hemithorax, potentially due to large pleural effusion with atelectasis. Improved right pleural effusion, now small. There is increased interstitial thinning in the right lung, suggestive of pulmonary edema.
+There are bilateral Pleurx catheters in place.
+Left chest wall pacemaker. Cervical fusion hardware.
+No acute osseous abnormalities.
+IMPRESSION:
+Impression:
+1.  New complete opacification of the left hemithorax, potentially due to large pleural effusion with atelectasis.
+2.  Improved right pleural effusion, now small. Probable pulm edema.
+3.  A Red - High message has been communicated to NIMMO, VICTORIA via the PowerConnect Actionable Findings application on 08/02/2025 [DATE], Message [REDACTED]",real,False,True,Effusion,Large symptomatic,90,nasal cannula,23,moderate,157,38.4,distressed,ward
+GRDN00BKCEOKC7S1,15,20250805,032017.415117,062Y,M,AP,XR CHEST 1 VIEW,1,1,"dyspnea, chest tightness; Pleural effusion, not elsewhere classified; Other specified abnormal findings of blood chemistry; Dyspnea, unspecified; Shortness of breath (Hx)
+COMPARISON:
+CR/SR - XR CHEST 1 VIEW - 08/02/25 [DATE] EDT","SUPPORT DEVICES:
+Left-sided cardiac pacemaker and bilateral thoracostomy tubes are stable.
+HEART/PULMONARY VASCULATURE:
+Stable heart size.
+LUNGS/PLEURAL SPACES:
+Improved aeration of the left lung. Diffuse interstitial and airspace opacities again seen throughout the lungs, worsened within the aerated right lung. Persistent moderate partially loculated left pleural effusion and moderate right pleural effusion. No pneumothorax","1. Improved aeration of the left lung. Persistent diffuse interstitial and airspace opacities, may reflect edema, worsened within the right lung.
+2. Persistent but improved moderate partially loculated left pleural effusion. Stable moderate right pleural effusion. No pneumothorax.","FINAL REPORT:
+EXAM:
+CR Chest, 1 view.
+CLINICAL HISTORY:
+dyspnea, chest tightness; Pleural effusion, not elsewhere classified; Other specified abnormal findings of blood chemistry; Dyspnea, unspecified; Shortness of breath (Hx)
+COMPARISON:
+CR/SR - XR CHEST 1 VIEW - 08/02/25 [DATE] EDT
+FINDINGS:
+SUPPORT DEVICES:
+Left-sided cardiac pacemaker and bilateral thoracostomy tubes are stable.
+HEART/PULMONARY VASCULATURE:
+Stable heart size.
+LUNGS/PLEURAL SPACES:
+Improved aeration of the left lung. Diffuse interstitial and airspace opacities again seen throughout the lungs, worsened within the aerated right lung. Persistent moderate partially loculated left pleural effusion and moderate right pleural effusion. No pneumothorax
+IMPRESSION:
+1. Improved aeration of the left lung. Persistent diffuse interstitial and airspace opacities, may reflect edema, worsened within the right lung.
+2. Persistent but improved moderate partially loculated left pleural effusion. Stable moderate right pleural effusion. No pneumothorax.
+Portable?
+Yes",real,False,True,Edema,Active normotensive congestion,89,nonrebreather,24,mild,125,36.6,alert,ED
+GRDN00BKCEOKC7S1,16,20250807,181033.415117,062Y,M,AP,XR CHEST 1 VIEW,1,1,"pleural effusion
+Comparison : Chest x-ray 08/05/2025. CT of the chest 07/12/2025.","Left-sided dual-lead pacer device, with no abandoned lead. There is mild enlargement the cardiac silhouette, unchanged.
+Increased interstitial markings in prominence of the perihilar vasculature, suggesting interstitial edema and pulmonary venous congestion.
+There is pronounced increased opacification of the left hemithorax, likely due to an enlarging moderate to large left-sided pleural effusion and adjacent airspace opacity either due to atelectasis or pneumonia. There is a Pleurx drainage catheter, which passes along the left lung base and paramediastinal left hemithorax with the tip projected over the left lung apex, unchanged. This may indicate impaired function of the Pleurx drainage catheter.
+There is also mild increase in size of right-sided pleural effusion with adjacent airspace opacity. Stable right Pleurx drainage catheter extending along the base of the right hemithorax, with the tip terminating in the medial right lung apex.
+Status post ACDF the cervical spine.
+The visible skeletal structures appear stable.","*  Enlarging moderate to large left-sided pleural effusion with adjacent airspace opacity either due to atelectasis or pneumonia.
+*
+*  Mild increase in size of right-sided pleural effusion with adjacent airspace opacity either due to atelectasis or pneumonia.
+*
+*  Stable bilateral Pleurx drainage catheters. The left Pleurx drainage catheter terminates along the left lung apex, which may indicate impaired function.
+*
+*  Stable cardiomegaly with interstitial edema and pulmonary venous congestion.","Pleural effusion
+Shortness of breath
+FINAL REPORT:
+Study date:08/07/2025 [DATE]
+Procedure:XR CHEST 1 VIEW
+History:  pleural effusion
+Comparison : Chest x-ray 08/05/2025. CT of the chest 07/12/2025.
+Findings: Left-sided dual-lead pacer device, with no abandoned lead. There is mild enlargement the cardiac silhouette, unchanged.
+Increased interstitial markings in prominence of the perihilar vasculature, suggesting interstitial edema and pulmonary venous congestion.
+There is pronounced increased opacification of the left hemithorax, likely due to an enlarging moderate to large left-sided pleural effusion and adjacent airspace opacity either due to atelectasis or pneumonia. There is a Pleurx drainage catheter, which passes along the left lung base and paramediastinal left hemithorax with the tip projected over the left lung apex, unchanged. This may indicate impaired function of the Pleurx drainage catheter.
+There is also mild increase in size of right-sided pleural effusion with adjacent airspace opacity. Stable right Pleurx drainage catheter extending along the base of the right hemithorax, with the tip terminating in the medial right lung apex.
+Status post ACDF the cervical spine.
+The visible skeletal structures appear stable.
+IMPRESSION:
+*  Enlarging moderate to large left-sided pleural effusion with adjacent airspace opacity either due to atelectasis or pneumonia.
+*
+*  Mild increase in size of right-sided pleural effusion with adjacent airspace opacity either due to atelectasis or pneumonia.
+*
+*  Stable bilateral Pleurx drainage catheters. The left Pleurx drainage catheter terminates along the left lung apex, which may indicate impaired function.
+*
+*  Stable cardiomegaly with interstitial edema and pulmonary venous congestion.",real,False,True,Effusion,Large symptomatic,84,nonrebreather,30,severe,151,36.7,distressed,stepdown
+GRDN00BKCEOKC7S1,17,20250809,145128.415117,062Y,M,AP,XR CHEST 1 VIEW,1,1,"Status post thoracentesis
+COMPARISON: 08/07/2025","Support Devices: Left chest cardiac pacemaker in place. Bilateral chest drainage
+catheters in place.
+Lungs/Pleura: Improved patchy airspace opacities. Trace left apical and right
+basilar pneumothoraces. Trace left pleural effusion.
+Heart/Mediastinum: Unchanged.
+Bones/Soft tissues: No acute osseous abnormality.","Trace left apical and right basilar pneumothoraces. Trace left pleural effusion.
+Improved patchy airspace opacities
+PM","------------- REPORT GRDN2E7D4E488A918372 -------------
+FINAL REPORT:
+XR CHEST 1 VIEW
+Status post thoracentesis
+EXAM: XR CHEST 1 VIEW
+CLINICAL INDICATION: Status post thoracentesis
+COMPARISON: 08/07/2025
+FINDINGS:
+Support Devices: Left chest cardiac pacemaker in place. Bilateral chest drainage
+catheters in place.
+Lungs/Pleura: Improved patchy airspace opacities. Trace left apical and right
+basilar pneumothoraces. Trace left pleural effusion.
+Heart/Mediastinum: Unchanged.
+Bones/Soft tissues: No acute osseous abnormality.
+IMPRESSION:
+:
+Trace left apical and right basilar pneumothoraces. Trace left pleural effusion.
+Improved patchy airspace opacities
+PM
+
+------------- REPORT GRDN38F462CECD3EE918 -------------
+ADDENDUM:
+Addendum:
+(#SRS.IWNMA.Clo
+\F\[HOSPITAL]\F\
+Communicated to: Dr. Wasan Mannan
+On behalf of: Dr. Dumersaint Rappeur
+By: Aboubar Isik
+At: [DATE]
+On: 08/09/2025 EST
+\F\/[HOSPITAL]\F\#)
+FINAL REPORT:
+XR CHEST 1 VIEW
+Status post thoracentesis
+EXAM: XR CHEST 1 VIEW
+CLINICAL INDICATION: Status post thoracentesis
+COMPARISON: 08/07/2025
+FINDINGS:
+Support Devices: Left chest cardiac pacemaker in place. Bilateral chest drainage
+catheters in place.
+Lungs/Pleura: Improved patchy airspace opacities. Trace left apical and right
+basilar pneumothoraces. Trace left pleural effusion.
+Heart/Mediastinum: Unchanged.
+Bones/Soft tissues: No acute osseous abnormality.
+IMPRESSION:
+:
+Trace left apical and right basilar pneumothoraces. Trace left pleural effusion.
+Improved patchy airspace opacities
+PM",real,False,True,Pneumothorax,Small stable,96,low-flow oxygen,15,normal,160,36.2,alert,ward
+GRDN00BKCEOKC7S1,18,20250809,202727.415117,062Y,M,AP,XR CHEST 1 VIEW,1,1,"possible pneumothoraces
+COMPARISON: Earlier same day","Support Devices: Unchanged
+Lungs/Pleura: Similar patchy airspace opacities. No definite visualized
+pneumothorax. Small bilateral pleural effusions.
+Heart/Mediastinum: Unchanged.
+Bones/Soft tissues: No acute osseous abnormality.","No definite visualized pneumothorax on this exam. Small bilateral pleural
+effusions. Similar patchy airspace opacities.
+PM","FINAL REPORT:
+XR CHEST 1 VIEW
+possible pneumothoraces
+EXAM: XR CHEST 1 VIEW
+CLINICAL INDICATION: possible pneumothoraces
+COMPARISON: Earlier same day
+FINDINGS:
+Support Devices: Unchanged
+Lungs/Pleura: Similar patchy airspace opacities. No definite visualized
+pneumothorax. Small bilateral pleural effusions.
+Heart/Mediastinum: Unchanged.
+Bones/Soft tissues: No acute osseous abnormality.
+IMPRESSION:
+No definite visualized pneumothorax on this exam. Small bilateral pleural
+effusions. Similar patchy airspace opacities.
+PM",real,False,True,Effusion,Small stable/chronic,98,baseline oxygen,17,normal,153,36.1,alert,outpatient
+GRDN00BKCEOKC7S1,19,20250921,123006.415117,062Y,M,LL; AP,XR CHEST 2 VIEWS,1,3,"Pleural effusion, not elsewhere classified",2 views of the chest compared to 09/16/2025. The cardiomediastinal contours are within normal limits. There are small bilateral pleural effusions with adjacent consolidation. Left-sided pacemaker is stable.,Stable chest,"F/u hx bilat effusions
+FINAL REPORT:
+Indication: Pleural effusion, not elsewhere classified
+Findings:
+2 views of the chest compared to 09/16/2025. The cardiomediastinal contours are within normal limits. There are small bilateral pleural effusions with adjacent consolidation. Left-sided pacemaker is stable.
+IMPRESSION:
+Impression: Stable chest",real,False,True,Effusion,Small stable/chronic,95,baseline oxygen,14,normal,111,36.4,alert,ward

@@ -1,0 +1,2092 @@
+PatientID,VisitNum,StudyDate,StudyTime,HistoryText,FindingsText,ImpressionText,ClinicalContext,generated_action_ids,generated_recommendation,generated_justification
+GRDN003M0HXJ2YHT,1,20080330,011543.934395,Sudden loss of vision.,,,"- SpO2: 99% on room air
+- Respiratory rate: 12/min
+- Work of breathing: normal
+- Systolic BP: 111 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: outpatient",ACT_ABSTAIN,No specific chest imaging follow-up is recommended based on the available information; clinical follow-up should be directed by the presenting neurologic complaint.,"No chest X-ray findings or impression are available, and the provided clinical context shows stable outpatient respiratory status without hypoxemia or distress."
+GRDN003M0HXJ2YHT,2,20080628,200041.934395,,,Unremarkable chest.,"- SpO2: 96% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 120 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No chest imaging follow-up is indicated based on this radiograph. Continue routine clinical observation/reassess if respiratory symptoms develop or worsen.,"Chest radiograph is unremarkable and the patient is physiologically stable with normal oxygenation, normal work of breathing, and no fever or altered mental status."
+GRDN003M0HXJ2YHT,3,20090225,225058.934395,"Chest pain. 
+
+COMPARISON:  None.",Portable AP upright view of the chest demonstrates a normal cardiac silhouette.  Pulmonary hila and vessels are within normal limits.  Pleural spaces are clear.  Lungs are clear of any focal mass or consolidation.  There is no pneumothorax.,No acute cardiopulmonary process.,"- SpO2: 98% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 100 mmHg
+- Temperature: 37.0°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,No acute chest imaging follow-up is indicated. Continue clinical management of chest pain and reassess if symptoms persist or worsen.,Chest X-ray shows no acute cardiopulmonary process and the outpatient clinical context is stable with normal oxygenation and work of breathing.
+GRDN003M0HXJ2YHT,4,20090228,093049.934395,,Heart and mediastinal contours unchanged.  No focal consolidation or evidence of edema.  No evidence for pneumothorax.  Bones are unremarkable.,No acute cardiopulmonary disease.,"- SpO2: 97% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 104 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE,No routine chest imaging follow-up is required. Clinical follow-up only if symptoms persist or worsen.,Chest radiograph shows no acute cardiopulmonary disease and the outpatient clinical context is physiologically stable with normal oxygenation and work of breathing.
+GRDN003M0HXJ2YHT,5,20090308,132330.934395,,,Unremarkable AP view chest.,"- SpO2: 99% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 139 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE,No acute radiographic follow-up is indicated. Continue routine clinical observation and reassess if respiratory symptoms develop or worsen.,"The chest X-ray impression is unremarkable and the patient is physiologically stable with normal oxygenation, respiratory rate, work of breathing, temperature, and mental status."
+GRDN003M0HXJ2YHT,6,20091118,163021.934395,,,Unremarkable AP view chest.,"- SpO2: 96% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 131 mmHg
+- Temperature: 37.2°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No acute radiographic follow-up is required. Continue routine clinical observation and reassess if respiratory symptoms develop or worsen.,"The chest radiograph impression is unremarkable and the patient is clinically stable with normal oxygenation, normal work of breathing, and no fever or altered mental status."
+GRDN003M0HXJ2YHT,7,20091204,181917.934395,,,,"- SpO2: 98% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 107 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: ward",ACT_ABSTAIN,Insufficient information is available to recommend a specific imaging or pulmonary follow-up action. Correlate with the completed chest radiograph report when available and reassess clinically if symptoms or respiratory status change.,"No history, findings, or impression are available to identify a specific pulmonary abnormality, and the provided clinical context shows stable oxygenation and no respiratory distress."
+GRDN003M0HXJ2YHT,8,20100415,224708.934395,Chest pain and shortness of breath.,The lungs are clear.  The cardiomediastinal silhouette is normal.  There is no pneumothorax or pleural effusion.,Negative.,"- SpO2: 99% on room air
+- Respiratory rate: 13/min
+- Work of breathing: normal
+- Systolic BP: 115 mmHg
+- Temperature: 37.2°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,"No routine chest imaging follow-up is required. Continue outpatient clinical observation and reassess if symptoms persist, worsen, or new respiratory signs develop.","Chest radiograph is negative with clear lungs and no pneumothorax or effusion, and the outpatient clinical context shows normal oxygenation, normal work of breathing, and stable vital signs."
+GRDN003M0HXJ2YHT,9,20100701,125452.934395,,,,"- SpO2: 99% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 116 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: ED",ACT_ABSTAIN,No specific chest imaging follow-up recommendation can be made from the provided information. Review the completed radiology report and correlate clinically if symptoms or abnormal findings are present.,"No history, chest X-ray findings, or impression are available to identify a pulmonary abnormality requiring follow-up, and the provided clinical context shows stable oxygenation and no respiratory distress."
+GRDN003M0HXJ2YHT,10,20150102,211805.871395,Chest pain.,"Single portable frontal radiograph of the chest shows that the lungs are clear, with no parenchymal consolidation, pulmonary edema or pleural effusion.  The heart size is normal.  No significant skeletal abnormality is identified.",No acute cardiopulmonary abnormality.,"- SpO2: 100% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 106 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: ED",ACT_STOP_SURVEILLANCE,No routine chest imaging follow-up is required based on this radiograph. Continue clinical evaluation of chest pain as indicated.,"The chest radiograph is normal with no acute cardiopulmonary abnormality, and the patient is physiologically stable with normal oxygenation and work of breathing."
+GRDN004RP5BFHE0T,1,20090429,023539.896060,"Evaluate PICC line placement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 12/08/2009","There is a right arm PICC line with tip in the SVC.
+
+The heart size is normal.
+
+There is no pleural effusion or pulmonary interstitial edema noted.
+
+No airspace densities identified.",1.  Right arm PICC line tip is in the SVC.,"- SpO2: 97% on room air
+- Respiratory rate: 20/min
+- Work of breathing: normal
+- Systolic BP: 120 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE,No additional chest imaging follow-up is required for PICC position. Continue routine clinical care and reassess only if new respiratory symptoms or line-related concerns develop.,"The right arm PICC tip projects in the SVC with no pneumothorax, edema, effusion, or airspace disease, and the patient is clinically stable on room air."
+GRDN004RP5BFHE0T,2,20090501,035000.896060,"Crohn's disease.  Anemia and dehydration.  PICC line
+placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 08/17/2010","A right arm PICC line is now seen with the tip in the
+proximal to mid right atrium.  Approximately 3 cm below the
+expected level of the cavoatrial junction.
+
+Both lungs are clear.  There is no evidence of pleural effusion.
+Heart size is normal.","1.  Right arm PICC line and right atrium, approximately 3 cm below
+the expected location of the cavoatrial junction.
+2.  No active cardiopulmonary disease.","- SpO2: 97% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 124 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: ward",ACT_REPEAT_CXR,"Recommend retracting the right arm PICC by approximately 3 cm to position the tip near the cavoatrial junction, followed by repeat chest radiograph to confirm satisfactory line position.","The PICC tip projects in the proximal to mid right atrium about 3 cm below the expected cavoatrial junction, while the patient is clinically stable with clear lungs and normal oxygenation."
+GRDN004RP5BFHE0T,3,20090525,080718.896060,"Shortness of breath.  Evaluate PICC line placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Chest x-ray 10/03/2010.  CT abdomen pelvis 10/26/2010.","Right upper extremity PICC terminates in the distal
+superior vena cava, near the junction of the superior vena cava and
+right atrium.  A nasogastric tube enters the stomach, goes beyond
+the edge of the image, and then curves back on itself, likely
+within the stomach.
+
+Heart and mediastinal, contours within normal limits.  The lungs
+are clear.","1. Satisfactory position of right upper extremity PICC, with the
+tip in the distal superior vena cava.
+2.  No evidence of acute cardiopulmonary disease.","- SpO2: 99% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 121 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,"No routine chest imaging follow-up is required for the satisfactory PICC position and negative chest radiograph. Continue clinical observation, with reassessment if shortness of breath persists or worsens.","The PICC tip is satisfactorily positioned, lungs are clear with no acute cardiopulmonary disease, and the patient is physiologically stable with normal oxygenation and work of breathing."
+GRDN004RP5BFHE0T,4,20090528,064728.896060,"Tachycardia.  Small bowel obstruction and low grade
+fever.
+
+CHEST - 2 VIEW
+
+Comparison: 05/09/2010","This is a mildly low volume film with mild bibasilar
+atelectasis.
+An NG tube is present within the stomach.
+A right-sided PICC line is identified with tip overlying the right
+atrium - consider retraction 4-5 cm.
+A probable small left pleural effusion is identified.
+There is no evidence of pneumothorax.
+No acute bony abnormalities are identified.","Mild bibasilar atelectasis and probable small left pleural
+effusion.
+
+Right-sided PICC line with tip overlying the right atrium -
+consider 4-5 cm retraction.
+
+Celam, Ivan Vid for this patient was notified of these results on
+05/12/2010 at [DATE] p.m.","- SpO2: 93% on room air
+- Respiratory rate: 12/min
+- Work of breathing: normal
+- Systolic BP: 158 mmHg
+- Temperature: 37.3°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_REPEAT_CXR,"Recommend focused bedside respiratory reassessment and postoperative lung-expansion measures, including upright positioning/early mobilization and deep-breathing/cough exercises. Retract the right PICC approximately 4–5 cm per line protocol and confirm position with follow-up chest radiograph; repeat imaging sooner if fever, hypoxemia, or respiratory symptoms worsen.","Stable postoperative patient with mild low-volume bibasilar atelectasis, probable small left pleural effusion, normal work of breathing, and a PICC tip projecting in the right atrium needing position follow-up."
+GRDN004RP5BFHE0T,5,20090529,002843.896060,"Small bowel obstruction.  Central line placement.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Earlier film of the same day.","There has been interval placement of a right IJ central
+venous catheter, tip in the distal SVC.  No pneumothorax.  Right
+arm PICC, endotracheal tube, and nasogastric tube are stable in
+position.  Some increase in left retrocardiac consolidation /
+atelectasis.  Right lung is clear.  Relatively low lung volumes.
+Heart size normal.  No definite effusion.","1.  Right IJ central line to distal SVC without pneumothorax.
+2.  Worsening left retrocardiac consolidation / atelectasis.","- SpO2: 89% on room air
+- Respiratory rate: 28/min
+- Work of breathing: moderate
+- Systolic BP: 133 mmHg
+- Temperature: 39.1°C
+- Mental status: mildly confused
+- Care setting: stepdown",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_CAP_INPATIENT_ABX;ACT_REQUEST_RELEVANT_LABS;ACT_ESCALATE_CARE,"Recommend urgent bedside respiratory assessment with supplemental oxygen titration and sepsis/pneumonia evaluation, including relevant labs, with initiation of inpatient empiric antibiotics if infection is clinically supported. Given hypoxemia and altered mentation in stepdown, escalate monitoring/level of care if oxygen requirement or work of breathing persists or worsens.","Worsening left retrocardiac consolidation/atelectasis with fever, SpO2 89% on room air, tachypnea, moderate work of breathing, and mild confusion is clinically concerning for significant pneumonia or infected atelectasis with hypoxemic respiratory illness."
+GRDN004RP5BFHE0T,6,20090529,163825.896060,"58-year-old male status post surgery.  Evaluate
+endotracheal tube.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 01/22/2010 and earlier.","Portable semiupright AP view 3223 hours.  Endotracheal
+tube tip projects at the level of clavicles.  Enteric tube courses
+to the region of the body of the stomach.  Cardiac size and
+mediastinal contours are within normal limits.  Stable slightly low
+lung volumes.  Probable hiatal hernia.  No pneumothorax, pulmonary
+edema, pleural effusion or confluent airspace opacity.  Stable
+right PICC line.","1.  Endotracheal tube in good position.
+2.  Otherwise stable lines and tubes.
+3.  Mild bibasilar atelectasis suspected.","- SpO2: 93% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 148 mmHg
+- Temperature: 37.5°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY,"Recommend routine postoperative respiratory reassessment and lung-expansion measures, including deep-breathing/cough exercises, incentive spirometry as tolerated, upright positioning/early mobilization, and adequate analgesia to permit ventilation. No urgent imaging or antimicrobial therapy is indicated unless respiratory status worsens or infectious signs develop.","The film shows only mild suspected bibasilar postoperative atelectasis with stable oxygenation, normal respiratory rate/work of breathing, and no pneumonia, edema, effusion, or pneumothorax."
+GRDN004RP5BFHE0T,7,20090530,194414.896060,"58-year-old male with shortness of breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/21/2009 and earlier.","Portable AP view at 2245 hours.  Endotracheal tube is
+stable.  Visualized enteric tube is stable.  Right PICC line and IJ
+catheters are stable.  Unchanged left lower lobe collapse.  Stable
+cardiac size and mediastinal contours.  No pneumothorax, pulmonary
+edema or pleural effusion identified.","1.  Stable lines and tubes.
+2.  Unchanged left lower lobe collapse.","- SpO2: 79% on mask
+- Respiratory rate: 33/min
+- Work of breathing: moderate
+- Systolic BP: 87 mmHg
+- Temperature: 38.3°C
+- Mental status: somnolent
+- Care setting: stepdown",ACT_RAPID_RESPONSE;ACT_INTUBATION_PATHWAY;ACT_ESCALATE_CARE;ACT_URGENT_ASSESSMENT;ACT_BRONCHOSCOPY,"Immediate rapid response/ICU-level respiratory assessment is recommended with airway and ventilatory support escalation as needed. After stabilization, evaluate the persistent left lower lobe collapse for obstructing mucus plug or airway lesion, including bronchoscopy if clinically appropriate.","Despite stable support devices on the radiograph, the patient has unchanged left lower lobe collapse with severe hypoxemia on mask, tachypnea, hypotension, fever, and somnolence in a stepdown setting, requiring emergency escalation rather than routine imaging follow-up."
+GRDN004RP5BFHE0T,8,20090531,201807.896060,"Shortness of breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 1 day prior","4448 hours.  Endotracheal tube and right-sided PICC line
+are unchanged.  The right-sided PICC line is difficult to follow
+centrally.  Nasogastric extends beyond the  inferior aspect of the
+film.  Midline trachea. Normal heart size for level of inspiration.
+Question small amount of layering left-sided pleural fluid. No
+pneumothorax.  No congestive failure.  Mild persistent right base
+atelectasis.  No change in left lower lobe atelectasis.","1. No significant change since one day prior.
+2.  Similar left greater than right bibasilar atelectasis.
+Possible small left pleural effusion.","- SpO2: 98% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 142 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: inpatient ward",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION,Recommend focused respiratory reassessment and conservative atelectasis management with deep-breathing/directed-cough exercises and upright positioning/early mobilization as tolerated. Repeat imaging only if respiratory status worsens or the opacity/effusion fails to improve clinically.,"Stable bibasilar atelectasis with only a possible small left pleural effusion and normal oxygenation/work of breathing supports conservative pulmonary hygiene rather than antibiotics, pleural procedure, or urgent escalation."
+GRDN004RP5BFHE0T,9,20090601,201233.896060,"Respiratory distress.  Small bowel obstruction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison:  08/18/2009","The endotracheal tube is stable in position.  An NG tube
+courses off the inferior border of the film.  A right-sided PICC
+line is stable in position.  A right IJ line is stable in position.
+Lung volumes remain low.  There is no significant change in right
+perihilar airspace disease.  Increased opacification in the left
+base represents a developing left pleural effusion.  There is left
+basilar atelectasis as well.","1.  Increasing opacification at the left base worrisome for
+effusion.
+2.  Low lung volumes with stable bibasilar atelectasis otherwise.
+3.  Support apparatus stable","- SpO2: 98% on room air
+- Respiratory rate: 22/min
+- Work of breathing: normal
+- Systolic BP: 129 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: outpatient",ACT_REASSESS_BEDSIDE;ACT_THORACIC_US;ACT_DIAGNOSTIC_THORACENTESIS;ACT_PULMONOLOGY_FOLLOWUP,"Recommend focused clinical respiratory reassessment and thoracic ultrasound to confirm and characterize the suspected left pleural effusion. If a sufficient safe fluid pocket is present and the effusion is new or unexplained, proceed with ultrasound-guided diagnostic thoracentesis and arrange pulmonary follow-up.","The report describes increasing left basilar opacification worrisome for a developing left pleural effusion with basilar atelectasis, while the provided clinical context is physiologically stable without hypoxemia or increased work of breathing."
+GRDN004RP5BFHE0T,10,20090602,201437.896060,"Small bowel obstruction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/24/2010","Endotracheal tube is in satisfactory position.
+Nasogastric tube is followed into the stomach, with the tip
+projecting beyond the inferior boundary of the film. Right PICC tip
+projects over the SVC. Lungs are low in volume with predominately
+lingular and left lower lobe air space disease.  Left pleural
+effusion.","Lingular and left lower lobe air space disease, and left pleural
+effusion.","- SpO2: 91% on room air
+- Respiratory rate: 26/min
+- Work of breathing: mild
+- Systolic BP: 108 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: ED",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_REASSESS_BEDSIDE;ACT_REPEAT_CXR;ACT_THORACIC_US,"Recommend prompt respiratory clinical assessment with supplemental oxygen titrated to saturation and short-interval follow-up chest radiograph. If the left pleural effusion is new, enlarging, or contributing to symptoms, obtain thoracic ultrasound to characterize the fluid and guide further management.","Lingular/left lower lobe airspace disease with a left pleural effusion is accompanied by mild hypoxemia and tachypnea, warranting prompt clinical reassessment and oxygen support, with imaging follow-up and pleural ultrasound if the effusion is clinically significant."
+GRDN004RP5BFHE0T,11,20090603,201553.896060,"Shortness breath.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 05/15/2009.","Right internal jugular line catheter tip mid superior
+vena cava.  Right PICC line tip distal superior vena cava.
+Nasogastric tube courses below the diaphragm.  Tip is not included
+on present examination.  No pneumothorax.  Poor inspiration.  Left
+mid to lower lung zone and medial aspect right lung/right
+infrahilar opacities remain unchanged.  Question infiltrate and /
+or atelectasis.  Central pulmonary vascular congestion.","Endotracheal tube has been removed.  Remainder of the findings are
+similar to that of the prior exam.","- SpO2: 95% on nasal cannula
+- Respiratory rate: 29/min
+- Work of breathing: mild
+- Systolic BP: 96 mmHg
+- Temperature: 37.0°C
+- Mental status: alert
+- Care setting: ward",ACT_REASSESS_BEDSIDE;ACT_CLINICAL_CORRELATION;ACT_REASSESS_DEFINED_INTERVAL;ACT_REPEAT_CXR,"Correlate clinically for infection, atelectasis, or volume overload and perform focused respiratory reassessment. If symptoms persist or worsen, repeat chest radiograph after a defined interval to assess for evolving infiltrate, edema, or atelectatic change.","Unchanged bilateral lower-lung opacities are indeterminate for atelectasis versus infiltrate with mild vascular congestion, while the patient is alert and adequately oxygenated on nasal cannula but tachypneic."
+GRDN004RP5BFHE0T,12,20090615,040907.896060,"The small bowel obstruction.  Fever.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 03/12/2009.","A right-sided PICC line terminates in the mid SVC.  There
+is ill-defined airspace disease involving the right lung apex.  The
+area is incompletely evaluated due to patient positioning.
+Bibasilar airspace disease is still worse left than right, likely
+reflecting atelectasis.  No definite effusions are seen.  Lung
+volumes remain low.","1.  Ill-defined right upper lobe airspace disease worrisome for
+pneumonia.
+2.  Improved aeration at both bases with some residual airspace
+disease, left greater than right, likely reflecting atelectasis.
+
+[REDACTED] DICTATED: 03/24/2009 [DATE]","- SpO2: 94% on nasal cannula
+- Respiratory rate: 26/min
+- Work of breathing: mild
+- Systolic BP: 128 mmHg
+- Temperature: 39.1°C
+- Mental status: alert
+- Care setting: ED",ACT_REASSESS_BEDSIDE;ACT_CAP_INPATIENT_ABX;ACT_OXYGEN_TITRATION;ACT_REQUEST_RELEVANT_LABS;ACT_TIMED_FOLLOWUP,"Recommend prompt clinical reassessment and empiric inpatient treatment for pneumonia, with supplemental oxygen titrated to maintain adequate saturation and relevant labs/cultures obtained per ED/inpatient protocol. Follow-up chest radiograph after treatment is advised to document resolution, particularly if symptoms persist.","Right upper lobe airspace disease is worrisome for pneumonia in a febrile, tachypneic ED patient requiring nasal-cannula oxygen, with residual basilar atelectatic opacity."
+GRDN004RP5BFHE0T,13,20091025,070000.255060,"Peripheral edema
+
+CHEST - 2 VIEW
+
+Comparison: 12/11/2009 .","Improved lung volumes compared to prior studies.  No
+current airspace disease, pneumonia, edema, effusion or
+pneumothorax.  Midline trachea.  Normal heart size and vascularity.
+Remote healed left posterior rib fractures.  Degenerative changes
+of the spine",No acute finding.,"- SpO2: 99% on room air
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 116 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: ED",ACT_STOP_SURVEILLANCE,No acute pulmonary intervention or routine chest imaging follow-up is required based on this radiograph. Continue clinical evaluation of peripheral edema as appropriate.,"Chest radiograph shows no acute cardiopulmonary abnormality, including no edema, effusion, pneumonia, or pneumothorax, and the patient is clinically stable with normal oxygenation and work of breathing."
+GRDN004RP5BFHE0T,14,20110718,105712.896060,"Bilateral leg pain and swelling.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 10/29/2009","The heart size and pulmonary vascularity are normal. The
+lungs appear clear and expanded without focal air space disease or
+consolidation. No blunting of the costophrenic angles.","No evidence of active pulmonary disease.  Nothing to suggest
+congestive failure.","- SpO2: 99% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 104 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE,No routine chest imaging follow-up is required for this normal chest radiograph. Continue clinical evaluation of the bilateral leg pain/swelling as indicated.,"Chest radiograph shows clear lungs with normal heart size and pulmonary vascularity and no evidence of congestive failure, and the outpatient clinical context shows normal oxygenation and no respiratory distress."
+GRDN004RP5BFHE0T,15,20110901,083224.896060,"PICC line placement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Portable chest x-ray of 07/29/2012","A left upper extremity PICC line has been placed with the
+tip near the expected SVC - RA junction.  No pneumothorax is seen.
+The lungs are clear.  Heart size is stable.","Left upper extremity PICC line tip near SVC/RA junction.  No
+pneumothorax.","- SpO2: 97% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 137 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE,No additional chest imaging follow-up is required for this line placement. PICC position is satisfactory and there is no pneumothorax.,"PICC tip is at the expected SVC/RA junction with no pneumothorax or acute cardiopulmonary abnormality, and the patient is clinically stable on room air."
+GRDN006MCYEVYFE8,1,20100611,193822.566744,"Fever
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: None","The lungs are clear.  The heart is within normal limits
+in size.  No bony abnormality is seen.",No active lung disease.,"- SpO2: 100% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 107 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,No routine chest imaging follow-up is needed. Recommend outpatient clinical observation with reassessment if fever or respiratory symptoms persist or worsen.,"Chest X-ray shows clear lungs with no active lung disease, and the patient is a stable outpatient with normal oxygenation and no respiratory distress."
+GRDN006MCYEVYFE8,2,20110725,033539.566744,"44-year-old male intubated.  ST-segment elevation
+myocardial infarction.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 04/19/2010.","Portable semi upright AP view 5885 hours.  Endotracheal
+tube tip between the level of clavicles and carina.  Enteric tube
+course to the abdomen, tip likely in the distal stomach.  There is
+acute perihilar pulmonary edema.  Relatively good lung volumes.
+Cardiac size and mediastinal contours are within normal limits.  No
+pneumothorax or effusion identified.","1.  Satisfactory placement of support apparatus.
+2.  Acute perihilar pulmonary edema.","- SpO2: 88% on simple mask
+- Respiratory rate: 34/min
+- Work of breathing: moderate
+- Systolic BP: 121 mmHg
+- Temperature: 37.3°C
+- Mental status: anxious
+- Care setting: stepdown",ACT_URGENT_ASSESSMENT;ACT_ESCALATE_CARE;ACT_OXYGEN_TITRATION;ACT_FUROSEMIDE_IV;ACT_REASSESS_BEDSIDE,"Urgent clinician assessment is recommended given persistent hypoxemia and acute pulmonary edema. Escalate to ICU-level care and optimize invasive ventilator and oxygen support - the patient is already intubated, so noninvasive ventilation does not apply. Administer IV furosemide if hemodynamics and volume status support diuresis. Maintain close cardiopulmonary monitoring with early reassessment.","Acute perihilar pulmonary edema in the setting of STEMI is accompanied by significant hypoxemia, tachypnea, and moderate work of breathing in a stepdown setting, requiring urgent escalation, ventilatory support, and decongestion."
+GRDN006MCYEVYFE8,3,20110726,054110.566744,"Myocardial infarction
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Chest radiograph 09/17/2011","Interval extubation and removal of NG tube.  Stable
+cardiac silhouette.  There is interval improvement in perihilar air
+space disease.  No evidence of atelectasis or pleural effusion.  No
+pneumothorax.","1.  Extubation without increase in atelectasis.
+2.  Improved pulmonary edema.","- SpO2: 97% on room air
+- Respiratory rate: 24/min
+- Work of breathing: normal
+- Systolic BP: 144 mmHg
+- Temperature: 37.2°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE;ACT_OBSERVE;ACT_CARDIOLOGY_FOLLOWUP,"No routine repeat chest imaging is required at this time; continue clinical observation and reassess if dyspnea, hypoxemia, or other respiratory symptoms worsen. Continue outpatient cardiac follow-up for the recent myocardial infarction/edema context.","Pulmonary edema has improved after extubation, with no pneumothorax, effusion, or atelectasis and the patient is alert, normoxic on room air, and without increased work of breathing."
+GRDN006MCYEVYFE8,4,20110727,104716.159744,"Myocardial infarction, pulmonary edema
+
+CHEST - 2 VIEW
+
+Comparison: 12/03/2009","Lungs clear.  Heart size and pulmonary vascularity
+normal.  No effusion.  Visualized bones unremarkable.",No acute disease,"- SpO2: 100% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 122 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE,No acute cardiopulmonary follow-up is required based on this chest radiograph. Continue routine clinical care; repeat imaging only if symptoms or oxygenation worsen.,"Chest radiograph shows clear lungs with normal heart size/vascularity and no effusion, and the patient is clinically stable with SpO2 100% on room air and normal work of breathing."
+GRDN006MCYEVYFE8,5,20130801,053738.566744,"Chest pain.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 07/11/2011","Cardiopericardial silhouette within normal limits.
+Mediastinal contours normal. Trachea midline.  No airspace disease
+or effusion.  Lung volumes are slightly low. Monitoring leads are
+projected over the chest.",No active cardiopulmonary disease.,"- SpO2: 100% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 102 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE,No routine chest imaging follow-up is indicated. Continue clinical evaluation of chest pain as appropriate.,Chest radiograph shows no active cardiopulmonary disease and the patient is clinically stable with SpO2 100% on room air and normal work of breathing.
+GRDN006MCYEVYFE8,6,20180918,200705.331744,"Cardiorespiratory arrest.  Intubation.
+
+EXAM:
+PORTABLE CHEST 1 VIEW
+
+COMPARISON:  Chest x-rays earlier today [DATE] a.m., yesterday and
+previously. CTA chest yesterday.","Endotracheal tube tip in satisfactory position projecting
+approximately 7 cm above carina. Nasogastric tube courses below the
+diaphragm into the stomach. External pacing pads are present.
+
+Cardiac silhouette markedly enlarged, unchanged. Interval resolution
+of the mild interstitial pulmonary edema and the atelectasis in the
+right lower lobe since this morning. Only minimal atelectasis
+persists at the right lung base. Lungs otherwise clear.","1. Support apparatus satisfactory.
+2. Resolution of interstitial pulmonary edema since earlier today.
+3. Improved aeration in the right lower lobe since earlier today
+with only minimal atelectasis persisting.
+4. No new abnormalities.","- SpO2: 96% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 175 mmHg
+- Temperature: 37.0°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION,No urgent chest imaging follow-up is required. Continue routine clinical observation and pulmonary hygiene with deep-breathing/cough exercises and mobilization/upright positioning as tolerated for minimal residual right basilar atelectasis.,"Chest radiograph shows resolved interstitial edema, improved right lower lobe aeration with only minimal residual basilar atelectasis, satisfactory support apparatus, and no new abnormality, while the patient is oxygenating well with normal work of breathing."
+GRDN006MCYEVYFE8,7,20180918,215842.159744,"Hypertension. Respiratory failure. Central line
+placement.
+
+EXAM:
+PORTABLE CHEST 1 VIEW
+
+COMPARISON:  04/27/2018 at [DATE]","New right jugular central line extends into the low SVC.
+
+Endotracheal tube is 5.8 cm above the carina. Nasogastric tube
+extends into the stomach.
+
+No pneumothorax.
+
+Unchanged cardiomegaly. Mild basilar airspace opacities, accentuated
+by a shallow degree of inspiration.","1. Support equipment appears satisfactorily positioned. New right IJ
+line extends into the low SVC.
+2. No pneumothorax.
+3. Stable cardiomegaly and mild basilar airspace opacities.","- SpO2: 98% on baseline low-flow oxygen
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 175 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: ED",ACT_CLINICAL_CORRELATION;ACT_OBSERVE,"No immediate procedure or urgent imaging follow-up is required for line placement. Correlate the mild stable basilar opacities clinically and continue routine observation/reassessment, with repeat imaging only if respiratory status worsens.","The new right IJ central line is satisfactorily positioned with no pneumothorax, and the stable mild basilar opacities occur in a clinically stable, afebrile patient with normal work of breathing and adequate oxygenation."
+GRDN006MCYEVYFE8,8,20190328,052625.566744,"52-year-old male preoperative exam for pacemaker
+lead. Hypertension and coronary artery disease. Initial encounter.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  08/22/2018 and 05/19/2018 chest x-ray. 05/19/2018 chest
+CT.","Cardiomegaly. Biventricular pacer/AICD in place with leads unchanged
+in position (right atrium and right ventricle).
+
+Pulmonary vascular congestion superimposed upon chronic lung
+changes.
+
+CT detected mediastinal adenopathy and right upper lobe 4 mm nodule
+not appreciated by plain film exam.
+
+Minimally tortuous descending thoracic aorta.
+
+No acute osseous abnormality","Cardiomegaly. Biventricular pacer/AICD in place with leads unchanged
+in position (right atrium and right ventricle).
+
+Pulmonary vascular congestion superimposed upon chronic lung
+changes.
+
+CT detected mediastinal adenopathy and right upper lobe 4 mm nodule
+not appreciated by plain film exam.","- SpO2: 86% on room air
+- Respiratory rate: 29/min
+- Work of breathing: mild
+- Systolic BP: 141 mmHg
+- Temperature: 37.7°C
+- Mental status: anxious
+- Care setting: stepdown",ACT_URGENT_ASSESSMENT;ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_FUROSEMIDE_IV;ACT_REQUEST_RELEVANT_LABS;ACT_OUTPATIENT_SURVEILLANCE;ACT_TIMED_FOLLOWUP,"Recommend urgent bedside respiratory assessment with immediate supplemental oxygen titration and treatment for suspected cardiogenic pulmonary congestion/volume overload, including IV diuresis as clinically appropriate with renal/electrolyte/cardiac laboratory monitoring. Separately, ensure outpatient CT-based surveillance/follow-up for the previously CT-detected mediastinal adenopathy and right upper lobe pulmonary nodule per prior CT recommendations.","Pulmonary vascular congestion with cardiomegaly is accompanied by significant hypoxemia on room air and tachypnea, while the known CT-detected mediastinal adenopathy/right upper lobe 4 mm nodule is not assessable on this radiograph."
+GRDN006MCYEVYFE8,9,20190330,061554.566744,"Thoracotomy.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  10/18/2017 .","Interim removal of left chest tube. No pneumothorax. Cardiac pacer
+stable position. Cardiomegaly with mild increase in interstitial
+prominence suggesting mild CHF. Mild right base subsegmental
+atelectasis again noted. No pleural effusion or pneumothorax.","1. Interim removal of left chest tube.  No pneumothorax.
+
+2. Cardiac pacer stable position. Cardiomegaly with slight increase
+interstitial prominence suggesting mild CHF.
+
+3. Stable right base subsegmental atelectasis .","- SpO2: 96% on nasal cannula
+- Respiratory rate: 34/min
+- Work of breathing: mild
+- Systolic BP: 107 mmHg
+- Temperature: 36.4°C
+- Mental status: anxious
+- Care setting: ED",ACT_URGENT_ASSESSMENT;ACT_REASSESS_BEDSIDE;ACT_REQUEST_RELEVANT_LABS;ACT_OXYGEN_TITRATION;ACT_FUROSEMIDE_IV;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION,"Recommend prompt clinical respiratory and volume-status assessment, oxygen titration as needed, relevant CHF labs/renal-electrolyte evaluation, and treatment for mild decompensated CHF if clinically confirmed. Continue postoperative lung-expansion measures such as deep breathing/coughing and mobilization for stable right basilar atelectasis; no pneumothorax-specific intervention is indicated.","Chest X-ray shows mild interstitial CHF and stable basilar subsegmental atelectasis after thoracotomy, while the patient is tachypneic in the ED but oxygenating on nasal cannula without pneumothorax."
+GRDN006MCYEVYFE8,10,20190427,125434.191744,"Epicardial pacer lead placement
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  08/22/2018","Stable appearance of cardiac pacer. Mild cardiac enlargement is
+unchanged. No pleural effusion or edema. No airspace opacities. No
+pneumothorax visualized.","1. No evidence for pneumothorax.
+2. Stable cardiac enlargement.","- SpO2: 99% on baseline low-flow oxygen
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 113 mmHg
+- Temperature: 37.4°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE;ACT_OBSERVE,"No additional routine chest imaging is required for pneumothorax surveillance at this time. Continue routine ward clinical observation and repeat chest radiograph only if new respiratory symptoms, worsening oxygenation, or clinical deterioration develops.","Chest radiograph shows no pneumothorax or acute pulmonary abnormality after epicardial pacer lead placement, and the patient is clinically stable with normal work of breathing and oxygenation at baseline."
+GRDN006MCYEVYFE8,11,20211111,114125.566744,"Amiodarone therapy.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  08/31/2018","Left ventricular assist device in good position and unchanged. AICD
+unchanged in position. Cardiac enlargement. Negative for heart
+failure infiltrate or effusion. Lungs are clear. No significant
+pulmonary scarring.",No active cardiopulmonary disease.,"- SpO2: 95% on room air
+- Respiratory rate: 21/min
+- Work of breathing: mild
+- Systolic BP: 121 mmHg
+- Temperature: 37.5°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE,"No acute radiographic follow-up is indicated. Continue routine clinical observation, with reassessment if respiratory symptoms or oxygenation worsen.","Chest radiograph shows clear lungs with no heart failure, infiltrate, effusion, or scarring, and the patient is clinically stable with SpO2 95% on room air."
+GRDN006VFINFR877,1,20051016,005659.106528,"Cough; pharyngitis; 105 degree fever
+ TWO VIEW CHEST 
+ Poor inspiration.  Grossly normal sized heart.  Diffuse peribronchial thickening without air space consolidation.  Unremarkable bones.",,Moderate to marked bronchitic changes.,"- SpO2: 86% on Venturi
+- Respiratory rate: 23/min
+- Work of breathing: moderate
+- Systolic BP: 155 mmHg
+- Temperature: 38.1°C
+- Mental status: anxious
+- Care setting: ED",ACT_RAPID_RESPONSE;ACT_HFNC;ACT_ESCALATE_CARE;ACT_URGENT_ASSESSMENT;ACT_REASSESS_BEDSIDE;ACT_REQUEST_RELEVANT_LABS,"Recommend immediate ED respiratory reassessment and activation of an emergency/escalation pathway, with escalation to high-flow oxygen support and higher level of monitoring/care as needed. Obtain focused infectious/respiratory evaluation and relevant labs while stabilizing the patient.","Although the chest radiograph shows bronchitic changes without consolidation, the ED clinical context shows severe hypoxemia despite Venturi oxygen, moderate work of breathing, fever, and anxiety, requiring urgent escalation rather than routine imaging follow-up."
+GRDN006VFINFR877,2,20080805,153415.106528,"Cough.  Fever.  History of asthma.
+ CHEST - 2 VIEW: 
+ Comparison : 08/14/05.",Pulmonary hyperaeration.  No active infiltrate or atelectasis.  Cardiomediastinal silhouette unremarkable.,"Pulmonary hyperaeration.  This may be due to air trapping for example, as seen with asthma.","- SpO2: 89% on room air
+- Respiratory rate: 15/min
+- Work of breathing: mild
+- Systolic BP: 122 mmHg
+- Temperature: 36.0°C
+- Mental status: alert
+- Care setting: ward",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_ALBUTEROL;ACT_REASSESS_BEDSIDE;ACT_REASSESS_DEFINED_INTERVAL,Recommend urgent bedside respiratory reassessment with supplemental oxygen titrated to target saturation and inhaled albuterol for suspected asthma-related air trapping. Reassess after treatment and escalate care if hypoxemia or respiratory distress persists or worsens.,"Chest radiograph shows hyperaeration/air trapping compatible with asthma and no infiltrate, but the patient is hypoxemic at SpO2 89% on room air despite only mild work of breathing."
+GRDN006VFINFR877,3,20100826,052511.106528,"Asthma.  Short of breath and fever.
+
+CHEST - 2 VIEW
+
+Comparison: 05/26/2008.","The lungs are hyperinflated with prominent lung markings
+compatible with asthma.  No acute infiltrate or effusion.",Hyperinflation without infiltrate.,"- SpO2: 92% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 145 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: ward",ACT_REASSESS_BEDSIDE;ACT_ALBUTEROL;ACT_OXYGEN_TITRATION;ACT_HOLD_ANTIBIOTICS,"Recommend focused respiratory reassessment and asthma-directed bronchodilator therapy; titrate supplemental oxygen to goal saturation if hypoxemia persists. No acute infiltrate is seen, so defer pneumonia antibiotics unless clinical findings independently support bacterial infection.","Hyperinflation without infiltrate supports obstructive/asthma physiology rather than radiographic pneumonia, while SpO2 92% on room air warrants respiratory reassessment and oxygen titration if needed."
+GRDN006VFINFR877,4,20110325,031404.106528,"Cough, congestion, runny nose, history asthma
+
+CHEST - 2 VIEW
+
+Comparison: 11/07/2009","Normal heart size, mediastinal contours, and pulmonary vascularity.
+Minimal hyperaeration and peribronchial thickening.
+Lungs otherwise clear.
+No pleural effusion or pneumothorax.
+Bones unremarkable.","Minimal peribronchial thickening and hyperinflation, question
+related to asthma.
+No acute infiltrate identified.","- SpO2: 94% on room air
+- Respiratory rate: 15/min
+- Work of breathing: mild
+- Systolic BP: 103 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: ward",ACT_REASSESS_BEDSIDE;ACT_ALBUTEROL;ACT_CLINICAL_CORRELATION,Recommend clinical reassessment for asthma/reactive airway symptoms; treat with inhaled bronchodilator if wheeze or bronchospasm is present. No radiographic evidence of pneumonia or pneumothorax requiring acute imaging follow-up.,"Chest X-ray shows minimal hyperinflation/peribronchial thickening compatible with asthma/reactive airways and no infiltrate, with stable oxygenation and only mild work of breathing."
+GRDN006VFINFR877,5,20110415,041713.106528,"Cough, congestion and fever.
+
+CHEST - 2 VIEW
+
+Comparison: Chest 04/18/2010.","Chest is hyperexpanded with central airway thickening.
+No focal airspace disease or effusion.  Heart size normal.","Findings compatible with a viral process or reactive airways
+disease.","- SpO2: 86% on controlled nasal cannula
+- Respiratory rate: 21/min
+- Work of breathing: mild
+- Systolic BP: 162 mmHg
+- Temperature: 38.2°C
+- Mental status: alert
+- Care setting: ED",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_HFNC;ACT_REASSESS_BEDSIDE,Recommend urgent clinical/respiratory assessment with immediate titration of supplemental oxygen; escalate to high-flow nasal cannula if hypoxemia persists. Perform focused bedside reassessment to guide further treatment for viral/reactive airway disease versus other causes of hypoxemia.,"Although the radiograph shows no focal pneumonia or effusion and is compatible with viral/reactive airways disease, the patient is significantly hypoxemic with SpO2 86% despite controlled nasal cannula in the ED."
+GRDN006VFINFR877,6,20110814,054418.106528,"Cough, congestion and fever for 3 days.
+
+CHEST - 2 VIEW
+
+Comparison: Chest radiograph for 12/20/2010","The lungs are well-aerated and clear.  There is no
+evidence of focal opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits.  No acute osseous abnormalities are seen.",No acute cardiopulmonary process seen.,"- SpO2: 100% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 135 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No imaging follow-up is indicated based on this chest radiograph. Continue clinical observation/supportive care with reassessment if symptoms worsen or respiratory status changes.,"Chest radiograph shows no acute cardiopulmonary process and the patient is physiologically stable with normal oxygenation, normal work of breathing, and alert mental status."
+GRDN006VFINFR877,7,20120130,030150.106528,"Cough and sore throat.
+
+CHEST - 2 VIEW
+
+Comparison: Chest 12/21/2010.","Lungs clear.  Heart size normal.  No pleural effusion or
+focal bony abnormality.",Negative chest.,"- SpO2: 97% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 115 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No acute chest imaging follow-up is required. Recommend routine clinical observation/supportive care with reassessment if symptoms worsen or new respiratory signs develop.,"The chest radiograph is negative and the patient is clinically stable with normal oxygenation, normal work of breathing, and no fever or focal lung finding reported."
+GRDN006VFINFR877,8,20130325,074531.106528,"Fever and cough.
+
+CHEST - 2 VIEW
+
+Comparison: Chest radiograph performed 11/17/2010","The lungs are well-aerated.  Mild peribronchial
+thickening may reflect viral or small airways disease.  There is no
+evidence of focal opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits.  No acute osseous abnormalities are seen.","Mild peribronchial thickening may reflect viral or small airways
+disease; no evidence of focal consolidation.","- SpO2: 91% on room air
+- Respiratory rate: 20/min
+- Work of breathing: mild
+- Systolic BP: 170 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ED",ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_CLINICAL_CORRELATION;ACT_HOLD_ANTIBIOTICS,"Prompt clinical respiratory reassessment is recommended given SpO2 91% on room air, with supplemental oxygen titrated as needed. Correlate for viral or reactive small-airways disease; imaging does not show focal bacterial pneumonia, so antibiotics should be based on clinical assessment rather than the radiograph alone.","Chest X-ray shows only mild peribronchial thickening without focal consolidation, effusion, or pneumothorax, but the patient has mild hypoxemia on room air in the ED."
+GRDN006VFINFR877,9,20141203,051952.324528,"Midsternal chest pain
+
+CHEST - 2 VIEW
+
+Comparison: 07/05/2013","Cardiomediastinal silhouette is within normal limits. The
+lungs are clear. No pleural effusion.  No pneumothorax.  No acute
+osseous abnormality.",Normal chest.,"- SpO2: 99% on room air
+- Respiratory rate: 20/min
+- Work of breathing: normal
+- Systolic BP: 111 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE,No routine chest imaging follow-up is required. Continue clinical evaluation of chest pain as clinically indicated.,"Chest radiograph is normal with clear lungs, no effusion or pneumothorax, and the patient is stable with normal oxygenation and work of breathing."
+GRDN006VFINFR877,10,20150621,080739.106528,"Chest pain and wheezing.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest radiograph performed 12/17/2013","The lungs are well-aerated and clear. There is no evidence of focal
+opacification, pleural effusion or pneumothorax.
+
+The heart is normal in size; the mediastinal contour is within
+normal limits. No acute osseous abnormalities are seen.",No acute cardiopulmonary process seen.,"- SpO2: 100% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 123 mmHg
+- Temperature: 37.2°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,"No acute chest imaging follow-up is indicated. Continue clinical evaluation and symptomatic management in the ED, with reassessment if chest pain, wheezing, hypoxemia, or respiratory distress develops.","The chest radiograph shows no acute cardiopulmonary process and the patient is physiologically stable with SpO2 100% on room air, normal respiratory rate, normal work of breathing, and alert mental status."
+GRDN006VFINFR877,11,20190524,061753.106528,"Shortness of breath, chest pain beginning yesterday.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest radiograph September 24, 2018","Cardiothymic silhouette is unremarkable. Mild bilateral perihilar
+peribronchial cuffing without pleural effusions or focal
+consolidations. Normal lung volumes. No pneumothorax. Soft tissue
+planes and included osseous structures are normal.","Peribronchial cuffing can be seen with reactive airway disease or
+bronchiolitis without focal consolidation.","- SpO2: 95% on baseline home oxygen
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 148 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: outpatient",ACT_CLINICAL_CORRELATION;ACT_OBSERVE,Recommend clinical correlation for reactive airway disease or bronchiolitis and outpatient observation/supportive care as appropriate. No routine chest imaging follow-up is needed unless symptoms worsen or fail to improve.,"Mild peribronchial cuffing without focal consolidation, effusion, or pneumothorax in a stable afebrile outpatient with normal work of breathing supports clinical correlation for reactive airway disease/bronchiolitis rather than urgent imaging or antibiotics."
+GRDN006VFINFR877,12,20200204,075513.106528,"Wheezing, chest pain, and nausea for 1 week.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  05/26/2018","Normal heart size and pulmonary vascularity. No focal airspace
+disease or consolidation in the lungs. No blunting of costophrenic
+angles. No pneumothorax. Mediastinal contours appear intact.",No active cardiopulmonary disease.,"- SpO2: 99% on room air
+- Respiratory rate: 12/min
+- Work of breathing: normal
+- Systolic BP: 137 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,"No acute cardiopulmonary imaging follow-up is required. Continue outpatient clinical observation, with reassessment if wheezing, chest pain, dyspnea, fever, or other symptoms worsen or persist.",The chest X-ray shows no active cardiopulmonary disease and the outpatient clinical context is physiologically stable with normal oxygenation and work of breathing.
+GRDN006WOMKG4AVY,1,20070110,113218.220663,"Chest pain.
+CHEST ? 2 VIEW:
+There is a 15 to 20 percent left pneumothorax present.  The heart is normal in size.  The lungs are clear.",,15 to 20 percent left pneumothorax.  The patient was contacted and he is currently coming back to the Emergency Department with his parents.  An attempt was made to contact the referring doctor at 537-7387 and a pager 654-4651 but I received no call back.  The patient will go to the Emergency Department.,"- SpO2: 94% on nasal cannula
+- Respiratory rate: 37/min
+- Work of breathing: severe
+- Systolic BP: 146 mmHg
+- Temperature: 37.1°C
+- Mental status: anxious
+- Care setting: stepdown",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_CHEST_TUBE_PTX;ACT_ESCALATE_CARE,Urgent Emergency Department/respiratory evaluation is recommended now. Titrate supplemental oxygen and arrange prompt pleural drainage/chest tube management with escalation to a monitored level of care.,"A 15–20% left pneumothorax with severe work of breathing, tachypnea, and oxygen requirement is a symptomatic intervention-requiring pneumothorax without documented tension physiology."
+GRDN006WOMKG4AVY,2,20070110,140600.220663,"Spontaneous left pneumothorax.  Status post chest tube placement. 
+ PORTABLE CHEST ? 1 VIEW, 06/24/05 AT 1862 HOURS:
+ Compared to prior study earlier today, there has been placement of a left chest tube.  Previously seen left pneumothorax has resolved.  Both lungs are clear.  The heart size and mediastinal contours are normal.",,Resolution of left pneumothorax following left chest tube placement.,"- SpO2: 95% on low-flow oxygen
+- Respiratory rate: 17/min
+- Work of breathing: mild
+- Systolic BP: 124 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE;ACT_REASSESS_DEFINED_INTERVAL;ACT_REPEAT_CXR,"Continue clinical observation/chest tube management with reassessment at a defined interval. Obtain a follow-up chest radiograph, particularly after water-seal trial or chest tube removal, to confirm no recurrent pneumothorax.","The left pneumothorax has resolved after chest tube placement and the patient is physiologically stable on the ward, so ongoing monitoring rather than urgent intervention is appropriate."
+GRDN006WOMKG4AVY,3,20070111,214227.220663,"Spontaneous left pneumothorax.
+ CHEST PORTABLE- 1 VIEW:
+ Comparison:    10/14/05.
+ Left chest tube remains in place and no pneumothorax is identified.  Both lungs are clear.  Heart size is normal.",,No evidence of residual pneumothorax.,"- SpO2: 98% on room air
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 133 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE;ACT_REPEAT_CXR;ACT_REASSESS_DEFINED_INTERVAL,No urgent intervention is indicated. Continue routine chest tube management with clinical observation and repeat chest radiograph at a defined interval or after water-seal/clamping or tube removal per protocol.,The left chest tube remains in place with no residual pneumothorax and the patient is clinically stable with normal oxygenation and work of breathing.
+GRDN006WOMKG4AVY,4,20070112,035859.220663,"Pneumothorax
+CHEST - 2 VIEW: 
+Comparison: 05/13/07.",The left chest tube has been removed and there is no left pneumothorax.  The heart is normal in size.  The lungs are clear.,No pneumothorax after left chest tube removal.,"- SpO2: 98% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 120 mmHg
+- Temperature: 37.0°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE;ACT_OBSERVE,No further routine pneumothorax imaging is required at this time. Continue routine clinical observation and obtain repeat chest radiograph only if new or worsening respiratory symptoms develop.,Post-removal chest radiograph shows no residual left pneumothorax and the patient is clinically stable with normal oxygenation and work of breathing.
+GRDN006WOMKG4AVY,5,20070112,214853.220663,"Assault. Spontaneous left pneumothorax.
+ PORTABLE 88HNM-V VIEW:
+ Left chest tube remains in place. There is no evidence of pneumothorax. Both lungs are clear. Heart size and mediastinal contours are normal.",,No evidence of residual left pneumothorax. Left chest tube remains in place.,"- SpO2: 99% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 104 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: outpatient",ACT_REASSESS_BEDSIDE;ACT_REPEAT_CXR;ACT_TIMED_FOLLOWUP,No emergent intervention is indicated. Recommend clinical reassessment for chest tube management/removal and a follow-up chest radiograph after tube removal or at a defined short interval per the treating service.,"The radiograph shows no residual left pneumothorax and the patient is clinically stable on room air, but a left chest tube remains in place and needs clinical reassessment and post-management imaging follow-up."
+GRDN006WOMKG4AVY,6,20070124,063451.313663,"History of pneumothorax of the left lung.  
+ PA AND LATERAL CHEST:
+ Comparison:  Multiple prior exams, most recent 08/21/06.",The lungs are clear.  No pneumothorax.  No pleural effusion.  Heart size normal.,Normal chest.  No pneumothorax.,"- SpO2: 97% on room air
+- Respiratory rate: 12/min
+- Work of breathing: normal
+- Systolic BP: 139 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE,No additional chest imaging follow-up is required for pneumothorax at this time; routine clinical follow-up only.,"Chest radiograph is normal with no pneumothorax or pleural effusion, and the patient is clinically stable with normal oxygenation on room air."
+GRDN006WOMKG4AVY,7,20070302,044057.220663,"History of pneumothorax. 
+ 2-VIEW CHEST:
+ PA and lateral views of the chest are made and are compared to a previous study of 04/19/07 and show no evidence of pneumothorax, pleural effusion, or acute chest disease.  The heart and mediastinum are normal.  Bones are normal.",,No acute findings.  No pneumothorax.,"- SpO2: 98% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 115 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: ED",ACT_STOP_SURVEILLANCE,No routine imaging follow-up for pneumothorax is required based on this exam. Clinical follow-up only if symptoms recur or worsen.,"Chest radiograph shows no pneumothorax or acute cardiopulmonary disease, and the patient is clinically stable with normal oxygenation and work of breathing."
+GRDN006WOMKG4AVY,8,20090806,070601.220663,"Cough
+
+Comparison:  03/14/2006
+
+CHEST - 2 VIEW:
+
+The lungs are clear.  The cardiopericardial silhouette is within normal limits
+for size.  Visualized bony structures of the thorax are intact.",,No acute cardiopulmonary process,"- SpO2: 97% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 128 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,"No routine imaging follow-up is indicated. Recommend clinical observation with outpatient reassessment if cough persists, worsens, or new symptoms develop.","Chest radiograph shows no acute cardiopulmonary process and the outpatient is physiologically stable with normal oxygenation, respiratory rate, work of breathing, and temperature."
+GRDN006WOMKG4AVY,9,20120813,033329.220663,"History of pneumothorax.  Shortness of breath with
+left-sided chest pain.
+
+CHEST - 2 VIEW
+
+Comparison: 06/27/2008.","Trachea is midline.  Heart size normal.  Lungs are clear.
+No pleural fluid.  There may be a very mild pectus deformity.",No acute findings.,"- SpO2: 99% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 140 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,No acute imaging follow-up is required. Recommend outpatient clinical observation with reassessment if shortness of breath or chest pain persists or worsens.,"Chest X-ray shows no acute findings or pneumothorax, and the patient is stable as an outpatient with normal oxygenation and work of breathing."
+GRDN006WOMKG4AVY,10,20150220,070206.360663,"Chest pain
+
+CHEST - 2 VIEW
+
+Comparison: January 31, 2012.","Cardiomediastinal silhouette appears normal.  No acute
+pulmonary disease is noted.  Bony thorax is intact.",No acute cardiopulmonary abnormality seen.,"- SpO2: 99% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 110 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No acute pulmonary imaging follow-up is indicated. Continue clinical evaluation/management of chest pain in the ED and reassess if respiratory symptoms or instability develop.,Chest radiograph shows no acute cardiopulmonary abnormality and the patient is clinically stable with normal oxygenation and work of breathing.
+GRDN007ELLXXY3OJ,1,20050502,160728.548902,"65-year-old with chest pain, throat pain for two weeks.  
+ PORTABLE, ONE VIEW, CHEST
+ Comparison:  CT of the chest 02/15/2005.  
+ The patient has left-sided AICD-pacer with leads overlying superior vena cava, right atrium, right ventricle and coronary sinus.  The patient has had median sternotomy and CABG.  The cardiac size is mildly enlarged though also accentuated by technique.  There is no evidence for edema.  No focal consolidations or pleural effusions are seen.",,Cardiomegaly without evidence for acute pulmonary abnormality.,"- SpO2: 97% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 119 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: outpatient",ACT_CLINICAL_CORRELATION,No urgent pulmonary imaging follow-up is indicated. Correlate cardiomegaly with the patient’s known cardiac history and symptoms; routine clinical/cardiology follow-up may be considered if cardiomegaly is new or symptoms suggest cardiac disease.,"The radiograph shows cardiomegaly but no edema, consolidation, effusion, or other acute pulmonary abnormality, and the outpatient clinical context is physiologically stable with normal oxygenation."
+GRDN007ELLXXY3OJ,2,20060507,130947.548902,"Chest pain. 
+ PORTABLE CHEST - 12/20/2005 AT 5536 HOURS:
+ Comparison:  12/15/2004.",The heart is borderline enlarged.  The left subclavian AICD device is stable.  The pulmonary vasculature is within normal limits.  The lungs are clear.,No significant change.  No acute pathology.,"- SpO2: 96% on baseline low-flow oxygen
+- Respiratory rate: 12/min
+- Work of breathing: mild
+- Systolic BP: 117 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE;ACT_OBSERVE,"No routine chest imaging follow-up is required for this stable, negative chest radiograph. Continue outpatient clinical observation and reassess if chest pain or respiratory symptoms worsen.","The chest radiograph is unchanged with clear lungs and no acute cardiopulmonary pathology, and the outpatient clinical context shows stable oxygenation and no respiratory distress."
+GRDN007ELLXXY3OJ,3,20060512,145354.548902,"Post-CABG.  Chest pain.  
+ PORTABLE CHEST ([DATE] HOURS):
+ Compared to a portable film from 10/11/06, endotracheal tube is in good position with the tip approximately 6 cm above the carina.  Swan-Ganz catheter tip is in the right main pulmonary artery.  There is cardiomegaly present and there is pericardial air probably due to recent surgical intervention.  Pacer is present.",,"1.  Endotracheal tube tip 6 cm above carina. 
+ 2.  Air in pericardial space probably postoperative in nature. 
+ 3.  Swan-Ganz catheter tip right main pulmonary artery.
+ 4.  Mild left basilar linear atelectasis.","- SpO2: 93% on room air
+- Respiratory rate: 16/min
+- Work of breathing: mild
+- Systolic BP: 146 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY,"Recommend focused bedside respiratory reassessment and routine postoperative lung-expansion measures, including deep-breathing/cough exercises, incentive spirometry, upright positioning/early mobilization, and analgesia optimization to permit ventilation and cough. No urgent imaging or invasive intervention is indicated unless oxygenation or respiratory status worsens.","The only actionable pulmonary abnormality is mild postoperative left basilar linear atelectasis in an alert, hemodynamically stable patient with only mild work of breathing and SpO2 93% on room air."
+GRDN007ELLXXY3OJ,4,20060513,041454.548902,"Chest pain, postop day 1 status post CABG redo.
+PORTABLE CHEST:
+Comparison:  06/22/06. 
+Stable left basilar atelectasis.  Mildly reduced interstitial edema.  Endotracheal and nasogastric tubes have been removed.  Defibrillator device, left sided chest tubes, and Swan-Ganz catheter in the right pulmonary artery remain.  
+No visible pneumothorax. 
+Minimal residual pneumopericardium.",,Endotracheal and nasogastric tubes have been removed.  Mild bibasilar atelectasis.  There is likely a tiny residual amount of pneumopericardium.,"- SpO2: 98% on nasal cannula 1–2 L/min
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 131 mmHg
+- Temperature: 37.6°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY;ACT_REASSESS_DEFINED_INTERVAL,"Recommend routine postoperative respiratory care with focused bedside reassessment, deep-breathing/cough exercises or incentive spirometry, adequate analgesia, and early mobilization. Continue routine clinical monitoring and reassess at a defined interval, with repeat imaging if respiratory status worsens.","Postoperative day 1 film shows only mild bibasilar atelectasis and tiny residual pneumopericardium with stable oxygenation on low-flow nasal cannula, normal work of breathing, and no pneumothorax."
+GRDN007ELLXXY3OJ,5,20060514,042211.548902,"Chest pain, CABG. 
+ PORTABLE CHEST:
+ Comparison: 05/22/05. 
+ Cardiomegaly, cardiac surgery, pacemaker, pulmonary vascular congestion and basilar atelectasis are stable. No evidence of pneumothorax.  Swan-Ganz catheter has been removed. Thoracostomy/ mediastinal tube is also removed.   A tiny amount of pneumomediastinum/pneumothorax along the left heart is unchanged.",,Swan-Ganz catheter and mediastinal/thoracostomy tube removal without other significant change.,"- SpO2: 94% on nasal cannula 1–2 L/min
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 131 mmHg
+- Temperature: 37.2°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_OBSERVE;ACT_REPEAT_CXR;ACT_REASSESS_DEFINED_INTERVAL;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION,"Continue routine postoperative respiratory monitoring and pulmonary hygiene with deep-breathing/cough exercises and early mobilization. Obtain a follow-up chest radiograph after a defined short interval or sooner if oxygen requirement, dyspnea, chest pain, or respiratory status worsens.",The patient is clinically stable postoperatively with normal work of breathing and only a stable tiny pneumomediastinum/pneumothorax plus basilar atelectasis after tube removal.
+GRDN007ELLXXY3OJ,6,20060515,035025.438902,"Chest pain.  CABG.  
+2-VIEW CHEST RADIOGRAPH:
+Comparison:  06/17/06.","There is mild persistent pneumopericardium.  Reduced interstitial edema.  There is a small amount of pleural fluid on the left with some mild left basilar atelectasis.  Mitral valve prosthesis ring is noted.  
+There is a 5 mm slightly spiculated-appearing nodule at the right lung apex.  Review of the prior CT scan of the chest from 04/01/05 failed to reveal this finding.  Cannot exclude a small neoplastic pulmonary nodule.   I recommend followup chest radiography in two months time or sooner for followup.","1.  Reduced interstitial edema.
+2.  Cardiomegaly.  
+3.  Mild residual pneumopericardium.
+4.  Mild left basilar atelectasis associated with small left pleural effusion.","- SpO2: 96% on mask
+- Respiratory rate: 27/min
+- Work of breathing: mild
+- Systolic BP: 182 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: stepdown",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_REPEAT_CXR;ACT_TIMED_FOLLOWUP,"Continue focused respiratory reassessment and postoperative lung-expansion measures, including deep breathing/coughing, mobilization, and adequate analgesia. Recommend repeat chest radiograph in about 2 months, or sooner if symptoms or respiratory status worsen, to reassess the right apical nodule and residual postoperative findings.","The patient is stable but tachypneic on supplemental oxygen with mild postoperative left basilar atelectasis/small effusion and residual pneumopericardium, plus a new 5 mm slightly spiculated right apical nodule for which the report recommends interval radiographic follow-up."
+GRDN007ELLXXY3OJ,7,20060612,041716.782902,"Unsteady gait and bilateral leg pain.
+ PA AND LATERAL CHEST:
+ Comparison:  09/13/06 and CT done 09/14/06.  The cardiomediastinal contours are stable status-post CABG and mitral valve replacement.  The left subclavian biventricular pacemaker leads are in stable position.  The lungs appear stable without evidence of acute superimposed process.  There is no pleural effusion or pneumothorax.",,Stable postoperative chest.  No acute findings.,"- SpO2: 98% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 107 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ED",ACT_STOP_SURVEILLANCE,No routine chest imaging follow-up is indicated for this stable postoperative appearance and absence of acute findings.,"The chest radiograph shows a stable postoperative chest with no acute cardiopulmonary abnormality, and the patient is oxygenating normally on room air without respiratory distress."
+GRDN007ELLXXY3OJ,8,20080412,130625.548902,"Patient is status post cardioversion.  Question pulmonary edema.  
+ PORTABLE CHEST ? 1 VIEW:
+ Comparison:   12/18/06.",There is cardiomegaly with mild interstitial edema.  No effusion.  Patient is status post CABG with an AICD in place.,Cardiomegaly and mild interstitial edema.,"- SpO2: 89% on nasal cannula
+- Respiratory rate: 32/min
+- Work of breathing: moderate
+- Systolic BP: 125 mmHg
+- Temperature: 37.7°C
+- Mental status: alert
+- Care setting: ward",ACT_URGENT_ASSESSMENT;ACT_NIV;ACT_FUROSEMIDE_IV;ACT_REASSESS_BEDSIDE;ACT_REQUEST_RELEVANT_LABS;ACT_ESCALATE_CARE,Recommend urgent bedside respiratory assessment and escalation of care for hypoxemic pulmonary edema; initiate noninvasive ventilatory support as appropriate and treat with IV loop diuresis with renal/electrolyte monitoring. Reassess clinical response promptly.,"Chest X-ray shows cardiomegaly with mild interstitial pulmonary edema, and the patient is hypoxemic on nasal cannula with tachypnea and moderate work of breathing on the ward."
+GRDN007ELLXXY3OJ,9,20081130,062410.282902,"Pre-op for cardiac catheterization. 
+ CHEST ? 2 VIEW:
+ Comparison:  10/28/08.",Two views of the chest show stable cardiomegaly.  No active infiltrate or effusion is seen.  Pacer with AICD remains.,Stable cardiomegaly with pacer.  No active lung disease.,"- SpO2: 94% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 180 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE;ACT_CLINICAL_CORRELATION,No acute pulmonary treatment or routine follow-up chest imaging is required for this study. Correlate the stable cardiomegaly with the patient’s ongoing cardiac evaluation/management.,"The radiograph shows stable chronic cardiomegaly with pacer/AICD and no infiltrate, effusion, edema, or pneumothorax, while the outpatient is oxygenating adequately with normal work of breathing."
+GRDN007ELLXXY3OJ,10,20091123,205750.423902,"Chest pain, hypertension, diabetes, coronary artery
+disease
+
+CHEST - 2 VIEW
+
+Comparison: 09/27/2008","Cardiac enlargement status post CABG and MVR.
+Left subclavian transvenous pacemaker and AICD leads stable.
+Pulmonary vascular congestion.
+Minimal chronic interstitial prominence without acute pulmonary
+edema or segmental consolidation.
+Spur formation vertebral endplates thoracic spine.
+No pleural effusion or pneumothorax.","Cardiomegaly with pulmonary vascular congestion, status post CABG,
+MVR, and pacemaker / AICD.
+No acute abnormalities.","- SpO2: 87% on mask
+- Respiratory rate: 20/min
+- Work of breathing: mild
+- Systolic BP: 114 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: ward",ACT_RAPID_RESPONSE;ACT_HFNC;ACT_URGENT_ASSESSMENT;ACT_ESCALATE_CARE;ACT_REASSESS_BEDSIDE,"Recommend immediate bedside respiratory assessment and activation of urgent response/escalation pathway, with escalation of oxygen support such as high-flow nasal cannula and higher-level monitoring as needed. Correlate clinically for the cause of hypoxemia despite no acute radiographic abnormality.","Although the radiograph shows cardiomegaly with pulmonary vascular congestion and no acute edema, the patient has significant hypoxemia with SpO2 87% on mask in the ward setting."
+GRDN007ELLXXY3OJ,11,20100620,210034.485902,"Chest pain and shortness of breath.
+
+CHEST - 2 VIEW
+
+Comparison: 04/28/2009","There is a stable appearance to a biventricular pacing /
+ICD device.  Stable cardiomegaly.  Patient is status post CABG and
+mitral valve replacement.
+
+No evidence of edema or infiltrate.  No pleural fluid is
+identified.  Stable degenerative changes of the thoracic spine.",Stable appearance of chest.  No acute edema.,"- SpO2: 98% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 113 mmHg
+- Temperature: 37.0°C
+- Mental status: alert
+- Care setting: outpatient",ACT_CLINICAL_CORRELATION;ACT_OBSERVE,"No acute chest imaging follow-up is recommended. Correlate clinically for the reported chest pain and shortness of breath, with outpatient reassessment or further workup only if symptoms persist or worsen.","The chest radiograph is stable with no edema, infiltrate, pleural effusion, or pneumothorax, and the outpatient clinical context shows normal oxygenation and no respiratory distress."
+GRDN007ELLXXY3OJ,12,20130712,101759.157902,"Shortness of breath, pacemaker battery dead.
+
+CHEST - 2 VIEW
+
+Comparison: 01/12/2011","Lungs are essentially clear. No pleural effusion or
+pneumothorax.
+
+Stable cardiomegaly. Postsurgical changes related to prior CABG.
+
+Left subclavian ICD.
+
+Degenerative changes of the visualized thoracolumbar spine.
+Cervical spine fixation hardware, incompletely visualized.","No evidence of acute cardiopulmonary disease.
+
+Stable cardiomegaly.","- SpO2: 97% on baseline low-flow oxygen
+- Respiratory rate: 21/min
+- Work of breathing: mild
+- Systolic BP: 146 mmHg
+- Temperature: 37.5°C
+- Mental status: alert
+- Care setting: outpatient",ACT_CARDIOLOGY_FOLLOWUP;ACT_CLINICAL_CORRELATION,No acute pulmonary imaging follow-up is required. Correlate clinically for dyspnea and arrange cardiology/device follow-up for the reported pacemaker/ICD battery issue and stable cardiomegaly.,"The chest radiograph shows no acute cardiopulmonary disease with stable cardiomegaly, while the history notes a dead pacemaker/ICD battery in a stable outpatient with only mild work of breathing."
+GRDN007ELLXXY3OJ,13,20130715,090900.548902,"Chest heart failure
+
+CHEST - 2 VIEW
+
+Comparison: Plain film 08/14/2013","Left-sided pacemaker with continuous leads overlies
+stable cardiac silhouette.  No effusion, infiltrate, or
+pneumothorax. Degenerative osteophytosis of the thoracic spine.",Cardiomegaly without acute cardiopulmonary process.,"- SpO2: 98% on baseline low-flow oxygen
+- Respiratory rate: 20/min
+- Work of breathing: normal
+- Systolic BP: 119 mmHg
+- Temperature: 37.2°C
+- Mental status: alert
+- Care setting: ED",ACT_CLINICAL_CORRELATION;ACT_CARDIOLOGY_FOLLOWUP,No acute pulmonary intervention or emergent imaging follow-up is indicated. Correlate clinically for heart-failure status and continue routine cardiology/heart-failure follow-up as appropriate.,"The radiograph shows cardiomegaly without edema, effusion, infiltrate, or pneumothorax, and the patient is clinically stable with normal work of breathing and oxygenation on baseline low-flow oxygen."
+GRDN007ELLXXY3OJ,14,20130721,135037.610902,"Shortness of breath.  The chest pain.  History of
+congestive heart failure.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Two-view chest 09/24/2013 and 09/21/2013.","Cardiomegaly is stable.  The mild pulmonary vascular
+congestion has increased slightly.  Pacing wires are stable.  The
+visualized soft tissues and bony thorax are unremarkable.","Cardiomegaly with a slight increase in a diffuse interstitial
+pattern compatible with mild edema or pulmonary vascular
+congestion.","- SpO2: 91% on room air
+- Respiratory rate: 29/min
+- Work of breathing: moderate
+- Systolic BP: 106 mmHg
+- Temperature: 37.2°C
+- Mental status: anxious
+- Care setting: ED",ACT_URGENT_ASSESSMENT;ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_FUROSEMIDE_IV;ACT_REQUEST_RELEVANT_LABS,"Recommend urgent ED respiratory/heart-failure assessment with supplemental oxygen titration and IV loop diuresis as clinically appropriate. Obtain relevant heart-failure/renal/electrolyte labs and closely reassess response, with escalation if hypoxemia or work of breathing worsens.","Mild cardiogenic pulmonary edema/pulmonary vascular congestion is present in a CHF patient with ED hypoxemia, tachypnea, and moderate work of breathing, warranting urgent assessment, oxygen support, and decongestive therapy rather than routine imaging follow-up alone."
+GRDN007ELLXXY3OJ,15,20130723,110839.548902,"Chest pain and shortness of breath.
+
+CHEST - 2 VIEW
+
+Comparison: Chest x-ray 12/12/2013.","Lungs are well expanded bilaterally, without
+consolidative airspace disease or pleural effusions.  No
+pneumothorax.  Pulmonary vasculature is within normal limits.
+Heart size is mildly enlarged.  Mediastinal contours are
+unremarkable.  Atherosclerosis in the thoracic aorta.  The patient
+is status post median sternotomy for CABG with [REDACTED] to the LAD.
+Additionally, there has been a mitral annuloplasty.  A left-sided
+biventricular pacemaker/AICD is in place with lead tips projecting
+over the expected location of the right atrium, right ventricle and
+left ventricle (via the coronary sinus and coronary veins).","1.  No radiographic evidence of acute cardiopulmonary disease.
+2.  Mild cardiomegaly is unchanged.
+3.  Postoperative changes and support apparatus redemonstrated, as
+above.
+4.  Atherosclerosis.","- SpO2: 97% on room air
+- Respiratory rate: 14/min
+- Work of breathing: mild
+- Systolic BP: 171 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE;ACT_STOP_SURVEILLANCE,No acute pulmonary intervention or routine follow-up chest imaging is indicated based on this radiograph. Continue clinical observation/reassessment for the presenting chest pain and shortness of breath as clinically warranted.,"The chest X-ray shows no acute cardiopulmonary disease, no edema, effusion, consolidation, or pneumothorax, and the patient is stable with normal oxygenation on room air."
+GRDN007ELLXXY3OJ,16,20130823,181653.688902,"Short of breath and cough
+
+CHEST - 2 VIEW
+
+Comparison: 09/29/2013","Mitral valve replacement.  AICD is unchanged.  Cardiac
+enlargement.  Prior CABG.
+
+Negative for edema.  Negative for pneumonia or effusion.  Mild
+vascular congestion.",Mild vascular congestion without edema or pneumonia.,"- SpO2: 91% on nasal cannula
+- Respiratory rate: 29/min
+- Work of breathing: moderate
+- Systolic BP: 155 mmHg
+- Temperature: 37.7°C
+- Mental status: anxious
+- Care setting: stepdown",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_REASSESS_BEDSIDE;ACT_REQUEST_RELEVANT_LABS;ACT_CLINICAL_CORRELATION,Recommend urgent bedside respiratory assessment with titration of supplemental oxygen and clinical correlation for early/decompensated heart failure or other causes of dyspnea. Obtain relevant clinical/laboratory evaluation as indicated; no routine chest imaging follow-up is needed unless symptoms worsen or fail to improve.,"Mild vascular congestion without radiographic edema or pneumonia is nonspecific, but the patient is hypoxemic on nasal cannula with tachypnea and moderate work of breathing, requiring urgent physiologic reassessment and supportive management rather than routine imaging follow-up alone."
+GRDN007ELLXXY3OJ,17,20130906,140424.548902,,,"Hazy density in the right infrahilar region which could
+represent developing pneumonia versus atelectasis. Pleural thickening is
+also a consideration. Pacemaker present with CABG changes and cardiomegaly.
+
+[REDACTED]","- SpO2: 92% on nasal cannula
+- Respiratory rate: 23/min
+- Work of breathing: moderate
+- Systolic BP: 110 mmHg
+- Temperature: 39.7°C
+- Mental status: alert
+- Care setting: observation",ACT_URGENT_ASSESSMENT;ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_CAP_INPATIENT_ABX;ACT_REQUEST_RELEVANT_LABS;ACT_REPEAT_CXR;ACT_TIMED_FOLLOWUP,"Recommend urgent clinical respiratory assessment with continued/titrated supplemental oxygen and inpatient empiric treatment for pneumonia, including appropriate laboratory evaluation. Obtain follow-up chest radiograph after treatment, typically in 6–8 weeks or sooner if symptoms or oxygenation worsen, to document clearing and exclude persistent pleural/parenchymal abnormality.","Right infrahilar hazy opacity is compatible with developing pneumonia in the setting of high fever, tachypnea, moderate work of breathing, and oxygen requirement with SpO2 92% on nasal cannula."
+GRDN007ELLXXY3OJ,18,20130911,145024.548902,,,"1. Cardiomegaly with mild pulmonary edema.
+
+[REDACTED]","- SpO2: 91% on nasal cannula
+- Respiratory rate: 29/min
+- Work of breathing: mild
+- Systolic BP: 130 mmHg
+- Temperature: 36.9°C
+- Mental status: anxious
+- Care setting: ED",ACT_URGENT_ASSESSMENT;ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_FUROSEMIDE_IV;ACT_REQUEST_RELEVANT_LABS,"Recommend urgent clinical reassessment in the ED with titration of supplemental oxygen and treatment for suspected cardiogenic pulmonary edema, including IV loop diuresis as clinically appropriate. Obtain relevant renal/electrolyte and heart-failure laboratory assessment and monitor response closely.","Cardiomegaly with mild pulmonary edema is accompanied by hypoxemia on nasal cannula and tachypnea in the ED, supporting urgent assessment, oxygen titration, and treatment/evaluation for acute cardiogenic pulmonary edema."
+GRDN007ELLXXY3OJ,19,20140531,091807.548902,"Cough and malaise for 4 weeks.
+
+CHEST - 2 VIEW
+
+Comparison: 09/30/2013.","The heart, mediastinum and hilar contours are normal.
+Status post CABG and cardiac valve replacement surgery.  Sequential
+cardiac ICD pacer wires in place with generator on the left.  The
+lungs are clear.  No edema, consolidation or masses.  No effusions
+or pneumothoraces.  No acute bony changes.",No active disease,"- SpO2: 97% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 111 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,"No acute imaging follow-up is required. Continue outpatient clinical observation and reassess clinically if cough/malaise persist, worsen, or new respiratory symptoms develop.","Chest radiograph shows no active cardiopulmonary disease and the outpatient clinical context is stable with normal oxygenation, respiratory rate, work of breathing, and no fever."
+GRDN007ELLXXY3OJ,20,20150719,085230.548902,"Dyspnea.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  March 08, 2014.","Stable cardiomegaly. Status post coronary artery bypass graft.
+Left-sided pacemaker is unchanged in position. No pneumothorax or
+pleural effusion is noted. No acute pulmonary disease is noted. Bony
+thorax appears intact.",No acute cardiopulmonary abnormality seen.,"- SpO2: 95% on baseline low-flow oxygen
+- Respiratory rate: 15/min
+- Work of breathing: mild
+- Systolic BP: 144 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: outpatient",ACT_CLINICAL_CORRELATION;ACT_OBSERVE,No acute radiographic follow-up is required. Recommend clinical correlation for dyspnea with outpatient observation/reassessment if symptoms persist or worsen.,"Chest radiograph shows no acute cardiopulmonary abnormality and the outpatient clinical context is stable with SpO2 95% on baseline oxygen, normal respiratory rate, and only mild work of breathing."
+GRDN007ELLXXY3OJ,21,20150721,070010.548902,"Shortness of Breath
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  April 09, 2015 and June 02, 2013","There is chronic interstitial prominence in the lung bases.
+Elsewhere lungs are clear. The heart is mildly enlarged with
+pulmonary vascularity within normal limits. Pacemaker leads are
+attached to the right atrium, right ventricle, and left ventricle.
+Patient is status post internal mammary bypass grafting. There is a
+mitral valve replacement as well. No adenopathy.","Suspect mild chronic congestive heart failure. There may also be
+some bibasilar interstitial fibrosis. There is no new opacity. No
+consolidation. There is chronic mild cardiac prominence with
+postoperative change.","- SpO2: 86% on mask
+- Respiratory rate: 23/min
+- Work of breathing: moderate
+- Systolic BP: 162 mmHg
+- Temperature: 36.6°C
+- Mental status: anxious
+- Care setting: stepdown",ACT_RAPID_RESPONSE;ACT_URGENT_ASSESSMENT;ACT_NIV;ACT_FUROSEMIDE_IV;ACT_ESCALATE_CARE;ACT_REQUEST_RELEVANT_LABS,"Urgent bedside respiratory assessment is recommended now with activation/escalation of care; initiate advanced oxygenatory support, preferably noninvasive ventilation if appropriate, and treat suspected cardiogenic pulmonary edema with IV diuresis while obtaining relevant labs and monitoring response.","Despite only mild chronic CHF/interstitial changes on chest X-ray, the patient has severe hypoxemia on a mask with moderate work of breathing and hypertension, raising concern for acute decompensated cardiopulmonary failure requiring urgent escalation rather than routine imaging follow-up."
+GRDN007ELLXXY3OJ,22,20150726,075752.548902,"Cough, shortness of Breath
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  07/20/2015","Left AICD remains in place, unchanged. Prior CABG. Cardiomegaly.
+Lungs are clear. No effusions or acute bony abnormality. No overt
+edema.",Cardiomegaly.  No active disease.,"- SpO2: 97% on baseline low-flow oxygen
+- Respiratory rate: 15/min
+- Work of breathing: mild
+- Systolic BP: 160 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: ED",ACT_CLINICAL_CORRELATION;ACT_OBSERVE,"No urgent chest imaging follow-up is required. Correlate clinically for the patient’s shortness of breath/cough and cardiomegaly, with routine reassessment if symptoms persist or worsen.","Chest X-ray shows cardiomegaly without edema, effusion, pneumonia, or other active pulmonary disease, and the patient is physiologically stable with normal oxygenation on baseline low-flow oxygen."
+GRDN007ELLXXY3OJ,23,20150803,155942.548902,"Congestive heart failure.
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  06/08/2016 and 06/03/2016.","5469 hr. Left subclavian pacemaker/ AICD leads are unchanged within
+the right atrium, right ventricle and coronary sinus. The heart is
+enlarged status post CABG and mitral valve replacement. There is
+mild pulmonary edema. No confluent airspace opacity or significant
+pleural effusion is seen.","Cardiomegaly with mild pulmonary edema consistent with mild
+congestive heart failure.","- SpO2: 88% on mask
+- Respiratory rate: 30/min
+- Work of breathing: mild
+- Systolic BP: 128 mmHg
+- Temperature: 37.3°C
+- Mental status: alert
+- Care setting: ED",ACT_URGENT_ASSESSMENT;ACT_NIV;ACT_FUROSEMIDE_IV;ACT_REQUEST_RELEVANT_LABS;ACT_REASSESS_DEFINED_INTERVAL,"Urgent respiratory reassessment is recommended; initiate noninvasive ventilatory support as clinically appropriate and treat acute CHF/pulmonary edema with IV loop diuresis while checking renal function/electrolytes and monitoring response. Reassess oxygenation and work of breathing after treatment, with escalation of care if hypoxemia or respiratory distress persists.","The chest radiograph shows mild cardiogenic pulmonary edema/CHF, and the ED context shows significant hypoxemia despite mask oxygen with tachypnea, requiring urgent assessment, ventilatory support, and decongestion rather than observation alone."
+GRDN007ELLXXY3OJ,24,20150803,191439.548902,"Central line placed
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  03/17/2016","New right upper extremity PICC.  The tip is at the lower SVC.
+
+Unchanged cardiomegaly. The patient is status post median sternotomy
+for mitral annuloplasty and CABG. Unchanged orientation of
+biventricular ICD/pacer leads from the left. There is improving
+right basilar aeration. Pulmonary edema is less evident as well.
+Suspect multiple calcified pulmonary nodules bilaterally, usually
+seen with granulomatous disease or remote varicella infection. No
+effusion or pneumothorax.","1. New right upper extremity PICC is in good position.
+2. Improving basilar lung aeration.","- SpO2: 98% on baseline low-flow oxygen
+- Respiratory rate: 13/min
+- Work of breathing: normal
+- Systolic BP: 147 mmHg
+- Temperature: 37.3°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No urgent imaging follow-up or intervention is required for the PICC placement. Continue routine clinical observation and reassess or repeat chest imaging only if respiratory status worsens or line dysfunction is suspected.,"The PICC tip is appropriately positioned with no pneumothorax or effusion, basilar aeration/pulmonary edema are improving, and the patient is physiologically stable on baseline low-flow oxygen."
+GRDN007ELLXXY3OJ,25,20150808,071124.548902,"Cough with sputum production, history CHF, question
+pneumonia.
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  Portable exam 5801 hr compared to 03/08/2016","LEFT subclavian pacemaker/AICD leads project over RIGHT atrium,
+RIGHT ventricle and coronary sinus.
+
+RIGHT arm PICC line tip projects over mid SVC.
+
+Enlargement of cardiac silhouette post CABG.
+
+Mediastinal contours and pulmonary vascularity normal.
+
+Atherosclerotic calcification aortic arch.
+
+Mild residual infiltrate RIGHT lower lobe.
+
+Remaining lungs grossly clear.
+
+No pleural effusion or pneumothorax.","Mild residual infiltrate RIGHT lower lobe.
+
+Enlargement of cardiac silhouette post CABG and pacemaker/AICD.","- SpO2: 94% on baseline oxygen
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 101 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: ward",ACT_CLINICAL_CORRELATION;ACT_REASSESS_BEDSIDE;ACT_CAP_INPATIENT_ABX;ACT_TIMED_FOLLOWUP;ACT_REPEAT_CXR,"Correlate clinically for residual right lower-lobe pneumonia; if infection remains clinically suspected, treat/continue nonsevere inpatient CAP therapy per local protocol. Recommend interval follow-up chest radiograph, typically in about 6–8 weeks or sooner if symptoms or oxygenation worsen, to document resolution.","Mild residual right lower-lobe infiltrate with cough/sputum supports possible nonsevere pneumonia, while normal work of breathing, afebrile status, and SpO2 94% on baseline oxygen argue against urgent respiratory escalation."
+GRDN007ELLXXY3OJ,26,20150810,065722.548902,"Short of breath, congestive heart failure
+
+EXAM:
+PORTABLE CHEST - 1 VIEW
+
+COMPARISON:  10/03/2015","Left-sided pacemaker with multiple contents leads overlie stable
+enlarged groin silhouette. Right PICC line is unchanged. There is
+mild central venous congestion. No pulmonary edema. No pneumothorax.","Mild central venous congestion. No overt pulmonary edema. No
+interval change.","- SpO2: 88% on room air
+- Respiratory rate: 33/min
+- Work of breathing: mild
+- Systolic BP: 157 mmHg
+- Temperature: 37.4°C
+- Mental status: anxious
+- Care setting: ward",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_REASSESS_BEDSIDE;ACT_FUROSEMIDE_IV;ACT_REQUEST_RELEVANT_LABS,"Recommend urgent respiratory/clinical assessment with titration of supplemental oxygen and focused reassessment. Given CHF with venous congestion and hypoxemia, consider IV diuresis if clinically volume overloaded and obtain relevant renal/electrolyte and heart-failure labs to guide therapy.","Mild central venous congestion in a patient with CHF is accompanied by clinically significant hypoxemia on room air and tachypnea, supporting urgent bedside evaluation, oxygen support, and treatment/monitoring for decompensated congestion."
+GRDN00A5ZYWHZY7D,1,20060929,044746.759320,"Cough, shortness of breath.
+ CHEST- 2 VIEW:",The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.,No active cardiopulmonary disease.,"- SpO2: 98% on room air
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 139 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,"No routine imaging follow-up is indicated. Continue clinical observation and reassess if symptoms worsen or new fever, hypoxemia, or respiratory distress develops.","Chest radiograph shows no active cardiopulmonary disease and the patient is physiologically stable with normal oxygenation, respiratory rate, work of breathing, temperature, and mental status."
+GRDN00A5ZYWHZY7D,2,20080114,041659.791320,"Fever, strep throat
+
+CHEST - 2 VIEW:
+
+Comparison: 07/12/2006","The heart size and mediastinal contours are within normal limits. 
+Both lungs are clear.  The visualized skeletal structures are unremarkable.",No active cardiopulmonary disease,"- SpO2: 98% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 127 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,"No acute chest imaging follow-up is indicated. Continue outpatient clinical observation, with reassessment if respiratory symptoms develop or worsen.",Chest radiograph shows no active cardiopulmonary disease and the patient is stable as an outpatient with normal oxygenation and work of breathing.
+GRDN00A5ZYWHZY7D,3,20080429,103241.822320,"Neutropenia, abdominal pain, pancytopenia. Fever of unknown
+origin.
+Comparison:  06/23/2008.","No focal airspace disease, edema, or effusions. No consolidations
+suspicious for pneumonia. Bones appear within normal limits. Cardiomediastinal
+silhouette within normal limits.
+**********************************************************************","No active cardiopulmonary disease. 
+**********************************************************************","- SpO2: 98% on room air
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 124 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,"No routine chest imaging follow-up is indicated based on this exam. Continue clinical evaluation for fever/neutropenia, with repeat chest imaging only if new or worsening respiratory symptoms, hypoxemia, or clinical deterioration develops.","Chest radiograph shows no active cardiopulmonary disease and the patient is physiologically stable with normal oxygenation, respiratory rate, work of breathing, blood pressure, temperature, and mental status."
+GRDN00A5ZYWHZY7D,4,20080710,023919.697320,"Midchest tightness.  Shortness of breath.  Cough.  
+ H4IU4-9 VIEWS:
+ Comparison:  01/05/09
+ Two views of the chest show no active infiltrate or effusion.  The heart is within normal limits and size.",,No active lung disease.,"- SpO2: 99% on room air
+- Respiratory rate: 20/min
+- Work of breathing: normal
+- Systolic BP: 112 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No acute pulmonary intervention or routine chest imaging follow-up is indicated. Continue clinical observation/reassessment in the ED and evaluate symptoms clinically as warranted.,"Chest radiograph shows no active lung disease and the patient is physiologically stable with SpO2 99% on room air, normal work of breathing, and no fever."
+GRDN00A5ZYWHZY7D,5,20120509,063431.572320,"Progressive mid chest pain for 2 weeks.  Question
+pneumonia.
+
+CHEST - 2 VIEW
+
+Comparison: 06/24/2008.","The heart size is stable at the upper limits of normal.
+Mediastinal contours are normal.  The lungs are clear.  There is no
+pleural effusion or pneumothorax.  Thoracic spine osteophytes are
+noted.","Stable examination.  No evidence of pneumonia or other acute
+cardiopulmonary process.","- SpO2: 99% on room air
+- Respiratory rate: 13/min
+- Work of breathing: normal
+- Systolic BP: 107 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE;ACT_OBSERVE,No acute chest imaging follow-up is indicated. Continue routine clinical observation and reassess only if respiratory symptoms develop or worsen.,"The chest radiograph is stable and clear with no pneumonia, effusion, pneumothorax, or other acute cardiopulmonary process, and the patient is physiologically stable with normal oxygenation and work of breathing."
+GRDN00A5ZYWHZY7D,6,20140506,093506.713320,"Chest pain and cough
+
+CHEST - 2 VIEW
+
+Comparison: October 09, 2012","Lungs clear.  The heart size and pulmonary vascularity
+are normal.  No adenopathy.  There is degenerative change in the
+thoracic spine.  No pneumothorax.",No edema or consolidation.,"- SpO2: 98% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 109 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No specific chest imaging follow-up is recommended. Continue clinical observation and reassess if symptoms worsen or new respiratory findings develop.,"The chest radiograph shows clear lungs without edema, consolidation, or pneumothorax, and the patient is physiologically stable with normal oxygenation and work of breathing."
+GRDN00A5ZYWHZY7D,7,20150424,011145.713320,"Asthma.  Pre bariatric screening.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  02/21/2014","Lateral view degraded by patient arm position. Lower thoracic
+spondylosis. Midline trachea. Normal heart size and mediastinal
+contours. No pleural effusion or pneumothorax. Clear lungs.",No acute cardiopulmonary disease.,"- SpO2: 99% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 126 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE,No acute chest imaging follow-up is required. Continue routine clinical/preoperative care unless new respiratory symptoms develop.,"Chest radiograph shows clear lungs with no pleural effusion, pneumothorax, or acute cardiopulmonary disease, and the patient is clinically stable with normal oxygenation on room air."
+GRDN00A5ZYWHZY7D,8,20160721,142647.713320,"48-year-old female with history of cough, fever and
+flu-like symptoms.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  Chest x-ray 07/23/2015.","Lung volumes are normal. No consolidative airspace disease. No
+pleural effusions. No pneumothorax. No pulmonary nodule or mass
+noted. Pulmonary vasculature and the cardiomediastinal silhouette
+are within normal limits.",No radiographic evidence of acute cardiopulmonary disease.,"- SpO2: 97% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 106 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,"No routine imaging follow-up is recommended. Continue outpatient clinical observation and reassess if respiratory symptoms persist, worsen, or new hypoxemia/distress develops.",The chest radiograph shows no acute cardiopulmonary disease and the outpatient clinical context is stable with normal oxygenation and work of breathing.
+GRDN00A5ZYWHZY7D,9,20170112,192635.713320,"Fever for 2 days.  Body aches.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  07/08/2016","Lung volumes are low. The cardiomediastinal contours are normal. The
+lungs are clear. Pulmonary vasculature is normal. No consolidation,
+pleural effusion, or pneumothorax. No acute osseous abnormalities
+are seen.",Low lung volumes without acute process.,"- SpO2: 98% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 116 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE,"No acute imaging follow-up is required. Continue routine clinical observation and reassess if respiratory symptoms, hypoxemia, or fever worsen.","Chest radiograph shows only low lung volumes without consolidation, effusion, pneumothorax, or edema, and the patient is oxygenating well with normal respiratory effort and stable vital signs."
+GRDN00A5ZYWHZY7D,10,20191114,053249.713320,"Generalized weakness recent gastroenteritis
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  03/14/2020","The heart size and mediastinal contours are within normal limits.
+Both lungs are clear. The visualized skeletal structures are
+unremarkable.",Normal chest radiograph.,"- SpO2: 96% on room air
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 113 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE,No routine chest imaging follow-up is required. Continue clinical management for the presenting symptoms and reassess if new or worsening respiratory symptoms develop.,"The chest radiograph is normal and the patient is clinically stable with normal oxygenation, respiratory rate, work of breathing, and mental status."
+GRDN00BE97VCHW4E,1,20220825,023135.184771,"chest pain. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 05/13/2022.","No focal consolidation, pleural effusion, or pneumothorax. Cardiomediastinal silhouette is unremarkable. No pulmonary edema pattern.",No features of an acute intrathoracic process.,"- SpO2: 99% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 131 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE,No routine chest imaging follow-up is required for this radiographic exam; continue clinical observation and evaluate the chest pain based on clinical findings.,Chest radiograph shows no acute intrathoracic abnormality and the patient is physiologically stable with normal oxygenation and work of breathing.
+GRDN00BE97VCHW4E,2,20241214,112345.184771,"Post CABG
+Comparison: Chest radiograph December 14, 2024","1 view of the chest.
+Interval removal of endotracheal and enteric tubes.
+Right IJ approach Swan-Ganz catheter terminates overlying the main pulmonary artery, unchanged.
+Borderline increased interstitial opacities overlying both lungs. No pleural effusion pneumothorax. Cardiomegaly. Postsurgical changes related to median sternotomy. No acute fracture is identified.",Borderline increased interstitial lung markings overlying both lungs. Mild pulmonary interstitial edema cannot be ruled out.,"- SpO2: 94% on low-flow nasal cannula
+- Respiratory rate: 23/min
+- Work of breathing: mild
+- Systolic BP: 178 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: ward",ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_FUROSEMIDE_IV;ACT_REQUEST_RELEVANT_LABS;ACT_REASSESS_DEFINED_INTERVAL;ACT_REPEAT_CXR,"Recommend prompt bedside respiratory and volume-status reassessment with continued oxygen titration and treatment for mild pulmonary edema if clinically confirmed, including consideration of IV diuresis with renal/electrolyte monitoring. Reassess after therapy and obtain follow-up chest radiograph if oxygen requirement, dyspnea, or congestion persists or worsens.","Borderline bilateral interstitial markings may represent mild pulmonary interstitial edema, and the patient has mild tachypnea/work of breathing with SpO2 94% on low-flow oxygen and marked hypertension after CABG."
+GRDN00BE97VCHW4E,3,20241214,202822.184771,"pre op eval pain
+Comparison: 12/12/2024","1 view of the chest. The cardiomediastinal contours are within normal limits. No evidence of focal consolidation, pleural effusion, pulmonary edema, or pneumothorax.",No acute cardiopulmonary findings.,"- SpO2: 96% on room air
+- Respiratory rate: 13/min
+- Work of breathing: normal
+- Systolic BP: 116 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE,"No dedicated chest imaging follow-up is recommended. Continue routine clinical/preoperative care, with reassessment only if new respiratory symptoms develop.",Chest X-ray shows no acute cardiopulmonary abnormality and the patient is clinically stable with normal oxygenation and work of breathing.
+GRDN00BE97VCHW4E,4,20241215,210209.184771,"postoperative care
+Comparison: 12/14/2024","1 view of the chest was obtained.
+Lungs/pleura: Mild interstitial prominence. Small left pleural effusion. No pneumothorax. Mildly prominent pulm vasculature.
+Cardiomediastinum: Cardiomegaly. Right Arturin Mc catheter tip is at the pulmonary outflow tract. Mediastinal drain in place.
+Bones: No acute osseous abnormalities.
+Other: None.","1. Small left pleural effusion with mild pulmonary vascular congestion.
+2. Satisfactory support device placement.","- SpO2: 95% on room air
+- Respiratory rate: 15/min
+- Work of breathing: mild
+- Systolic BP: 178 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: outpatient",ACT_REASSESS_BEDSIDE;ACT_REQUEST_RELEVANT_LABS;ACT_FUROSEMIDE_IV;ACT_REASSESS_DEFINED_INTERVAL;ACT_REPEAT_CXR;ACT_CARDIOLOGY_FOLLOWUP,"Recommend clinical reassessment for volume overload/heart failure and renal/electrolyte evaluation; consider diuresis/BP optimization if clinically congested. Repeat chest radiograph after treatment or sooner if dyspnea, oxygen requirement, or respiratory status worsens, with outpatient cardiology follow-up as appropriate.","Small left pleural effusion with mild pulmonary vascular congestion and cardiomegaly suggests mild volume overload, but the patient is stable on room air without severe respiratory distress."
+GRDN00BE97VCHW4E,5,20241216,030633.184771,"removal of anterior \T\ posterior chest tubes. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/16/2024.",Interval removal of pulmonary artery catheter with right internal jugular introducer remaining in stable position. Mediastinal drain/left chest tube is demonstrated. Persistent small left pleural effusion. No pneumothorax. Cardiomediastinal silhouette is stable and the heart remains enlarged. No pulmonary edema pattern.,No significant interval change since prior examination.,"- SpO2: 94% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 161 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE;ACT_REPEAT_CXR,"No urgent intervention is indicated. Continue clinical observation, with repeat chest radiograph only if symptoms develop or as part of routine post–chest tube removal/postoperative follow-up.","The radiograph shows no pneumothorax after tube removal and only a persistent small left pleural effusion, with normal work of breathing and adequate room-air oxygenation."
+GRDN00BE97VCHW4E,6,20241216,210348.184771,"postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/15/2024.","Support apparatus appear to be in stable position. Hypoventilation. Mild left basilar opacity may correlate with atelectasis, small effusion. No lobar consolidation. No pneumothorax. Heart remains enlarged. No overt pulmonary edema pattern.",No significant interval change since prior examination.,"- SpO2: 98% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 156 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_INCENTIVE_SPIROMETRY,"Recommend routine postoperative pulmonary hygiene with focused respiratory reassessment, deep-breathing/cough exercises, incentive spirometry, and early mobilization/upright positioning. No urgent imaging or invasive intervention is indicated unless oxygenation, work of breathing, fever, or symptoms worsen.","Stable postoperative patient with normal oxygenation/work of breathing and unchanged hypoventilation with mild left basilar opacity most compatible with dependent atelectasis/small effusion, without consolidation, edema, or pneumothorax."
+GRDN00BE97VCHW4E,7,20241217,221157.184771,"postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/16/2024.","Right internal jugular introducer remains in stable position. Previously demonstrated left chest tube/drain is not definitely present, with evaluation limited by overlying external wires. Heart remains enlarged. Central vascular congestion. No overt pulmonary edema pattern. Small pleural effusions. No pneumothorax.",No significant interval change since prior examination.,"- SpO2: 95% on nasal cannula 1–2 L/min
+- Respiratory rate: 13/min
+- Work of breathing: normal
+- Systolic BP: 151 mmHg
+- Temperature: 37.6°C
+- Mental status: alert
+- Care setting: inpatient ward",ACT_CLINICAL_CORRELATION;ACT_OBSERVE,"Recommend clinical correlation with volume status and continued routine inpatient respiratory monitoring. No urgent imaging or intervention is indicated; repeat chest radiograph if oxygen requirement, work of breathing, or clinical status worsens.","Stable postoperative film shows unchanged cardiomegaly/central vascular congestion and small pleural effusions without overt pulmonary edema or pneumothorax, and the patient is clinically stable on low-flow oxygen with normal work of breathing."
+GRDN00BE97VCHW4E,8,20241218,214609.184771,"postoperative care. . .
+TECHNIQUE: Single, portable, AP digital radiograph of the chest.
+COMPARISON: 12/17/2024.","Right internal jugular introducer has been removed. Left chest tube/mediastinal drain remains in stable position. Mild left basilar opacities persist which may correlate with atelectasis, infiltrate, and/or small pleural effusions. No pneumothorax. Cardiomediastinal silhouette is stable and the heart remains enlarged. No pulmonary edema pattern.",No significant interval change since prior examination.,"- SpO2: 98% on nasal cannula 1–2 L/min
+- Respiratory rate: 15/min
+- Work of breathing: mild
+- Systolic BP: 156 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: inpatient ward",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY,"Continue routine postoperative respiratory reassessment and pulmonary hygiene with deep-breathing/cough exercises, incentive spirometry, upright positioning/early mobilization, and analgesia optimization to support ventilation and cough. Repeat chest radiograph only if respiratory status, oxygen requirement, or chest tube/drain management needs change.","Stable postoperative mild left basilar opacity without pneumothorax, pulmonary edema, fever, or significant hypoxemia is most consistent with uncomplicated postoperative/dependent atelectatic change requiring pulmonary hygiene rather than urgent intervention or antibiotics."
+GRDN00BE97VCHW4E,9,20250105,005819.184771,"CABG
+Number of views:2
+Comparison: 01/02/2025 and 12/22/2024",Cardiomediastinal contour and poststernotomy changes are stable. No aggressive bone lesions are seen. Small posterior density persists. This is decreased since the prior with mild residual.,Decrease but persistence of pleural/parenchymal density in the left lower lobe. Follow-up to complete clearing or consider chest CT,"- SpO2: 96% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 174 mmHg
+- Temperature: 37.0°C
+- Mental status: alert
+- Care setting: ED",ACT_TIMED_FOLLOWUP;ACT_REPEAT_CXR;ACT_CT_CHEST,"Recommend follow-up chest radiograph at a defined short interval to document complete clearing. If the opacity persists or there is ongoing clinical concern, obtain CT chest for further evaluation.","The left lower lobe pleural/parenchymal density has improved but persists, and the patient is clinically stable without hypoxemia or respiratory distress, making nonurgent imaging follow-up appropriate with CT if it does not clear."
+GRDN00BE97VCHW4E,10,20250719,111607.184771,"Chest pain, ACS suspected
+Comparison: 07/18/2025",The lungs are clear.   The cardiac silhouette is within normal limits  given portable technique.  No acute osseous abnormalities.,No acute cardiopulmonary process.,"- SpO2: 97% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 111 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: ED",ACT_STOP_SURVEILLANCE,No routine chest imaging follow-up is indicated for this exam. Continue clinical evaluation of chest pain/possible ACS as clinically warranted.,Chest radiograph shows no acute cardiopulmonary process and the patient is physiologically stable with normal room-air oxygenation and no respiratory distress.
+GRDN00BJ2R8QRO0L,1,20051228,120940.735989,"Chest pain. Preoperative evaluation prior to cardiac
+catheterization.
+
+CHEST - 2 VIEW  08/28/2006:
+
+Comparison:  None. I have the report of a previous two-view chest x-ray
+05/01/2000 which was interpreted as no active disease. Those films have been
+purged.","The heart is upper normal in size to perhaps slightly enlarged. The
+thoracic aorta is mildly atherosclerotic. The hilar and mediastinal contours are
+otherwise unremarkable. The lungs appear clear. Degenerative changes are present
+in the thoracic spine.",Borderline to mild cardiomegaly. No evidence of acute disease.,"- SpO2: 97% on baseline low-flow oxygen
+- Respiratory rate: 14/min
+- Work of breathing: mild
+- Systolic BP: 144 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: ward",ACT_CLINICAL_CORRELATION,No acute chest imaging follow-up is required. Correlate the borderline/mild cardiomegaly with the ongoing cardiac evaluation.,"The chest radiograph shows only borderline to mild cardiomegaly without edema, infiltrate, effusion, or other acute pulmonary disease, and the patient is physiologically stable."
+GRDN00BJ2R8QRO0L,2,20071023,123315.391989,"Fever, shortness of breath, chest pain. 
+ CHEST - 2 VIEW:
+ Comparison:   10/23/05.",The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.,No active cardiopulmonary disease.,"- SpO2: 97% on room air
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 134 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,"No acute chest imaging follow-up is indicated. Continue clinical observation/reassessment in the ED and pursue further evaluation only if symptoms persist, worsen, or clinical concern remains.","Chest radiograph shows no active cardiopulmonary disease and the patient is physiologically stable with normal oxygenation, normal work of breathing, and normal mental status."
+GRDN00BJ2R8QRO0L,3,20071024,135430.391989,"Cough
+
+Chest 2 view:
+
+Comparison 02/17/2008. Lungs clear. Heart size normal. No effusion. Vascular clips
+right upper abdomen. Atheromatous aortic arch. Minimal thoracic spondylitic
+changes.",,1. No acute disease,"- SpO2: 100% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 126 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,No chest imaging follow-up is indicated at this time. Recommend routine clinical observation and outpatient reassessment if cough persists or symptoms worsen.,"Chest radiograph shows no acute disease and the outpatient is physiologically stable with SpO2 100% on room air, normal work of breathing, and no fever."
+GRDN00BJ2R8QRO0L,4,20080701,074024.735989,"Chest pain.  Bilateral shoulder pain.  Short of breath.
+ CHEST - 2 VIEW:
+ Comparison:   01/31/07",Two views of the chest show no active infiltrate or effusion.  There is some peribronchial thickening which may indicate bronchitis.  Mild cardiomegaly is stable.  No acute bony abnormality is seen.,No pneumonia.  Possible bronchitis.,"- SpO2: 99% on room air
+- Respiratory rate: 15/min
+- Work of breathing: mild
+- Systolic BP: 142 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: outpatient",ACT_CLINICAL_CORRELATION;ACT_OBSERVE,Correlate clinically for bronchitis and manage conservatively as an outpatient with observation/reassessment if symptoms persist or worsen. No routine follow-up chest imaging is indicated based on these findings alone.,"Chest radiograph shows no pneumonia or effusion, only possible bronchitis/peribronchial thickening with stable mild cardiomegaly, and the outpatient is oxygenating well on room air without fever or significant respiratory distress."
+GRDN00BJ2R8QRO0L,5,20081224,121253.031989,"Pre cardiac cath work up. 
+ CHEST, TWO VIEWS: 
+ Comparison:  03/27/08.",The heart size and mediastinal contours are within normal limits.  Both lungs are clear.  The visualized skeletal structures are unremarkable.  Multilevel degenerative disc disease of the thoracic spine.,No active cardiopulmonary disease.,"- SpO2: 98% on room air
+- Respiratory rate: 20/min
+- Work of breathing: normal
+- Systolic BP: 114 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: ED",ACT_STOP_SURVEILLANCE,No specific chest imaging follow-up is required. Continue routine clinical care for the planned cardiac catheterization workup.,The chest radiograph shows no active cardiopulmonary disease and the patient is clinically stable with normal oxygenation on room air and no respiratory distress.
+GRDN00BJ2R8QRO0L,6,20081229,095130.735989,"Aortic stenosis.  
+ CHEST - 2 VIEW:
+ Comparison:  01/18/2010","The heart is upper normal.   There is no heart failure, infiltrate, or effusion.  The lungs are clear.",No active cardiopulmonary disease.,"- SpO2: 99% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 120 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: outpatient",ACT_STOP_SURVEILLANCE,No acute cardiopulmonary follow-up or repeat chest imaging is recommended based on this exam. Continue routine clinical care as appropriate for the known aortic stenosis.,"Chest X-ray shows clear lungs with no heart failure, infiltrate, effusion, or other active cardiopulmonary disease, and the outpatient clinical context is stable with normal oxygenation."
+GRDN00BJ2R8QRO0L,7,20090101,084551.735989,"Aortic stenosis. CABG.
+ AP PORTABLE SEMI-RECUMBANT CHEST ? 03/03/09 AT [DATE] P.M.:
+ Comparison Examination: 02/28/09",Endotracheal tube 1.8 cm above the carina. Nasogastric tube enters the stomach. The tip is not imaged. Right Swan-Ganz catheter is in place with the tip in the right lower lobe pulmonary artery.  This may be retracted by 5 cm to be within right main pulmonary artery. Floor contacted. Cardiomegaly and pulmonary vascular congestion. Mediastinal drain in place. No pneumothorax. Limited evaluation of aorta.,"1.  Swan-Ganz catheter tip right lower lobe pulmonary artery. This can be retracted by 5 cm to be within the right main pulmonary artery.
+ 2.  Endotracheal tube tip 1.8 cm above the carina. 
+ 3.  Cardiomegaly and pulmonary vascular congestion.
+ 4.  No pneumothorax.","- SpO2: 93% on room air
+- Respiratory rate: 26/min
+- Work of breathing: moderate
+- Systolic BP: 109 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: stepdown",ACT_URGENT_ASSESSMENT;ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_FUROSEMIDE_IV;ACT_REPEAT_CXR,"Urgent bedside respiratory/cardiac assessment is recommended; retract the Swan-Ganz catheter approximately 5 cm and confirm position with repeat chest radiograph. Treat pulmonary vascular congestion clinically, including oxygen titration as needed and IV diuresis if consistent with acute decompensated heart failure and hemodynamics/renal function allow.","The Swan-Ganz catheter tip is too distal in a right lower lobe pulmonary artery, and the patient has cardiomegaly/pulmonary vascular congestion with tachypnea and moderate work of breathing."
+GRDN00BJ2R8QRO0L,8,20090102,021741.735989,"Aortic valve replacement. 
+ PORTABLE CHEST - 1 VIEW AT 1924 HOURS: 
+ Comparison:  [DATE]",Endotracheal tube has been removed with slight decrease in aeration and increase in basilar atelectasis.  Swan-Ganz catheter tip remains in the distal right lower lobe pulmonary artery.  Cardiomegaly is stable.,Diminished aeration after removal of endotracheal tube.,"- SpO2: 94% on nasal cannula 1–2 L/min
+- Respiratory rate: 12/min
+- Work of breathing: mild
+- Systolic BP: 126 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY;ACT_REASSESS_DEFINED_INTERVAL,"Recommend focused postoperative respiratory reassessment and pulmonary toilet with deep-breathing/cough exercises, incentive spirometry, upright positioning/early mobilization, and analgesia optimization to permit ventilation. Reassess oxygenation and work of breathing at a defined interval, with repeat imaging or escalation only if respiratory status worsens.",Post-extubation diminished aeration with increased basilar atelectasis in a stable postoperative patient with only mild work of breathing and SpO2 94% on low-flow nasal cannula supports conservative lung-expansion measures with close reassessment rather than urgent escalation.
+GRDN00BJ2R8QRO0L,9,20090103,015222.735989,"Aortic stenosis, CABG.  Followup.
+ PORTABLE CHEST ? 1 VIEW ? 3564 hours:
+ Comparison:  10/07/08",The Swan Ganz catheter has been removed with the venous sheath remaining in the SVC.  Atelectasis and mild congestion remain.  Probable small effusions.  No pneumothorax is seen.,Swan Ganz catheter removed.  No change in atelectasis and probable mild congestion with effusions.,"- SpO2: 93% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 155 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_REASSESS_DEFINED_INTERVAL;ACT_REPEAT_CXR,"Recommend continued postoperative respiratory reassessment with pulmonary toilet/lung-expansion measures, upright positioning and early mobilization, and adequate analgesia to support deep breathing and cough. Reassess clinically over a defined interval and repeat chest radiograph if oxygenation, work of breathing, or symptoms worsen.","Postoperative film shows unchanged atelectasis with only mild congestion/small effusions and no pneumothorax, while the patient is alert, normopneic, and not in respiratory distress with SpO2 93% on room air."
+GRDN00BJ2R8QRO0L,10,20090105,020343.797989,"AVR;
+
+CHEST - 2 VIEW
+
+Comparison: 10/20/2009",Small pleural effusions.  Cardiomegaly.  No pneumothorax.,Small pleural effusions are present.,"- SpO2: 96% on baseline oxygen
+- Respiratory rate: 18/min
+- Work of breathing: mild
+- Systolic BP: 119 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: ward",ACT_CLINICAL_CORRELATION;ACT_REASSESS_BEDSIDE;ACT_OBSERVE;ACT_REASSESS_DEFINED_INTERVAL,"Correlate clinically for volume status/heart failure and perform focused respiratory reassessment. If the patient remains stable, manage conservatively with clinical observation and reassess if dyspnea, oxygen requirement, or effusions worsen.","Small pleural effusions with cardiomegaly are present, but the patient is stable on baseline oxygen with normal respiratory rate, preserved blood pressure, and only mild work of breathing, so immediate drainage or aggressive edema therapy is not indicated from the report alone."
+GRDN00BJ2R8QRO0L,11,20090128,120220.735989,"Post heart surgery 04/01/2009.  Chest pain with
+cough
+
+CHEST - 2 VIEW
+
+Comparison: 04/05/2009",".  The heart borderline enlarged considering low level of
+inspiration.  Pleural effusions have resolved.  Lungs clear.
+Aortic valve prosthesis unchanged.","Suboptimal inspiration - no active disease.  Pleural effusions
+resolved since 04/05/2009.","- SpO2: 100% on room air
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 106 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: ward",ACT_STOP_SURVEILLANCE;ACT_OBSERVE,No routine chest imaging follow-up is required for the resolved pleural effusions. Continue clinical observation and reassess only if respiratory symptoms worsen or new clinical concerns arise.,"Chest X-ray shows no active disease with resolved pleural effusions, and the patient is clinically stable with SpO2 100% on room air and normal work of breathing."
+GRDN00BJ2R8QRO0L,12,20100922,114132.735989,"Degenerative joint disease right hip, preoperative
+assessment, history hypertension, diabetes, asthma
+
+CHEST - 2 VIEW
+
+Comparison: 09/14/2009","Cardiac enlargement status post median sternotomy and AVR.
+Atherosclerotic calcifications of mildly tortuous thoracic aorta.
+Pulmonary vascularity normal.
+Eventration right diaphragm stable.
+No acute infiltrate or effusion.
+Minimal chronic peribronchial thickening.
+End plate spur formation throughout thoracic spine.","Cardiac enlargement status post AVR.
+Minimal chronic bronchitic changes.","- SpO2: 96% on baseline low-flow oxygen
+- Respiratory rate: 20/min
+- Work of breathing: normal
+- Systolic BP: 116 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: ED",ACT_STOP_SURVEILLANCE;ACT_CLINICAL_CORRELATION,No acute chest imaging follow-up or pulmonary intervention is required. Correlate chronic cardiomegaly/bronchitic changes with the patient’s baseline clinical status and reassess only if new respiratory symptoms develop.,"The chest radiograph shows only stable chronic findings—cardiac enlargement after AVR and minimal chronic bronchitic change—with no acute infiltrate, effusion, edema, or physiologic respiratory distress."
+GRDN00BJ2R8QRO0L,13,20111103,135807.438989,"Chest pain and right shoulder pain secondary to a
+motor vehicle accident.
+
+CHEST - 2 VIEW
+
+Comparison: Chest x-ray dated 02/27/2010","There is borderline cardiomegaly.  Pulmonary vascularity
+is normal and the lungs are clear.  Evidence of previous aortic
+valve replacement.  No acute osseous abnormalities.",No acute disease.,"- SpO2: 97% on baseline low-flow oxygen
+- Respiratory rate: 17/min
+- Work of breathing: mild
+- Systolic BP: 179 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE,"No acute chest imaging follow-up is indicated. Continue clinical observation and reassess if respiratory symptoms, hypoxemia, or post-traumatic chest findings worsen.","The chest radiograph shows no acute cardiopulmonary disease with clear lungs and normal pulmonary vascularity, and the patient is oxygenating well on baseline low-flow oxygen without respiratory distress."
+GRDN00BJ2R8QRO0L,14,20130331,103734.735989,"Preoperative assessment for cardiac valve
+replacement, history hypertension, diabetes, COPD, sleep apnea, AVR
+
+CHEST - 2 VIEW
+
+Comparison: 08/25/2012","Upper normal-sized cardiac silhouette post median sternotomy and
+AVR.
+Calcified tortuous aorta.
+Pulmonary vascularity normal.
+Bronchitic changes without infiltrate or effusion.
+No pneumothorax.
+Multilevel endplate spur formation throughout thoracic spine.","Post AVR.
+Mild bronchitic changes.","- SpO2: 99% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 139 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: ward",ACT_CLINICAL_CORRELATION,No acute chest imaging follow-up is required. Correlate mild bronchitic changes with baseline COPD/bronchitis symptoms and manage clinically if respiratory symptoms develop.,"Mild bronchitic changes are present without infiltrate, effusion, pneumothorax, hypoxemia, fever, or increased work of breathing, so there is no evidence of acute COPD exacerbation or pneumonia requiring treatment or imaging follow-up."
+GRDN00BJ2R8QRO0L,15,20130402,143009.406989,"Status post CABG today.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: 06/13/2013.","Endotracheal tube in satisfactory position.  Right
+jugular Swan-Ganz catheter tip in the main pulmonary artery.
+Mediastinal and right chest tubes without pneumothorax.
+Nasogastric tube extending into the stomach.  Minimal right lung
+atelectasis.  Clear left lung.  Mildly enlarged cardiac silhouette.
+Median sternotomy wires and prosthetic heart valve.  Thoracic spine
+degenerative changes.","1.  Minimal right lung atelectasis.
+2.  Interval mild cardiomegaly.","- SpO2: 97% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 115 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: inpatient ward",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY,"Recommend routine postoperative respiratory reassessment and pulmonary toilet with deep-breathing/cough exercises, incentive spirometry, upright positioning/early mobilization as tolerated, and adequate analgesia to support ventilation. No urgent imaging or invasive intervention is indicated unless respiratory status worsens.","Minimal postoperative right lung atelectasis after CABG with normal oxygenation and work of breathing supports conservative pulmonary hygiene rather than antibiotics, repeat imaging, or urgent escalation."
+GRDN00BJ2R8QRO0L,16,20130403,014056.735989,"Aortic valve replacement
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Yesterday","Endotracheal and NG tubes removed.  Vatuva and right
+chest tube stable.  Mediastinal tube stable.  Increasing
+hypoaeration and bibasilar atelectasis.  Cardiomegaly.  No sign of
+interstitial edema.  No pneumothorax.","No pneumothorax or pulmonary edema.
+
+Extubated.
+
+Increasing basilar atelectasis.","- SpO2: 93% on nasal cannula 1–6 L/min
+- Respiratory rate: 20/min
+- Work of breathing: moderate
+- Systolic BP: 123 mmHg
+- Temperature: 36.3°C
+- Mental status: anxious
+- Care setting: ward",ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY;ACT_REASSESS_DEFINED_INTERVAL,"Recommend focused bedside respiratory reassessment and pulmonary toilet/lung-expansion measures, including deep-breathing/cough exercises, upright positioning/early mobilization, incentive spirometry, and analgesia optimization as needed. Titrate supplemental oxygen and reassess clinically after intervention, with repeat imaging or escalation if oxygen requirement or work of breathing worsens.","Post-extubation portable chest shows increasing bibasilar atelectasis without pneumothorax or edema, with mild oxygen requirement and moderate work of breathing on the ward."
+GRDN00BJ2R8QRO0L,17,20130404,023616.906989,"Status post cardiac surgery.
+
+PORTABLE CHEST - 1 VIEW
+
+Comparison: Portable chest 04/30/2014.","The Swan-Ganz catheter has been removed.  The right IJ
+sheath remains.  The right-sided chest tube in mediastinal drains
+have been removed.  There is no pneumothorax.  The lung volumes are
+low.  Bibasilar atelectasis is evident.  Small effusions are
+suspected, particularly on the left.","1.  Interval removal of Swan-Ganz catheter, right-sided chest tube,
+and mediastinal drain.
+2.  No pneumothorax.
+3.  Low lung volumes with persistent bibasilar atelectasis and
+probable left pleural effusion.","- SpO2: 93% on nasal cannula 1–2 L/min
+- Respiratory rate: 20/min
+- Work of breathing: normal
+- Systolic BP: 170 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: inpatient ward",ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_DEEP_BREATHING_COUGH;ACT_INCENTIVE_SPIROMETRY;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA,"Recommend bedside respiratory reassessment with continued/titrated supplemental oxygen as needed and postoperative lung-expansion measures, including deep-breathing/cough exercises, incentive spirometry, upright positioning/early mobilization, and analgesia optimized to permit ventilation and cough. Repeat imaging or pleural evaluation should be reserved for worsening oxygenation, respiratory distress, fever, or enlarging effusion.","Post-cardiac-surgery film shows low lung volumes with persistent bibasilar atelectasis and only probable small effusions, no pneumothorax, while the patient is alert with normal work of breathing and mild oxygen requirement."
+GRDN00BJ2R8QRO0L,18,20130405,023851.156989,"Postop aortic valve replacement.
+
+PORTABLE CHEST - 1 VIEW [DATE]/1027 0380 hours:
+
+Comparison: Portable chest x-rays yesterday and dating back to
+09/03/2013.","Sternotomy for aortic valve replacement.  Cardiac
+silhouette enlarged but stable.  Mild pulmonary venous hypertension
+without overt edema.  Improved aeration in the lung bases, with
+mild atelectasis persisting, right greater than left.  No new
+pulmonary parenchymal abnormalities.  Right jugular introducer
+sheath tip remains in the SVC.","Improved aeration in the lung bases with mild atelectasis
+persisting, right greater than left.  Stable cardiomegaly without
+pulmonary edema.  No new abnormalities.","- SpO2: 98% on nasal cannula 1–2 L/min
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 170 mmHg
+- Temperature: 37.4°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY,"Recommend routine postoperative pulmonary hygiene: focused respiratory reassessment, deep-breathing/directed-cough exercises, incentive spirometry, upright positioning/early mobilization, and adequate analgesia to permit ventilation. No urgent imaging or invasive intervention is indicated unless respiratory status worsens.","The film shows improving mild postoperative bibasilar atelectasis without edema or new abnormality, and the patient is stable with normal work of breathing and adequate oxygenation on low-flow nasal cannula."
+GRDN00BJ2R8QRO0L,19,20130406,030119.735989,"Postop aortic valve replacement.
+
+CHEST - 2 VIEW
+
+Comparison: Portable chest x-ray yesterday and dating back to
+04/08/2030","Sternotomy for aortic valve replacement.  Cardiac
+silhouette enlarged but stable.  Thoracic aorta tortuous
+atherosclerotic, unchanged.  Hilar and mediastinal contours
+otherwise stable.  Slight increase in the right lower lobe
+atelectasis since yesterday.  Improved aeration in the left lower
+lobe.  No new pulmonary parenchymal abnormalities.  Pulmonary
+vascularity normal.  Very small bilateral pleural effusions.
+Degenerative changes involving the thoracic spine.","Slight worsening of right lower lobe atelectasis since yesterday,
+though aeration in the left lower lobe has improved.  Very small
+bilateral pleural effusions.  No new abnormalities.","- SpO2: 93% on simple mask
+- Respiratory rate: 27/min
+- Work of breathing: moderate
+- Systolic BP: 178 mmHg
+- Temperature: 38.1°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_URGENT_ASSESSMENT;ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_OPTIMIZE_ANALGESIA;ACT_INCENTIVE_SPIROMETRY;ACT_REASSESS_DEFINED_INTERVAL,"Recommend prompt bedside respiratory reassessment and titration of oxygen, with postoperative lung-expansion therapy including deep-breathing/cough exercises, incentive spirometry, upright positioning/early mobilization, and adequate analgesia. Reassess clinically after treatment and repeat imaging if respiratory status worsens or fails to improve.","Postoperative film shows mildly worsening right lower-lobe atelectasis with very small effusions and no new infiltrate, but the patient has tachypnea, moderate work of breathing, fever, and requires a simple mask to maintain SpO2 93%."
+GRDN00BJ2R8QRO0L,20,20130501,101808.844989,"Aortic valve replacement.  Follow-up to surgery.
+
+CHEST - 2 VIEW
+
+Comparison: Two-view chest 08/01/2013.","The heart size is normal.  Although the lung volumes are
+still low, bibasilar atelectasis has significantly improved.
+Minimal residual pleural fluid persists, though significantly
+reduced.  A prosthetic aortic valve is now in place.  The patient
+is status post cholecystectomy.","1.  Improving aeration at the lung bases with mild atelectasis and
+minimal fluid bilaterally.
+2.  Persistent low lung volumes.
+3.  Status post aortic valve replacement.","- SpO2: 92% on nasal cannula 1–2 L/min
+- Respiratory rate: 17/min
+- Work of breathing: mild
+- Systolic BP: 136 mmHg
+- Temperature: 37.2°C
+- Mental status: alert
+- Care setting: postoperative unit",ACT_REASSESS_BEDSIDE;ACT_OXYGEN_TITRATION;ACT_DEEP_BREATHING_COUGH;ACT_EARLY_MOBILIZATION;ACT_INCENTIVE_SPIROMETRY;ACT_OPTIMIZE_ANALGESIA,"Recommend focused postoperative respiratory reassessment with continued/titrated supplemental oxygen as needed and lung-expansion measures, including deep-breathing/cough exercises, incentive spirometry, upright positioning/early mobilization, and adequate analgesia to permit ventilation. Repeat imaging is not routinely required unless respiratory status or oxygen requirement worsens.","The film shows improving postoperative low-volume bibasilar atelectasis with minimal residual pleural fluid, and the patient is stable but mildly hypoxemic on low-flow nasal cannula."
+GRDN00BJ2R8QRO0L,21,20140927,104017.735989,"Cough for 2 weeks.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  12/22/2012.","Aortic arch atherosclerosis. The cardiopericardial silhouette is
+within normal limits for projection. No airspace disease. No
+effusion. Cholecystectomy clips are present in the right upper
+quadrant. Median sternotomy wires are present. Aortic arch
+atherosclerosis. Tiny calcified granuloma is present in the right
+upper lobe. Subsegmental atelectasis or scarring is present at the
+medial right lung base. Aortic valve replacement.","1. No active cardiopulmonary disease.
+2. Aortic valve replacement.","- SpO2: 99% on room air
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 125 mmHg
+- Temperature: 37.1°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE,"No acute imaging follow-up is required. Recommend clinical observation with reassessment if cough persists, worsens, or new respiratory symptoms develop.","Chest radiograph shows no active cardiopulmonary disease and the patient is clinically stable with normal oxygenation, normal respiratory rate, afebrile status, and no increased work of breathing."
+GRDN00BJ2R8QRO0L,22,20150620,140018.453989,"Asthma and shortness of breath. Midsternal burning
+sensation, dizziness, nausea, cough, and congestion for 1 day.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  10/28/2015","Sequelae of prior aortic valve replacement are again identified.
+Cardiac silhouette is within normal limits for size. Thoracic aortic
+calcification is again seen. The lungs are normally inflated without
+evidence of airspace consolidation, edema, pleural effusion, or
+pneumothorax. Tiny calcified granuloma in the right upper lobe is
+unchanged. No acute osseous abnormality is identified. Thoracolumbar
+spondylosis and right upper quadrant abdominal surgical clips are
+noted.",No active cardiopulmonary disease.,"- SpO2: 99% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 112 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,"No acute imaging follow-up is indicated. Continue clinical observation/reassessment in the ED as needed, with repeat evaluation only if symptoms worsen or new respiratory distress develops.","Chest radiograph shows no active cardiopulmonary disease and the patient is physiologically stable with normal oxygenation, normal work of breathing, and no fever."
+GRDN00BJ2R8QRO0L,23,20160329,072210.016989,"Bronchitis.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  None.","Mediastinum and hilar structures are normal. Lungs are clear of
+acute infiltrates. Prior aortic valve replacement. Cardiomegaly, no
+pulmonary venous congestion. No pleural effusion or pneumothorax. No
+acute bony abnormality. Surgical clips right upper quadrant .","1. Prior aortic valve replacement. Cardiomegaly. No pulmonary venous
+congestion.
+2. No acute pulmonary infiltrate.","- SpO2: 100% on baseline low-flow oxygen
+- Respiratory rate: 11/min
+- Work of breathing: mild
+- Systolic BP: 119 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: ward",ACT_CLINICAL_CORRELATION;ACT_CARDIOLOGY_FOLLOWUP,No acute pulmonary imaging follow-up is required. Correlate the cardiomegaly/prior valve replacement clinically and arrange routine cardiology follow-up as clinically indicated.,"Chest X-ray shows cardiomegaly with prior aortic valve replacement but no pulmonary venous congestion, infiltrate, effusion, or pneumothorax, and the patient is physiologically stable on baseline oxygen."
+GRDN00BJ2R8QRO0L,24,20170107,084821.625989,"Cough for 1 week.  History of asthma.
+
+EXAM:
+CHEST  2 VIEW
+
+COMPARISON:  11/25/2016","Cardiac silhouette is normal in size. Changes from cardiac surgery
+and valve replacement are stable. No mediastinal or hilar masses or
+evidence of adenopathy.
+
+Lungs are clear.  No pleural effusion or pneumothorax.
+
+Bony thorax is intact.",No acute cardiopulmonary disease.,"- SpO2: 100% on room air
+- Respiratory rate: 18/min
+- Work of breathing: normal
+- Systolic BP: 122 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,"No chest imaging follow-up is required at this time. Continue clinical observation and reassess if cough, wheezing, fever, hypoxemia, or respiratory distress develops or worsens.","The chest radiograph shows no acute cardiopulmonary disease and the patient is clinically stable with normal oxygenation, normal work of breathing, and no fever."
+GRDN00BJ2R8QRO0L,25,20190410,100912.735989,"Pt from endo, was getting procedure and EKG showed
+new onset afib. Patient mostly asymptomatic with occasional
+palpitations. HR ranging from 115-135. denies any complaints. Hx
+asthma, diabetic, htn, non-smoker.
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  06/09/2019","Status post median sternotomy and valve replacement. The heart is
+normal in size. Lungs are free of focal consolidations and pleural
+effusions. No pulmonary edema. Degenerative changes are seen in
+thoracic spine. Chronic changes in both shoulders. Clips are present
+in the RIGHT UPPER QUADRANT the abdomen.",No evidence for acute cardiopulmonary abnormality.,"- SpO2: 98% on room air
+- Respiratory rate: 20/min
+- Work of breathing: normal
+- Systolic BP: 111 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,No acute pulmonary imaging follow-up is indicated. Continue outpatient clinical management for the new atrial fibrillation as appropriate.,"Chest radiograph shows no acute cardiopulmonary abnormality, and the patient is stable with normal room-air oxygenation and normal work of breathing."
+GRDN00BJ2R8QRO0L,26,20200726,125133.547989,"Cough
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  12/26/2020","Cardiomegaly status post median sternotomy with aortic valve
+prosthesis. Both lungs are clear. Disc degenerative disease of the
+thoracic spine.",Cardiomegaly without acute abnormality of the lungs.,"- SpO2: 99% on baseline low-flow oxygen
+- Respiratory rate: 11/min
+- Work of breathing: normal
+- Systolic BP: 155 mmHg
+- Temperature: 36.9°C
+- Mental status: alert
+- Care setting: ED",ACT_CLINICAL_CORRELATION,No acute pulmonary imaging follow-up is required. Correlate cardiomegaly with the patient’s known cardiac history and clinical findings; routine outpatient cardiac follow-up may be continued as appropriate.,"The chest X-ray shows cardiomegaly but no acute lung abnormality, and the patient is clinically stable with normal oxygenation on baseline low-flow oxygen and no respiratory distress."
+GRDN00BJ2R8QRO0L,27,20210414,133037.735989,"MVA
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  09/17/2021","Prior valve replacement. Cardiomegaly. Lungs clear. No effusions or
+pneumothorax. No acute bony abnormality.",No active cardiopulmonary disease.,"- SpO2: 95% on room air
+- Respiratory rate: 11/min
+- Work of breathing: normal
+- Systolic BP: 168 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: ED",ACT_OBSERVE,No acute chest imaging follow-up is required. Continue routine clinical observation/reassessment as indicated for the trauma evaluation.,"Chest X-ray shows clear lungs with no effusion, pneumothorax, or acute cardiopulmonary disease, and the patient is clinically stable with normal work of breathing and SpO2 95% on room air."
+GRDN00BJ2R8QRO0L,28,20220328,135013.735989,"Chest pain
+
+EXAM:
+CHEST - 2 VIEW
+
+COMPARISON:  05/13/2022","Post sternotomy changes and valve prosthesis. Mild cardiomegaly with
+aortic atherosclerosis. Mitral calcifications. No focal opacity,
+pleural effusion or pneumothorax.",No active cardiopulmonary disease.  Cardiomegaly,"- SpO2: 95% on room air
+- Respiratory rate: 12/min
+- Work of breathing: normal
+- Systolic BP: 145 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: ED",ACT_CLINICAL_CORRELATION,No acute pulmonary imaging follow-up is required based on this chest radiograph. Correlate mild cardiomegaly with the patient's cardiac history and ongoing chest-pain evaluation.,"The chest X-ray shows no focal opacity, pleural effusion, pneumothorax, or edema, and the patient is clinically stable on room air; mild cardiomegaly is the only reported abnormality."
+GRDN00BJ2R8QRO0L,29,20221122,102126.735989,"Shortness of breath with chest pain and dizziness
+today. History of diabetes.
+
+EXAM:
+CHEST  1 VIEW
+
+COMPARISON:  Radiographs 01/27/2023 and 09/12/2022.  CT 03/12/2020.","6434 hours. Stable cardiomegaly and aortic atherosclerosis post
+median sternotomy and aortic valve replacement. The lungs are clear.
+There is no pleural effusion or pneumothorax. No acute osseous
+findings are evident.","Stable postoperative chest. No evidence of acute cardiopulmonary
+process.","- SpO2: 99% on room air
+- Respiratory rate: 19/min
+- Work of breathing: normal
+- Systolic BP: 148 mmHg
+- Temperature: 36.5°C
+- Mental status: alert
+- Care setting: outpatient",ACT_OBSERVE,"No acute pulmonary imaging follow-up is required. Continue outpatient clinical evaluation of chest pain/shortness of breath as indicated, with reassessment if symptoms worsen or new respiratory findings develop.",Chest radiograph shows no acute cardiopulmonary process and the outpatient clinical context is stable with normal oxygenation and work of breathing.
+GRDN00BKCEOKC7S1,1,20240112,184734.415117,"shortness of breath
+Comparison: 01/11/2024",1 view of the chest. The cardiomediastinal contours are within normal limits. Worsening consolidation right mid to lower lung. Left lung stable..,Worsening consolidation right mid to lower lung.,"- SpO2: 89% on room air
+- Respiratory rate: 29/min
+- Work of breathing: moderate
+- Systolic BP: 101 mmHg
+- Temperature: 37.4°C
+- Mental status: alert
+- Care setting: stepdown",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_CAP_INPATIENT_ABX;ACT_REQUEST_RELEVANT_LABS;ACT_TIMED_FOLLOWUP,"Recommend urgent respiratory assessment with supplemental oxygen titration and inpatient empiric treatment for pneumonia, with relevant infectious/laboratory evaluation. Follow-up chest imaging should be obtained after treatment to document improvement/resolution, or sooner if clinical status worsens.","Worsening right mid-to-lower lung consolidation with shortness of breath, SpO2 89% on room air, tachypnea, and moderate work of breathing supports clinically significant pneumonia with hypoxemic respiratory compromise."
+GRDN00BKCEOKC7S1,2,20240525,111732.415117,"Pleural effusion, not elsewhere classified
+Comparison: Chest radiograph dated 04/01/2024",Faint perihilar groundglass opacities may reflect edema versus an infectious/inflammatory process. There are no definite pleural effusions. There is elevation of the left hemidiaphragm. There is a small right pneumothorax. The heart is normal in size.,"1.  Small right pneumothorax.
+2.  No definite pleural effusion.
+3.  Faint groundglass opacities may reflect edema versus an infectious/inflammatory process.
+4.  Additional findings as described above.","- SpO2: 94% on room air
+- Respiratory rate: 14/min
+- Work of breathing: mild
+- Systolic BP: 134 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: ED",ACT_REASSESS_BEDSIDE;ACT_OBSERVE;ACT_REPEAT_CXR;ACT_TIMED_FOLLOWUP;ACT_CLINICAL_CORRELATION,"Recommend clinical reassessment and observation with repeat chest radiograph in a short defined interval, typically 4–6 hours in the ED, to confirm stability of the small right pneumothorax. Correlate the faint perihilar groundglass opacities with symptoms and clinical/laboratory findings for edema or infection.","The patient has a small right pneumothorax with stable oxygenation on room air and only mild work of breathing, while the faint perihilar groundglass opacities are nonspecific for edema versus infection/inflammation."
+GRDN00BKCEOKC7S1,3,20240525,134809.415117,"Pleural effusion, not elsewhere classified
+Comparison: 05/25/2024",Inspiration and expiration views of the chest. The cardiomediastinal contours are within normal limits. Small right apical pneumothorax stable in size and appearance. Left lung clear.,Stable small right apical pneumothorax.,"- SpO2: 96% on room air
+- Respiratory rate: 13/min
+- Work of breathing: mild
+- Systolic BP: 140 mmHg
+- Temperature: 37.6°C
+- Mental status: alert
+- Care setting: ward",ACT_REASSESS_BEDSIDE;ACT_OBSERVE;ACT_REPEAT_CXR;ACT_TIMED_FOLLOWUP,"Continue clinical observation with focused respiratory reassessment. Repeat chest radiograph at a defined short interval, such as in 6–24 hours or sooner if dyspnea, hypoxemia, or clinical deterioration develops.",The imaging shows a stable small right apical pneumothorax and the patient is physiologically stable on room air without distress or tension features.
+GRDN00BKCEOKC7S1,4,20241021,093751.415117,"Pleural effusion, not elsewhere classified
+Comparison: 05/25/2024","2 views of the chest.
+There is a tiny less than 5% right apical pneumothorax slightly decreased compared to prior examination. Lungs otherwise clear. Heart size within normal limits. Bony structures unremarkable. There is some muscular calcification.",Tiny right apical less than 5% pneumothorax slightly improved compared to prior examination.,"- SpO2: 100% on room air
+- Respiratory rate: 13/min
+- Work of breathing: mild
+- Systolic BP: 138 mmHg
+- Temperature: 36.7°C
+- Mental status: alert
+- Care setting: outpatient",ACT_REASSESS_BEDSIDE;ACT_OBSERVE;ACT_REPEAT_CXR;ACT_TIMED_FOLLOWUP,"Recommend clinical reassessment and continued observation with repeat chest radiograph at a defined short interval to document stability/resolution, or sooner if dyspnea, chest pain, or oxygenation worsens.","The patient has a tiny (<5%) right apical pneumothorax that is slightly improved, with normal oxygenation on room air and no instability, supporting conservative outpatient follow-up rather than intervention."
+GRDN00BKCEOKC7S1,5,20250207,230941.821117,"PRE-OP MAJOR SURGERY
+Comparison: 01/28/2025",The cardiac silhouette is normal. Moderate left pleural effusion with adjacent atelectasis. No pneumothorax. No acute osseous abnormalities.,Moderate left pleural effusion with adjacent atelectasis.,"- SpO2: 97% on low-flow nasal cannula
+- Respiratory rate: 19/min
+- Work of breathing: mild
+- Systolic BP: 103 mmHg
+- Temperature: 36.3°C
+- Mental status: alert
+- Care setting: ED",ACT_REASSESS_BEDSIDE;ACT_THORACIC_US;ACT_DIAGNOSTIC_THORACENTESIS;ACT_PULMONOLOGY_FOLLOWUP,"Recommend focused respiratory reassessment and thoracic ultrasound to characterize the left pleural effusion and identify a safe procedural window. If the effusion is new or unexplained, perform ultrasound-guided diagnostic thoracentesis and arrange pulmonary follow-up.",Moderate unilateral left pleural effusion with adjacent atelectasis and mild respiratory symptoms on low-flow oxygen warrants characterization and diagnostic evaluation rather than observation alone.
+GRDN00BKCEOKC7S1,6,20250208,170013.415117,"post op pacemaker insertion
+Comparison: 02/08/2025",Left subclavian vein pacemaker. The cardiac silhouette is obscured given portable technique. Hazy bilateral airspace infiltrates. Skinfold artifact projects over the right lung. Cervical fusion hardware noted. No pneumothorax. Small to moderate left pleural effusion. No acute osseous abnormalities.,"Satisfactory positioning of left pacemaker. No pneumothorax.
+Diffuse bilateral airspace infiltrates which could represent pneumonia and/or edema.
+Small to moderate left pleural effusion.","- SpO2: 92% on room air
+- Respiratory rate: 24/min
+- Work of breathing: moderate
+- Systolic BP: 153 mmHg
+- Temperature: 36.5°C
+- Mental status: mildly confused
+- Care setting: stepdown",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_REASSESS_BEDSIDE;ACT_REQUEST_RELEVANT_LABS;ACT_CLINICAL_CORRELATION;ACT_THORACIC_US,"Recommend urgent bedside respiratory assessment with supplemental oxygen titration and clinical/laboratory correlation to distinguish pulmonary edema from pneumonia. Consider thoracic ultrasound to further evaluate the left pleural effusion if it is new, enlarging, or clinically contributory.","Diffuse bilateral airspace infiltrates concerning for edema and/or pneumonia with a small-to-moderate left pleural effusion are accompanied by borderline hypoxemia, tachypnea, moderate work of breathing, and mild confusion in a stepdown patient."
+GRDN00BKCEOKC7S1,7,20250210,222956.415117,,"SUPPORT DEVICES: Left-sided cardiac reduction device. Bilateral pigtail pleural drainage catheters/thoracostomy tubes. EKG leads.
+HEART /PULMONARY VASCULATURE: Cardiomediastinal silhouette is within normal limits.
+LUNGS / PLEURA: Hazy opacification of the right lung apex. Airspace disease/atelectasis at the left lower lung zone/left retrocardiac region, improved relative the prior. Mild interstitial edema. Significant improved aeration of the right lung. No appreciable residual/recurrent pneumothorax.
+OSSEOUS: Stable.
+ADDITIONAL","*  Airspace disease/atelectasis at the left lung base, improved relative the prior.
+*  Bilateral thoracostomy tubes in place.
+*  Significant improved aeration of the right lung.","- SpO2: 83% on HFNC
+- Respiratory rate: 37/min
+- Work of breathing: severe
+- Systolic BP: 97 mmHg
+- Temperature: 39.4°C
+- Mental status: confused
+- Care setting: stepdown",ACT_RAPID_RESPONSE;ACT_INTUBATION_PATHWAY;ACT_ESCALATE_CARE;ACT_URGENT_ASSESSMENT;ACT_CAP_INPATIENT_ABX;ACT_REQUEST_RELEVANT_LABS,"Activate an emergency respiratory response now with urgent bedside assessment, escalation to ICU-level care, and preparation for invasive airway/ventilatory support. Given fever and persistent airspace disease, initiate inpatient empiric pneumonia/sepsis management with relevant labs/cultures per local protocol without delaying stabilization.","Despite improved aeration and no recurrent pneumothorax on chest X-ray, the patient has refractory severe hypoxemia on HFNC with severe work of breathing, tachypnea, fever, and confusion, with persistent left basilar airspace disease/atelectasis raising concern for severe infection-associated respiratory failure."
+GRDN00BKCEOKC7S1,8,20250212,111810.415117,"Pleural effusion
+COMPARISON: Radiograph 02/10/2025","Support Devices: Bilateral pigtail drainage catheters. Left chest cardiac device.
+Lungs/Pleura: Trace right apical pneumothorax. No pleural effusion. Patchy right basilar airspace opacity, which may represent atelectasis, pneumonia, and/or aspiration.
+Heart/Mediastinum: Unremarkable.
+Bones/Soft tissues: No acute osseous abnormality. Partially imaged lower cervical ACDF.","1.  Trace right apical pneumothorax. Bilateral pigtail drainage catheters.
+2.  Patchy right basilar airspace opacity, which may represent atelectasis, pneumonia, and/or aspiration.","- SpO2: 95% on room air
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 174 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: outpatient",ACT_REASSESS_BEDSIDE;ACT_OBSERVE;ACT_REPEAT_CXR;ACT_TIMED_FOLLOWUP;ACT_CLINICAL_CORRELATION,"Recommend clinical observation with focused respiratory reassessment and short-interval repeat chest radiograph to ensure the trace right apical pneumothorax remains stable or resolves. Correlate the patchy right basilar opacity clinically for atelectasis versus pneumonia/aspiration, with earlier reassessment if dyspnea, hypoxemia, fever, or worsening symptoms develop.","The study shows a trace right apical pneumothorax with bilateral pigtail drainage catheters in a clinically stable, nonhypoxemic outpatient, plus a nonspecific right basilar opacity without fever or respiratory distress."
+GRDN00BKCEOKC7S1,9,20250324,132633.415117,"Pleural effusion, not elsewhere classified
+TECHNIQUE: PA and lateral digital radiographs were obtained of the chest.
+COMPARISON: 02/24/2025.",Left chest cardiac device and leads are in stable position. Small left pleural effusion. No focal consolidation or pneumothorax. Cardiomediastinal silhouette stable. Central vascular congestion without overt pulmonary edema pattern.,Small left pleural effusion.,"- SpO2: 98% on baseline oxygen
+- Respiratory rate: 16/min
+- Work of breathing: normal
+- Systolic BP: 110 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE;ACT_TIMED_FOLLOWUP,No urgent intervention is required based on this radiograph. Recommend clinical observation with reassessment and interval follow-up imaging if symptoms develop or the effusion is clinically suspected to be new or increasing.,"The only acute finding is a small left pleural effusion, with normal work of breathing and oxygenation at baseline, and no consolidation, pneumothorax, or overt pulmonary edema."
+GRDN00BKCEOKC7S1,10,20250714,041956.415117,"Respiratory failure
+COMPARISON: 07/13/2025
+Bilateral effusions are not significantly changed. There is associated atelectasis. No pneumothorax is seen. Invasive devices appear stable.",,No significant change in appearance of the chest.,"- SpO2: 99% on room air
+- Respiratory rate: 21/min
+- Work of breathing: mild
+- Systolic BP: 134 mmHg
+- Temperature: 37.6°C
+- Mental status: alert
+- Care setting: ward",ACT_OBSERVE;ACT_REASSESS_DEFINED_INTERVAL;ACT_REPEAT_CXR,"Continue clinical observation with interval respiratory reassessment. Repeat chest radiograph if symptoms, oxygen requirement, or work of breathing worsens, or as clinically needed to monitor the effusions/atelectasis.","Bilateral pleural effusions with associated atelectasis are unchanged and the patient is alert, normotensive, and oxygenating well on room air with only mild work of breathing."
+GRDN00BKCEOKC7S1,11,20250716,182939.415117,"dyspnea
+COMPARISON: 07/14/2025","Support Devices: None
+Lungs/Pleura: Worsening airspace consolidations in the bilateral mid and lower lung zones may reflect pneumonia, atelectasis, or aspiration. No pneumothorax. Small bilateral pleural effusions.
+Heart/Mediastinum: Normal.
+Bones/Soft tissues: No acute abnormality.","Worsening airspace consolidations in the bilateral mid and lower lung zones may reflect pneumonia, atelectasis, or aspiration.
+Small bilateral pleural effusions.","- SpO2: 72% on nonrebreather
+- Respiratory rate: 38/min
+- Work of breathing: exhaustion/failure
+- Systolic BP: 62 mmHg
+- Temperature: 36.3°C
+- Mental status: unresponsive
+- Care setting: stepdown",ACT_RAPID_RESPONSE;ACT_INTUBATION_PATHWAY;ACT_ESCALATE_CARE;ACT_CAP_INPATIENT_ABX;ACT_REQUEST_RELEVANT_LABS,Activate emergency response/critical care immediately for airway management with likely intubation and ICU-level escalation. Start inpatient empiric antibiotics for severe pneumonia/aspiration as clinically appropriate and obtain urgent relevant labs/cultures without delaying stabilization.,"Worsening bilateral airspace consolidations concerning for pneumonia/aspiration are accompanied by refractory severe hypoxemia on nonrebreather, exhaustion, shock, and unresponsiveness, indicating life-threatening respiratory failure rather than routine imaging follow-up."
+GRDN00BKCEOKC7S1,12,20250723,164832.415117,"increased oxygen requirements- last Xray poor exposure
+TECHNIQUE: Radiograph of the chest, 1 view.
+COMPARISON: 07/20/2025","Support Devices: Cardiac conduction device is present.
+Cardiomediastinal contours: Cardiomegaly.
+Lungs: Worsening pulmonary vascular congestion with bilateral pleural effusions and associated airspace disease, right greater than left. No pneumothorax.
+Bones: No acute osseous abnormalities.","Worsening pulmonary edema with bilateral pleural effusions and associated airspace disease, right greater than left.","- SpO2: 72% on NIV
+- Respiratory rate: 33/min
+- Work of breathing: severe
+- Systolic BP: 194 mmHg
+- Temperature: 36.7°C
+- Mental status: confused
+- Care setting: ED",ACT_RAPID_RESPONSE;ACT_INTUBATION_PATHWAY;ACT_ESCALATE_CARE;ACT_NITROGLYCERIN;ACT_FUROSEMIDE_IV;ACT_URGENT_ASSESSMENT,"Immediate emergency/critical care assessment is recommended with activation of the rapid response pathway and escalation to ICU-level care. Given severe hypoxemia despite NIV and confusion, prepare for invasive airway/ventilation while treating hypertensive pulmonary edema with IV diuresis and nitrate therapy if no contraindication.","Worsening pulmonary edema with bilateral pleural effusions is accompanied by severe refractory hypoxemia on NIV, severe work of breathing, confusion, and marked hypertension, indicating unstable acute cardiogenic pulmonary edema requiring emergency escalation and treatment."
+GRDN00BKCEOKC7S1,13,20250725,152138.415117,"Recurrent bilateral pleural effusion. Patient not surgical candidate per cardiothoracic surgery.
+Procedure:
+1.  Bilateral chest Pleurx catheter placement.
+The patient was informed and consented for the procedure then placed in the supine position on the fluoroscopic table. The patient was prepped and draped in a sterile technique. Whole-body sterile drape, sterile gown, sterile gloves, surgical and facemask were utilized for the procedure.
+1% lidocaine without and with epinephrine was utilized as a local anesthetic.
+Versed and fentanyl was utilized for conscious sedation while monitoring the vital signs for 30 minutes. Direct face-to-face monitoring was provided during sedation. A trained intraprocedural observed and was present at all times.
+The patient was administered 2 g of Ancef prior to the procedure for intraprocedural prophylaxis. No additional antibiotics were given during or after the procedure.
+RIGHT:
+Under ultrasound guidance access into the right thorax was performed along the right lateral thoracic wall. Ultrasound image of the access needle in the pleural space and fluid was sent to PACS for documentation. This was followed by placement of a guidewire through the access needle and into the thorax.
+A 10 cm subcutaneous tract was then made extending medially from the guidewire through which a Pleurx drainage catheter was pulled. A peel-away sheath was then introduced over the guidewire and into the thorax under fluoroscopic guidance.
+The guidewire stylet were removed and the Pleurx catheter was placed through the peel-away sheath and into the thorax. The peel-away sheath was then removed and the pleural exchange catheter was secured. A sterile dressing was applied.
+1.3 L of clear yellow fluid was drained.
+LEFT:
+Under ultrasound guidance access into the left thorax was performed along the left lateral thoracic wall. Ultrasound image of the access needle in the pleural space and fluid was sent to PACS for documentation. This was followed by placement of a guidewire through the access needle and into the thorax.
+A 10 cm subcutaneous tract was then made extending medially from the guidewire through which a Pleurx drainage catheter was pulled. A peel-away sheath was then introduced over the guidewire and into the thorax under fluoroscopic guidance.
+The guidewire stylet were removed and the Pleurx catheter was placed through the peel-away sheath and into the thorax. The peel-away sheath was then removed and the pleural exchange catheter was secured. A sterile dressing was applied.
+0.5 L of clear yellow fluid was drained.
+Fluoroscopic time: 1.8 minutes.
+Air kerma:",,"Successful bilateral chest Pleurx catheter placement. 1.3 L of clear yellow fluid was drained from the right Pleurx catheter, and 0.5 L of clear yellow fluid was drained from the left Pleurx catheter.
+PLAN: Drain as needed.","- SpO2: 84% on nasal cannula
+- Respiratory rate: 31/min
+- Work of breathing: moderate
+- Systolic BP: 118 mmHg
+- Temperature: 36.8°C
+- Mental status: alert
+- Care setting: stepdown",ACT_RAPID_RESPONSE;ACT_HFNC;ACT_URGENT_ASSESSMENT;ACT_REPEAT_CXR;ACT_PULMONOLOGY_FOLLOWUP,"Recommend immediate bedside respiratory/rapid-response evaluation with escalation of oxygen support, such as high-flow nasal cannula, and close monitored care. Obtain a prompt follow-up chest radiograph if hypoxemia persists or worsens to assess for post-procedure complication, with ongoing Pleurx drainage as needed and pulmonology follow-up.","Despite successful bilateral Pleurx placement and drainage, the patient has severe hypoxemia on nasal cannula with tachypnea and moderate work of breathing, requiring immediate respiratory escalation and assessment for post-procedure or residual pleural/airspace complication."
+GRDN00BKCEOKC7S1,14,20250802,091328.415117,"sob
+Comparison: 07/23/2025.","The cardiac silhouette is obscured by pulmonary findings.
+New complete opacification of left hemithorax, potentially due to large pleural effusion with atelectasis. Improved right pleural effusion, now small. There is increased interstitial thinning in the right lung, suggestive of pulmonary edema.
+There are bilateral Pleurx catheters in place.
+Left chest wall pacemaker. Cervical fusion hardware.
+No acute osseous abnormalities.","1.  New complete opacification of the left hemithorax, potentially due to large pleural effusion with atelectasis.
+2.  Improved right pleural effusion, now small. Probable pulm edema.
+3.  A Red - High message has been communicated to NIMMO, VICTORIA via the PowerConnect Actionable Findings application on 08/02/2025 [DATE], Message [REDACTED]","- SpO2: 90% on nasal cannula
+- Respiratory rate: 23/min
+- Work of breathing: moderate
+- Systolic BP: 157 mmHg
+- Temperature: 38.4°C
+- Mental status: distressed
+- Care setting: ward",ACT_URGENT_ASSESSMENT;ACT_OXYGEN_TITRATION;ACT_THORACIC_US;ACT_DIAGNOSTIC_THORACENTESIS;ACT_FUROSEMIDE_IV,"Recommend urgent bedside respiratory assessment with oxygen titration, prompt thoracic ultrasound to evaluate the left pleural space/Pleurx catheter and guide diagnostic pleural fluid sampling/drainage. Treat concurrent probable pulmonary edema as clinically appropriate, including IV diuresis if hemodynamics and renal/electrolyte status permit.","New complete left hemithorax opacification likely from a large pleural effusion with atelectasis, associated with hypoxemia and moderate respiratory distress, plus probable pulmonary edema and fever."
+GRDN00BKCEOKC7S1,15,20250805,032017.415117,"dyspnea, chest tightness; Pleural effusion, not elsewhere classified; Other specified abnormal findings of blood chemistry; Dyspnea, unspecified; Shortness of breath (Hx)
+COMPARISON:
+CR/SR - XR CHEST 1 VIEW - 08/02/25 [DATE] EDT","SUPPORT DEVICES:
+Left-sided cardiac pacemaker and bilateral thoracostomy tubes are stable.
+HEART/PULMONARY VASCULATURE:
+Stable heart size.
+LUNGS/PLEURAL SPACES:
+Improved aeration of the left lung. Diffuse interstitial and airspace opacities again seen throughout the lungs, worsened within the aerated right lung. Persistent moderate partially loculated left pleural effusion and moderate right pleural effusion. No pneumothorax","1. Improved aeration of the left lung. Persistent diffuse interstitial and airspace opacities, may reflect edema, worsened within the right lung.
+2. Persistent but improved moderate partially loculated left pleural effusion. Stable moderate right pleural effusion. No pneumothorax.","- SpO2: 89% on nonrebreather
+- Respiratory rate: 24/min
+- Work of breathing: mild
+- Systolic BP: 125 mmHg
+- Temperature: 36.6°C
+- Mental status: alert
+- Care setting: ED",ACT_RAPID_RESPONSE;ACT_ESCALATE_CARE;ACT_NIV;ACT_REASSESS_BEDSIDE;ACT_FUROSEMIDE_IV;ACT_REQUEST_RELEVANT_LABS;ACT_THORACIC_US,Recommend immediate ED respiratory escalation/rapid response assessment with higher-level monitoring and noninvasive ventilatory support if tolerated. Treat suspected pulmonary edema with IV diuresis as clinically appropriate and evaluate the persistent partially loculated/bilateral pleural effusions with thoracic ultrasound for drainage planning.,"Diffuse interstitial/airspace opacities favored to reflect edema with persistent bilateral pleural effusions, combined with SpO2 89% despite nonrebreather in the ED, indicates acute hypoxemic respiratory failure requiring escalation rather than routine imaging follow-up."
+GRDN00BKCEOKC7S1,16,20250807,181033.415117,"pleural effusion
+Comparison : Chest x-ray 08/05/2025. CT of the chest 07/12/2025.","Left-sided dual-lead pacer device, with no abandoned lead. There is mild enlargement the cardiac silhouette, unchanged.
+Increased interstitial markings in prominence of the perihilar vasculature, suggesting interstitial edema and pulmonary venous congestion.
+There is pronounced increased opacification of the left hemithorax, likely due to an enlarging moderate to large left-sided pleural effusion and adjacent airspace opacity either due to atelectasis or pneumonia. There is a Pleurx drainage catheter, which passes along the left lung base and paramediastinal left hemithorax with the tip projected over the left lung apex, unchanged. This may indicate impaired function of the Pleurx drainage catheter.
+There is also mild increase in size of right-sided pleural effusion with adjacent airspace opacity. Stable right Pleurx drainage catheter extending along the base of the right hemithorax, with the tip terminating in the medial right lung apex.
+Status post ACDF the cervical spine.
+The visible skeletal structures appear stable.","*  Enlarging moderate to large left-sided pleural effusion with adjacent airspace opacity either due to atelectasis or pneumonia.
+*
+*  Mild increase in size of right-sided pleural effusion with adjacent airspace opacity either due to atelectasis or pneumonia.
+*
+*  Stable bilateral Pleurx drainage catheters. The left Pleurx drainage catheter terminates along the left lung apex, which may indicate impaired function.
+*
+*  Stable cardiomegaly with interstitial edema and pulmonary venous congestion.","- SpO2: 84% on nonrebreather
+- Respiratory rate: 30/min
+- Work of breathing: severe
+- Systolic BP: 151 mmHg
+- Temperature: 36.7°C
+- Mental status: distressed
+- Care setting: stepdown",ACT_RAPID_RESPONSE;ACT_INTUBATION_PATHWAY;ACT_ESCALATE_CARE;ACT_THORACIC_US;ACT_THERAPEUTIC_THORACENTESIS;ACT_FUROSEMIDE_IV;ACT_REQUEST_RELEVANT_LABS;ACT_CLINICAL_CORRELATION;ACT_PULMONOLOGY_FOLLOWUP,"Activate emergency respiratory response and escalate to ICU-level care with invasive ventilatory support pathway as needed for refractory hypoxemia. Urgently evaluate the pleural spaces/Pleurx function with ultrasound-guided drainage of the large symptomatic effusion, treat concomitant pulmonary edema if clinically appropriate, and correlate/laboratory-assess for superimposed pneumonia.","The patient has enlarging moderate-to-large pleural effusions with suspected left Pleurx dysfunction and pulmonary venous congestion/interstitial edema, plus severe respiratory distress with SpO2 84% despite nonrebreather support."
+GRDN00BKCEOKC7S1,17,20250809,145128.415117,"Status post thoracentesis
+COMPARISON: 08/07/2025","Support Devices: Left chest cardiac pacemaker in place. Bilateral chest drainage
+catheters in place.
+Lungs/Pleura: Improved patchy airspace opacities. Trace left apical and right
+basilar pneumothoraces. Trace left pleural effusion.
+Heart/Mediastinum: Unchanged.
+Bones/Soft tissues: No acute osseous abnormality.","Trace left apical and right basilar pneumothoraces. Trace left pleural effusion.
+Improved patchy airspace opacities
+PM","- SpO2: 96% on low-flow oxygen
+- Respiratory rate: 15/min
+- Work of breathing: normal
+- Systolic BP: 160 mmHg
+- Temperature: 36.2°C
+- Mental status: alert
+- Care setting: ward",ACT_REASSESS_BEDSIDE;ACT_OBSERVE;ACT_REPEAT_CXR;ACT_TIMED_FOLLOWUP,"Recommend continued clinical observation with focused respiratory reassessment and repeat chest radiograph in a defined short interval, or sooner for worsening dyspnea, hypoxemia, or chest pain.",The pneumothoraces are trace and the patient is clinically stable on low-flow oxygen with normal work of breathing after thoracentesis/drainage catheter placement.
+GRDN00BKCEOKC7S1,18,20250809,202727.415117,"possible pneumothoraces
+COMPARISON: Earlier same day","Support Devices: Unchanged
+Lungs/Pleura: Similar patchy airspace opacities. No definite visualized
+pneumothorax. Small bilateral pleural effusions.
+Heart/Mediastinum: Unchanged.
+Bones/Soft tissues: No acute osseous abnormality.","No definite visualized pneumothorax on this exam. Small bilateral pleural
+effusions. Similar patchy airspace opacities.
+PM","- SpO2: 98% on baseline oxygen
+- Respiratory rate: 17/min
+- Work of breathing: normal
+- Systolic BP: 153 mmHg
+- Temperature: 36.1°C
+- Mental status: alert
+- Care setting: outpatient",ACT_CLINICAL_CORRELATION;ACT_OBSERVE;ACT_TIMED_FOLLOWUP,"No urgent intervention is indicated for pneumothorax on this exam. Correlate the small effusions and patchy opacities clinically, with outpatient reassessment/follow-up imaging only if symptoms worsen or the opacity/effusions fail to resolve as expected.","The exam shows no definite pneumothorax and only small bilateral pleural effusions with similar patchy opacities, while the patient is clinically stable with normal work of breathing and oxygenation on baseline oxygen."
+GRDN00BKCEOKC7S1,19,20250921,123006.415117,"Pleural effusion, not elsewhere classified",2 views of the chest compared to 09/16/2025. The cardiomediastinal contours are within normal limits. There are small bilateral pleural effusions with adjacent consolidation. Left-sided pacemaker is stable.,Stable chest,"- SpO2: 95% on baseline oxygen
+- Respiratory rate: 14/min
+- Work of breathing: normal
+- Systolic BP: 111 mmHg
+- Temperature: 36.4°C
+- Mental status: alert
+- Care setting: ward",ACT_CLINICAL_CORRELATION;ACT_OBSERVE,"Recommend clinical correlation and routine observation; no urgent pleural intervention or immediate additional imaging is required. Reassess and repeat chest imaging if respiratory symptoms, oxygen requirement, fever, or clinical status worsens.","The small bilateral pleural effusions with adjacent consolidation are stable compared with prior imaging, and the patient is physiologically stable on baseline oxygen without fever, tachypnea, increased work of breathing, or altered mental status."
