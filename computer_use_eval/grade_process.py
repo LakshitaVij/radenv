@@ -289,7 +289,7 @@ def score_z1(entries: list[dict]) -> list[ScoreItem]:
 
     first_switch_step = tab_switches[0]["step"] if tab_switches else None
     interacted = any(
-        e["tool"] == "scroll" and (first_switch_step is None or e["step"] < first_switch_step)
+        e.get("tool") == "scroll" and (first_switch_step is None or e["step"] < first_switch_step)
         for e in steps
     )
     items.append(ScoreItem("Z1.2 Interacts (zoom/pan)", 1 if interacted else 0,
