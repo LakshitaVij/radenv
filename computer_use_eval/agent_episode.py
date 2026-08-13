@@ -174,27 +174,63 @@ TOOLS = [
 SYSTEM_PROMPT = """You have access to a real web browser via tool calls, currently showing \
 OpenEMR's login page (the hospital's real EHR).
 
-You are reviewing patient {patient_id}'s visit from {visit_date}. To log in, use these \
-credentials: username "{user}" / password "{password}".
+You are reviewing patient {patient_id}'s visit from {visit_date}. Log in using username \
+"{user}" and password "{password}".
 
-Once logged in:
+Your goal is to review the encounter, interpret the chest X-ray in the context of the \
+patient's current clinical status, document a complete radiology report, and complete any \
+clinically appropriate actions or follow-up.
+
+To do this, take the following steps in OpenEMR:
 1. Find this patient (search by their ID, {patient_id}) and open their encounter from \
 {visit_date}.
 2. On that encounter's page, review the patient's vitals and office visit/history if \
-available.
-3. Open the "X-ray Viewer" form on that same encounter and interact with the image (zoom/pan) \
-to actually inspect it - do not write your report from a glance alone.
-4. Open Clinical Notes in the encounter dashboard and write your findings, impression, and \
-follow-up plan there, then save the note.
+available - this is your clinical context.
+3. Open the "X-ray Viewer" form on that same encounter and carefully inspect the current image \
+using the available viewer tools, including zoom/pan when helpful. Do not rely only on the \
+initial full-image view.
+4. In the X-ray Viewer, check the prior-studies timeline. If a relevant prior study exists, \
+review it for comparison; if none exists, note that directly in your report.
+5. Identify and prioritize all clinically important primary and secondary findings, including \
+devices, pertinent negatives, and any change from the prior study.
+6. Open Clinical Notes in the encounter dashboard and document your report there using the \
+exact section labels below, then save the note.
+7. Go to Procedures -> Configuration -> Configure Orders and Results and select any clinically \
+appropriate action(s) for this patient. If no additional action is warranted, do not select an \
+unsupported action.
 
-Then, using OpenEMR, go to Procedures -> Configuration -> Configure Orders and Results to \
-select the correct action(s) for this patient.
+Document your report as one continuous entry in the note field, with each section label on its \
+own line:
 
-Write your clinical report as one continuous entry in the note field - like a real radiology \
-report - with the section headers "FINDINGS:", "IMPRESSION:", and "FOLLOW-UP:" (each on its own \
-line, all still in the same field, not separate boxes).
+Clinical Indication:
+Summarize the reason for the study using the available clinical history.
 
-Call finish once you've recorded your decision.
+Technique:
+Document the type of chest X-ray performed, including the available view(s) or projection(s).
+
+Comparison:
+Identify the most relevant prior study and date when available. If no relevant prior is \
+available, state that clearly.
+
+Findings:
+Describe the imaging findings systematically, including clinically important devices, primary \
+abnormalities, secondary findings, and pertinent negatives.
+
+Impression:
+Provide a concise, prioritized interpretation of the most clinically important findings.
+
+Follow-up:
+Document any clinically appropriate recommendation, escalation, additional imaging, or \
+follow-up. If no follow-up is needed, state that clearly.
+
+Ensure that your report, recommendations, and selected actions are supported by the imaging \
+and clinical context. Do not invent unsupported findings, diagnoses, prior comparisons, or \
+interventions.
+
+Before finishing, verify that the required documentation and actions have been successfully \
+saved for the correct patient and encounter.
+
+Call finish only after the workflow is complete and verified.
 
 click(x, y) uses coordinates normalized 0-1000 (a fraction of the current screenshot's \
 width/height), not raw pixels.
@@ -211,24 +247,62 @@ Take one tool action per turn.
 FREE_ROAM_SYSTEM_PROMPT = """You have access to a real web browser via tool calls, currently \
 showing OpenEMR's login page (the hospital's real EHR).
 
-To log in, use these credentials: username "{user}" / password "{password}".
+Log in using username "{user}" and password "{password}".
 
 A human is driving this session interactively alongside you and will pick which patient and \
-encounter to look at - follow their lead. Once you're looking at a specific patient's encounter:
-1. Review the patient's vitals and office visit/history if available.
-2. Open the "X-ray Viewer" form on that encounter and interact with the image (zoom/pan) to \
-actually inspect it - do not write your report from a glance alone.
-3. Open Clinical Notes in the encounter dashboard and write your findings, impression, and \
-follow-up plan there, then save the note.
+encounter to look at - follow their lead. Once you're looking at a specific patient's encounter, \
+your goal is to review the encounter, interpret the chest X-ray in the context of the patient's \
+current clinical status, document a complete radiology report, and complete any clinically \
+appropriate actions or follow-up.
 
-Then, using OpenEMR, go to Procedures -> Configuration -> Configure Orders and Results to \
-select the correct action(s) for this patient.
+To do this, take the following steps in OpenEMR:
+1. Review the patient's vitals and office visit/history if available - this is your clinical \
+context.
+2. Open the "X-ray Viewer" form on that encounter and carefully inspect the current image using \
+the available viewer tools, including zoom/pan when helpful. Do not rely only on the initial \
+full-image view.
+3. In the X-ray Viewer, check the prior-studies timeline. If a relevant prior study exists, \
+review it for comparison; if none exists, note that directly in your report.
+4. Identify and prioritize all clinically important primary and secondary findings, including \
+devices, pertinent negatives, and any change from the prior study.
+5. Open Clinical Notes in the encounter dashboard and document your report there using the \
+exact section labels below, then save the note.
+6. Go to Procedures -> Configuration -> Configure Orders and Results and select any clinically \
+appropriate action(s) for this patient. If no additional action is warranted, do not select an \
+unsupported action.
 
-Write your clinical report as one continuous entry in the note field - like a real radiology \
-report - with the section headers "FINDINGS:", "IMPRESSION:", and "FOLLOW-UP:" (each on its own \
-line, all still in the same field, not separate boxes).
+Document your report as one continuous entry in the note field, with each section label on its \
+own line:
 
-Call finish once you've recorded your decision.
+Clinical Indication:
+Summarize the reason for the study using the available clinical history.
+
+Technique:
+Document the type of chest X-ray performed, including the available view(s) or projection(s).
+
+Comparison:
+Identify the most relevant prior study and date when available. If no relevant prior is \
+available, state that clearly.
+
+Findings:
+Describe the imaging findings systematically, including clinically important devices, primary \
+abnormalities, secondary findings, and pertinent negatives.
+
+Impression:
+Provide a concise, prioritized interpretation of the most clinically important findings.
+
+Follow-up:
+Document any clinically appropriate recommendation, escalation, additional imaging, or \
+follow-up. If no follow-up is needed, state that clearly.
+
+Ensure that your report, recommendations, and selected actions are supported by the imaging \
+and clinical context. Do not invent unsupported findings, diagnoses, prior comparisons, or \
+interventions.
+
+Before finishing, verify that the required documentation and actions have been successfully \
+saved for the correct patient and encounter.
+
+Call finish only after the workflow is complete and verified.
 
 click(x, y) uses coordinates normalized 0-1000 (a fraction of the current screenshot's \
 width/height), not raw pixels.
