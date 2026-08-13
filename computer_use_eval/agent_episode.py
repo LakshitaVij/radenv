@@ -523,6 +523,7 @@ def run_episode(patient_id: str | None, visit_date: str | None, max_steps: int, 
                 })
 
                 tool_result = "ok"
+                url_before_action = page.url
                 try:
                     if take_manual:
                         log_step(log_path, {"type": "step", "step": step, "note": "handed to Playwright Inspector for manual control"})
@@ -557,6 +558,22 @@ def run_episode(patient_id: str | None, visit_date: str | None, max_steps: int, 
                     tool_result = f"error: {e}"
 
                 page.wait_for_timeout(800)
+
+                # A full page navigation (e.g. submitting login, which lands
+                # on the portal's Calendar/Message Center/Patient Finder
+                # tile dashboard) can leave those tiles rendered at a tiny
+                # fixed size if their JS layout pass hasn't finished by the
+                # time the flat 800ms wait above elapses - confirmed via a
+                # real episode where the agent got stuck in a click-loop
+                # because the Patient Finder tile never expanded past
+                # ~300x300px, hiding its own search results. Give any actual
+                # navigation extra time to settle before the next screenshot.
+                if page.url != url_before_action:
+                    try:
+                        page.wait_for_load_state("networkidle", timeout=5000)
+                    except Exception:  # noqa: BLE001 - best-effort, don't block the episode on it
+                        pass
+                    page.wait_for_timeout(700)
 
                 # target="_blank" links (e.g. "View in OpenEMR") open a new
                 # tab that Playwright does NOT follow automatically - if one
