@@ -43,12 +43,11 @@ if not _LOCAL_KEY_FILE.exists():
 OPENROUTER_API_KEY = _LOCAL_KEY_FILE.read_text().strip()
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
-FRONTEND_URL = "http://localhost:5173"
 OPENEMR_BASE = "https://localhost:9300"
 OPENEMR_USER = "admin"
 OPENEMR_PASS = "pass"
 MODEL = "google/gemini-3.1-pro-preview"  # newest multimodal Gemini Pro on OpenRouter (resolved from the ~google/gemini-pro-latest alias)
-MAX_STEPS_DEFAULT = 30
+MAX_STEPS_DEFAULT = 120
 VIEWPORT = {"width": 1600, "height": 1000}
 
 EPISODES_DIR = Path(__file__).parent / "episodes"
@@ -172,22 +171,62 @@ TOOLS = [
     },
 ]
 
-SYSTEM_PROMPT = """You have access to a real web browser via tool calls.
+SYSTEM_PROMPT = """You have access to a real web browser via tool calls, currently showing \
+OpenEMR's login page (the hospital's real EHR).
 
-Your job is to review this patient's chest X-ray and, using OpenEMR (the hospital's real \
-EHR), do two things for this encounter: (1) document your clinical report - findings, \
-impression, and your recommended follow-up - directly in the patient's encounter notes, \
-and (2) go to Procedures -> Configuration -> Configure Orders and Results to select the \
-correct action(s) for this patient.
+You are reviewing patient {patient_id}'s visit from {visit_date}. To log in, use these \
+credentials: username "{user}" / password "{password}".
 
-Structure your written note with the exact section labels "Findings:", "Impression:", and \
-"Follow-up:" - each on its own, written out literally - so your findings, impression, and \
-follow-up recommendation are each clearly separated.
+Once logged in:
+1. Find this patient (search by their ID, {patient_id}) and open their encounter from \
+{visit_date}.
+2. On that encounter's page, review the patient's vitals and office visit/history if \
+available.
+3. Open the "X-ray Viewer" form on that same encounter and interact with the image (zoom/pan) \
+to actually inspect it - do not write your report from a glance alone.
 
-To log into OpenEMR, use these credentials: username "{user}" / password "{password}".
+Then, using OpenEMR, do two things for this encounter: (1) document your clinical report - \
+findings, impression, and your recommended follow-up - directly in the patient's encounter \
+notes, and (2) go to Procedures -> Configuration -> Configure Orders and Results to select \
+the correct action(s) for this patient.
 
-OpenEMR may also have this patient's vitals/clinical context, visit history, and prior \
-X-ray reports available - use your discretion on whether and how to use them.
+Write it as one continuous clinical report in a single note field - like a real radiology \
+report. Structure it with the section headers "FINDINGS:", "IMPRESSION:", and "FOLLOW-UP:" \
+(each on its own line, all still in the same field, not separate boxes).
+
+Call finish once you've recorded your decision.
+
+click(x, y) uses coordinates normalized 0-1000 (a fraction of the current screenshot's \
+width/height), not raw pixels.
+
+Take one tool action per turn.
+"""
+
+# Used when no --patient-id/--visit-date is given (free-roam interactive
+# mode only - not gradable, there's no gold answer for "whichever patient
+# the human happens to pick"). Same login/report/action-selection shape as
+# SYSTEM_PROMPT, just without a specific target - the human picks the
+# patient/encounter live, either by approving the model's own navigation
+# choices or by taking manual control via the interactive gate's 'm' key.
+FREE_ROAM_SYSTEM_PROMPT = """You have access to a real web browser via tool calls, currently \
+showing OpenEMR's login page (the hospital's real EHR).
+
+To log in, use these credentials: username "{user}" / password "{password}".
+
+A human is driving this session interactively alongside you and will pick which patient and \
+encounter to look at - follow their lead. Once you're looking at a specific patient's encounter:
+1. Review the patient's vitals and office visit/history if available.
+2. Open the "X-ray Viewer" form on that encounter and interact with the image (zoom/pan) to \
+actually inspect it - do not write your report from a glance alone.
+
+Then, using OpenEMR, do two things for this encounter: (1) document your clinical report - \
+findings, impression, and your recommended follow-up - directly in the patient's encounter \
+notes, and (2) go to Procedures -> Configuration -> Configure Orders and Results to select \
+the correct action(s) for this patient.
+
+Write it as one continuous clinical report in a single note field - like a real radiology \
+report. Structure it with the section headers "FINDINGS:", "IMPRESSION:", and "FOLLOW-UP:" \
+(each on its own line, all still in the same field, not separate boxes).
 
 Call finish once you've recorded your decision.
 
@@ -208,22 +247,69 @@ def screenshot_b64(page) -> str:
     return base64.b64encode(png_bytes).decode("utf-8")
 
 
-def run_episode(patient_id: str, visit_date: str, max_steps: int, headless: bool) -> Path:
-    pid = OPENEMR_PID_MAP.get(patient_id)
-    if pid is None:
-        raise ValueError(f"Unknown patient_id {patient_id}, not in OPENEMR_PID_MAP")
+def _interactive_gate(step: int, name: str, args: dict) -> tuple[str, dict, bool, bool]:
+    """Prints the model's proposed action and waits for one line of
+    terminal input before it executes. Returns (name, args, take_manual,
+    quit_episode) - name/args are the action that actually gets executed
+    (possibly a human override), take_manual signals a page.pause() detour
+    for this step instead of executing name/args at all, quit_episode ends
+    the episode early exactly like hitting max_steps.
 
-    episode_dir = EPISODES_DIR / f"{patient_id}_{visit_date}_{int(time.time())}"
+    y / Enter -> execute the model's proposed action as-is.
+    s <tool> <json args> -> execute a human-supplied action instead.
+    m -> hand the browser to Playwright's Inspector (page.pause()) for this
+         step; resuming the Inspector returns control to the loop.
+    q -> stop the episode now."""
+    print(f"\n[step {step}] model wants: {name}({json.dumps(args)})")
+    print("  [Enter/y]=run  [s <tool> <json args>]=override  [m]=manual (Inspector)  [q]=quit")
+    line = input("> ").strip()
+
+    if line.lower() == "q":
+        return name, args, False, True
+    if line.lower() == "m":
+        return name, args, True, False
+    if line.lower().startswith("s "):
+        try:
+            _, tool, rest = line.split(" ", 2)
+            override_args = json.loads(rest) if rest.strip() else {}
+            return tool, override_args, False, False
+        except (ValueError, json.JSONDecodeError) as e:
+            print(f"  couldn't parse override ({e}), running the model's original action instead")
+            return name, args, False, False
+    return name, args, False, False
+
+
+def run_episode(patient_id: str | None, visit_date: str | None, max_steps: int, headless: bool, interactive: bool = False) -> Path:
+    # patient_id/visit_date are None in free-roam interactive mode - no
+    # grading target, the human picks live. Not gradable through the normal
+    # pipeline (grade_episode.py looks up gold answers by patient_id/
+    # visit_date), which is fine - free-roam is for exploration, not scoring.
+    free_roam = patient_id is None
+    if not free_roam:
+        pid = OPENEMR_PID_MAP.get(patient_id)
+        if pid is None:
+            raise ValueError(f"Unknown patient_id {patient_id}, not in OPENEMR_PID_MAP")
+    else:
+        pid = None
+        if not interactive:
+            raise ValueError("patient_id/visit_date can only be omitted in --interactive mode - "
+                              "an autonomous run needs a real grading target.")
+
+    episode_name = f"{patient_id}_{visit_date}" if not free_roam else "freeroam"
+    episode_dir = EPISODES_DIR / f"{episode_name}_{int(time.time())}"
     screenshots_dir = episode_dir / "screenshots"
     screenshots_dir.mkdir(parents=True, exist_ok=True)
     log_path = episode_dir / "log.jsonl"
 
     client = OpenAI(api_key=OPENROUTER_API_KEY, base_url=OPENROUTER_BASE_URL)
 
-    system_prompt = SYSTEM_PROMPT.format(
-        user=OPENEMR_USER, password=OPENEMR_PASS, patient_id=patient_id, pid=pid, visit_date=visit_date,
-    )
-    log_step(log_path, {"type": "episode_start", "patient_id": patient_id, "visit_date": visit_date, "pid": pid})
+    if free_roam:
+        system_prompt = FREE_ROAM_SYSTEM_PROMPT.format(user=OPENEMR_USER, password=OPENEMR_PASS)
+    else:
+        system_prompt = SYSTEM_PROMPT.format(
+            user=OPENEMR_USER, password=OPENEMR_PASS, patient_id=patient_id, visit_date=visit_date,
+        )
+    log_step(log_path, {"type": "episode_start", "patient_id": patient_id, "visit_date": visit_date, "pid": pid, "free_roam": free_roam})
 
     selected_actions = []
 
@@ -231,39 +317,33 @@ def run_episode(patient_id: str, visit_date: str, max_steps: int, headless: bool
         browser = p.chromium.launch(headless=headless)
         context = browser.new_context(viewport=VIEWPORT, ignore_https_errors=True)
         page = context.new_page()
-        page.goto(FRONTEND_URL, wait_until="domcontentloaded")
-        page.wait_for_timeout(1500)
 
-        # Deterministically select the patient + visit for this episode -
-        # we already know exactly which visit this episode is about (CLI
-        # args), so the harness picks the dropdowns rather than spending
-        # agent turns on trivial navigation the episode design doesn't
-        # actually need to test.
-        selects = page.locator("select")
-        selects.nth(0).select_option(patient_id)
+        # Embedded-in-OpenEMR app: no separate standalone viewer to
+        # pre-select a patient/visit dropdown on anymore - the agent starts
+        # at the bare login page and has to log in, find the patient, and
+        # find the encounter itself (all three are scored Z1 steps). The
+        # X-ray-load wait that used to happen once here now happens per-step
+        # in the main loop below, since the X-ray isn't opened until
+        # whenever the agent gets there, not at a fixed point in setup.
+        page.goto(f"{OPENEMR_BASE}/interface/login/login.php?site=default", wait_until="domcontentloaded")
         page.wait_for_timeout(1000)
-        selects.nth(1).select_option(label=visit_date)
-
-        # A fixed 1500ms wait wasn't always enough for the X-ray <img>
-        # elements to finish fetching/rendering (thumbnail endpoint does a
-        # cold DICOM->PNG conversion) - a real run once handed the agent a
-        # genuinely blank image and it (correctly) reported "insufficient
-        # evidence," which is right behavior on wrong input. Wait for every
-        # <img> on the page to actually finish loading instead of guessing
-        # a timeout.
-        try:
-            page.wait_for_function(
-                "Array.from(document.querySelectorAll('img')).every(img => img.complete && img.naturalWidth > 0)",
-                timeout=15000,
-            )
-        except Exception:  # noqa: BLE001 - log and continue rather than abort the episode
-            log_step(log_path, {"type": "setup", "note": "WARNING: X-ray image(s) did not finish loading within 15s"})
-        page.wait_for_timeout(500)
-        log_step(log_path, {"type": "setup", "note": "patient/visit pre-selected by harness"})
+        log_step(log_path, {"type": "setup", "note": "starting at OpenEMR login page - agent logs in and navigates itself"})
 
         messages = [{"role": "system", "content": system_prompt}]
 
         for step in range(1, max_steps + 1):
+            # X-ray Viewer is an iframe that may or may not be open at any
+            # given step - find it by URL (not by a fixed nesting-depth
+            # guess) and, if present, wait for Cornerstone's real
+            # IMAGE_RENDERED-derived flag before screenshotting, so the
+            # agent isn't handed a screenshot of a still-loading viewport.
+            xray_frame = next((f for f in page.frames if "xray_viewer/public/index.php" in f.url), None)
+            if xray_frame is not None:
+                try:
+                    xray_frame.wait_for_selector('[data-xray-loaded="true"]', timeout=15000)
+                except Exception:  # noqa: BLE001 - proceed with whatever's on screen rather than abort the episode
+                    log_step(log_path, {"type": "step", "step": step, "note": "WARNING: X-ray image(s) did not finish loading within 15s"})
+
             shot_path = screenshots_dir / f"step_{step:03d}.png"
             page.screenshot(path=str(shot_path))
             img_b64 = base64.b64encode(shot_path.read_bytes()).decode("utf-8")
@@ -353,6 +433,16 @@ def run_episode(patient_id: str, visit_date: str, max_steps: int, headless: bool
                     })
                     continue
 
+                take_manual = False
+                user_quit = False
+                if interactive:
+                    name, args, take_manual, user_quit = _interactive_gate(step, name, args)
+                    if user_quit:
+                        log_step(log_path, {"type": "step", "step": step, "note": "user quit via interactive gate"})
+                        messages.append({"role": "tool", "tool_call_id": tool_call.id, "content": "episode stopped by user"})
+                        episode_finished = True
+                        break
+
                 log_step(log_path, {
                     "type": "step", "step": step, "screenshot": str(shot_path),
                     "reasoning": choice.content, "tool": name, "args": args,
@@ -360,7 +450,11 @@ def run_episode(patient_id: str, visit_date: str, max_steps: int, headless: bool
 
                 tool_result = "ok"
                 try:
-                    if name == "click":
+                    if take_manual:
+                        log_step(log_path, {"type": "step", "step": step, "note": "handed to Playwright Inspector for manual control"})
+                        page.pause()
+                        tool_result = "manual intervention via Playwright Inspector"
+                    elif name == "click":
                         # Gemini outputs coordinates on its native 0-1000
                         # normalized scale, not raw pixels - confirmed by the
                         # consistent ~1.6x undershoot on x (=1600/1000, our
@@ -439,13 +533,23 @@ def run_episode(patient_id: str, visit_date: str, max_steps: int, headless: bool
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--patient-id", required=True)
-    parser.add_argument("--visit-date", required=True, help="YYYY-MM-DD")
+    parser.add_argument("--patient-id", default=None,
+                         help="Required unless --interactive is also given, in which case omitting "
+                              "it starts a free-roam session with no fixed patient/visit target.")
+    parser.add_argument("--visit-date", default=None, help="YYYY-MM-DD - same free-roam rule as --patient-id.")
     parser.add_argument("--max-steps", type=int, default=MAX_STEPS_DEFAULT)
     parser.add_argument("--headed", action="store_true", help="Show the browser window instead of running headless.")
+    parser.add_argument("--interactive", action="store_true",
+                         help="Pause before each step for human review/override/manual-control - forces --headed.")
     args = parser.parse_args()
 
-    run_episode(args.patient_id, args.visit_date, args.max_steps, headless=not args.headed)
+    if not args.interactive and (args.patient_id is None or args.visit_date is None):
+        parser.error("--patient-id/--visit-date are required unless --interactive is given.")
+    if (args.patient_id is None) != (args.visit_date is None):
+        parser.error("--patient-id and --visit-date must be given together, or both omitted for free-roam.")
+
+    run_episode(args.patient_id, args.visit_date, args.max_steps,
+                headless=not (args.headed or args.interactive), interactive=args.interactive)
 
 
 if __name__ == "__main__":

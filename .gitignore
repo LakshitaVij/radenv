@@ -13,13 +13,18 @@ __pycache__/
 dist/
 build/
 
-# Real patient data - DICOM images, gold reports, generated followups.
-# These must be placed locally per the README, never committed to git
-# history (private repo or not).
-dicom_by_visit/
-dicomweb/
-csv/
+# Real patient data - included deliberately (private repo, explicit
+# decision) so the pipeline runs end to end out of the box. Only the exact
+# files the code actually reads are included - everything CSV-shaped is
+# excluded first, then the 2 real source files (confirmed via oracle.py's
+# own GOLD_CSV/FOLLOWUP_CSV constants) are explicitly re-included below.
+# Negation lines must come AFTER the pattern they're un-ignoring, or git
+# silently re-excludes them - keep this order. Everything in
+# dicom_by_visit/ IS included (no exclude on that directory at all) since
+# every file there is real per-visit imaging data the pipeline needs.
 *.csv
+!csv/consolidated_real_reports.csv
+!generated_followups_fin.csv
 *.numbers
 
 # Generated run artifacts - eval episodes, receipts, results, logs

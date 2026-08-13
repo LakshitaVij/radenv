@@ -4,6 +4,15 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import { viteCommonjs } from '@originjs/vite-plugin-commonjs'
 
 export default defineConfig({
+  // Relative, not absolute (/) - this bundle is deployed several directories
+  // deep (interface/forms/xray_viewer/public/dist/), not at the site root
+  // the standalone app used to run at. Vite's default absolute "/assets/..."
+  // references broke the dicom-image-loader web worker specifically (it
+  // resolves its own URL against the page's base) - real, confirmed bug:
+  // the worker 404'd/ERR_FAILED under the embedded path, which cascaded
+  // into "Cannot read properties of undefined (reading 'samplesPerPixel')"
+  // and fully black canvases despite Cornerstone believing it rendered.
+  base: './',
   plugins: [
     react(),
     nodePolyfills({
@@ -25,6 +34,16 @@ export default defineConfig({
   },
   worker: {
     format: 'es',
+  },
+  build: {
+    // Default (content-hashed) filenames - a fixed-name override was tried
+    // first but real multiple distinct Cornerstone codec .wasm files
+    // collided under one fixed name (Vite auto-resolved with fragile,
+    // build-order-dependent numeric suffixes: bundle.wasm, bundle2.wasm,
+    // bundle3.wasm...) and some assets ended up duplicated. Hashed names
+    // avoid the collision entirely; index.php reads manifest.json below to
+    // find the current entry/asset names instead of assuming a fixed one.
+    manifest: true,
   },
   server: {
     // Proxy DICOMweb requests to Orthanc through the dev server itself, so

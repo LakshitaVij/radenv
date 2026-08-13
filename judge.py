@@ -9,7 +9,7 @@ clinician-approved gold for semantic (not exact-string) equivalence.
 
 Rewritten from the earlier 0.0-1.0-per-dimension/weighted-average design to
 match the discrete point-value scoring in the "Accuracy Axis" design doc
-(A1: 8 metrics/finding, range [-9,+7]; A2: 8 metrics/diagnosis, range
+(A1: 8 metrics/finding, range [-10,+7]; A2: 8 metrics/diagnosis, range
 [-15,+7]; A3: 9 metrics/action, range documented as [-15,+8]).
 
 Two things confirmed by hand-checking the doc's own stated ranges against
@@ -17,10 +17,11 @@ its own metric point values, both flagged to and confirmed with the user
 before implementing this way (do not "fix" silently if this file is
 revisited later without re-deriving the same math):
   - Despite the doc saying "weighted average," the stated ranges for A1
-    ([-9,+7]) and A2 ([-15,+7]) only make arithmetic sense as a RAW SUM of
+    ([-10,+7]) and A2 ([-15,+7]) only make arithmetic sense as a RAW SUM of
     the per-metric point values, not a percentage-weighted average - the
     percentages in the doc don't change the computed score here. Verified:
-    A1 max = 1+1+1+1+1+1+1+0 = 7, min = 0-1-1-2-1-1-2-1 = -9 (exact).
+    A1 max = 1+1+1+1+1+1+1+0 = 7, min = -1-1-1-2-1-1-2-1 = -10 (exact -
+    presence_absence's incorrect case is -1, not 0, per a later revision).
     A2 max = 1+1+1+1+1+0+1+1 = 7, min = -2-2-2-1-2-2-2-2 = -15 (exact).
   - A3's stated range ([-15,+8]) does NOT match this same raw-sum approach
     applied to its 9 metrics (raw sum gives max=+9, min=-18). Per explicit
@@ -133,24 +134,38 @@ class FindingScoreItem(BaseModel):
     match_status: Literal["matched", "missed_by_model", "hallucinated_by_model"]
 
     # Only meaningful for match_status="matched" - score 0 otherwise.
-    presence_absence: float = Field(description="+1 correct / 0 incorrect. 0 if not matched.")
+    presence_absence: float = Field(description="+1 correct / -2 incorrect. 0 if not matched.")
     laterality: float = Field(description="+1 correct / -1 wrong or hallucination / 0 if not lateralized or not matched.")
-    severity: float = Field(description="+1 correct / -0.5 over-escalating / -1 under-calling or hallucination / 0 if not matched.")
+    severity: float = Field(description="+1 correct / -0.5 over-escalating / -2 under-calling or hallucination / 0 if not matched.")
     location: float = Field(description="+1 precise / +0.5 general region / -1 wrong or hallucination / 0 if not matched.")
-    confidence_wording: float = Field(description="+1 match / -0.5 over-confident / -1 under-confident or hallucination / 0 if not matched.")
-    clinical_reasoning: float = Field(description="+1 sound / +0.5 weak / -1 incorrect / -2 hallucination or miss / 0 if not matched.")
-
-    # Only meaningful for match_status="missed_by_model" / "hallucinated_by_model" respectively.
-    false_negatives: float = Field(description="+1 caught (matched) / -2 missed (missed_by_model) / 0 for hallucinated items.")
-    false_positives: float = Field(description="+0 no hallucination (matched/missed) / -1 hallucinated (hallucinated_by_model).")
+    confidence_wording: float = Field(description="+1 match / -0.5 over- or under-confident / -2 hallucination. 0 if not matched.")
+    clinical_reasoning: float = Field(description="+1 sound / +0.5 weak / -2 incorrect (includes hallucinated reasoning - not a separate case). 0 if not matched.")
+    comparison_accuracy: float = Field(description="+1 correctly describes change from a prior study (unchanged/improved/worsened/new) when gold's finding is itself comparative / -1 wrong or omitted comparison gold explicitly makes. 0 if gold's finding isn't comparative, or not matched.")
 
     reasoning: str = Field(description="One or two sentences: why this item was scored this way.")
+
+    @property
+    def _match_penalty(self) -> float:
+        """Replaces the old false_negatives/false_positives fields - both were
+        pure functions of match_status, so the LLM was independently
+        "scoring" something already implied by match_status itself. Derived
+        here instead of asked for, removing the risk of an inconsistent
+        combination (e.g. match_status="missed_by_model" but a model output
+        of false_negatives=+1). Symmetric -5.0/-5.0: a missed real finding
+        and a fabricated one are treated as equally bad - a clinician has to
+        either notice the omission themselves or actively rule out a
+        hallucinated one, both real safety costs. Raised from -2.0/-1.0 to
+        -5.0/-5.0 per explicit user request, applied uniformly across
+        A1/A2/A3 for consistency (same change in DiagnosisScoreItem and
+        FollowupScoreItem below)."""
+        return {"matched": 1.0, "missed_by_model": -5.0, "hallucinated_by_model": -5.0}[self.match_status]
 
     @property
     def raw_total(self) -> float:
         return (
             self.presence_absence + self.laterality + self.severity + self.location
-            + self.confidence_wording + self.clinical_reasoning + self.false_negatives + self.false_positives
+            + self.confidence_wording + self.clinical_reasoning + self.comparison_accuracy
+            + self._match_penalty
         )
 
 
@@ -170,24 +185,27 @@ class DiagnosisScoreItem(BaseModel):
     diagnosis_description: str = Field(description="The diagnosis this item scores - model's wording if matched/hallucinated, gold's if missed.")
     match_status: Literal["matched", "missed_by_model", "hallucinated_by_model"]
 
-    primary_diagnosis_match: float = Field(description="+1 correct primary / +0.5 correct but listed secondary / -1 wrong / -2 missed. 0 if hallucinated.")
-    secondary_points: float = Field(description="+1 caught / +0.5 mentioned but not prioritized / -1 wrong / -2 missed. 0 if this item is the primary diagnosis or hallucinated.")
-    prioritization: float = Field(description="+1 correct order / +0.5 partial / -1 wrong. 0 if missed or hallucinated.")
-    severity_tone: float = Field(description="+1 match / -0.5 alarmist when unnecessary / -2 dismissive of critical / -1 hallucination. 0 if missed.")
-    confidence_wording: float = Field(description="+1 match / -0.5 over-confident / -1 under-confident / -2 misdiagnosis. 0 if missed or hallucinated.")
-    clinical_reasoning: float = Field(description="+1 sound / +0.5 weak / -1 incorrect / -2 hallucination or miss. 0 if not matched.")
-
-    false_negatives: float = Field(description="+1 caught (matched) / -2 missed (missed_by_model) / 0 for hallucinated items.")
-    false_positives: float = Field(description="+0 no hallucination (matched/missed) / -1 hallucinated (hallucinated_by_model).")
+    diagnosis_match: float = Field(description="+1 correct diagnosis at correct prominence (primary listed as primary, secondary listed as secondary) / +0.5 correct diagnosis but wrong prominence / -2 wrong diagnosis. 0 if not matched.")
+    prioritization: float = Field(description="+1 correct order / +0.5 partial / -2 wrong. 0 if not matched.")
+    severity_tone: float = Field(description="+1 match / -0.5 alarmist when unnecessary / -2 dismissive of critical. 0 if not matched.")
+    confidence_wording: float = Field(description="+1 match / -0.5 over- or under-confident. 0 if not matched.")
+    clinical_reasoning: float = Field(description="+1 sound / +0.5 weak / -2 incorrect (includes hallucinated reasoning - not a separate case). 0 if not matched.")
 
     reasoning: str = Field(description="One or two sentences: why this item was scored this way.")
 
     @property
+    def _match_penalty(self) -> float:
+        """Same deterministic-from-match_status derivation as
+        FindingScoreItem._match_penalty - see that docstring (symmetric
+        -5.0/-5.0)."""
+        return {"matched": 1.0, "missed_by_model": -5.0, "hallucinated_by_model": -5.0}[self.match_status]
+
+    @property
     def raw_total(self) -> float:
         return (
-            self.primary_diagnosis_match + self.secondary_points + self.prioritization
+            self.diagnosis_match + self.prioritization
             + self.severity_tone + self.confidence_wording + self.clinical_reasoning
-            + self.false_negatives + self.false_positives
+            + self._match_penalty
         )
 
 
@@ -206,24 +224,28 @@ class FollowupScoreItem(BaseModel):
     action_description: str = Field(description="The action this item scores - model's wording if matched/hallucinated, gold's action name if missed.")
     match_status: Literal["matched", "missed_by_model", "hallucinated_by_model"]
 
-    essential_action_recall: float = Field(description="+1 caught / -2 missed / +0 correctly absent (not in gold, model correctly didn't recommend it - rare, usually not applicable per item).")
-    severity_appropriate_intensity: float = Field(description="+1 match / +0.5 slight off / -0.5 over-urgent / -2 under-urgent / -1 hallucination. 0 if missed.")
-    conflict_avoidance: float = Field(description="+1 no conflicts / -0.5 one conflict / -1 multiple / -2 contraindicated, relative to the OTHER actions in this same episode. 0 if missed.")
-    unnecessary_avoidance: float = Field(description="+1 only necessary / -0.5 one unnecessary / -1 multiple / -2 excessive. 0 unless this item is itself a hallucinated/unnecessary action.")
-    secondary_capture: float = Field(description="+1 caught / -2 missed / -1 hallucinated / +0 correctly absent - for SECONDARY/adjunct actions specifically (not the primary recommended action).")
-    tone: float = Field(description="+1 match / +0.5 slight off / -0.5 alarmist / -2 dismissive / -1 hallucination. 0 if missed.")
-    prioritization: float = Field(description="+1 correct order / +0.5 partial / -1 wrong, relative to gold's action ordering. 0 if missed or hallucinated.")
-    confidence_wording: float = Field(description="+1 match / -0.5 over-confident / -1 under-confident or hallucination (urgent vs. consider). 0 if missed.")
-    abstention_calibration: float = Field(description="+1 correct / -0.5 acted when should abstain / -2 abstained when should act. Score this identically across every item in the episode (it's an episode-level judgment, not per-action) - see judge_followup()'s abstention handling below.")
+    severity_appropriate_intensity: float = Field(description="+1 match / +0.5 slight off / -0.5 over-urgent / -2 under-urgent. 0 if not matched (no gold urgency to compare against).")
+    conflict_avoidance: float = Field(description="+1 no conflicts / -0.5 one conflict / -1 multiple / -2 contraindicated, relative to the OTHER actions actually selected this episode. 0 if missed (nothing was selected to check) - stays live for hallucinated_by_model, since a fabricated action can still genuinely conflict with something else selected.")
+    tone: float = Field(description="+1 match / +0.5 slight off / -0.5 alarmist / -2 dismissive. 0 if not matched.")
+    prioritization: float = Field(description="+1 correct order / +0.5 partial / -1 wrong, relative to gold's action ordering. 0 if not matched.")
+    confidence_wording: float = Field(description="+1 match / -0.5 over-confident / -1 under-confident. 0 if not matched.")
 
     reasoning: str = Field(description="One or two sentences: why this item was scored this way.")
 
     @property
+    def _match_penalty(self) -> float:
+        """Replaces the old essential_action_recall/secondary_capture fields
+        - both were just match_status restated (a primary/secondary split of
+        the same "caught/missed/hallucinated" fact, same redundancy pattern
+        as A1/A2's false_negatives/positives and diagnosis_match merge).
+        Symmetric -5.0/-5.0, same as A1/A2 - see FindingScoreItem._match_penalty."""
+        return {"matched": 1.0, "missed_by_model": -5.0, "hallucinated_by_model": -5.0}[self.match_status]
+
+    @property
     def raw_total(self) -> float:
         return (
-            self.essential_action_recall + self.severity_appropriate_intensity + self.conflict_avoidance
-            + self.unnecessary_avoidance + self.secondary_capture + self.tone + self.prioritization
-            + self.confidence_wording + self.abstention_calibration
+            self.severity_appropriate_intensity + self.conflict_avoidance
+            + self.tone + self.prioritization + self.confidence_wording + self._match_penalty
         )
 
 
@@ -231,6 +253,15 @@ class FollowupJudgement(BaseModel):
     items: list[FollowupScoreItem] = Field(
         description="One item per gold action (matched or missed_by_model), plus one item "
                     "per model-recommended action with no gold counterpart."
+    )
+    abstention_calibration: float = Field(
+        description="+1 correct / -0.5 acted when should abstain / -2 abstained when should act. "
+                    "ONE episode-level score, not per-action - see FOLLOWUP_SYSTEM_PROMPT."
+    )
+    unnecessary_avoidance: float = Field(
+        description="+1 only necessary actions selected / -0.5 one unnecessary / -1 multiple / "
+                    "-2 excessive. ONE episode-level score covering the whole action set, not "
+                    "per-action - see FOLLOWUP_SYSTEM_PROMPT."
     )
 
 
@@ -245,20 +276,21 @@ class AccuracyJudgement(BaseModel):
 
     @property
     def a1_score(self) -> float:
-        items = self.findings.items
-        return sum(i.raw_total for i in items) / len(items) if items else 0.0
+        return sum(i.raw_total for i in self.findings.items)
 
     @property
     def a2_score(self) -> float:
-        items = self.impressions.items
-        return sum(i.raw_total for i in items) / len(items) if items else 0.0
+        return sum(i.raw_total for i in self.impressions.items)
 
     @property
     def a3_score(self) -> float | None:
         if self.follow_up is None:
             return None
-        items = self.follow_up.items
-        return sum(i.raw_total for i in items) / len(items) if items else 0.0
+        return (
+            sum(i.raw_total for i in self.follow_up.items)
+            + self.follow_up.abstention_calibration
+            + self.follow_up.unnecessary_avoidance
+        )
 
     @property
     def total_score(self) -> float:
@@ -270,12 +302,20 @@ against a clinician-approved gold-standard FINDINGS section for the SAME image. 
 re-reading the image yourself - only comparing two descriptions for clinical equivalence.
 
 For each finding in gold, output ONE item: "matched" if the model reported an equivalent \
-finding (score presence_absence/laterality/severity/location/confidence_wording/clinical_reasoning \
-per the field descriptions, and false_negatives=+1 since it was caught; false_positives=0), or \
-"missed_by_model" if the model never addressed it (false_negatives=-2, all other fields=0).
+finding (score presence_absence/laterality/severity/location/confidence_wording/ \
+clinical_reasoning/comparison_accuracy per the field descriptions), or "missed_by_model" if the \
+model never addressed it (all other fields=0 - match_status alone captures that it was missed).
 
 For each model finding with NO equivalent in gold, output one "hallucinated_by_model" item \
-(false_positives=-1, all other fields=0).
+(all other fields=0 - match_status alone captures that it was hallucinated).
+
+COMPARISON_ACCURACY: some gold findings are inherently comparative - they describe change (or \
+lack of it) relative to a prior study (e.g. "unchanged left lower lobe nodule," "increased \
+right mediastinal mass," "new since prior"). When gold's finding is comparative, score whether \
+the model's finding correctly captures that same direction of change (+1), gets it wrong or \
+omits the comparison entirely (-1). If gold's finding is NOT comparative (a one-time \
+observation with nothing to compare against), score 0 - this only applies when gold itself \
+makes a comparison.
 
 Include pertinent negatives (e.g. "no pneumothorax") as findings if either side states them. \
 Grade on CLINICAL MEANING, not wording - different phrasing of the same finding should score \
@@ -286,13 +326,12 @@ against a clinician-approved gold-standard IMPRESSION for the same case, given t
 are based on. You are not re-reading the image - only comparing the two impressions.
 
 For each diagnosis in gold (in gold's priority order), output ONE item: "matched" if the model \
-reported an equivalent diagnosis (score primary_diagnosis_match/secondary_points/prioritization/ \
-severity_tone/confidence_wording/clinical_reasoning per the field descriptions, false_negatives=+1, \
-false_positives=0), or "missed_by_model" if the model never reported it (false_negatives=-2, all \
-other fields=0).
+reported an equivalent diagnosis (score diagnosis_match/prioritization/severity_tone/ \
+confidence_wording/clinical_reasoning per the field descriptions), or "missed_by_model" if the \
+model never reported it (all other fields=0 - match_status alone captures that it was missed).
 
 For each model diagnosis with NO equivalent in gold, output one "hallucinated_by_model" item \
-(false_positives=-1, all other fields=0).
+(all other fields=0 - match_status alone captures that it was hallucinated).
 
 Grade on CLINICAL MEANING, not wording."""
 
@@ -300,20 +339,29 @@ FOLLOWUP_SYSTEM_PROMPT = """You are grading an AI model's recommended follow-up 
 patient's chest X-ray against the clinician-consensus gold-standard action(s) for the same case.
 
 For each gold action, output ONE item: "matched" if the model recommended an equivalent action \
-(score severity_appropriate_intensity/conflict_avoidance/unnecessary_avoidance/secondary_capture/ \
-tone/prioritization/confidence_wording per the field descriptions, essential_action_recall=+1), or \
-"missed_by_model" if the model never recommended it (essential_action_recall=-2, all other fields \
-except abstention_calibration=0).
+(score severity_appropriate_intensity/conflict_avoidance/tone/prioritization/confidence_wording \
+per the field descriptions), or "missed_by_model" if the model never recommended it (all fields \
+except conflict_avoidance=0 - match_status alone captures that it was missed; conflict_avoidance \
+is always 0 for a missed item since nothing was actually selected to check for conflicts).
 
-For each model-recommended action with NO gold equivalent, output one "hallucinated_by_model" item.
+For each model-recommended action with NO gold equivalent, output one "hallucinated_by_model" \
+item. severity_appropriate_intensity/tone/prioritization/confidence_wording=0 (no gold \
+counterpart to compare against), but conflict_avoidance stays live - a fabricated action can \
+still genuinely conflict with something else the model actually selected.
 
-ABSTENTION CALIBRATION is an episode-level judgment, not per-action: if gold's action list is \
-empty/abstention-only and the model correctly recommended no action or explicitly abstained, every \
-item should score abstention_calibration=+1. If gold expected real action(s) and the model \
-abstained/recommended nothing, every item should score abstention_calibration=-2. If gold expected \
-abstention but the model still recommended something, score abstention_calibration=-0.5. Otherwise \
-(model correctly acted when action was warranted), score +1. Apply the SAME abstention_calibration \
-value to every item in your response - it does not vary item to item.
+TWO SEPARATE EPISODE-LEVEL SCORES (not per-action - set once each on the response, covering the \
+WHOLE action set, not any single item):
+
+ABSTENTION_CALIBRATION: if gold's action list is empty/abstention-only and the model correctly \
+recommended no action or explicitly abstained, score +1. If gold expected real action(s) and the \
+model abstained/recommended nothing, score -2. If gold expected abstention but the model still \
+recommended something, score -0.5. Otherwise (model correctly acted when action was warranted), \
+score +1.
+
+UNNECESSARY_AVOIDANCE: looking at the model's FULL set of recommended actions together, how many \
+were unnecessary/excessive relative to what gold and the clinical picture actually warrant? +1 if \
+every recommended action was necessary, -0.5 if exactly one was unnecessary, -1 if multiple were \
+unnecessary, -2 if the action set was excessive overall.
 
 Grade on CLINICAL MEANING, not exact wording - a model recommending "chest ultrasound" for a gold \
 action of "thoracic ultrasound" is a match."""
