@@ -21,12 +21,16 @@ new.php would find no data if opened for it.
 from __future__ import annotations
 
 import subprocess
+from pathlib import Path
 
 import requests
 
 ORTHANC_URL = "http://localhost:8042"
 MYSQL_CMD = ["docker", "compose", "exec", "-T", "mysql", "mariadb", "-uroot", "-proot", "openemr"]
-COMPOSE_DIR = "/Users/lakshitavij/synthetic pipeline/openemr/docker/development-easy"
+# Relative to this file's own location (openemr-setup/../openemr/docker/...)
+# instead of hardcoded to one machine's checkout path - this script needs to
+# run correctly from any clone of the repo, not just the one it was written on.
+COMPOSE_DIR = str(Path(__file__).resolve().parent.parent / "openemr" / "docker" / "development-easy")
 
 
 def sql(query: str, params: list | None = None) -> str:
