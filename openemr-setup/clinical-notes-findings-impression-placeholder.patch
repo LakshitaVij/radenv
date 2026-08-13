@@ -1,0 +1,18 @@
+diff --git a/interface/forms/clinical_notes/new.php b/interface/forms/clinical_notes/new.php
+index 6885010..00e0fed 100644
+--- a/interface/forms/clinical_notes/new.php
++++ b/interface/forms/clinical_notes/new.php
+@@ -91,7 +91,12 @@ if ($formid) {
+             ,'codetext' => ''
+             ,'clinical_notes_type' => $defaultType
+             ,'clinical_notes_category' => $defaultCategory
+-            ,'description' => ''
++            // Real, persistent default content (not a placeholder that
++            // vanishes on first keystroke) - stays in the box so the
++            // section headers are still there once real content gets
++            // typed around them, matching a real radiology report's
++            // structure.
++            ,'description' => "FINDINGS:\n\nIMPRESSION:\n\nFOLLOW-UP:\n"
+             ,'date' =>date('Y-m-d')
+         ]
+     ];
