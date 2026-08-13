@@ -1,0 +1,25 @@
+diff --git a/interface/patient_file/encounter/forms.php b/interface/patient_file/encounter/forms.php
+index 544ab18..85b94ab 100644
+--- a/interface/patient_file/encounter/forms.php
++++ b/interface/patient_file/encounter/forms.php
+@@ -963,13 +963,18 @@ if (OEGlobalsBag::getInstance()->getBoolean('google_signin_enabled') && !empty(O
+                         (!$aco_spec || AclMain::aclCheckCore($aco_spec[0], $aco_spec[1], '', 'write') and $is_group == 0 and $authPostCalendarCategoryWrite)
+                         or (((!$aco_spec || AclMain::aclCheckCore($aco_spec[0], $aco_spec[1], '', 'write')) and $is_group and AclMain::aclCheckCore("groups", "glog", false, 'write')) and $authPostCalendarCategoryWrite)
+                     ) {
++                        // xray_viewer has no editable fields (it's a live image
++                        // viewer, not stored text) - "Edit" is misleading for it
++                        // specifically, so label it "Open" while every other
++                        // form keeps the standard "Edit" label.
++                        $isViewOnlyForm = ($formdir === 'xray_viewer');
+                         echo "<a class='btn btn-text btn-sm form-edit-button btn-edit' " .
+                             "id='form-edit-button-" . attr($formdir) . "-" . attr($iter['id']) . "' " .
+                             "href='#' " .
+-                            "title='" . xla('Edit this form') . "' " .
++                            "title='" . ($isViewOnlyForm ? xla('Open this form') : xla('Edit this form')) . "' " .
+                             "onclick=\"return openEncounterForm(" . attr_js($formdir) . ", " .
+                             attr_js($form_name) . ", " . attr_js($iter['form_id']) . ")\">";
+-                        echo "" . xlt('Edit') . "</a>";
++                        echo "" . ($isViewOnlyForm ? xlt('Open') : xlt('Edit')) . "</a>";
+                     }
+                 }
+ 

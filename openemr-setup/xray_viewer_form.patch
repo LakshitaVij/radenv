@@ -1,0 +1,526 @@
+diff --git a/interface/forms/xray_viewer/info.txt b/interface/forms/xray_viewer/info.txt
+new file mode 100644
+index 0000000..a0c11c4
+--- /dev/null
++++ b/interface/forms/xray_viewer/info.txt
+@@ -0,0 +1 @@
++X-ray Viewer
+diff --git a/interface/forms/xray_viewer/new.php b/interface/forms/xray_viewer/new.php
+new file mode 100644
+index 0000000..c4d0232
+--- /dev/null
++++ b/interface/forms/xray_viewer/new.php
+@@ -0,0 +1,108 @@
++<?php
++
++/**
++ * X-ray Viewer form new.php
++ *
++ * Modeled on clinical_notes/new.php's lightweight (non-C_Form-class)
++ * pattern - this form has no user-editable fields of its own, it just
++ * embeds the Cornerstone3D X-ray viewer for the encounter's imaging. Since
++ * there is nothing for the user to fill in and submit, the forms/
++ * form_xray_viewer rows are created immediately on first load (mirroring
++ * what save.php would otherwise do for a real data-entry form) rather than
++ * waiting for an explicit save action that will never come.
++ *
++ * @package OpenEMR
++ */
++
++require_once("../../globals.php");
++
++use OpenEMR\Common\Csrf\CsrfUtils;
++use OpenEMR\Common\Session\SessionWrapperFactory;
++use OpenEMR\Core\OEGlobalsBag;
++
++$srcdir = OEGlobalsBag::getInstance()->getSrcDir();
++require_once("$srcdir/api.inc.php");
++require_once("$srcdir/forms.inc.php");
++
++$session = SessionWrapperFactory::getInstance()->getActiveSession();
++$pid = $session->get('pid');
++$encounter = $session->get('encounter');
++$userauthorized = $session->get('userauthorized') ?? 0;
++
++$formId = (int) (sqlQuery(
++    "SELECT form_id FROM `forms` WHERE formdir = 'xray_viewer' AND pid = ? AND encounter = ? AND deleted = 0 LIMIT 1",
++    [$pid, $encounter]
++)['form_id'] ?? 0);
++
++if (!$formId) {
++    $newRow = sqlInsert(
++        "INSERT INTO form_xray_viewer (date, pid, encounter, user, groupname, authorized, activity) " .
++        "VALUES (NOW(), ?, ?, ?, ?, ?, 1)",
++        [$pid, $encounter, $session->get('authUser'), $session->get('authProvider'), $userauthorized]
++    );
++    addForm($encounter, "X-ray Viewer", $newRow, "xray_viewer", $pid, $userauthorized);
++    $formId = $newRow;
++}
++
++// Short-lived, subject-scoped token for public/index.php to verify - the
++// iframe boundary means that page can't read the parent's PHP session
++// directly, so identity/authorization has to be handed across explicitly
++// rather than assumed. Same verification mechanism dicom_frame.php uses
++// for its own sensitive param (CsrfUtils), applied here as a scoped token
++// instead of a form-submission check since this is a GET-loaded iframe.
++$csrfToken = CsrfUtils::collectCsrfToken($session, 'api');
++
++// Absolute ($rootdir-based), not relative - real production navigation
++// doesn't load this file directly. OpenEMR's own "Edit Form" flow requests
++// interface/patient_file/encounter/view_form.php, which require()'s our
++// view.php/new.php INTO its own response rather than the browser ever
++// requesting new.php's URL directly - confirmed via a live OpenEMR session
++// (my own dev testing had navigated straight to new.php's URL, which
++// masked this). That means the browser's actual document URL for this
++// page is view_form.php's, so a relative "public/index.php" iframe src
++// resolved to .../patient_file/encounter/public/index.php (404) instead of
++// this form's own public/ directory.
++$iframeSrc = $rootdir . "/forms/xray_viewer/public/index.php?pid=" . urlencode((string) $pid)
++    . "&encounter=" . urlencode((string) $encounter)
++    . "&csrf_token=" . urlencode($csrfToken);
++
++// Absolute, webroot-relative path - correct regardless of how deep this
++// page happens to be loaded in OpenEMR's tab/frame structure. Same pattern
++// delete_form.php uses for its Cancel button's location.href target
++// ($rootdir/patient_file/encounter/forms.php), including the same
++// same-frame navigation (no top./parent. escaping needed - this page
++// occupies whatever frame level OpenEMR loaded it into, same as
++// delete_form.php does).
++$backToChartUrl = $rootdir . "/patient_file/encounter/forms.php";
++?>
++<!DOCTYPE html>
++<html>
++<head>
++    <meta charset="utf-8">
++    <title><?php echo xlt('X-ray Viewer'); ?></title>
++    <style>
++        /* Deliberately no OpenEMR/Bootstrap styling loaded for the iframe
++           below - the embedded viewer's own CSS (Cornerstone3D
++           canvas/toolbar) would conflict with it, same reasoning
++           library/dicom_frame.php gives for keeping its DICOM viewer
++           wrapper bootstrap-free. The header bar above it is plain/minimal
++           for the same reason - kept out of the iframe entirely. */
++        html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
++        .xray-header {
++            display: flex; align-items: center; height: 40px; padding: 0 12px;
++            background: #111; border-bottom: 1px solid #333; font-family: sans-serif;
++        }
++        .xray-header a {
++            color: #7fd9a8; text-decoration: none; font-size: 0.95rem; font-weight: 600;
++        }
++        .xray-header a:hover { text-decoration: underline; }
++        iframe { border: none; width: 100%; height: calc(100vh - 40px); display: block; }
++    </style>
++</head>
++<body>
++    <div class="xray-header">
++        <a href="#" id="back-to-chart" onclick="top.restoreSession(); location.href=<?php echo js_escape($backToChartUrl); ?>; return false;">&larr; <?php echo xlt('Back to Chart'); ?></a>
++    </div>
++    <iframe id="xray-viewer-frame" src="<?php echo attr($iframeSrc); ?>" allow="fullscreen"></iframe>
++</body>
++</html>
+diff --git a/interface/forms/xray_viewer/open_latest.php b/interface/forms/xray_viewer/open_latest.php
+new file mode 100644
+index 0000000..f7ac0c7
+--- /dev/null
++++ b/interface/forms/xray_viewer/open_latest.php
+@@ -0,0 +1,52 @@
++<?php
++
++/**
++ * X-ray Viewer "open latest" bridge - the dashboard's "Open X-ray" link
++ * points here rather than straight at view_form.php, because view_form.php
++ * (and our own new.php underneath it) reads pid/encounter from the PHP
++ * SESSION, not from GET params - the dashboard isn't tied to any one
++ * encounter, so there is no "current encounter" in session yet when the
++ * link is clicked. This script finds the patient's most recent encounter
++ * that actually has the X-ray Viewer form attached (i.e. has real
++ * matching imaging - see seed_xray_viewer_forms.py), sets it as the
++ * active encounter the same way clicking an encounter tab would, then
++ * redirects into the real form.
++ *
++ * @package OpenEMR
++ */
++
++require_once("../../globals.php");
++
++use OpenEMR\Common\Session\EncounterSessionUtil;
++use OpenEMR\Common\Session\SessionWrapperFactory;
++use OpenEMR\Core\OEGlobalsBag;
++
++$session = SessionWrapperFactory::getInstance()->getActiveSession();
++$pid = $session->get('pid');
++
++if (empty($pid)) {
++    http_response_code(400);
++    exit;
++}
++
++$row = sqlQuery(
++    "SELECT f.encounter, f.form_id FROM forms f " .
++    "JOIN form_encounter fe ON fe.pid = f.pid AND fe.encounter = f.encounter " .
++    "WHERE f.formdir = 'xray_viewer' AND f.pid = ? AND f.deleted = 0 " .
++    "ORDER BY fe.date DESC LIMIT 1",
++    [$pid]
++);
++
++if (empty($row['encounter'])) {
++    // No imaging for this patient at all - back to the dashboard rather
++    // than a dead end/error page.
++    header("Location: " . $rootdir . "/patient_file/summary/demographics.php");
++    exit;
++}
++
++EncounterSessionUtil::setEncounter((string) $row['encounter']);
++
++header(
++    "Location: " . $rootdir . "/patient_file/encounter/view_form.php?id="
++    . urlencode((string) $row['form_id']) . "&formname=xray_viewer"
++);
+diff --git a/interface/forms/xray_viewer/public/.htaccess b/interface/forms/xray_viewer/public/.htaccess
+new file mode 100644
+index 0000000..30ccf5c
+--- /dev/null
++++ b/interface/forms/xray_viewer/public/.htaccess
+@@ -0,0 +1,9 @@
++##
++## Only rewrite requests aimed at dicomweb_proxy.php itself - this
++## directory also serves real static files (built JS/CSS, index.php),
++## which must NOT be swallowed by a catch-all rewrite (unlike
++## apis/.htaccess, which can safely rewrite everything since apis/ has
++## no static assets of its own).
++##
++RewriteEngine On
++RewriteRule ^dicomweb_proxy\.php/(.*)$ dicomweb_proxy.php?_path=$1 [QSA,L]
+diff --git a/interface/forms/xray_viewer/public/dicomweb_proxy.php b/interface/forms/xray_viewer/public/dicomweb_proxy.php
+new file mode 100644
+index 0000000..38b008d
+--- /dev/null
++++ b/interface/forms/xray_viewer/public/dicomweb_proxy.php
+@@ -0,0 +1,79 @@
++<?php
++
++/**
++ * Same-origin DICOMweb proxy: forwards QIDO-RS/WADO-RS reads from the
++ * embedded X-ray viewer to Orthanc, which runs on a different origin/scheme
++ * (OpenEMR is https, Orthanc is http) - a direct browser fetch would hit
++ * both CORS and mixed-content blocks. Orthanc itself has no auth in this
++ * dev setup (see openemr-setup/orthanc-addition.patch), so this proxy is
++ * the only thing standing between an anonymous request and every DICOM
++ * image on the box - it must require a real OpenEMR session, same as any
++ * other patient-data page.
++ *
++ * Read-only: only GET is forwarded. Errors from Orthanc are passed through
++ * unchanged (status + body) rather than normalized, since the frontend
++ * (XrayFullScreenViewer.jsx) already handles real DICOMweb error responses.
++ *
++ * @package OpenEMR
++ */
++
++require_once('../../../globals.php');
++
++use OpenEMR\Common\Acl\AccessDeniedHelper;
++use OpenEMR\Common\Acl\AclMain;
++use GuzzleHttp\Client;
++use GuzzleHttp\Exception\RequestException;
++
++// Same ACL check as the existing DICOM viewer precedent (library/dicom_frame.php)
++if (!AclMain::aclCheckCore('patients', 'docs')) {
++    AccessDeniedHelper::denyWithTemplate("ACL check failed for patients/docs: X-ray Viewer", xl("X-ray Viewer"));
++}
++
++if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
++    http_response_code(405);
++    header('Allow: GET');
++    exit;
++}
++
++// Set by the .htaccess RewriteRule: dicomweb_proxy.php/<path> -> ?_path=<path>
++$relativePath = $_GET['_path'] ?? '';
++if ($relativePath === '' || str_contains($relativePath, '..')) {
++    http_response_code(400);
++    exit;
++}
++
++// Docker-network service hostname, not localhost - this script runs inside
++// the OpenEMR container, on the same Docker network Orthanc is attached to
++// (see openemr-setup/orthanc-addition.patch's `orthanc` service).
++$orthancBase = 'http://orthanc:8042/dicom-web';
++
++// Forward every query param except our own routing param.
++$forwardParams = $_GET;
++unset($forwardParams['_path']);
++$queryString = http_build_query($forwardParams);
++$targetUrl = $orthancBase . '/' . $relativePath . ($queryString ? '?' . $queryString : '');
++
++$client = new Client();
++
++try {
++    $response = $client->request('GET', $targetUrl, [
++        'headers' => [
++            // DICOMweb responses vary by what the caller asked for (JSON
++            // metadata vs multipart pixel data) - pass the real Accept
++            // header through instead of forcing one.
++            'Accept' => $_SERVER['HTTP_ACCEPT'] ?? 'application/dicom+json',
++        ],
++        'http_errors' => false, // don't throw on 4xx/5xx - pass them through below
++    ]);
++} catch (RequestException $e) {
++    http_response_code(502);
++    header('Content-Type: text/plain');
++    echo 'X-ray viewer could not reach Orthanc.';
++    exit;
++}
++
++http_response_code($response->getStatusCode());
++if ($response->hasHeader('Content-Type')) {
++    header('Content-Type: ' . $response->getHeaderLine('Content-Type'));
++}
++echo $response->getBody();
+diff --git a/interface/forms/xray_viewer/public/index.php b/interface/forms/xray_viewer/public/index.php
+new file mode 100644
+index 0000000..9d94708
+--- /dev/null
++++ b/interface/forms/xray_viewer/public/index.php
+@@ -0,0 +1,105 @@
++<?php
++
++/**
++ * X-ray Viewer SPA shell.
++ *
++ * Loaded inside new.php's <iframe>. Re-authenticates via the normal
++ * OpenEMR session (this is a same-origin request, so the session cookie is
++ * sent same as any other page) rather than trusting the GET params blindly
++ * - pid/encounter/csrf_token in the URL are a tamper/staleness check
++ * against the session's own values, not the source of truth themselves.
++ * Injects window.__XRAY_BOOTSTRAP__ with the real DICOM identifiers, which
++ * turn out to already exist natively in OpenEMR: patient_data.lname is the
++ * exact DICOM PatientID string, and form_encounter.date is the exact DICOM
++ * StudyDateTime - confirmed against the real seeded data, not guessed. No
++ * separate imaging-lookup table or service needed.
++ *
++ * @package OpenEMR
++ */
++
++require_once('../../../globals.php');
++
++use OpenEMR\Common\Csrf\CsrfUtils;
++use OpenEMR\Common\Session\SessionWrapperFactory;
++use OpenEMR\Core\OEGlobalsBag;
++use OpenEMR\Services\PatientService;
++
++$srcdir = OEGlobalsBag::getInstance()->getSrcDir();
++require_once("$srcdir/api.inc.php");
++
++$session = SessionWrapperFactory::getInstance()->getActiveSession();
++
++$sessionPid = (string) $session->get('pid');
++$sessionEncounter = (string) $session->get('encounter');
++$requestPid = (string) ($_GET['pid'] ?? '');
++$requestEncounter = (string) ($_GET['encounter'] ?? '');
++$csrfToken = $_GET['csrf_token'] ?? '';
++
++if (
++    $requestPid === '' || $requestEncounter === ''
++    || $requestPid !== $sessionPid || $requestEncounter !== $sessionEncounter
++    || !CsrfUtils::verifyCsrfToken($csrfToken, $session, 'api')
++) {
++    http_response_code(403);
++    exit;
++}
++
++$pid = $sessionPid;
++$encounter = $sessionEncounter;
++
++$patientService = new PatientService();
++$patient = $patientService->findByPid($pid);
++$dicomPatientId = $patient['lname'] ?? '';
++
++$encounterRow = sqlQuery("SELECT `date` FROM form_encounter WHERE pid = ? AND encounter = ?", [$pid, $encounter]);
++$studyDateYYYYMMDD = $encounterRow['date'] ? date('Ymd', strtotime((string) $encounterRow['date'])) : '';
++
++$age = null;
++if (!empty($patient['DOB'])) {
++    $dob = new DateTime((string) $patient['DOB']);
++    $age = $dob->diff(new DateTime())->y;
++}
++$sex = !empty($patient['sex']) ? strtoupper(substr((string) $patient['sex'], 0, 1)) : '';
++
++$bootstrap = [
++    'pid' => $pid,
++    'encounter' => $encounter,
++    'patientId' => $dicomPatientId,
++    'studyDateYYYYMMDD' => $studyDateYYYYMMDD,
++    'patientDemographics' => [
++        'age' => $age,
++        'sex' => $sex,
++    ],
++];
++
++$manifestPath = __DIR__ . '/dist/.vite/manifest.json';
++if (!file_exists($manifestPath)) {
++    http_response_code(500);
++    echo 'X-ray viewer bundle not built (dist/ missing). Run `npm run build` in xray-viewer-frontend/.';
++    exit;
++}
++$manifest = json_decode(file_get_contents($manifestPath), true);
++$entry = $manifest['index.html'] ?? null;
++if (!$entry) {
++    http_response_code(500);
++    echo 'X-ray viewer bundle manifest missing its entry point.';
++    exit;
++}
++$entryJs = 'dist/' . $entry['file'];
++$entryCss = array_map(static fn($f) => 'dist/' . $f, $entry['css'] ?? []);
++?>
++<!DOCTYPE html>
++<html>
++<head>
++    <meta charset="utf-8">
++    <title><?php echo xlt('X-ray Viewer'); ?></title>
++    <?php foreach ($entryCss as $css): ?>
++    <link rel="stylesheet" href="<?php echo attr($css); ?>">
++    <?php endforeach; ?>
++</head>
++<body>
++    <div id="root"></div>
++    <script>window.__XRAY_BOOTSTRAP__ = <?php echo json_encode($bootstrap, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT); ?>;</script>
++    <script type="module" src="<?php echo attr($entryJs); ?>"></script>
++</body>
++</html>
+diff --git a/interface/forms/xray_viewer/report.php b/interface/forms/xray_viewer/report.php
+new file mode 100644
+index 0000000..1b4b4b9
+--- /dev/null
++++ b/interface/forms/xray_viewer/report.php
+@@ -0,0 +1,28 @@
++<?php
++
++/**
++ * X-ray Viewer form report.php
++ *
++ * No text fields to summarize (the form is a live image viewer, not
++ * stored data) - renders one confirmation line rather than leaving this
++ * form's section of the encounter report blank, which would otherwise look
++ * like a rendering bug next to every other form's real content.
++ *
++ * @package OpenEMR
++ */
++
++require_once(__DIR__ . "/../../globals.php");
++
++function xray_viewer_report($pid, $encounter, $cols, $id): void
++{
++    $record = sqlQuery("SELECT `date` FROM form_xray_viewer WHERE id = ?", [$id]);
++    $date = $record['date'] ?? null;
++
++    echo "<table><tr><td class='detail'>";
++    if ($date) {
++        echo xlt('X-ray Viewer reviewed') . ' - ' . text(oeFormatDateTime($date));
++    } else {
++        echo xlt('X-ray Viewer reviewed');
++    }
++    echo "</td></tr></table>";
++}
+diff --git a/interface/forms/xray_viewer/save.php b/interface/forms/xray_viewer/save.php
+new file mode 100644
+index 0000000..9076ceb
+--- /dev/null
++++ b/interface/forms/xray_viewer/save.php
+@@ -0,0 +1,47 @@
++<?php
++
++/**
++ * X-ray Viewer form save.php
++ *
++ * Not part of the normal flow - new.php creates the forms/form_xray_viewer
++ * rows itself on first load, since there's no user-submitted data to wait
++ * for. Kept only because OpenEMR's generic forms machinery expects every
++ * form directory to have a save.php it can safely POST to.
++ *
++ * @package OpenEMR
++ */
++
++require_once(__DIR__ . "/../../globals.php");
++
++use OpenEMR\Common\Csrf\CsrfUtils;
++use OpenEMR\Common\Session\SessionWrapperFactory;
++use OpenEMR\Core\OEGlobalsBag;
++
++$srcdir = OEGlobalsBag::getInstance()->getSrcDir();
++require_once("$srcdir/api.inc.php");
++require_once("$srcdir/forms.inc.php");
++
++$session = SessionWrapperFactory::getInstance()->getActiveSession();
++CsrfUtils::checkCsrfInput(INPUT_POST, dieOnFail: true);
++
++$pid = $session->get('pid');
++$encounter = $session->get('encounter');
++$userauthorized = $session->get('userauthorized') ?? 0;
++
++$formId = (int) (sqlQuery(
++    "SELECT form_id FROM `forms` WHERE formdir = 'xray_viewer' AND pid = ? AND encounter = ? AND deleted = 0 LIMIT 1",
++    [$pid, $encounter]
++)['form_id'] ?? 0);
++
++if (!$formId) {
++    $newRow = sqlInsert(
++        "INSERT INTO form_xray_viewer (date, pid, encounter, user, groupname, authorized, activity) " .
++        "VALUES (NOW(), ?, ?, ?, ?, ?, 1)",
++        [$pid, $encounter, $session->get('authUser'), $session->get('authProvider'), $userauthorized]
++    );
++    addForm($encounter, "X-ray Viewer", $newRow, "xray_viewer", $pid, $userauthorized);
++}
++
++formHeader("Redirecting....");
++formJump();
++formFooter();
+diff --git a/interface/forms/xray_viewer/sql/xray_viewer.sql b/interface/forms/xray_viewer/sql/xray_viewer.sql
+new file mode 100644
+index 0000000..9f987d9
+--- /dev/null
++++ b/interface/forms/xray_viewer/sql/xray_viewer.sql
+@@ -0,0 +1,7 @@
++-- Registers the X-ray Viewer as an encounter form, same mechanism as
++-- every other entry in sql/database.sql's registry seed block (e.g.
++-- 'Clinical Notes'/'clinical_notes'). priority 0 matches the convention
++-- used by every other clinical form (SOAP, ROS, vitals, etc.) rather than
++-- an arbitrary higher number that would reorder the existing form list.
++INSERT INTO `registry` (name, state, directory, sql_run, unpackaged, date, priority, category, patient_encounter, aco_spec)
++VALUES ('X-ray Viewer', 1, 'xray_viewer', 1, 0, NOW(), 0, 'Clinical', 1, 'encounters|notes');
+diff --git a/interface/forms/xray_viewer/table.sql b/interface/forms/xray_viewer/table.sql
+new file mode 100644
+index 0000000..e740321
+--- /dev/null
++++ b/interface/forms/xray_viewer/table.sql
+@@ -0,0 +1,11 @@
++CREATE TABLE `form_xray_viewer` (
++	`id` bigint(20) NOT NULL auto_increment,
++	`date` datetime default NULL,
++	`pid` bigint(20) NOT NULL,
++	`encounter` bigint(20) NOT NULL,
++	`user` varchar(255) default NULL,
++	`groupname` varchar(255) default NULL,
++	`authorized` tinyint(4) NOT NULL default '0',
++	`activity` tinyint(4) NOT NULL default '1',
++	PRIMARY KEY (`id`)
++	) ENGINE=InnoDB;
+diff --git a/interface/forms/xray_viewer/view.php b/interface/forms/xray_viewer/view.php
+new file mode 100644
+index 0000000..bcf34d0
+--- /dev/null
++++ b/interface/forms/xray_viewer/view.php
+@@ -0,0 +1,13 @@
++<?php
++
++/**
++ * X-ray Viewer form view.php
++ *
++ * Same as clinical_notes/view.php: viewing an existing X-ray Viewer form is
++ * identical to opening it fresh (it's a live image viewer, not stored
++ * editable text), so there's no separate read-only state to render.
++ *
++ * @package OpenEMR
++ */
++
++require("new.php");
