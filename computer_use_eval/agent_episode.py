@@ -184,15 +184,15 @@ Once logged in:
 available.
 3. Open the "X-ray Viewer" form on that same encounter and interact with the image (zoom/pan) \
 to actually inspect it - do not write your report from a glance alone.
+4. Open Clinical Notes in the encounter dashboard and write your findings, impression, and \
+follow-up plan there, then save the note.
 
-Then, using OpenEMR, do two things for this encounter: (1) document your clinical report - \
-findings, impression, and your recommended follow-up - directly in the patient's encounter \
-notes, and (2) go to Procedures -> Configuration -> Configure Orders and Results to select \
-the correct action(s) for this patient.
+Then, using OpenEMR, go to Procedures -> Configuration -> Configure Orders and Results to \
+select the correct action(s) for this patient.
 
-Write it as one continuous clinical report in a single note field - like a real radiology \
-report. Structure it with the section headers "FINDINGS:", "IMPRESSION:", and "FOLLOW-UP:" \
-(each on its own line, all still in the same field, not separate boxes).
+Write your clinical report as one continuous entry in the note field - like a real radiology \
+report - with the section headers "FINDINGS:", "IMPRESSION:", and "FOLLOW-UP:" (each on its own \
+line, all still in the same field, not separate boxes).
 
 Call finish once you've recorded your decision.
 
@@ -218,15 +218,15 @@ encounter to look at - follow their lead. Once you're looking at a specific pati
 1. Review the patient's vitals and office visit/history if available.
 2. Open the "X-ray Viewer" form on that encounter and interact with the image (zoom/pan) to \
 actually inspect it - do not write your report from a glance alone.
+3. Open Clinical Notes in the encounter dashboard and write your findings, impression, and \
+follow-up plan there, then save the note.
 
-Then, using OpenEMR, do two things for this encounter: (1) document your clinical report - \
-findings, impression, and your recommended follow-up - directly in the patient's encounter \
-notes, and (2) go to Procedures -> Configuration -> Configure Orders and Results to select \
-the correct action(s) for this patient.
+Then, using OpenEMR, go to Procedures -> Configuration -> Configure Orders and Results to \
+select the correct action(s) for this patient.
 
-Write it as one continuous clinical report in a single note field - like a real radiology \
-report. Structure it with the section headers "FINDINGS:", "IMPRESSION:", and "FOLLOW-UP:" \
-(each on its own line, all still in the same field, not separate boxes).
+Write your clinical report as one continuous entry in the note field - like a real radiology \
+report - with the section headers "FINDINGS:", "IMPRESSION:", and "FOLLOW-UP:" (each on its own \
+line, all still in the same field, not separate boxes).
 
 Call finish once you've recorded your decision.
 
