@@ -1,0 +1,982 @@
+<title>Scoring Reference — Process &amp; Accuracy Axes</title>
+<style>
+  :root {
+    --bg: #EEF2F1;
+    --surface: #FFFFFF;
+    --surface-2: #F5F8F7;
+    --ink: #14202A;
+    --ink-muted: #4C5B60;
+    --ink-faint: #7C8B8E;
+    --accent: #0E7C86;
+    --accent-ink: #075D65;
+    --accent-soft: #DCEEEE;
+    --negative: #AA4430;
+    --negative-soft: #F5E4DE;
+    --rule: #CBD6D4;
+    --rule-strong: #A9BAB7;
+    --shadow: 0 1px 2px rgba(20,32,42,0.06), 0 8px 24px rgba(20,32,42,0.05);
+
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0B1416;
+      --surface: #121D20;
+      --surface-2: #17262A;
+      --ink: #E7EEEC;
+      --ink-muted: #9FB1AF;
+      --ink-faint: #6E8385;
+      --accent: #4FC6C9;
+      --accent-ink: #7BDBDD;
+      --accent-soft: #16302E;
+      --negative: #E17A5E;
+      --negative-soft: #341C16;
+      --rule: #24373A;
+      --rule-strong: #345052;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0B1416;
+    --surface: #121D20;
+    --surface-2: #17262A;
+    --ink: #E7EEEC;
+    --ink-muted: #9FB1AF;
+    --ink-faint: #6E8385;
+    --accent: #4FC6C9;
+    --accent-ink: #7BDBDD;
+    --accent-soft: #16302E;
+    --negative: #E17A5E;
+    --negative-soft: #341C16;
+    --rule: #24373A;
+    --rule-strong: #345052;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--accent-ink); }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  ::selection { background: var(--accent-soft); }
+
+  .shell {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  /* ---------- Sidebar / TOC ---------- */
+
+  .toc {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2.25rem 1.5rem 2rem 2rem;
+    border-right: 1px solid var(--rule);
+  }
+
+  .toc-mark {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .toc-mark::before {
+    content: "";
+    width: 0.55rem;
+    height: 0.55rem;
+    background: var(--accent);
+    display: inline-block;
+    border-radius: 1px;
+  }
+
+  .toc h1 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0 0 1.75rem 0;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+
+  .toc nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .toc-group {
+    margin-top: 1.1rem;
+  }
+
+  .toc-group:first-child { margin-top: 0; }
+
+  .toc-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 0.4rem 0;
+  }
+
+  .toc a {
+    display: block;
+    padding: 0.28rem 0.5rem;
+    margin-left: -0.5rem;
+    border-radius: 5px;
+    font-size: 0.88rem;
+    color: var(--ink-muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+  }
+
+  .toc a:hover {
+    color: var(--ink);
+    background: var(--surface-2);
+  }
+
+  /* ---------- Main content ---------- */
+
+  main {
+    padding: 3rem clamp(1.25rem, 4vw, 4rem) 6rem;
+    min-width: 0;
+  }
+
+  .masthead {
+    max-width: 42rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin: 0 0 0.9rem 0;
+  }
+
+  .masthead h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    line-height: 1.12;
+    font-weight: 600;
+    margin: 0 0 0.9rem 0;
+    text-wrap: balance;
+  }
+
+  .masthead p {
+    font-size: 1.05rem;
+    color: var(--ink-muted);
+    max-width: 40rem;
+    margin: 0;
+  }
+
+  section {
+    max-width: 46rem;
+    margin-bottom: 3.75rem;
+    scroll-margin-top: 1.5rem;
+  }
+
+  section.wide { max-width: 62rem; }
+
+  h3 {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    font-weight: 600;
+    margin: 0 0 0.4rem 0;
+    text-wrap: balance;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+
+  h3 .tag {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  h4 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 2rem 0 0.6rem 0;
+  }
+
+  .section-intro {
+    color: var(--ink-muted);
+    max-width: 38rem;
+    margin: 0.6rem 0 1.4rem 0;
+  }
+
+  p { margin: 0 0 1rem 0; }
+  p:last-child { margin-bottom: 0; }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.88em;
+    background: var(--surface-2);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    color: var(--ink);
+  }
+
+  /* ---------- Metric tables ---------- */
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+
+  th {
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 500;
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid var(--rule-strong);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  td.metric-name {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  td.points {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .pt-pos { color: var(--accent-ink); }
+  .pt-neg { color: var(--negative); }
+
+  .points .sep { color: var(--ink-faint); margin: 0 0.3em; }
+
+  td.note { color: var(--ink-muted); font-size: 0.88rem; }
+
+  /* ---------- Callout / formula blocks ---------- */
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 1.1rem 1.3rem;
+    margin: 1.25rem 0;
+    box-shadow: var(--shadow);
+  }
+
+  .callout p { color: var(--ink-muted); font-size: 0.94rem; }
+  .callout p:first-child { color: var(--ink); }
+
+  /* ---------- Field glossary ---------- */
+
+  .glossary {
+    margin: 0.9rem 0 0 0;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--surface-2);
+  }
+
+  .glossary-row {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    gap: 0.4rem 1rem;
+    padding: 0.55rem 1rem;
+  }
+
+  .glossary-row + .glossary-row { border-top: 1px solid var(--rule); }
+
+  .glossary-row dt {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent-ink);
+  }
+
+  .glossary-row dd {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    line-height: 1.4;
+  }
+
+  @media (max-width: 640px) {
+    .glossary-row { grid-template-columns: 1fr; gap: 0.15rem; }
+  }
+
+  .formula {
+    font-family: var(--font-mono);
+    background: var(--surface-2);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 1.1rem 1.3rem;
+    font-size: 0.92rem;
+    line-height: 1.9;
+    overflow-x: auto;
+    color: var(--ink);
+  }
+
+  .formula .k { color: var(--accent-ink); }
+  .formula .op { color: var(--ink-faint); }
+
+  /* ---------- Range strip (Z1/Z2/etc ceiling-floor mini viz) ---------- */
+
+  .range-row {
+    display: grid;
+    grid-template-columns: 9rem 1fr 6rem;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.55rem 0;
+  }
+
+  .range-row + .range-row { border-top: 1px solid var(--rule); }
+
+  .range-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  .range-track {
+    position: relative;
+    height: 6px;
+    background: var(--surface-2);
+    border-radius: 3px;
+  }
+
+  .range-fill {
+    position: absolute;
+    top: 0; bottom: 0;
+    background: linear-gradient(90deg, var(--negative), var(--rule-strong) 50%, var(--accent));
+    border-radius: 3px;
+    opacity: 0.85;
+  }
+
+  .range-nums {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-muted);
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  /* ---------- Task cards ---------- */
+
+  .task-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 1.6rem 1.8rem 1.8rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+  }
+
+  .task-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .task-head h4 { margin: 0; font-size: 1.25rem; }
+
+  .task-id {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+  }
+
+  .task-desc {
+    color: var(--ink-muted);
+    font-size: 0.92rem;
+    margin: 0.3rem 0 1.2rem 0;
+  }
+
+  .key-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.1rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .key-block .key-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 0.45rem;
+  }
+
+  .key-block ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .key-block li {
+    font-size: 0.86rem;
+    color: var(--ink-muted);
+    padding-left: 0.8rem;
+    position: relative;
+    line-height: 1.4;
+  }
+
+  .key-block li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--rule-strong);
+  }
+
+  .key-block code { font-size: 0.82em; }
+
+  .bounds-table th, .bounds-table td { padding: 0.55rem 0.9rem; }
+
+  .grand-row td {
+    font-weight: 700;
+    background: var(--surface-2);
+    border-top: 1px solid var(--rule-strong);
+  }
+
+  .grade-row td {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    max-width: 46rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+  }
+
+  footer code { font-size: 0.9em; }
+
+  @media (max-width: 860px) {
+    .shell { grid-template-columns: 1fr; }
+    .toc {
+      position: relative;
+      height: auto;
+      border-right: none;
+      border-bottom: 1px solid var(--rule);
+      padding: 1.5rem 1.25rem;
+    }
+    main { padding: 2rem 1.25rem 4rem; }
+  }
+</style>
+
+<div class="shell">
+  <aside class="toc">
+    <div class="toc-mark">Reference · v-final</div>
+    <h1>Scoring Reference<br>Process &amp; Accuracy</h1>
+    <nav>
+      <div class="toc-group">
+        <p class="toc-label">Overview</p>
+        <a href="#overview">Two-axis system</a>
+        <a href="#final-grade">Final grade formula</a>
+      </div>
+      <div class="toc-group">
+        <p class="toc-label">Process Axis</p>
+        <a href="#z1">Z1 — Information-Gathering</a>
+        <a href="#z2">Z2 — Action-Execution</a>
+      </div>
+      <div class="toc-group">
+        <p class="toc-label">Accuracy Axis</p>
+        <a href="#a1">A1 — Findings</a>
+        <a href="#a2">A2 — Impressions</a>
+        <a href="#a3">A3 — Follow-up Actions</a>
+      </div>
+      <div class="toc-group">
+        <p class="toc-label">Per-task bounds</p>
+        <a href="#task2">Task 2 — Effusion conflation</a>
+        <a href="#task4">Task 4 — Pulmonary edema</a>
+        <a href="#task5">Task 5 — Suspicious opacity</a>
+        <a href="#task8">Task 8 — Anchoring resistance</a>
+      </div>
+    </nav>
+  </aside>
+
+  <main>
+    <div class="masthead">
+      <p class="eyebrow">Chest X-ray Computer-Use Eval</p>
+      <h2>How every episode gets graded</h2>
+      <p>There are essentially two independent reward channels, namely, Process (did the agent interact with all the required elements correctly) and
+      Accuracy (was the clinical read correct),  combined into one weighted grade per episode.
+      Every point value below is the exact rule implemented in <code>judge.py</code> and
+      <code>grade_process.py</code>.</p>
+    </div>
+
+    <section id="overview">
+      <h3>Two-axis system</h3>
+      <p class="section-intro">Process and Accuracy are scored, stored, and reasoned about
+      independently, and a strong Accuracy score never offsets a broken workflow, and vice versa.
+      Only at the very end are they combined into a single grade.</p>
+
+      <div class="range-row">
+        <div class="range-label">Process</div>
+        <div class="range-track"><div class="range-fill" style="left: 15%; right: 40%;"></div></div>
+        <div class="range-nums">−12.5 → +12</div>
+      </div>
+      <div class="range-row">
+        <div class="range-label">Accuracy</div>
+        <div class="range-track"><div class="range-fill" style="left: 8%; right: 8%;"></div></div>
+        <div class="range-nums">scales with visit</div>
+      </div>
+
+      <p style="margin-top:1.1rem; font-size:0.88rem; color:var(--ink-faint);">Process is fixed
+      for every episode. Accuracy scales with how many real findings, diagnoses, and gold actions
+      that specific visit has - attached below are the per-task tables.</p>
+
+      <div class="callout" style="border-left-color: var(--negative);">
+        <p><strong>Correction (this session):</strong> Process used to have its own
+        "Action count calibration" check (old Z2.12) that penalized a missing gold action −5 and
+        an extra one −0.25 - the exact same fact A3 already scores on the Accuracy axis (every
+        missing gold action is independently a <code>missed_by_model</code> item there). The two
+        axes are supposed to be independent reward channels, but for this one fact they weren't -
+        the same miss was charged on both, giving action-set correctness roughly double the
+        leverage of any single clinical-judgment error and making it possible to pass an episode
+        on action selection alone with the entire written report missed. Z2.12 has been removed;
+        A3 remains the sole place action-set correctness is scored, and Process's floor is back to
+        a fixed constant since it no longer has an unbounded component.</p>
+      </div>
+    </section>
+
+    <section id="final-grade">
+      <h3>Final grade formula</h3>
+      <p class="section-intro">Raw point sums can't be weighted directly since Accuracy's scale
+      (tens to hundreds of points) dwarfs Process's small range, so a naive
+      <code>0.3×process + 0.7×accuracy</code> wouldn't actually produce a 30/70 split. Both axes
+      are normalized to <code>[0,1]</code> against their own ceiling/floor first, then weighted.</p>
+
+      <div class="formula"><span class="k">process_norm</span>  <span class="op">=</span> (process_total − <span class="k">−12.5</span>) / (<span class="k">12</span> − <span class="k">−12.5</span>)
+<span class="k">accuracy_norm</span> <span class="op">=</span> (accuracy_total − floor<sub>task</sub>) / (ceiling<sub>task</sub> − floor<sub>task</sub>)
+
+<span class="k">final_grade</span>  <span class="op">=</span> 100 × ( <span class="pt-pos" style="color:var(--accent-ink)">0.3</span> × process_norm  <span class="op">+</span>  <span class="pt-pos" style="color:var(--accent-ink)">0.7</span> × accuracy_norm )</div>
+
+      <div class="callout">
+        <p>The ceiling and floor only count real gold items , and anything the model made up
+        (hallucinated) is left out, since a made-up item can only ever lose points, never earn
+        extra credit toward the best-possible score. And whatever percentage comes out of the
+        math is always kept between 0% and 100%, even in edge cases.</p>
+      </div>
+
+      <div class="callout">
+        <p>Total no-show special case</p>
+        <p>If the model does nothing at all, that is, it never logs in, never writes a note, every gold
+        item shows up as "missed." Missing something now costs <code>−5</code>, the same
+        magnitude as the match-status penalty on an actively wrong matched answer - but a badly-
+        wrong matched item can still fall further, down to the <code>−10</code> per-item floor,
+        since its other quality fields (severity, location, reasoning, etc.) can also score
+        negative on top of the match-status penalty. Left unchecked, silence could still be
+        cheaper than trying and failing badly, so it's forced to 0% directly below rather than
+        left to the normal math.</p>
+        <p>The no-show check reads the actual findings/impressions/follow-up strings straight
+        from the episode log , were they empty before they were ever sent to the judge? If so,
+        the score is forced straight to 0%, skipping the usual math. This is checked directly
+        from the log rather than inferred from the judge's own output, since the judge is a
+        separate LLM call and can occasionally misclassify an item on its own.</p>
+      </div>
+
+   
+    </section>
+
+    <section id="z1" class="wide">
+      <h3><span class="tag">Z1</span>Information-Gathering</h3>
+      <p class="section-intro">Range <strong>[−8.5, +8]</strong>, identical for every episode.
+      Measures whether the agent systematically collects data before deciding.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Step</th><th>Points</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td class="metric-name">1 · Logs in</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−1</span></td><td class="note">fails to log in</td></tr>
+            <tr><td class="metric-name">2 · Correct patient</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−1</span></td><td class="note">wrong patient</td></tr>
+            <tr><td class="metric-name">3 · Correct encounter</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−1</span></td><td class="note">wrong encounter</td></tr>
+            <tr><td class="metric-name">4 · Engages vitals</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−1</span></td><td class="note">clicked + scrolled/read; −1 if no engagement</td></tr>
+            <tr><td class="metric-name">5 · Engages history/office visit</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−1</span></td><td class="note">only if form given; else auto +1</td></tr>
+            <tr><td class="metric-name">6 · Clicks open X-ray</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−2</span></td><td class="note">never opens the viewer</td></tr>
+            <tr><td class="metric-name">7 · Interacts with X-ray</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−0.5</span></td><td class="note">no scroll/zoom after opening</td></tr>
+            <tr><td class="metric-name">8 · Engages prior imaging</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−1</span></td><td class="note">clicks a prior study in the timeline; auto +1 if none exists on file</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="z2" class="wide">
+      <h3><span class="tag">Z2</span>Action-Execution</h3>
+      <p class="section-intro">Numbered 9-11 and 13, matching <code>grade_process.py</code>
+      exactly - 12 ("Action count calibration") was removed, see the correction note above, and
+      the gap in numbering is kept on purpose so old episode logs stay interpretable.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Step</th><th>Points</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td class="metric-name">9 · Navigate to Procedures/Configuration</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−1</span></td></tr>
+            <tr><td class="metric-name">10 · No mutual exclusivity conflicts</td><td class="points"><span class="pt-pos">±1/n</span></td><td class="note">normalized per action, not per pair — always sums to [−1,+1] regardless of action count</td></tr>
+            <tr><td class="metric-name">11 · Abstention calibration</td><td class="points"><span class="pt-pos">+1</span> <span class="sep">/</span> +0.25 <span class="sep">/</span> <span class="pt-neg">−2</span></td><td class="note">matches ground truth / acted-when-should-abstain / abstained-when-should-act</td></tr>
+            <tr><td class="metric-name">13 · Step efficiency</td><td class="points"><span class="pt-pos">+1</span><span class="sep">/</span><span class="pt-neg">−0.25 ea.</span></td><td class="note">bonus only if fully completed at minimum steps (which now also requires the action COUNT to match gold, checked directly rather than via the removed check 12 - but this only gates the bonus, it applies no separate penalty); penalty per extra step regardless</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="a1" class="wide">
+      <h3><span class="tag">A1</span>Findings</h3>
+      <p class="section-intro">Scored per finding, summed. Ceiling <strong>+8</strong>, Floor <strong>−10</strong>, per item.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Field</th><th>Points</th></tr></thead>
+          <tbody>
+            <tr><td class="metric-name">Presence absence</td><td class="points"><span class="pt-pos">+1</span> correct <span class="sep">/</span> <span class="pt-neg">−2</span> incorrect</td></tr>
+            <tr><td class="metric-name">laterality</td><td class="points"><span class="pt-pos">+1</span> correct <span class="sep">/</span> <span class="pt-neg">−1</span> wrong or hallucination</td></tr>
+            <tr><td class="metric-name">severity</td><td class="points"><span class="pt-pos">+1</span> correct <span class="sep">/</span> −0.5 over-escalating <span class="sep">/</span> <span class="pt-neg">−2</span> under-calling or hallucination</td></tr>
+            <tr><td class="metric-name">location</td><td class="points"><span class="pt-pos">+1</span> precise <span class="sep">/</span> +0.5 general <span class="sep">/</span> <span class="pt-neg">−1</span> wrong or hallucination</td></tr>
+            <tr><td class="metric-name">confidence_wording</td><td class="points"><span class="pt-pos">+1</span> match <span class="sep">/</span> −0.5 over/under-confident <span class="sep">/</span> <span class="pt-neg">−2</span> hallucination</td></tr>
+            <tr><td class="metric-name">clinical_reasoning</td><td class="points"><span class="pt-pos">+1</span> sound <span class="sep">/</span> +0.5 weak <span class="sep">/</span> <span class="pt-neg">−2</span> incorrect (hallucinated reasoning folds in)</td></tr>
+            <tr><td class="metric-name">comparison_accuracy</td><td class="points"><span class="pt-pos">+1</span> correct change vs. prior <span class="sep">/</span> <span class="pt-neg">−1</span> wrong or omitted. 0 if gold isn't comparative</td></tr>
+            <tr><td class="metric-name">match status penalty</td><td class="points"><span class="pt-pos">+1</span> matched <span class="sep">/</span> <span class="pt-neg">−5</span> missed <span class="sep">/</span> <span class="pt-neg">−5</span> hallucinated</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <dl class="glossary">
+        <div class="glossary-row"><dt>Presence absence</dt><dd>Did the model correctly say the finding is there vs. not there (this covers pertinent negatives like "no pneumothorax" too)?</dd></div>
+        <div class="glossary-row"><dt>Laterality</dt><dd>Left, right, or bilateral, was the side correctly identified?</dd></div>
+        <div class="glossary-row"><dt>Severity</dt><dd>How significant the finding is (mild vs. severe)</dd></div>
+        <div class="glossary-row"><dt>Location</dt><dd>How precisely the anatomical location was described.</dd></div>
+        <div class="glossary-row"><dt>Confidence Wording</dt><dd>Does the hedge language ("probable," "likely") match how certain gold actually is?</dd></div>
+        <div class="glossary-row"><dt>Clinical Reasoning</dt><dd>Does the reasoning connecting the finding to its significance actually hold up?</dd></div>
+        <div class="glossary-row"><dt>Comparison accuracy</dt><dd>When gold's finding is itself comparative ("unchanged," "increased since prior"), did the model correctly capture that same direction of change? Only scores when gold actually makes a comparison - ties directly to the new prior-studies timeline in the viewer (Z1.8).</dd></div>
+        <div class="glossary-row"><dt>Match status penalty</dt><dd>Was this finding addressed at all , and is it present, missed entirely, or made up? This is the field everything else in the row depends on: unless it comes back "matched," every other quality field is forced to zero, so match status alone decides whether the rest of the row gets to count at all. It's the single biggest lever on an item's score , since it guards against missed findings(false negatives) and hallucinations (false positives).</dd></div>
+      </dl>
+      <p style="margin-top:0.9rem; font-size:0.85rem; color:var(--ink-faint);">All fields 0 if
+      not matched — <code>match_status</code> alone carries the miss/hallucination penalty, no
+      double-counting across fields.</p>
+    </section>
+
+    <section id="a2" class="wide">
+      <h3><span class="tag">A2</span>Impressions</h3>
+      <p class="section-intro">Scored per diagnosis, summed. Ceiling <strong>+6</strong>, floor
+      <strong>−7.5</strong>, per item.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Field</th><th>Points</th></tr></thead>
+          <tbody>
+            <tr><td class="metric-name">Diagnosis match</td><td class="points"><span class="pt-pos">+1</span> correct + right prominence <span class="sep">/</span> +0.5 right diagnosis, wrong prominence <span class="sep">/</span> <span class="pt-neg">−2</span> wrong</td></tr>
+            <tr><td class="metric-name">prioritization</td><td class="points"><span class="pt-pos">+1</span> correct order <span class="sep">/</span> +0.5 partial <span class="sep">/</span> <span class="pt-neg">−2</span> wrong</td></tr>
+            <tr><td class="metric-name">severity tone</td><td class="points"><span class="pt-pos">+1</span> match <span class="sep">/</span> −0.5 alarmist <span class="sep">/</span> <span class="pt-neg">−2</span> dismissive of critical</td></tr>
+            <tr><td class="metric-name">confidence wording</td><td class="points"><span class="pt-pos">+1</span> match <span class="sep">/</span> <span class="pt-neg">−0.5</span> over/under-confident</td></tr>
+            <tr><td class="metric-name">clinical reasoning</td><td class="points"><span class="pt-pos">+1</span> sound <span class="sep">/</span> +0.5 weak <span class="sep">/</span> <span class="pt-neg">−2</span> incorrect</td></tr>
+            <tr><td class="metric-name">match status penalty</td><td class="points"><span class="pt-pos">+1</span> matched <span class="sep">/</span> <span class="pt-neg">−5</span> missed <span class="sep">/</span> <span class="pt-neg">−5</span> hallucinated</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <dl class="glossary">
+        <div class="glossary-row"><dt>diagnosis match</dt><dd>Right diagnosis, at the right rank: is it listed as primary when gold says primary, secondary when gold says secondary?</dd></div>
+        <div class="glossary-row"><dt>prioritization</dt><dd>When there are multiple diagnoses, are they ordered the way gold orders them?</dd></div>
+        <div class="glossary-row"><dt>severity tone</dt><dd>Does the write-up's urgency match the real severity, and is not alarmist, and not dismissive?</dd></div>
+        <div class="glossary-row"><dt>confidence_wording</dt><dd>Same hedge-language calibration as A1, applied to the diagnosis.</dd></div>
+        <div class="glossary-row"><dt>clinical reasoning</dt><dd>Does the diagnostic reasoning actually hold up?</dd></div>
+        <div class="glossary-row"><dt>Match status penalty</dt><dd>Was this finding addressed at all , and is it present, missed entirely, or made up? This is the field everything else in the row depends on: unless it comes back "matched," every other quality field is forced to zero, so match status alone decides whether the rest of the row gets to count at all. It's the single biggest lever on an item's score , since it guards against missed findings(false negatives) and hallucinations (false positives).</dd></div>
+      </dl>
+      <p style="margin-top:0.9rem; font-size:0.85rem; color:var(--ink-faint);">
+      <code>diagnosis_match</code> merges the old <code>primary_diagnosis_match</code> +
+      <code>secondary_points</code> fields — only one was ever meaningful per item.
+      <code>confidence_wording</code> is a placeholder pending redesign.</p>
+    </section>
+
+    <section id="a3" class="wide">
+      <h3><span class="tag">A3</span>Follow-up Actions</h3>
+      <p class="section-intro">Scored per action, summed, plus two episode-level fields added
+      exactly once. Ceiling <strong>+6</strong> per item, <strong>+2</strong> episode-level.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Field</th><th>Points</th></tr></thead>
+          <tbody>
+            <tr><td class="metric-name">severity_appropriate_intensity</td><td class="points"><span class="pt-pos">+1</span> match <span class="sep">/</span> −0.5 over-urgent <span class="sep">/</span> <span class="pt-neg">−2</span> under-urgent</td></tr>
+            <tr><td class="metric-name">conflict_avoidance</td><td class="points"><span class="pt-pos">+1</span> none <span class="sep">/</span> −1 multiple <span class="sep">/</span> <span class="pt-neg">−2</span> contraindicated</td></tr>
+            <tr><td class="metric-name">tone</td><td class="points"><span class="pt-pos">+1</span> match <span class="sep">/</span> −0.5 alarmist <span class="sep">/</span> <span class="pt-neg">−2</span> dismissive</td></tr>
+            <tr><td class="metric-name">prioritization</td><td class="points"><span class="pt-pos">+1</span> correct order <span class="sep">/</span> <span class="pt-neg">−1</span> wrong</td></tr>
+            <tr><td class="metric-name">confidence_wording</td><td class="points"><span class="pt-pos">+1</span> match <span class="sep">/</span> <span class="pt-neg">−1</span> over/under-confident</td></tr>
+            <tr><td class="metric-name">match_status penalty</td><td class="points"><span class="pt-pos">+1</span> matched <span class="sep">/</span> <span class="pt-neg">−5</span> missed <span class="sep">/</span> <span class="pt-neg">−5</span> hallucinated</td></tr>
+            <tr><td class="metric-name">abstention_calibration <span style="font-weight:400; color:var(--ink-faint);">(episode)</span></td><td class="points"><span class="pt-pos">+1</span> <span class="sep">/</span> +0.25 <span class="sep">/</span> <span class="pt-neg">−2</span></td></tr>
+            <tr><td class="metric-name">unnecessary_avoidance <span style="font-weight:400; color:var(--ink-faint);">(episode)</span></td><td class="points"><span class="pt-pos">+1</span> <span class="sep">/</span> −0.5 <span class="sep">/</span> −1 <span class="sep">/</span> <span class="pt-neg">−2</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <dl class="glossary">
+        <div class="glossary-row"><dt>Severity appropriate intensity</dt><dd>Does the recommended action's urgency match how urgent it really is?</dd></div>
+        <div class="glossary-row"><dt>Conflict avoidance</dt><dd>Does this action contradict something else the model also selected?</dd></div>
+        <div class="glossary-row"><dt>Tone</dt><dd>Same urgency-in-wording check as A2's severity_tone, applied to the action.</dd></div>
+        <div class="glossary-row"><dt>Prioritization</dt><dd>Ordered the way gold orders the actions?</dd></div>
+        <div class="glossary-row"><dt>Confidence wording</dt><dd>Hedge language ("consider" vs. "urgent") calibrated correctly?</dd></div>
+        <div class="glossary-row"><dt>Match status penalty</dt><dd>Was this action recommended at all, and is it present, missed entirely, or made up? Same rule as findings and diagnoses,  every other field in this row is locked at zero unless this is "matched," so it's what actually decides most of an action's score before urgency, tone, or ordering ever come into play.</dd></div>
+        <div class="glossary-row"><dt>Abstention Calibration <span style="color:var(--ink-faint); font-weight:400;">(episode)</span></dt><dd>Across the whole action set: did the model correctly act vs. hold back?</dd></div>
+        <div class="glossary-row"><dt>Unnecessary avoidance <span style="color:var(--ink-faint); font-weight:400;">(episode)</span></dt><dd>Across the whole action set: how many recommended actions weren't actually warranted?</dd></div>
+      </dl>
+      <p style="margin-top:0.9rem; font-size:0.85rem; color:var(--ink-faint);">
+      <code>conflict avoidance</code> stays live even on a hallucinated action: a fabricated
+      recommendation can still conflict with something else actually selected.
+      <code>abstention calibration</code> and <code>unnecessary avoidance</code> are scored once
+      for the whole action set, not per item.</p>
+    </section>
+
+    <section class="wide" style="margin-bottom: 2.5rem;">
+      <h3>Per-task bounds</h3>
+      <p class="section-intro">Process is fixed across every task (ceiling and floor both) - it
+      no longer has any per-episode-scaling component now that Z2.12 is removed. Accuracy's
+      ceiling and floor differ, scaled to each visit's real gold item count. The tables below
+      predate several changes this session (Z1.8, comparison_accuracy, the −5/−5 match-status
+      penalty, and the Z2.12 removal) and need a full numeric refresh - treat the per-task
+      Ceiling/Floor columns as indicative, not exact, until that's done.</p>
+    </section>
+
+    <section id="task2" class="wide">
+      <div class="task-card">
+        <div class="task-head">
+          <h4>Task 2 · Effusion conflation trap</h4>
+          <span class="task-id">GRDN004RP5BFHE0T &nbsp;·&nbsp; 2009-05-28</span>
+        </div>
+        <p class="task-desc">Three real findings packed close together, and tests whether the agent
+        conflates laterality/severity across them, or drops the PICC line entirely.</p>
+
+        <div class="key-grid">
+          <div class="key-block">
+            <p class="key-label">A1 · 6 findings</p>
+            <ul><li>Mild bibasilar atelectasis</li><li>NG tube in stomach</li><li>PICC malposition, tip over right atrium</li><li>Probable small left effusion</li><li>No pneumothorax <em>(negative)</em></li><li>No bony abnormality <em>(negative)</em></li></ul>
+          </div>
+          <div class="key-block">
+            <p class="key-label">A2 · 2 diagnoses</p>
+            <ul><li>Atelectasis + effusion</li><li>PICC malposition</li></ul>
+          </div>
+          <div class="key-block">
+            <p class="key-label">A3 · 4 gold actions</p>
+            <ul><li><code>ACT_REASSESS_BEDSIDE</code></li><li><code>ACT_DEEP_BREATHING_COUGH</code></li><li><code>ACT_EARLY_MOBILIZATION</code></li><li><code>ACT_REPEAT_CXR</code></li></ul>
+          </div>
+        </div>
+
+        <div class="table-wrap bounds-table">
+          <table>
+            <thead><tr><th>Axis</th><th>Ceiling</th><th>Floor</th></tr></thead>
+            <tbody>
+              <tr><td>Z1</td><td class="points pt-pos">+7</td><td class="points pt-neg">−7.5</td></tr>
+              <tr><td>Z2</td><td class="points pt-pos">+4</td><td class="points pt-neg">−4.75</td></tr>
+              <tr><td>A1</td><td class="points pt-pos">+42</td><td class="points pt-neg">−54</td></tr>
+              <tr><td>A2</td><td class="points pt-pos">+12</td><td class="points pt-neg">−15</td></tr>
+              <tr><td>A3</td><td class="points pt-pos">+26</td><td class="points pt-neg">−32</td></tr>
+              <tr class="grand-row"><td>Grand total</td><td class="points pt-pos">+91</td><td class="points pt-neg">−113.25</td></tr>
+              <tr class="grade-row"><td>→ Final Grade</td><td colspan="2">100% at ceiling · 0% at floor (normalized, per the formula above)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="task4" class="wide">
+      <div class="task-card">
+        <div class="task-head">
+          <h4>Task 4 · Pulmonary edema crisis</h4>
+          <span class="task-id">GRDN00BKCEOKC7S1 &nbsp;·&nbsp; 2025-07-23</span>
+        </div>
+        <p class="task-desc">Highest-stakes case in the set — SpO2 72%, six gold actions. Tests
+        whether escalation intensity and action count actually calibrate to true severity.</p>
+
+        <div class="key-grid">
+          <div class="key-block">
+            <p class="key-label">A1 · 3 findings</p>
+            <ul><li>Cardiomegaly</li><li>Worsening pulmonary vascular congestion</li><li>Bilateral effusions + airspace disease, R&gt;L</li></ul>
+          </div>
+          <div class="key-block">
+            <p class="key-label">A2 · 1 diagnosis</p>
+            <ul><li>Worsening pulmonary edema, bilateral effusions R&gt;L</li></ul>
+          </div>
+          <div class="key-block">
+            <p class="key-label">A3 · 6 gold actions</p>
+            <ul><li><code>ACT_RAPID_RESPONSE</code></li><li><code>ACT_INTUBATION_PATHWAY</code></li><li><code>ACT_ESCALATE_CARE</code></li><li><code>ACT_NITROGLYCERIN</code></li><li><code>ACT_FUROSEMIDE_IV</code></li><li><code>ACT_URGENT_ASSESSMENT</code></li></ul>
+          </div>
+        </div>
+
+        <div class="table-wrap bounds-table">
+          <table>
+            <thead><tr><th>Axis</th><th>Ceiling</th><th>Floor</th></tr></thead>
+            <tbody>
+              <tr><td>Z1</td><td class="points pt-pos">+7</td><td class="points pt-neg">−7.5</td></tr>
+              <tr><td>Z2</td><td class="points pt-pos">+4</td><td class="points pt-neg">−4.75</td></tr>
+              <tr><td>A1</td><td class="points pt-pos">+21</td><td class="points pt-neg">−27</td></tr>
+              <tr><td>A2</td><td class="points pt-pos">+6</td><td class="points pt-neg">−7.5</td></tr>
+              <tr><td>A3</td><td class="points pt-pos">+38</td><td class="points pt-neg">−46</td></tr>
+              <tr class="grand-row"><td>Grand total</td><td class="points pt-pos">+76</td><td class="points pt-neg">−92.75</td></tr>
+              <tr class="grade-row"><td>→ Final Grade</td><td colspan="2">100% at ceiling · 0% at floor (normalized, per the formula above)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="task5" class="wide">
+      <div class="task-card">
+        <div class="task-head">
+          <h4>Task 5 · Suspicious opacity, recommend CT</h4>
+          <span class="task-id">GRDN00BE97VCHW4E &nbsp;·&nbsp; 2025-01-05</span>
+        </div>
+        <p class="task-desc">A genuine radiologist hedge in the real report — tests calibrated
+        uncertainty, not a binary hit/miss, plus whether CT gets recommended at all.</p>
+
+        <div class="key-grid">
+          <div class="key-block">
+            <p class="key-label">A1 · 3 findings</p>
+            <ul><li>Stable cardiomediastinal / poststernotomy changes</li><li>No aggressive bone lesions <em>(negative)</em></li><li>Persistent, decreasing posterior density</li></ul>
+          </div>
+          <div class="key-block">
+            <p class="key-label">A2 · 1 diagnosis</p>
+            <ul><li>Persistent LLL density — "consider CT" hedge</li></ul>
+          </div>
+          <div class="key-block">
+            <p class="key-label">A3 · 3 gold actions</p>
+            <ul><li><code>ACT_TIMED_FOLLOWUP</code></li><li><code>ACT_REPEAT_CXR</code></li><li><code>ACT_CT_CHEST</code></li></ul>
+          </div>
+        </div>
+
+        <div class="table-wrap bounds-table">
+          <table>
+            <thead><tr><th>Axis</th><th>Ceiling</th><th>Floor</th></tr></thead>
+            <tbody>
+              <tr><td>Z1</td><td class="points pt-pos">+7</td><td class="points pt-neg">−7.5</td></tr>
+              <tr><td>Z2</td><td class="points pt-pos">+4</td><td class="points pt-neg">−4.75</td></tr>
+              <tr><td>A1</td><td class="points pt-pos">+21</td><td class="points pt-neg">−27</td></tr>
+              <tr><td>A2</td><td class="points pt-pos">+6</td><td class="points pt-neg">−7.5</td></tr>
+              <tr><td>A3</td><td class="points pt-pos">+20</td><td class="points pt-neg">−25</td></tr>
+              <tr class="grand-row"><td>Grand total</td><td class="points pt-pos">+58</td><td class="points pt-neg">−71.75</td></tr>
+              <tr class="grade-row"><td>→ Final Grade</td><td colspan="2">100% at ceiling · 0% at floor (normalized, per the formula above)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="task8" class="wide">
+      <div class="task-card">
+        <div class="task-head">
+          <h4>Task 8 · Anchoring-bias resistance</h4>
+          <span class="task-id">GRDN00A5ZYWHZY7D &nbsp;·&nbsp; 2012-05-09</span>
+        </div>
+        <p class="task-desc">Concerning history ("2 weeks chest pain, question pneumonia"), clean
+        film. Tests whether the agent stays anchored to the actual image, not the chart note.</p>
+
+        <div class="key-grid">
+          <div class="key-block">
+            <p class="key-label">A1 · 5 findings</p>
+            <ul><li>Heart size stable, upper-normal</li><li>Mediastinal contours normal</li><li>Lungs clear</li><li>No effusion / pneumothorax <em>(negative)</em></li><li>Thoracic spine osteophytes <em>(benign)</em></li></ul>
+          </div>
+          <div class="key-block">
+            <p class="key-label">A2 · 1 diagnosis</p>
+            <ul><li>Stable, no acute cardiopulmonary process</li></ul>
+          </div>
+          <div class="key-block">
+            <p class="key-label">A3 · 2 gold actions</p>
+            <ul><li><code>ACT_STOP_SURVEILLANCE</code></li><li><code>ACT_OBSERVE</code></li></ul>
+          </div>
+        </div>
+
+        <div class="table-wrap bounds-table">
+          <table>
+            <thead><tr><th>Axis</th><th>Ceiling</th><th>Floor</th></tr></thead>
+            <tbody>
+              <tr><td>Z1</td><td class="points pt-pos">+7</td><td class="points pt-neg">−7.5</td></tr>
+              <tr><td>Z2</td><td class="points pt-pos">+4</td><td class="points pt-neg">−4.75</td></tr>
+              <tr><td>A1</td><td class="points pt-pos">+35</td><td class="points pt-neg">−45</td></tr>
+              <tr><td>A2</td><td class="points pt-pos">+6</td><td class="points pt-neg">−7.5</td></tr>
+              <tr><td>A3</td><td class="points pt-pos">+14</td><td class="points pt-neg">−18</td></tr>
+              <tr class="grand-row"><td>Grand total</td><td class="points pt-pos">+66</td><td class="points pt-neg">−82.75</td></tr>
+              <tr class="grade-row"><td>→ Final Grade</td><td colspan="2">100% at ceiling · 0% at floor (normalized, per the formula above)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Source of truth: <code>judge.py</code> (Accuracy), <code>grade_process.py</code> (Process),
+      <code>grade_episode.py</code> (final grade, per-episode receipt). Floors above assume the
+      model addresses exactly the real gold items, scored as badly as possible — not unlimited
+      hallucinated extras, which are unbounded by design and excluded from these ceiling/floor
+      calculations.
+    </footer>
+  </main>
+</div>

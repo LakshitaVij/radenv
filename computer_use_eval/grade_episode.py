@@ -125,24 +125,16 @@ def _load_episode_summary(log_path: Path) -> dict:
     }
 
 
-# Process axis ceiling is fixed - identical for every episode - but the
-# floor is NOT, now that Z2.12's missing-action penalty is direct and
-# uncapped (-5.0 per missing gold action, same magnitude as a missed item
-# on the Accuracy axis) instead of normalized to a flat -0.75. A visit with
-# more gold actions has a further-negative worst case (selecting 0 of 6
-# costs -30.0, not -0.75), so the floor scales with THIS episode's real
-# gold_n, same reasoning as the Accuracy bounds below. _BASE_PROCESS_FLOOR
-# is every other Z1/Z2 checkpoint's worst case (fixed), with Z2.12's own
-# worst case (missing every gold action) added per-episode via
-# _process_floor(). Shifted by +-1 from the prior [-12.25, 11.0] when Z1.8
-# (engages prior imaging) was added - one more +1/-1 checkpoint in the Z1
-# sum.
-_BASE_PROCESS_FLOOR = -12.5
-PROCESS_CEILING = 12.0
-
-
-def _process_floor(gold_n: int) -> float:
-    return _BASE_PROCESS_FLOOR - 5.0 * gold_n
+# Process axis bounds are fixed - identical for every episode regardless of
+# task complexity. Used to scale with gold_n while Z2.12 (action count
+# calibration) existed, since its missing-action penalty was direct and
+# uncapped - but Z2.12 was removed (it double-counted the same fact A3
+# already scores on the Accuracy axis; see grade_process.py's docstring),
+# so Process no longer has any unbounded/per-episode-scaling component and
+# the floor is back to a plain constant. Shifted by +-1 from the prior
+# [-12.25, 11.0] when Z1.8 (engages prior imaging) was added - one more
+# +1/-1 checkpoint in the Z1 sum.
+PROCESS_FLOOR, PROCESS_CEILING = -12.5, 12.0
 
 # Per-item ceiling/floor for each Accuracy sub-axis, from judge.py's actual
 # point values (worst case here means "still matched, but scored badly on
@@ -154,7 +146,7 @@ _A3_ITEM_BOUNDS = (6.0, -7.0)
 _A3_EPISODE_BOUNDS = (2.0, -4.0)  # abstention_calibration + unnecessary_avoidance, ceiling/floor
 
 
-def _final_grade(process_total: float, accuracy: AccuracyJudgement, no_real_output: bool, gold_n_actions: int) -> float | None:
+def _final_grade(process_total: float, accuracy: AccuracyJudgement, no_real_output: bool) -> float | None:
     """Single 0-100 grade combining Process (30%) and Accuracy (70%). Raw
     point sums can't be weighted directly - Accuracy's scale (tens to
     hundreds of points, scaling with how many real findings/diagnoses/
@@ -203,8 +195,7 @@ def _final_grade(process_total: float, accuracy: AccuracyJudgement, no_real_outp
     # the episode log instead - were model_findings/model_impressions/
     # model_follow_up_actions actually empty BEFORE they were ever sent to
     # the judge - so this can't be fooled by judge noise.
-    process_floor = _process_floor(gold_n_actions)
-    process_norm = (process_total - process_floor) / (PROCESS_CEILING - process_floor)
+    process_norm = (process_total - PROCESS_FLOOR) / (PROCESS_CEILING - PROCESS_FLOOR)
     if no_real_output:
         accuracy_norm = 0.0
     else:
@@ -362,7 +353,7 @@ def grade_episode(episode_dir: Path) -> dict:
     # Ground truth for the no-show case, from what was actually sent to the
     # judge - not inferred from the judge's own (occasionally noisy) output.
     no_real_output = not (model_findings.strip() or model_impressions.strip() or model_follow_up_actions.strip())
-    final_grade_pct = _final_grade(process_total, accuracy, no_real_output, len(gold.gold_action_ids))
+    final_grade_pct = _final_grade(process_total, accuracy, no_real_output)
 
     totals = {
         "Z1 (Information-Gathering) total": round(z1_total, 2),

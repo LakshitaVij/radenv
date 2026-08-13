@@ -34,8 +34,9 @@ of the old standalone-viewer-first order):
       Z2.9  Navigate to Procedures/Configuration
       Z2.10 No mutual exclusivity conflicts
       Z2.11 Abstention calibration
-      Z2.12 Action count calibration
       Z2.13 Step efficiency
+    (Z2.12 "Action count calibration" was removed - see below - the label
+    gap is intentional, kept so old episode logs stay interpretable.)
   - Z2.9 (navigate Procedures / Configuration): ONE check, not two - both
     used to be separate ScoreItems reading the exact same underlying
     boolean ("did the log ever show a URL for Configure Orders and
@@ -57,27 +58,33 @@ of the old standalone-viewer-first order):
     for every single action in the catalog (confirmed against the real
     xlsx), so it could never detect a conflict and only contributed free,
     uninformative points that scaled with action count.
-  - Z2.12 ("too many/too few actions"): compared against THIS VISIT's
-    actual gold action count (via oracle.py), not a fixed universal band
-    - real visits have 1-6 gold actions, not always 1-3. Direct, uncapped
-    per-action penalty (no longer normalized by gold_n): -5.0 per missing
-    action (same magnitude as a missed item on the Accuracy axis - a
-    missing gold action is the same underlying failure either way) vs
-    -0.25 per extra action (a harmless additional order is a minor
-    inefficiency, not a missed necessity). Missing 4 of 4 gold actions
-    costs -20.0, not a flat -0.75 - this DOES now scale with task size on
-    purpose (PROCESS_FLOOR in grade_episode.py accounts for this
-    per-episode via gold_n).
+  - Z2.12 ("too many/too few actions") REMOVED entirely. It compared
+    model_n vs gold_n and penalized -5.0/missing, -0.25/extra - but A3 on
+    the Accuracy axis already scores the exact same fact: every gold
+    action the model didn't select is independently a missed_by_model
+    item there (-5.0 each), every extra one a hallucinated_by_model item.
+    Process and Accuracy were supposed to be two INDEPENDENT reward
+    channels (workflow execution vs. clinical correctness), but for this
+    one fact they weren't - the same miss was charged twice, giving
+    action-set correctness roughly double the leverage of any single
+    clinical-judgment error and making it mathematically possible to pass
+    an episode on action selection alone even with every finding and
+    impression missed. Caught only after a full batch had already been
+    graded under it - should have been sanity-checked before, not after.
+    Process still independently catches genuine EXECUTION failures: Z2.9
+    (never reached Configure Orders and Results at all) and Z2.11 below
+    (abstained when gold expected real action(s), or acted when gold
+    expected abstention) - what's gone is the redundant per-action
+    identity/count re-check that duplicated A3's job.
   - Z2.11 (abstention calibration): "should abstain" ground truth = gold
     action list is empty OR contains ACT_ABSTAIN/ACT_CLINICAL_CORRELATION.
     Same definition used in judge.py's A3 abstention handling so Process
     and Accuracy don't quietly disagree.
   - Z1 range [-8.5,8] (was [-7.5,7] before step 8 was added). Z2.10 is
-    normalized to [-1,+1] regardless of action count, but Z2.12's
-    per-action penalty (-0.25/-1.0) DOES grow with how far off the action
-    count is, which is intentional: a badly-miscalibrated action count
-    (e.g. Task 4's 6-action case answered with 0) should be able to swing
-    the total further negative than a fixed-range check would allow.
+    normalized to [-1,+1] regardless of action count. With Z2.12 removed,
+    Z2 no longer has any unbounded/scaling component - every Z2 checkpoint
+    now sits in a small fixed range, and PROCESS_FLOOR/CEILING in
+    grade_episode.py are fixed constants again (not per-episode).
 
 Ground truth patient/encounter comes from a direct DB query (same
 `docker compose exec mysql` pattern used throughout this session), not
@@ -449,7 +456,7 @@ def score_z2_navigation(page_states: list[dict]) -> ScoreItem:
     )
 
 
-def score_z2_actions(selected_actions: list[dict], gold_action_ids: list[str]) -> list[ScoreItem]:
+def score_z2_actions(selected_actions: list[dict]) -> list[ScoreItem]:
     """No longer scores catalog-validity itself (formerly Z2.11, +1/-1 per
     selected action) - an agent hallucinating a nonexistent action is an
     Accuracy-axis concern (A3's hallucinated_by_model), not a Process one.
@@ -480,30 +487,21 @@ def score_z2_actions(selected_actions: list[dict], gold_action_ids: list[str]) -
         items.append(ScoreItem("Z2.10 No mutual exclusivity conflicts", points,
                                 f"{n - n_conflicted}/{n} action(s) conflict-free."))
 
-    # "Too many/too few" relative to THIS visit's real gold count - direct,
-    # uncapped per-action penalty (no longer normalized by gold_n). A missing
-    # action is a missed GOLD action - same -5.0 magnitude as a missed item
-    # on the Accuracy axis (judge.py's match_status penalty), since it's the
-    # same underlying failure (a required real action never happened), just
-    # observed from the Process side (EMR order execution) instead of the
-    # Accuracy side (judged output). An extra action costs -0.25 - much
-    # cheaper, since one harmless additional order is a minor inefficiency,
-    # not a missed necessity. Unlike the old normalized version (which
-    # always capped at exactly -0.75/-0.25 regardless of how far off the
-    # count was), this scales with the actual gap - selecting 0 of 4
-    # expected actions now costs -20.0, not a flat -0.75. A conflicting
-    # extra action (contradicts another selected action) is scored
-    # separately by Z2.10's mutual-exclusivity check above; this checkpoint
-    # only counts raw over/under-selection, not conflicts.
-    gold_n, model_n = len(gold_action_ids), len(valid_ids)
-    if model_n > gold_n:
-        extra = model_n - gold_n
-        penalty = round(-0.25 * extra, 3)
-        items.append(ScoreItem("Z2.12 Action count calibration", penalty, f"Selected {model_n} actions vs. {gold_n} expected - {extra} too many."))
-    elif model_n < gold_n and gold_n > 0:
-        missing = gold_n - model_n
-        penalty = round(-5.0 * missing, 3)
-        items.append(ScoreItem("Z2.12 Action count calibration", penalty, f"Selected {model_n} actions vs. {gold_n} expected - {missing} too few."))
+    # Z2.12 ("too many/too few actions", -5/missing, -0.25/extra) removed -
+    # it was scoring the exact same underlying fact as A3 on the Accuracy
+    # axis (each missing gold action is independently a missed_by_model
+    # item there, each extra one a hallucinated_by_model item), just from
+    # the Process side instead of the judged-output side. Process and
+    # Accuracy are supposed to be two independent reward channels, but for
+    # this one fact they weren't - a missing action cost -5 on BOTH axes
+    # for the identical miss, giving action-set correctness roughly double
+    # the leverage of any single clinical-judgment error and making it
+    # possible to pass an episode on action selection alone even with
+    # every finding/impression missed. Process still catches genuine
+    # EXECUTION failures independently: Z2.9 (never reached Configure
+    # Orders and Results at all) and Z2.11 below (abstained when gold
+    # expected real action(s), or vice versa) - what's gone is the
+    # redundant per-action identity/count re-check that duplicated A3.
 
     return items, valid_ids
 
@@ -544,11 +542,15 @@ STEP_EFFICIENCY_INTERACTION_BUFFER = 2
 # reasonable additional interaction as "wasted steps."
 
 
-def _episode_fully_completed(process_items: list[ScoreItem]) -> bool:
+def _episode_fully_completed(process_items: list[ScoreItem], action_count_matches: bool) -> bool:
     """'Completed fully end to end, without skipping anything' - stricter
     than a positive Z1/Z2 point total (which can stay positive even with a
     real gap, e.g. several correct action selections offsetting one bad
-    one). Every checkpoint below must have cleanly passed."""
+    one). Every checkpoint below must have cleanly passed. action_count_matches
+    is passed in directly (not re-derived from a Z2.12 ScoreItem, which no
+    longer exists) - it only gates the step-efficiency BONUS below, it does
+    not itself apply any penalty, so this isn't a re-introduction of the
+    double-counting Z2.12 was removed for."""
     by_step: dict[str, list[float]] = {}
     for item in process_items:
         by_step.setdefault(item.step, []).append(item.points)
@@ -567,7 +569,7 @@ def _episode_fully_completed(process_items: list[ScoreItem]) -> bool:
         return False
     if any(p < 0 for p in by_step.get("Z2.10 No mutual exclusivity conflicts", [])):
         return False
-    if "Z2.12 Action count calibration" in by_step:  # any row here means the count didn't match exactly
+    if not action_count_matches:
         return False
     doc_points = by_step.get("Documentation actually saved", [])
     if not doc_points or doc_points[0] != 1:
@@ -575,7 +577,7 @@ def _episode_fully_completed(process_items: list[ScoreItem]) -> bool:
     return True
 
 
-def score_step_efficiency(entries: list[dict], process_items: list[ScoreItem], gold_action_ids: list[str]) -> ScoreItem:
+def score_step_efficiency(entries: list[dict], process_items: list[ScoreItem], gold_action_ids: list[str], valid_ids: list[str]) -> ScoreItem:
     """New check, per explicit user request: reward completing the full
     required workflow in the fewest steps, penalize unnecessary extra
     steps. Full +1 credit only if the episode both (a) completed the
@@ -589,7 +591,8 @@ def score_step_efficiency(entries: list[dict], process_items: list[ScoreItem], g
     extra_steps = max(0, actual_steps - minimum_steps)
     penalty = round(-0.25 * extra_steps, 2)
 
-    fully_completed = _episode_fully_completed(process_items)
+    action_count_matches = len(valid_ids) == len(gold_action_ids)
+    fully_completed = _episode_fully_completed(process_items, action_count_matches)
     bonus = 1 if (fully_completed and extra_steps == 0) else 0
     points = round(bonus + penalty, 2)
 
@@ -610,7 +613,7 @@ def grade_process(log_path: Path, patient_id: str, visit_date: str, gold_action_
 
     z2_nav = score_z2_navigation(page_states)
     selected_actions = [e for e in entries if e.get("type") == "select_action"]
-    z2_actions, valid_ids = score_z2_actions(selected_actions, gold_action_ids)
+    z2_actions, valid_ids = score_z2_actions(selected_actions)
     z2_abstain = score_z2_abstention(valid_ids, gold_action_ids)
 
     xray_step = _reached_form_step(page_states, "xray_viewer")
@@ -625,7 +628,7 @@ def grade_process(log_path: Path, patient_id: str, visit_date: str, gold_action_
     doc_items = [doc_saved_item] if doc_saved_item else []
 
     all_items = z1_items + [z2_nav] + z2_actions + [z2_abstain] + doc_items
-    efficiency_item = score_step_efficiency(entries, all_items, gold_action_ids)
+    efficiency_item = score_step_efficiency(entries, all_items, gold_action_ids, valid_ids)
 
     return all_items + [efficiency_item]
 
