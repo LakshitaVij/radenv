@@ -33,33 +33,57 @@ Secrets (git-ignored, must be created locally):
 
 ## Run order
 
-1. **OpenEMR** — bring up your OpenEMR instance, apply `openemr-setup/orthanc-addition.patch`, then run the seed scripts in order:
+1. **OpenEMR** — apply `openemr-setup/orthanc-addition.patch` against
+   `openemr/` first (it edits `docker/development-easy/docker-compose.yml`
+   to add the Orthanc service, so it has to land before containers start,
+   not after):
+   ```bash
+   cd openemr && git apply ../openemr-setup/orthanc-addition.patch && cd ..
+   ```
+   Then bring the stack up (`docker compose up` in
+   `openemr/docker/development-easy`) and run the base seed scripts in
+   order:
    ```bash
    python openemr-setup/seed_patients_and_vitals.py
    python openemr-setup/seed_encounter_history.py
    python openemr-setup/seed_action_library.py
    python openemr-setup/seed_action_hierarchy.py
    ```
-   OpenEMR is expected at `https://localhost:9300`.
+   OpenEMR is expected at `https://localhost:9300` (login `admin`/`pass`).
 
-2. **Orthanc** — start Orthanc (port `8042`), then load the real DICOM data:
+2. **X-ray Viewer form** (the embedded viewer patients/agents actually use
+   inside OpenEMR - separate from the standalone dev frontend in step 4
+   below) - one command applies its patches, seeds its form attachments,
+   and builds + deploys the React frontend into OpenEMR:
+   ```bash
+   bash openemr-setup/setup_xray_viewer.sh
+   ```
+   Requires the OpenEMR docker stack already up (step 1) and `python3`/`npm`
+   on PATH. Safe to re-run - patch application and the DB seed are both
+   idempotent.
+
+3. **Orthanc** — load the real DICOM data (Orthanc itself is already up
+   from step 1):
    ```bash
    python load_dicom_into_orthanc.py
    ```
 
-3. **Backend** (Azure Functions):
-   ```bash
-   cd xray-viewer-backend && func start
-   ```
-   Expected at `http://localhost:7071`.
-
-4. **Frontend**:
+4. **Standalone frontend dev server** (optional - only needed if you're
+   iterating on `xray-viewer-frontend/` source directly; the embedded
+   build from step 2 is what OpenEMR/the agent actually serve):
    ```bash
    cd xray-viewer-frontend && npm run dev
    ```
    Expected at `http://localhost:5173`, proxies `/dicom-web` to Orthanc.
 
-5. **Run the agent evaluation** (real OpenRouter + OpenAI calls — has real cost):
+5. **Backend** (Azure Functions, only used by the standalone frontend
+   above):
+   ```bash
+   cd xray-viewer-backend && func start
+   ```
+   Expected at `http://localhost:7071`.
+
+6. **Run the agent evaluation** (real OpenRouter + OpenAI calls — has real cost):
    ```bash
    cd computer_use_eval && python run_task_batch.py
    ```
