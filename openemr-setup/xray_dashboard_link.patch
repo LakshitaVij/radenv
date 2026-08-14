@@ -1,0 +1,129 @@
+diff --git a/interface/modules/custom_modules/oe-module-xray-dashboard-link/info.txt b/interface/modules/custom_modules/oe-module-xray-dashboard-link/info.txt
+new file mode 100644
+index 0000000..ad0de22
+--- /dev/null
++++ b/interface/modules/custom_modules/oe-module-xray-dashboard-link/info.txt
+@@ -0,0 +1 @@
++X-ray Dashboard Link v1.0.0
+diff --git a/interface/modules/custom_modules/oe-module-xray-dashboard-link/openemr.bootstrap.php b/interface/modules/custom_modules/oe-module-xray-dashboard-link/openemr.bootstrap.php
+new file mode 100644
+index 0000000..f57cb06
+--- /dev/null
++++ b/interface/modules/custom_modules/oe-module-xray-dashboard-link/openemr.bootstrap.php
+@@ -0,0 +1,23 @@
++<?php
++
++/**
++ * X-ray Dashboard Link module bootstrap.
++ *
++ * Modeled on oe-module-dashboard-context's registration pattern (the
++ * existing precedent for injecting into the patient dashboard without
++ * patching demographics.php core).
++ *
++ * @package OpenEMR
++ */
++
++use OpenEMR\Core\ModulesClassLoader;
++use OpenEMR\Core\OEGlobalsBag;
++use OpenEMR\Modules\XrayDashboardLink\Bootstrap;
++
++$file = OEGlobalsBag::getInstance()->getProjectDir();
++$classLoader = new ModulesClassLoader($file);
++$classLoader->registerNamespaceIfNotExists('OpenEMR\\Modules\\XrayDashboardLink\\', __DIR__ . DIRECTORY_SEPARATOR . 'src');
++
++$eventDispatcher = OEGlobalsBag::getInstance()->getKernel()->getEventDispatcher();
++$bootstrap = new Bootstrap($eventDispatcher);
++$bootstrap->subscribeToEvents();
+diff --git a/interface/modules/custom_modules/oe-module-xray-dashboard-link/src/Bootstrap.php b/interface/modules/custom_modules/oe-module-xray-dashboard-link/src/Bootstrap.php
+new file mode 100644
+index 0000000..a7b200b
+--- /dev/null
++++ b/interface/modules/custom_modules/oe-module-xray-dashboard-link/src/Bootstrap.php
+@@ -0,0 +1,74 @@
++<?php
++
++/**
++ * X-ray Dashboard Link module Bootstrap class.
++ *
++ * Adds an "Open X-ray" button to the patient dashboard, pointing at the
++ * patient's most recent visit that has real DICOM imaging attached (via
++ * the X-ray Viewer form - see interface/forms/xray_viewer/). Uses
++ * RenderEvent::EVENT_SECTION_LIST_RENDER_BEFORE, the same dashboard
++ * injection point oe-module-dashboard-context uses, so demographics.php
++ * itself never needs to be touched.
++ *
++ * @package OpenEMR
++ */
++
++namespace OpenEMR\Modules\XrayDashboardLink;
++
++use OpenEMR\Core\OEGlobalsBag;
++use OpenEMR\Events\PatientDemographics\RenderEvent;
++use Symfony\Component\EventDispatcher\EventDispatcherInterface;
++
++class Bootstrap
++{
++    public function __construct(
++        private readonly EventDispatcherInterface $eventDispatcher
++    ) {
++    }
++
++    public function subscribeToEvents(): void
++    {
++        $this->eventDispatcher->addListener(RenderEvent::EVENT_SECTION_LIST_RENDER_BEFORE, $this->renderWidget(...));
++    }
++
++    public function renderWidget(RenderEvent $event): void
++    {
++        $pid = $event->getPid();
++        if (empty($pid)) {
++            return;
++        }
++
++        $row = sqlQuery(
++            "SELECT fe.date FROM forms f " .
++            "JOIN form_encounter fe ON fe.pid = f.pid AND fe.encounter = f.encounter " .
++            "WHERE f.formdir = 'xray_viewer' AND f.pid = ? AND f.deleted = 0 " .
++            "ORDER BY fe.date DESC LIMIT 1",
++            [$pid]
++        );
++
++        // No imaging for this patient at all - nothing to link to, don't
++        // show a dead-end button.
++        if (empty($row['date'])) {
++            return;
++        }
++
++        $mostRecentDate = date('Y-m-d', strtotime((string) $row['date']));
++        $rootdir = OEGlobalsBag::getInstance()->get('rootdir');
++        $openUrl = $rootdir . '/forms/xray_viewer/open_latest.php';
++        ?>
++        <div class="card mb-3" id="card_xray_dashboard_link">
++            <div class="card-header d-flex justify-content-between align-items-center">
++                <span><?php echo xlt('X-ray'); ?></span>
++            </div>
++            <div class="card-body d-flex justify-content-between align-items-center">
++                <span class="text-muted small">
++                    <?php echo xlt('Most recent'); ?>: <?php echo text($mostRecentDate); ?>
++                </span>
++                <a href="<?php echo attr($openUrl); ?>" class="btn btn-primary btn-sm">
++                    <?php echo xlt('Open'); ?> &rarr;
++                </a>
++            </div>
++        </div>
++        <?php
++    }
++}
+diff --git a/interface/modules/custom_modules/oe-module-xray-dashboard-link/version.php b/interface/modules/custom_modules/oe-module-xray-dashboard-link/version.php
+new file mode 100644
+index 0000000..c556105
+--- /dev/null
++++ b/interface/modules/custom_modules/oe-module-xray-dashboard-link/version.php
+@@ -0,0 +1,7 @@
++<?php
++
++$v_major = '1';
++$v_minor = '0';
++$v_patch = '0';
++$v_tag   = '';
++$v_database = 0;
